@@ -4,98 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Calendar.css">
     <title>Calendar</title>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=he__K8LD5cIXTwo-fH8_hx83V3735CL_3filYeEBzxdTa7W_6XgixVWcHh9-7txMZVYy3fiViCH5U9p82jQ__dMII6BUCJNTdQs0_cNWLt2qftNk2oEPb78HSAZHWQ_2InSLKjWHVWx2ffHJUvtlqQ" charset="UTF-8"></script></head>
+</head>
 <body>
-    <img src="LOGO.png" alt="LOGO">
-    <div class="vertical-menu">
-        <a href="Profil.html" class="active">Your profile</a>
-        <a href="Start_Workout.html">Start workout</a>
-        <a href="Informations.html">Information</a>
-        <a href="Statistics.html">Statistics</a>
-        <a href="Calendar.html">Calendar</a>
-        <a href="Start.html">Logout</a>
-      </div>
-      <div class="month">      
-        <ul>
-          <li class="prev">&#10094;</li>
-          <li class="next">&#10095;</li>
-          <li>
-            August<br>
-            <span style="font-size:18px">2017</span>
-          </li>
-        </ul>
-      </div>
+  
+  <ul class="menu">
+    <li><img class="logo" src="LOGO.png" alt="LOGO"> </li>
+    <li class="start">MENU</li>
+    <li><a href="Profil.html">Your profile</a></li>
+    <li><a href="Start_Workout.html">Start workout</a></li>
+    <li><a href="Informations.html">Information</a></li>
+    <li><a href="Statistics.html">Statistics</a></li>
+    <li><a href="Calendar.html">Calendar</a></li>
+    <li><a href="Start.html">Logout</a></li>
+  </ul>
+
+<div class="calendar">
+      <div class="container">
+
+        <div class="calendar-base">
       
-      <ul class="weekdays">
-        <li>Mo</li>
-        <li>Tu</li>
-        <li>We</li>
-        <li>Th</li>
-        <li>Fr</li>
-        <li>Sa</li>
-        <li>Su</li>
-      </ul>
+          <div class="year">2021</div>
+
+          <div class="triangle-left"></div>
+
+          <div class="triangle-right"></div>
+
       
-      <ul class="days">  
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li><span class="active">10</span></li>
-        <li>11</li>
-        <li>12</li>
-        <li>13</li>
-        <li>14</li>
-        <li>15</li>
-        <li>16</li>
-        <li>17</li>
-        <li>18</li>
-        <li>19</li>
-        <li>20</li>
-        <li>21</li>
-        <li>22</li>
-        <li>23</li>
-        <li>24</li>
-        <li>25</li>
-        <li>26</li>
-        <li>27</li>
-        <li>28</li>
-        <li>29</li>
-        <li>30</li>
-        <li>31</li>
-      </ul>
+          <div class="months">
+            <span class="month-hover">Jan</span>
+            <span class="month-hover">Feb</span> 
+            <span class="month-hover">Mar</span> 
+            <strong class="month-color">Apr</strong>
+            <span class="month-hover">May</span>
+            <span class="month-hover">Jun</span>
+            <span class="month-hover">July</span> 
+            <span class="month-hover">Aug</span> 
+            <span class="month-hover">Sep</span> 
+            <span class="month-hover">Oct</span> 
+            <span class="month-hover">Nov</span> 
+            <span class="month-hover">Dec</span>
+          </div>
+          <hr class="month-line" />
       
-      <div>
-      <span>
-          What group of muscles did you work?
-            <select name="group 1" id="1">
-                <option value="Group 1">G1</option>
-                <option value="Group 2">G2</option>
-                <option value="Gropu 3">G3</option>
-                <option value="Group 4">G4</option>
-                <option value="Group 5">G5</option>
-                <option value="Group 6">G6</option>
-                <option value="Group 7">G7</option>
-            </select>
-          </span>
-          <div>
-        <span>
-          Time
-            <select name="group 2" id="2">
-                <option value="Group 1">1h</option>
-                <option value="Group 2">2h</option>
-            </select>
+          <div class="days">SUN MON TUE WED THU FRI SAT</div>
           
-            <button type="submit">ADD IN CALENDAR</button>
-      </span>
-    </div>
-    </div>
       
+          <div class="num-dates">
+      
+            <div class="first-week"><span class="grey">26 27 28 29 30 31</span> 01</div>
+         
+            <div class="second-week">02 03 04 05 06 07 08</div>
+           
+            <div class="third-week"> 09 10 11 12 13 14 15</div>
+           
+            <div class="fourth-week"> 16 17 18 19 20 21 22</div>
+            
+            <div class="fifth-week"> 23 24 25 26 <strong class="white">27</strong> 28 29</div>
+            
+            <div class="sixth-week"> 30 <span class="grey">01 02 03 04 05 06</span></div>
+          
+          </div>
+         
+          <div class="event-indicator"></div>
+   
+          <div class="active-day"></div>
+        
+          <div class="event-indicator two"></div>
+         
+      
+        </div>
+       
+        <div class="calendar-left">
+      
+          <div class="hamburger">
+            <div class="burger-line"></div>
+         
+            <div class="burger-line"></div>
+           
+            <div class="burger-line"></div>
+          
+          </div>
+     
+      
+      
+          <div class="num-date">27</div>
+     
+          <div class="day">THURSDAY</div>
+      
+          <div class="current-events">Current Events
+            <br/>
+            <ul>
+              <li>Workout Day!</li>
+            </ul>
+            <span class="posts">See post events</span></div>
+       
+      
+          <div class="create-event">Create an Event</div>
+       
+          <hr class="event-line" />
+          <div class="add-event"><span class="add">+</span></div>
+
+      
+        </div>
+
+      </div>
+  
+    </div>  
 </body>
 </html>
