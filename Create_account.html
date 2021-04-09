@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Create_account.css">
     <title>Create account</title>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=9MEzHquu8qSIxpllrcyIZZ8hw2KVRQe5NmnrUE37wAYeYFxbJoaq-qP4OkMNLEu4EUOFir-qua0lZHH66W1-6CPKdJdBjt8SQWJu_GDl7JeQ7738siOEy_9tZYXgFQvgOdmZ5DwqTL5TtTy0upX5bp-5d-EFZuBSV9rQZjhuM7k" charset="UTF-8"></script></head>
+</head>
 <body>
 
     <div class="start_create">
@@ -53,39 +53,49 @@
             <label> Gender</label>
           </div>
 
+          <div class="check-box">
+            <span><p>Choose what's your focus part:<br>
+                <input type="radio" name="part" value="Arms"> Arms
+                <input type="radio" name="part" value="Abs"> Abs
+                <input type="radio" name="part" value="Butt"> Butt 
+                <input type="radio" name="part" value="Legs"> Legs
+            </p></span>
+          </div>
+          
           <div class="user-box">
-            <span>Choose what's your focus part:
-                <input type="checkbox" name="part" value="Arms"> Arms
-                <input type="checkbox" name="part" value="Abs"> Abs
-                <input type="checkbox" name="part" value="Butt"> Butt 
-                <input type="checkbox" name="part" value="Legs"> Legs
-            </span>
+            <input type="text" placeholder="">
+            <label>Choose what's your focus part:</label>
           </div>
 
-          <div class="user-box">
-          <span>I want to:
+
+
+
+
+          <div class="checj-box">
+          <span><p>I want to:
             <input type="radio" name="wish" value="lose weight"> Lose weight
-            <input type="number" placeholder="kg" required> kg
             <input type="radio" name="wish" value="get toned"> Get toned
             <input type="radio" name="wish" value="build muscles"> Build muscles  
-        </span>
+        </p></span>
     </div>
 
-    <div class="user-box">
-        <span>
+    <div class="check-box">
+
+        <span><p>
         Add a photo so people know it's you.
         <input type="file" />
-        </span>
+        </p></span>
         </div>
-        <div class="user-box">
-        <span>
+        <div class="check-box">
+        <span><p>
             <input type="checkbox" name="terms_and_conditions" value="Process_data" required> I agree to the processing of my personal data.
             <input type="checkbox" name="terms_and_conditions" value="Terms_and_conditions" required> I agree with the Terms and conditions.
-        </span>
+       </p> </span>
     </div>
-       
+
     
-          <a href="Login.html">
+        <button type="submit">
+          <a href="Login.css">
             <span></span>
             <span></span>
             <span></span>
@@ -105,23 +115,10 @@
                 <span></span>
                 Login
               </a>
-    
+   
     </form>
     </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

@@ -4,73 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Edit.css">
+    <title>Edit profile</title>
 </head>
 <body>
-    <img src="LOGO.png" alt="LOGO">
-    <h1>Edit your profile</h1>
+    <div class="start_create">
 
-    <p>Public information</p>
-    <div>
-        Username
-        <input type="text" placeholder="Username" required>
-    </div>
-    <div>
-        Email
-        <input type="text" pattern="([a-zA-z]*@gmail.com|[0][1-9]{9})" placeholder="Email" required>
-    </div>
-    <div>
-        Current password
-        <input type="password" placeholder="Current password" required> 
-    </div>
-    <div>
-        New password
-        <input type="password" placeholder="New password" required> 
-    </div>
-    <div>
-        Age
-        <input type="number" placeholder="Age" required>
-    </div>
-    <div>
-        Height
-        <input type="number" placeholder="Height" required>
-    </div>
-    <div>
-        Weight
-        <input type="number" placeholder="Weight" required>
-    </div>    
-    <div>
-        Gender
-        <select>
-            <option>Male</option>
-            <option>Female</option>
-        </select>
-    </div>
+        <div class="login-box2">
     
-    <span>Choose what's your focus part:
-        <input type="checkbox" name="part" value="Arms"> Arms
-        <input type="checkbox" name="part" value="Abs"> Abs
-        <input type="checkbox" name="part" value="Butt"> Butt 
-        <input type="checkbox" name="part" value="Legs"> Legs
-    </span>
-    <span>I want to:
-        <input type="radio" name="wish" value="lose weight"> Lose weight
-        <input type="number" placeholder="kg" required> kg
-        <input type="radio" name="wish" value="get toned"> Get toned
-        <input type="radio" name="wish" value="build muscles"> Build muscles
-    </span><span>
-    Add a photo so people know it's you.
-    <input type="file" />
-    </span>
-    <span>
-        <input type="checkbox" name="terms_and_conditions" value="Process_data" required> I agree to the processing of my personal data.
-        <input type="checkbox" name="terms_and_conditions" value="Terms_and_conditions" required> I agree with the Terms and conditions.
-    </span>
-    <div>
-    <span>
-        <button type="submit"><a href="Login.html">Create account</a></button>
-        You have an account? <button type="submit"> <a href="Login.html">LOGIN</a></button>
-     </span>
+    <h2>Edit your profile</h2>
+    <form>
+    
+        <div class="user-box">
+            <input type="text" pattern="([a-zA-z])" placeholder="" required >
+            <label>Full name</label>
+          </div>
+    
+          
+          <div class="user-box">
+            <input type="text" pattern="([a-zA-z][0][1-9]{9})" placeholder="" required>
+            <label> Username</label>
+          </div>
+
+        <div class="user-box">
+            <input type="text" pattern="([a-zA-z]*@gmail.com|[0][1-9]{9})" placeholder="" required>
+            <label>Email</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" placeholder="" required>
+            <label>Age</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" placeholder="" required>
+            <label>Height</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" placeholder="" required>
+            <label>Weight</label>
+          </div>
+
+         
+          <div class="user-box">
+            <input type="text" placeholder="" required>
+            <label> Gender</label>
+          </div>
+<div class="upload">
+        <span><p>
+        Change your profil picture
+        <input type="file" />
+        </p></span>
+   </div>
+        
+    <button type="submit">
+          <a href="Profil.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Save changes
+          </a>
+        </button>
+
+    </form>
     </div>
+    </div>
+
 </body>
 </html>
