@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Generator.css">
     <title>Generator</title>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=y8-t4DXIRbgF1pi7OLksNv_Vp42gEizmIyLWPrj60Y4wDXVqek-QCHIE427O8pIHGnUiH8F_7hegew18ZycaPQLqBKh5vdvAZWQkc8UbdcxrgQbkx4-WE6qOsYAfwchC1vLyZAARUWB69eWDxHfSvQ" charset="UTF-8"></script></head>
+</head>
 <body>
-    <img src="LOGO.png" alt="LOGO">
-    <div class="vertical-menu">
-        <a href="Profil.html" class="active">Your profile</a>
-        <a href="Start_Workout.html">Start workout</a>
-        <a href="Informations.html">Information</a>
-        <a href="Statistics.html">Statistics</a>
-        <a href="Calendar.html">Calendar</a>
-        <a href="Start.html">Logout</a>
-      </div>
+  <div class="start_generator">
+  <ul class="menu">
+    <li><img class="logo" src="LOGO.png" alt="LOGO"> </li>
+    <li class="start"></li>
+    <li><a href="Profil.html">Your profile</a></li>
+    <li><a href="Start_Workout.html">Start workout</a></li>
+    <li><a href="Informations.html">Information</a></li>
+    <li><a href="Statistics.html">Statistics</a></li>
+    <li><a href="Calendar.html">Calendar</a></li>
+    <li><a href="Start.html">Logout</a></li> 
+    </ul>
+
+      <div class="login-box2">
+  
       <form>
-       <div>What groups of muscles you want to work on?
+        <h2>Generate workout</h2>
+
+      <p>What groups of muscles you want to work on?</p>
+      <div class="select">
         <select name="group 1" id="1">
-            <option value="Group 1">G1</option>
+          <option selected disabled>Choose an option</option>
+          <option value="Group 1">G1</option>
             <option value="Group 2">G2</option>
             <option value="Gropu 3">G3</option>
             <option value="Group 4">G4</option>
@@ -28,8 +38,11 @@
             <option value="Group 7">G7</option>
         </select>
       </div>
-      <div>
+
+
+      <div class="select">
         <select name="group 2" id="2">
+          <option selected disabled>Choose an option</option>
             <option value="Group 1">G1</option>
             <option value="Group 2">G2</option>
             <option value="Gropu 3">G3</option>
@@ -39,8 +52,9 @@
             <option value="Group 7">G7</option>
         </select>
       </div>
-      <div>
+      <div class="select">
         <select name="group 3" id="3">
+          <option selected disabled>Choose an option</option>
             <option value="Group 1">G1</option>
             <option value="Group 2">G2</option>
             <option value="Gropu 3">G3</option>
@@ -50,8 +64,9 @@
             <option value="Group 7">G7</option>
         </select>
       </div>
-      <div>
+      <div class="select">
         <select name="group 4" id="4">
+          <option selected disabled>Choose an option</option>
             <option value="Group 1">G1</option>
             <option value="Group 2">G2</option>
             <option value="Gropu 3">G3</option>
@@ -61,9 +76,12 @@
             <option value="Group 7">G7</option>
         </select>
       </div>
-        <div>How long you want your workout?
-            <select name="group 5" id="5">
-                <option value="time 1">T1</option>
+    
+          <p>How long you want your workout? </p>
+          <div class="select">
+            <select name="group 1" id="1">
+              <option selected disabled>Choose an option</option>
+              <option value="time 1">T1</option>
                 <option value="time 2">T2</option>
                 <option value="time 3">T3</option>
                 <option value="time 4">T4</option>
@@ -72,7 +90,9 @@
                 <option value="time 7">T7</option>
             </select>
           </div>
-          <div>Location of your workout:
+
+          <p>Where do you want to do your workout?</p>
+          <div class="select">
             <select name="location" >
                 <option value="location 1">L1</option>
                 <option value="location 2">L2</option>
@@ -83,9 +103,21 @@
                 <option value="location 7">L7</option>
             </select>
           </div>
-          <span>
-            <button type="submit">GENERATE WORKOUT</button>
-         </span>
+          
+          
+      
+          <button type="submit">
+            <a href="Login.css">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Generate workout
+            </a>
+          </button>
     </form>
+    </div>
+    </div>
+
 </body>
 </html>

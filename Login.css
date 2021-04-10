@@ -26,14 +26,6 @@ h2{
     text-align: center;
   }
   
-  .start_create{
-    height: 160%;
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-    background: linear-gradient(#141e30, #243b55);
-    text-align: center;
-  }
   .login-box2 {
     position: relative;
     top: 50%;
@@ -47,6 +39,9 @@ h2{
     border-radius: 10px;
   }
   
+  .login-box2 p{
+    padding: 0;
+  }
   .login-box2 h2 {
     margin: 0 0 30px;
     padding: 0;
@@ -99,7 +94,7 @@ h2{
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
+    margin-top: 20px;
     letter-spacing: 4px
   }
   
@@ -199,34 +194,54 @@ button{
     text-align: center;
 }
   
+.login-box2 p{
+  color:#fff;
+  font-size:20px;
+}
 
-
-@media only screen and (min-width:200px) and (max-width:500px){
-  .start{
-          background-image: url("https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-size: 130% 100%;
-          background-position: center;
-        }
-  .start-box {
-          top:45%;
-          left: 50%;
-          width: 250px;
-          height: 300px;
-        }
-        
-    .start-box form a {
-      padding: 5px 10px;
-      font-size: 15px;
-      margin-top: 10px;
-      letter-spacing: 2px;
+@media only screen and (max-width:300px){
+  .start_login{
+      height: 110%;
+      width: 110%;
+      background-image: url("https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=631&q=80");
+      background-size: 100% 100%;
     }
+    .login-box2 {
+      top: 50%;
+      left: 50%;
+      width: 250px;
+      padding: 10px;
+    }
+      
+    .login-box2 p{
+      color:#fff;
+      font-size:20px;
+      margin-top: 30px;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:500px){
+.start_login{
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=631&q=80");
+    background-size: 100% 100%;
   }
+  .login-box2 {
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 10px;
+  }
+    
+  .login-box2 p{
+    color:#fff;
+    font-size:25px;
+    margin-top: 30px;
+  }
+}
   
   
   @media screen and (min-width:500px) and (max-width:900px){
-      .start{
+    .start_login{
           width: 100%;
           height: 100%;
           background-size: 150% 100%;
@@ -234,3 +249,11 @@ button{
         }
   }
  
+  @media screen and (min-width:900px) and (max-width:1024px){
+    .start_login{
+        width: 100%;
+        height: 100%;
+        background-size: 150% 170%;
+        background-position: center;
+      }
+  }

@@ -52,55 +52,51 @@
             <input type="text" placeholder="" required>
             <label> Gender</label>
           </div>
-
-          <div class="check-box">
-            <span><p>Choose what's your focus part:<br>
-                <input type="radio" name="part" value="Arms"> Arms
-                <input type="radio" name="part" value="Abs"> Abs
-                <input type="radio" name="part" value="Butt"> Butt 
-                <input type="radio" name="part" value="Legs"> Legs
+          <div class="upload">
+            <span><p>
+            Choose a profil picture:
+            <input type="file" />
             </p></span>
-          </div>
-          
-          <div class="user-box">
-            <input type="text" placeholder="">
-            <label>Choose what's your focus part:</label>
-          </div>
+       </div>
 
 
+<div id="radios">
+  <p>Choose what's your focus part:</p>
+  <label class="label-radio" for="input1"></label>
+  <input  id="input1" name="radio" type="radio" /> Arms
+  <label class="label-radio" for="input2"></label>
+  <input  id="input2" name="radio" type="radio" /> Abs
+  <label class="label-radio" for="input3"></label>
+  <input  id="input3" name="radio" type="radio" /> Butt
+  <label class="label-radio" for="input4"></label>
+  <input  id="input4" name="radio" type="radio" /> Legs
+</div>
 
 
+<div id="radios">
+  <p> I want to:</p>
+  <label class="label-radio" for="input1"></label>
+  <input  id="input1" name="radio" type="radio" /> Lose weight
+  <label class="label-radio" for="input2"></label>
+  <input  id="input2" name="radio" type="radio" /> Get toned
+  <label class="label-radio" for="input4"></label>
+  <input  id="input4" name="radio" type="radio" /> Build muscles
+</div>
 
-          <div class="checj-box">
-          <span><p>I want to:
-            <input type="radio" name="wish" value="lose weight"> Lose weight
-            <input type="radio" name="wish" value="get toned"> Get toned
-            <input type="radio" name="wish" value="build muscles"> Build muscles  
-        </p></span>
-    </div>
-
-    <div class="check-box">
-
-        <span><p>
-        Add a photo so people know it's you.
-        <input type="file" />
-        </p></span>
-        </div>
-        <div class="check-box">
-        <span><p>
-            <input type="checkbox" name="terms_and_conditions" value="Process_data" required> I agree to the processing of my personal data.
-            <input type="checkbox" name="terms_and_conditions" value="Terms_and_conditions" required> I agree with the Terms and conditions.
-       </p> </span>
-    </div>
-
-    
-        <button type="submit">
-          <a href="Login.css">
+ <div id="terms">
+   <label>
+   <input type="checkbox" class="option-input-checkbox" checked />
+    I agree to the processing of my personal data.  I agree with the terms and <br> conditions. 
+   </label>
+ </div>
+       
+ <button type="submit">
+          <a href="Login.html">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Create account!
+            Create account
           </a>
         </button>
     
@@ -115,7 +111,7 @@
                 <span></span>
                 Login
               </a>
-   
+          
     </form>
     </div>
     </div>
