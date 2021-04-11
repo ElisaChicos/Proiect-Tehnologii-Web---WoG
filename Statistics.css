@@ -74,34 +74,37 @@ p{
   color: #fff;
 }
 
-  .menu {
-    list-style-type: none;
-    flex-direction:column;
-    margin: 0;
-    padding: 0;
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
+.menu {
+  list-style-type: none;
+  flex-direction:column;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
   
-.menu, li a {
-    display: block;
-    color:white;
-    padding: 8px 16px;
-    text-decoration: none;
-    padding-bottom: 1em;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4);   
-    z-index: 2;
-    padding: 1.5em;
+   
 }
-  
+
+.menu, li a {
+  display: block;
+  color:white;
+  padding: 8px 16px;
+  text-decoration: none;
+  padding-bottom: 1em;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);   
+  z-index: 2;
+  padding: 1.5em;
+
+
+}
+
 .menu li.start{
-    padding-top: 1.7em;
-    padding-bottom: 0.5em;
-    font-size: 3em;
-    padding-left: 0.3em;
+  padding-bottom: 2em;
+  font-size: 3em;
+  padding-left: 0.3em;
 }
   
 .meniu, li a:hover {

@@ -17,45 +17,49 @@
   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.44, rgb(103, 223, 223)),color-stop(0.72,rgb(70, 151, 151)),color-stop(0.86, rgb(41, 114, 114)));
 }
 .menu {
-    list-style-type: none;
-    flex-direction:column;
-    margin: 0;
-    padding: 0;
-    width: 15%;
-    position: fixed;
-    height: 100%;
-    overflow: auto; 
-  }
-  .menu, li a {
-    display: block;
-    color:white;
-    text-decoration: none;
-    padding-bottom: 4em;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4);   
-    z-index: 2;
-    padding: 1.5em;
-    padding-top: 2em;
-  }
+  list-style-type: none;
+  flex-direction:column;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
   
-  .menu li.start{
-    padding-top: 5em;
-    padding-bottom: 2em;
-    font-size: 3em;
-    padding-left: 0;
-  }
-  .meniu, li a:hover {
-    background-color:black;
-    color: white;
-  }
-
-  img{
-    width:10em;
-    height:4em;
-    padding-top: 0em;
-    padding-bottom: 4em;
-    position:relative;
+   
 }
+
+.menu, li a {
+  display: block;
+  color:white;
+  padding: 8px 16px;
+  text-decoration: none;
+  padding-bottom: 1em;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);   
+  z-index: 2;
+  padding: 1.5em;
+
+
+}
+
+.menu li.start{
+  padding-bottom: 2em;
+  font-size: 3em;
+  padding-left: 0.3em;
+}
+.meniu, li a:hover {
+  background-color:black;
+  color: white;
+}
+
+img{
+  width:10em;
+  height:4em;
+  padding-bottom: 6em;
+  position:relative;
+}
+
 html{
     height: 100px;
 }
