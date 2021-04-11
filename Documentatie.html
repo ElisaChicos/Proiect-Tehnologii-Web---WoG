@@ -1,12 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta charset="utf-8">
+    <title>WoG</title>
+    <link rel="stylesheet" href="Documentatie.css"></head>
+
+<body prefix="schema: http://schema.org">
+
+    <header>
+        <h1>WoG - documentation</h1>
+    </header>
+    <div class="top-info" role="contentinfo">
+        <dl>
+            <dt>Autori</dt>
+            <dd typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                    <meta property="schema:givenName" content="Veronica">
+                    <meta property="schema:additionalName" content="Elisa">
+                    <meta property="schema:familyName" content="Chicos">
+                    <a href="https://github.com/ElisaChicos">
+                        <span property="schema:name">Chicos Elisa Veronica</span>
+                    </a>
+                </span>
+            </dd>
+            <dd typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                    <meta property="schema:givenName" content="Adriana">
+                    <meta property="schema:additionalName" content="Alina">
+                    <meta property="schema:familyName" content="Haidau">
+                    <a href="https://github.com/Haidau-Alina-Adriana">
+                        <span property="schema:name">Haidau Alina-Adriana</span>
+                    </a>
+                </span>
+            </dd>
+        </dl>
+    </div>
+
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2><span>1. </span>Cerință</h2>
+        <p>
+            Sa se creeze o aplicatie Web ce le ofera utilizatorilor diverse tipuri de antrenamente sportive personalizate in functie de greutate, inaltime, varsta, gen, etc.
+        </p>
+    </section>
+
+    <section id="introduction">
+        <h2><span>2. </span>Introducere</h2>
+        <p>
+            Specialiștii au constatat că multe dintre problemele de sănătate apărute pe parcursul vieții pot fi prevenite dacă urmăm un plan alimentar 
+            echilibrat și facem mișcare în mod regulat. Beneficiile sportului asupra fizicului ne sunt deja binecunoscute. Însă, trebuie să știi că 
+            din ce în ce mai multe studii recente au dovedit că sportul contribuie atât la sănătatea fizică, dar și la cea mentală. Efectuate în mod regulat,
+            activitățile fizice îți îmbunătățesc încrederea în tine și modul în care îți percepi corpul, te ajută să te concentrezi mai ușor și să faci față cu succes stresului.
+            <br><br>
+            Ne propunem să facem o aplicație web cu scopul de a ajuta persoanele care sunt in cautarea unui program eficient de exercitii fizice generat conform preferintelor utilizatorului si nevoilor sale.
+        </p>
+    </section>
+
+    <section id="architecture"> 
+        <h2><span>3. </span>Arhitectura aplicației</h2>
+        <p>
+                Aplicatia se deschide cu pagina de start, de unde un utilizator se poate loga sau isi poate crea un cont. Dupa autentificare,
+                este redirectionat catre pagina profilului, iar apoi poate naviga intre pagini cu ajutorului meniului: poate genera 
+                un workout, poate citi niste informatii despre sport, poate sa vizualizeze statisticile sale, cat si un top al celor mai activi
+                utilizatori, poate sa isi verifice activitatea sau sa verifice/programeze viitoarele workout-uri sau se poate deloga.
+                <br><br>
+                Aplicatia contine 13 pagini responsive
+        </p>
+    </section>
+
+    <section id="pages">
+        <h2><span>4. </span>Paginile aplicației Web</h2>
+
+        <section id="pages-start">
+            <h3><span>4.1 </span>Start</h3>
+            <p>
+                Pagina Start ofera posibilitatea ca un nou utilizator sa isi creeze cont sau utilizatorii cu un cont existent sa se logheze, 
+                dar si un link catre informatii referitoare la proprietarii site-ului.
+            </p>
+
+            <img src="Start-page.png" alt="Start Page" class="pages">
+        </section>
+
+
+        <section id="pages-create-account">
+            <h3><span>4.2 </span>Create account</h3>
+            <p>
+                În această pagină, utilizatorul isi poate face un cont introducand datele personale, cat si datele necesare pentru 
+                generarea unui workout potrivit acestuia.
+            </p>
+
+            <img src="Create-account-page.png" alt="Create account Page" class="pages">
+
+
+        </section>
+
+        <section id="pages-login">
+            <h3><span>4.3 </span>Login</h3>
+            <p>
+               In aceasta pagina utilizatorul se poate loga folosind email-ul si parola.
+            </p>
+
+            <img src="Login-page.png" alt="Login Page" class="pages">
+        </section>
     
+    <section id="pages-profile">
+        <h3><span>4.4 </span>Profile</h3>
+        <p>
+           Dupa ce utilizatorul s-a logat, sau si-a creat contul, va fi redirectionat catre pagina profilului sau, unde isi poate vedea
+           atat informatiile publice, cat si cele private si respectiv le poate modifica. 
+        </p>
+
+        <img src="Profile-page.png" alt="Profile Page" class="pages">
+    </section>
+
+<section id="pages-edit-profile">
+    <h3><span>4.5 </span>Edit profile</h3>
+    <p>
+        In acesta pagina utilizatorul isi poate modifica efectiv informatiile.
+    </p>
+
+    <img src="Edit-profile-page.png" alt="Edit Profile Page" class="pages">
+</section>
+
+<section id="pages-generator">
+    <h3><span>4.6 </span>Generator</h3>
+    <p>
+        In acesta pagina utilizatorul alege ce grupe de muschi ar vrea sa lucreze in ziua respectiva, locatia unde se desfasoara workout-ul,
+        dar si durata acestuia.
+    </p>
+
+    <img src="Generator-page.png" alt="Generator Page" class="pages">
+</section>
+
+<section id="pages-workout">
+    <h3><span>4.7 </span>Workout</h3>
+    <p>
+       Dupa ce si-a creat workout-ul in pagina "Start workout", utilizatorul este redirectionat catre pagina aceasta, unde sunt prezentate
+       exercitiile generate impreuna cu instructiuni detaliate si exemple foto/video.
+    </p>
+
+    <img src="Workout-page.png" alt="Workout Page" class="pages">
+</section>
+
+<section id="pages-informations">
+    <h3><span>4.8 </span>Informations</h3>
+    <p>
+       Aceasta pagina contine informatii despre sport si cateva beneficii ale acestuia asupra corpului nostru.
+    </p>
+
+    <img src="Informations-page.png" alt="Informations Page" class="pages">
+</section>
+
+<section id="pages-statistics">
+    <h3><span>4.9 </span>Statistics</h3>
+    <p>
+       In pagina Statistics se poate gasi un top al celor mai activi utilizatori, dar si niste statistici personale ale utilizatorului 
+       curent, care ulterior pot fi descarcate in formatele JSON si PDF.
+
+    </p>
+
+    <img src="Statistics-page.png" alt="Statistics Page" class="pages">
+</section>
+
+<section id="pages-calendar">
+    <h3><span>4.10 </span>Calendar</h3>
+    <p>
+       In pagina Calendar utilizatorul curent isi poate programa viitoarele workout-uri sau isi poate tine evidenta celor anterioare.
+    </p>
+
+    <img src="Calendar-page.png" alt="Calendar Page" class="pages">
+</section>
+</section>
+
+<section id="Suplimentar">
+    <h2><span>6. </span>Alte</h2>
+    <p>
+        Urmeaza sa implementam workout-ul propriu-zis, cu exemple video si detalii relevante, cat si posibilitatea descarcarii 
+        datelor statistice in formatele JSON si PDF, plus si mici modificari aduse stilizarii paginilor, cat si paginilor responsive, 
+        dar totodata sa adaugam functionalitate aplicatiei.
+    </p>
+</section>
+
+    <section id="references">
+        <h2><span>7. </span>Referințe</h2>
+            <ul>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://www.w3schools.com/">
+                    <cite property="schema:name">
+                        <a href="https://www.w3schools.com/">w3schools</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://developer.mozilla.org/en-US/">
+                    <cite property="schema:name">
+                        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://www.geeksforgeeks.org/">
+                    <cite property="schema:name">
+                        <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+                    </cite>
+                </li>
+            </ul>
+    </section>
+
 </body>
+
 </html>
