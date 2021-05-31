@@ -154,7 +154,7 @@ h2{
 
 
 
-@media only screen and (min-width:200px) and (max-width:500px){
+@media only screen and (min-width:200px) and (max-width:380px){
 .start{
         background-image: url("https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
         background-repeat: no-repeat;
@@ -178,20 +178,88 @@ h2{
 }
 
 
-@media screen and (min-width:500px) and (max-width:900px){
+@media screen and (min-width:380px) and (max-width:700px){
     .start{
         width: 100%;
         height: 100%;
         background-size: 150% 100%;
         background-position: center;
       }
+      .start-box {
+        top:50%;
+        left: 50%;
+        width: 400px;
+        height: 400px;
+        padding: 40px;
+      }
+    
+    .start-box h2 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-size: 30px;
+    }
+    
+    .start-box form a {
+      padding: 10px 20px;
+      padding-top: 1em;
+      font-size: 20px;
+      
+    }
 }
 
-@media screen and (min-width:900px) and (max-width:1024px){
+@media screen and (min-width:700px) and (max-width:900px){
   .start{
       width: 100%;
       height: 100%;
-      background-size: 150% 170%;
+      background-size: 200% 170%;
       background-position: center;
     }
+    .start-box {
+      top:50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      padding: 40px;
+    }
+  
+  .start-box h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 45px;
+  }
+  
+  .start-box form a {
+    padding: 10px 20px;
+    padding-top: 1em;
+    font-size: 30px;
+    
+  }
+}
+@media screen and (min-width:900px) and (max-width:1500px){
+  .start{
+      width: 100%;
+      height: 100%;
+      background-size: 200% 170%;
+      background-position: center;
+    }
+    .start-box {
+      top:50%;
+      left: 50%;
+      width: 650px;
+      height: 650px;
+      padding: 40px;
+    }
+  
+  .start-box h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+  }
+  
+  .start-box form a {
+    padding: 10px 20px;
+    padding-top: 1.5em;
+    font-size: 40px;
+    
+  }
 }

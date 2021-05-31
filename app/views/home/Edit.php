@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/Edit.css">
+    <title>Edit profile</title>
+</head>
+<body>
+    <div class="start_create">
+
+        <div class="login-box2">
+    
+    <h2>Edit your profile</h2>
+    <form>
+    
+        <div class="user-box">
+            <input type="text" pattern="([a-zA-z])" placeholder="" required >
+            <label>Full name</label>
+          </div>
+          
+          <div class="user-box">
+            <input type="text" pattern="([a-zA-z][0][1-9]{9})" placeholder="" required>
+            <label> Username</label>
+          </div>
+
+        <div class="user-box">
+            <input type="text" pattern="([a-zA-z]*@gmail.com|[0][1-9]{9})" placeholder="" required>
+            <label>Email</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" placeholder="" required>
+            <label>Age</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" placeholder="" required>
+            <label>Height</label>
+          </div>
+
+          <div class="user-box">
+            <input type="number" placeholder="" required>
+            <label>Weight</label>
+          </div>
+
+         
+          <div class="user-box">
+            <input type="text" placeholder="" required>
+            <label> Gender</label>
+          </div>
+<div class="upload">
+        <p><span>
+        Change your profil picture:
+        <input type="file" />
+        </span></p>
+   </div>
+        
+          <a href="/app/views/home/Profil.php">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Save changes
+          </a>
+
+    </form>
+    </div>
+    </div>
+
+</body>
+</html>

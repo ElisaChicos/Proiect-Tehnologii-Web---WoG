@@ -1,0 +1,713 @@
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #d1d1d1;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(143, 158, 187)), color-stop(0.72, rgb(122, 134, 158)), color-stop(0.86, rgb(79, 85, 97)));
+}
+
+body,
+html {
+    margin: 0;
+    height: 1400px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.start_create {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.upload {
+    width: 50%;
+    padding: 10px 0;
+    padding-left: 160px;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    border-radius: 15px;
+    color: white;
+    word-spacing: 4px;
+    text-indent: 2%;
+    white-space: normal;
+    padding-top: 1em;
+    padding-bottom: 0;
+    font: normal 1.2em Georgia, 'Times New Roman', Times, serif;
+}
+
+.login-box2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 1250px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.726);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.726);
+    border-radius: 10px;
+}
+
+.login-box2 h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    padding-top: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box2 .user-box {
+    position: relative;
+}
+
+.login-box2 .user-box input {
+    width: 60%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box2 .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    right: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box2 .user-box input:focus~label,
+.login-box2 .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login-box2 a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.login-box2 a span {
+    position: absolute;
+    display: block;
+}
+
+.login-box2 a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box2 a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box2 a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box2 a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+button {
+    background: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+.login-box2 form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 4px
+}
+
+.login-box2 a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.login-box2 span {
+    position: relative;
+    display: block;
+}
+
+#terms {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 10px;
+}
+
+@keyframes click-wave {
+    0% {
+        height: 40px;
+        width: 40px;
+        opacity: 0.35;
+        position: relative;
+    }
+    100% {
+        height: 200px;
+        width: 200px;
+        margin-left: -80px;
+        margin-top: -80px;
+        opacity: 0;
+    }
+}
+
+.option-input-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.option-input-checkbox:hover {
+    background: #9faab7;
+}
+
+.option-input-checkbox:checked {
+    background: #415c59;
+}
+
+.option-input-checkbox:checked::before {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.option-input-checkbox:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #415c59;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+@media only screen and (max-width:330px) {
+    body,
+    html {
+        height: 180%;
+        width: 170%;
+    }
+    .start_create {
+        background-image: url("https://images.unsplash.com/photo-1617133973515-f714c8e8f51e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        background-size: 170% 120%;
+    }
+    .upload {
+        width: 50%;
+        padding: 10px 0;
+        padding-left: 160px;
+        font-size: 20px;
+        left: 100px;
+    }
+    h2 {
+        font: normal bold 5em Georgia, 'Times New Roman', Times, serif;
+    }
+    p {
+        word-spacing: 5px;
+        padding-top: 0;
+        padding-bottom: 0;
+        font: normal 2em Georgia, 'Times New Roman', Times, serif;
+    }
+    .login-box2 {
+        top: 50%;
+        left: 50%;
+        width: 700px;
+        height: 1700px;
+        background: rgba(0, 0, 0, 0.89);
+    }
+    .login-box2 h2 {
+        margin: 0 0 30px;
+    }
+    .login-box2 .user-box input {
+        width: 40%;
+        padding: 10px 2px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .login-box2 .user-box label {
+        padding: 10px 0;
+        font-size: 25px;
+        right: 0;
+    }
+    .login-box2 .user-box input:focus~label,
+    .login-box2 .user-box input:valid~label {
+        top: -10px;
+    }
+    #radios {
+        font-size: 27px;
+    }
+    #radios p {
+        font-size: 40px;
+    }
+    .login-box2 form a {
+        padding: 15px 25px;
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 0;
+    }
+    .option-input-checkbox {
+        height: 50px;
+        width: 50px;
+        margin-right: 0.5rem;
+    }
+    #terms {
+        font-size: 25px;
+    }
+    .option-input-checkbox:checked::before {
+        height: 50px;
+        width: 50px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (min-width:330px) and (max-width:500px) {
+    body,
+    html {
+        height: 160%;
+        width: 140%;
+    }
+    .start_create {
+        background-image: url("https://images.unsplash.com/photo-1616279968481-f8717a710ef6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA0fHxmaXRuZXNzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+        background-size: 120% 100%;
+    }
+    .upload {
+        width: 50%;
+        padding: 10px 0;
+        padding-left: 140px;
+        font-size: 20px;
+        left: 100px;
+    }
+    h2 {
+        font: normal bold 3em Georgia, 'Times New Roman', Times, serif;
+    }
+    p {
+        word-spacing: 5px;
+        padding-top: 0;
+        padding-bottom: 0.2em;
+        font: normal 2em Georgia, 'Times New Roman', Times, serif;
+    }
+    .login-box2 {
+        top: 50%;
+        left: 50%;
+        width: 670px;
+        height: 1600px;
+        background: rgba(0, 0, 0, 0.89);
+    }
+    .login-box2 h2 {
+        padding-top: 0.5em;
+    }
+    .login-box2 .user-box input {
+        width: 40%;
+        padding: 10px 2px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .login-box2 .user-box label {
+        padding: 10px 0;
+        font-size: 20px;
+        right: 0;
+    }
+    .login-box2 .user-box input:focus~label,
+    .login-box2 .user-box input:valid~label {
+        top: -10px;
+    }
+    #radios {
+        font-size: 24px;
+    }
+    #radios p {
+        font-size: 30px;
+    }
+    .login-box2 form a {
+        padding: 15px 25px;
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 0;
+    }
+    .option-input-checkbox {
+        height: 40px;
+        width: 40px;
+        margin-right: 0.5rem;
+    }
+    #terms {
+        padding-top: 1em;
+        font-size: 20px;
+    }
+    .option-input-checkbox:checked::before {
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+    body,
+    html {
+        height: 160%;
+        width: 150%;
+    }
+    .start_create {
+        background-size: 120% 100%;
+    }
+    .upload {
+        width: 50%;
+        padding: 10px 0;
+        padding-left: 250px;
+        font-size: 20px;
+        left: 100px;
+    }
+    h2 {
+        font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
+    }
+    p {
+        word-spacing: 5px;
+        padding-top: 0;
+        padding-bottom: 0.2em;
+        font: normal 2em Georgia, 'Times New Roman', Times, serif;
+    }
+    .login-box2 {
+        top: 50%;
+        left: 50%;
+        width: 1000px;
+        height: 1600px;
+        background: rgba(0, 0, 0, 0.89);
+    }
+    .login-box2 .user-box input {
+        width: 30%;
+        padding: 10px 2px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .login-box2 .user-box label {
+        padding: 10px 0;
+        font-size: 25px;
+        right: 0;
+    }
+    .login-box2 .user-box input:focus~label,
+    .login-box2 .user-box input:valid~label {
+        top: -5px;
+    }
+    #radios {
+        font-size: 27px;
+    }
+    #radios p {
+        font-size: 30px;
+    }
+    .login-box2 form a {
+        padding: 15px 25px;
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 0;
+    }
+    .option-input-checkbox {
+        height: 40px;
+        width: 40px;
+        margin-right: 0.5rem;
+    }
+    #terms {
+        padding-top: 1em;
+        font-size: 20px;
+    }
+    .option-input-checkbox:checked::before {
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    body,
+    html {
+        height: 130%;
+        width: 130%;
+    }
+    .start_create {
+        background-size: 170% 100%;
+    }
+    .upload {
+        width: 50%;
+        padding: 10px 0;
+        padding-left: 250px;
+        font-size: 20px;
+        left: 100px;
+    }
+    h2 {
+        font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
+    }
+    p {
+        word-spacing: 5px;
+        padding-top: 0;
+        padding-bottom: 0.2em;
+        font: normal 2em Georgia, 'Times New Roman', Times, serif;
+    }
+    .login-box2 {
+        top: 50%;
+        left: 50%;
+        width: 1200px;
+        height: 1600px;
+        background: rgba(0, 0, 0, 0.89);
+    }
+    .login-box2 .user-box input {
+        width: 30%;
+        padding: 10px 2px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .login-box2 .user-box label {
+        padding: 10px 0;
+        font-size: 25px;
+        right: 0;
+    }
+    .login-box2 .user-box input:focus~label,
+    .login-box2 .user-box input:valid~label {
+        top: -5px;
+    }
+    #radios {
+        font-size: 30px;
+    }
+    #radios p {
+        font-size: 40px;
+    }
+    .login-box2 form a {
+        padding: 15px 25px;
+        font-size: 40px;
+        margin-top: 20px;
+        letter-spacing: 0;
+    }
+    .option-input-checkbox {
+        height: 40px;
+        width: 40px;
+        margin-right: 0.5rem;
+    }
+    #terms {
+        padding-top: 1em;
+        font-size: 30px;
+    }
+    .option-input-checkbox:checked::before {
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1030px) {
+    body,
+    html {
+        height: 120%;
+        width: 100%;
+    }
+    .start_create {
+        background-size: 150% 100%;
+    }
+    .upload {
+        width: 50%;
+        padding: 10px 0;
+        padding-left: 250px;
+        font-size: 20px;
+        left: 100px;
+    }
+    h2 {
+        font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
+    }
+    p {
+        word-spacing: 5px;
+        padding-top: 0;
+        padding-bottom: 0.2em;
+        font: normal 2em Georgia, 'Times New Roman', Times, serif;
+    }
+    .login-box2 {
+        top: 50%;
+        left: 50%;
+        width: 1000px;
+        height: 1600px;
+        background: rgba(0, 0, 0, 0.89);
+    }
+    .login-box2 .user-box input {
+        width: 30%;
+        padding: 10px 2px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .login-box2 .user-box label {
+        padding: 10px 0;
+        font-size: 25px;
+        right: 0;
+    }
+    .login-box2 .user-box input:focus~label,
+    .login-box2 .user-box input:valid~label {
+        top: -5px;
+    }
+    #radios {
+        font-size: 30px;
+    }
+    #radios p {
+        font-size: 40px;
+    }
+    .login-box2 form a {
+        padding: 15px 25px;
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 0;
+    }
+    .option-input-checkbox {
+        height: 40px;
+        width: 40px;
+        margin-right: 0.5rem;
+    }
+    #terms {
+        padding-top: 1em;
+        font-size: 20px;
+    }
+    .option-input-checkbox:checked::before {
+        height: 40px;
+        width: 40px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
