@@ -1,6 +1,6 @@
 <?php
 require_once('config_create_account.php');
-require_once("app/views/config_create_account.php");
+require_once("/app/views/config_create_account.php");
 
 
 if(isset($_POST['create'])){
