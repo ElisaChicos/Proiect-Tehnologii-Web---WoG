@@ -1,3 +1,35 @@
+<?php
+require_once('config_create_account.php');
+require_once("app/views/config_create_account.php");
+
+
+if(isset($_POST['create'])){
+  $full_name    = $_POST['full_name'];
+  $username    = $_POST['username'];
+  $email       = $_POST['email'];
+  $age         = $_POST['age'];
+  $height      = $_POST['height'];
+  $weight      = $_POST['weight'];
+  $gender      = $_POST['gender'];
+  $password    = $_POST['password'];
+  $image       = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
+  $want        = $_POST['want'];
+  $focus_part  = $_POST['focus_part'];
+  
+
+
+
+  $sql = "INSERT INTO user_exemplu.users (full_name,username,email,age,height,weight,gender,password,image,want,focus_part) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+  $stmtinsert = $db->prepare($sql);
+  $result = $stmtinsert->execute([$full_name,$username,$email,$age,$height,$weight,$gender,$password,$image,$want,$focus_part]);
+  if($result){
+      echo 'Successfuly saved.';
+  }
+  else{
+      echo 'Erorssss';
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,71 +46,82 @@
         <div class="login-box2">
     
     <h2>Create account</h2>
-    <form>
+    <form action="Create_account.php" method="post">
+    <div class="container">
+    <div class="row">
     
-        <div class="user-box">
-            <input type="text" pattern="([a-zA-z])" placeholder="" required >
-            <label>Full name</label>
-          </div>
-    
-          
-          <div class="user-box">
-            <input type="text" pattern="([a-zA-z][0][1-9]{9})" placeholder="" required>
-            <label> Username</label>
-          </div>
+    <input type="text"  name="full_name"  placeholder="" required >
+        <label for="full_name">Full name</label>
+      </div>
 
-        <div class="user-box">
-            <input type="text" pattern="([a-zA-z]*@gmail.com|[0][1-9]{9})" placeholder="" required>
-            <label>Email</label>
-          </div>
+      
+      <div class="user-box">
+      
+        <input type="text" name="username" required>
+        <label for="username"> Username</label>
+      </div>
 
-          <div class="user-box">
-            <input type="number" placeholder="" required>
-            <label>Age</label>
-          </div>
+    <div class="user-box">
+   
+        <input type="text" name="email"  required>
+        <label for="email">Email</label>
+      </div>
 
-          <div class="user-box">
-            <input type="number" placeholder="" required>
-            <label>Height</label>
-          </div>
+      <div class="user-box">
+      
+        <input type="number" name="age"  required>
+        <label for="age">Age</label>
+      </div>
 
-          <div class="user-box">
-            <input type="number" placeholder="" required>
-            <label>Weight</label>
-          </div>
+      <div class="user-box">
+      
+        <input type="number"  name="height"  required>
+        <label for="height">Height</label>
+      </div>
 
-         
-          <div class="user-box">
-            <input type="text" placeholder="" required>
-            <label> Gender</label>
-          </div>
-          <div class="upload">
-            <p><span>
-            Choose a profil picture:
-            <input type="file" />
-            </span></p>
+      <div class="user-box">
+      
+        <input type="number" name="weight"  required>
+        <label for="weight">Weight</label>
+      </div>
+
+     
+      <div class="user-box">
+      
+        <input type="text" name="gender"  required>
+        <label for="gender"> Gender</label>
+      </div>
+
+      <div class="user-box">
+     
+        <input type="password" name="password"  required>
+        <label for="password"> Password</label>
+      </div>
+
+
+      <div id="radios">
+        <p> I want to:
+        <select name="want">
+        <option> Choose an option </option>
+        <option value="lose_weight"> Lose weight </option>
+        <option value="get_toned"> Get toned </option>
+        <option value="build_muscles"> Build muscles </option>
+        </select>
+        </p>
        </div>
 
-
-<div id="radios">
-  <p>Choose what's your focus part:</p>
-  <label class="label-radio" for="input1"></label>
-  <input  id="input1" name="radio" type="radio" /> Arms
-  <label class="label-radio" for="input2"></label>
-  <input  id="input2" name="radio" type="radio" /> Abs
-  <label class="label-radio" for="input3"></label>
-  <input  id="input3" name="radio" type="radio" /> Butt
-  <label class="label-radio" for="input4"></label>
-  <input  id="input4" name="radio" type="radio" /> Legs
-
-  <p> I want to:</p>
-  <label class="label-radio" for="input1"></label>
-  <input  id="input5" name="radio" type="radio" /> Lose weight
-  <label class="label-radio" for="input2"></label>
-  <input  id="input6" name="radio" type="radio" /> Get toned
-  <label class="label-radio" for="input4"></label>
-  <input  id="input7" name="radio" type="radio" /> Build muscles
-</div>
+              
+       <div id="radios">
+          <p>Choose what's your focus part:
+          <select name="focus_part">
+          <option> Choose an option </option>
+          <option value="arms"> Arms </option>
+          <option value="abs"> Abs </option>
+          <option value="butt"> Butt </option>
+          <option value="legs"> Legs </option>
+          </select>
+          </p>
+        </div>
 
  <div id="terms">
    <label>
@@ -86,6 +129,7 @@
     I agree to the processing of my personal data.  I agree with the terms and <br> conditions. 
    </label>
  </div>
+ <input type="submit" name="create" id="create" value="Sign Up">
  <a href="/app/views/home/Login.php">
             <span></span>
             <span></span>

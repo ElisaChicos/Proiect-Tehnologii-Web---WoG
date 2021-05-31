@@ -1,3 +1,39 @@
+<?php
+//require_once('config_create_account.php');
+
+
+$host="localhost";
+$user="root";
+$password="";
+$db="user_exemplu";
+
+$aVar=mysqli_connect($host,$user,$password);
+
+mysqli_select_db($aVar,'user_exemplu');
+
+
+
+if(isset($_POST['create'])){
+  $full_name    = $_POST['full_name'];
+  $username    = $_POST['username'];
+  $email       = $_POST['email'];
+  $age         = $_POST['age'];
+  $height      = $_POST['height'];
+  $weight      = $_POST['weight'];
+
+  $sql = "UPDATE `users` SET `full_name`='".$full_name."',`email`='".$email."',`age`='".$age."',`height`='".$height ."',`weight`='".$weight ."' WHERE `username`=$username";
+ // $stmtinsert = $db->prepare($sql);
+ // $result = $stmtinsert->execute([$full_name,$username,$email,$age,$height,$weight]);
+ $result = mysqli_query($aVar,$sql);
+
+ if($result){
+      echo 'Successfuly saved.';
+  }
+  else{
+      echo 'Erorssss';
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,50 +49,40 @@
         <div class="login-box2">
     
     <h2>Edit your profile</h2>
-    <form>
+    <form action="/app/views/home/Edit.php" method="post">
     
-        <div class="user-box">
-            <input type="text" pattern="([a-zA-z])" placeholder="" required >
-            <label>Full name</label>
+    <div class="user-box">
+        <input type="text"  name="full_name"  placeholder="" required >
+        <label for="full_name">Full name</label>
           </div>
+    
           
           <div class="user-box">
-            <input type="text" pattern="([a-zA-z][0][1-9]{9})" placeholder="" required>
-            <label> Username</label>
+          <input type="text" name="username" required>
+        <label for="username"> Username</label>
           </div>
 
         <div class="user-box">
-            <input type="text" pattern="([a-zA-z]*@gmail.com|[0][1-9]{9})" placeholder="" required>
-            <label>Email</label>
+        <input type="text" name="email"  required>
+        <label for="email">Email</label>
           </div>
 
           <div class="user-box">
-            <input type="number" placeholder="" required>
-            <label>Age</label>
+          <input type="number" name="age"  required>
+        <label for="age">Age</label>
           </div>
 
           <div class="user-box">
-            <input type="number" placeholder="" required>
-            <label>Height</label>
+          <input type="number"  name="height"  required>
+        <label for="height">Height</label>
           </div>
 
           <div class="user-box">
-            <input type="number" placeholder="" required>
-            <label>Weight</label>
+          <input type="number" name="weight"  required>
+        <label for="weight">Weight</label>
           </div>
 
-         
-          <div class="user-box">
-            <input type="text" placeholder="" required>
-            <label> Gender</label>
-          </div>
-<div class="upload">
-        <p><span>
-        Change your profil picture:
-        <input type="file" />
-        </span></p>
-   </div>
-        
+          <input type="submit" name="create" id="create" value="Save changes">
           <a href="/app/views/home/Profil.php">
             <span></span>
             <span></span>
