@@ -26,10 +26,27 @@
         <div class="login-box2">
 
         <div id="app"></div>
+<img src="
+<?php
+session_start();
+$host="localhost";
+$user="root";
+$password="";
+$db="images";
+$aVar=mysqli_connect($host,$user,$password);
+mysqli_select_db($aVar,'user_exemplu');
+$sql = "SELECT * FROM user_exemplu.images WHERE id='1';";
+$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
+while($row = mysqli_fetch_array($result))
+  {
+    echo $row["path"];
+  }
 
-   
+?>
+  "> 
     <button onclick="startTimer()">HAPPY LAMMA</button>
-
+        </div>
+    </div>
 </body>
 </html>
 <script type="text/javascript">

@@ -48,7 +48,7 @@ $_SESSION['message'] = $username;
  //echo $username_from_edit;
 $sql = "SELECT * FROM user_exemplu.users WHERE username = '$username';";
 
-$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));;
+$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
 
 while($row = mysqli_fetch_array($result))
   {
