@@ -29,13 +29,13 @@
       <div class="select">
         <select name="group 1" id="1">
           <option selected disabled>Choose an option</option>
-          <option value="Group 1">G1</option>
-            <option value="Group 2">G2</option>
-            <option value="Group 3">G3</option>
-            <option value="Group 4">G4</option>
-            <option value="Group 5">G5</option>
-            <option value="Group 6">G6</option>
-            <option value="Group 7">G7</option>
+          <option value="Group 1">Legs</option>
+            <option value="Group 2">Glutes</option>
+            <option value="Group 3">Abs</option>
+            <option value="Group 4">Shoulders</option>
+            <option value="Group 5">Arms</option>
+            <option value="Group 6">Back</option>
+            <option value="Group 7">Chest</option>
         </select>
       </div>
 
@@ -43,37 +43,37 @@
       <div class="select">
         <select name="group 2" id="2">
           <option selected disabled>Choose an option</option>
-            <option value="Group 1">G1</option>
-            <option value="Group 2">G2</option>
-            <option value="Group 3">G3</option>
-            <option value="Group 4">G4</option>
-            <option value="Group 5">G5</option>
-            <option value="Group 6">G6</option>
-            <option value="Group 7">G7</option>
+          <option value="Group 1">Legs</option>
+            <option value="Group 2">Glutes</option>
+            <option value="Group 3">Abs</option>
+            <option value="Group 4">Shoulders</option>
+            <option value="Group 5">Arms</option>
+            <option value="Group 6">Back</option>
+            <option value="Group 7">Chest</option>
         </select>
       </div>
       <div class="select">
         <select name="group 3" id="3">
           <option selected disabled>Choose an option</option>
-            <option value="Group 1">G1</option>
-            <option value="Group 2">G2</option>
-            <option value="Group 3">G3</option>
-            <option value="Group 4">G4</option>
-            <option value="Group 5">G5</option>
-            <option value="Group 6">G6</option>
-            <option value="Group 7">G7</option>
+          <option value="Group 1">Legs</option>
+            <option value="Group 2">Glutes</option>
+            <option value="Group 3">Abs</option>
+            <option value="Group 4">Shoulders</option>
+            <option value="Group 5">Arms</option>
+            <option value="Group 6">Back</option>
+            <option value="Group 7">Chest</option>
         </select>
       </div>
       <div class="select">
         <select name="group 4" id="4">
           <option selected disabled>Choose an option</option>
-            <option value="Group 1">G1</option>
-            <option value="Group 2">G2</option>
-            <option value="Group 3">G3</option>
-            <option value="Group 4">G4</option>
-            <option value="Group 5">G5</option>
-            <option value="Group 6">G6</option>
-            <option value="Group 7">G7</option>
+          <option value="Group 1">Legs</option>
+            <option value="Group 2">Glutes</option>
+            <option value="Group 3">Abs</option>
+            <option value="Group 4">Shoulders</option>
+            <option value="Group 5">Arms</option>
+            <option value="Group 6">Back</option>
+            <option value="Group 7">Chest</option>
         </select>
       </div>
     
@@ -81,13 +81,11 @@
           <div class="select">
             <select name="group 5" id="5">
               <option selected disabled>Choose an option</option>
-              <option value="time 1">T1</option>
-                <option value="time 2">T2</option>
-                <option value="time 3">T3</option>
-                <option value="time 4">T4</option>
-                <option value="time 5">T5</option>
-                <option value="time 6">T6</option>
-                <option value="time 7">T7</option>
+              <option value="time 1">15 minutes</option>
+                <option value="time 2">30 minutes</option>
+                <option value="time 3">45 minutes</option>
+                <option value="time 4">1 hour</option>
+                <option value="time 5">1 hour 30 minutes</option>
             </select>
           </div>
 
@@ -95,13 +93,9 @@
           <div class="select">
             <select name="location" >
             <option selected disabled>Choose an option</option>
-                <option value="location 1">L1</option>
-                <option value="location 2">L2</option>
-                <option value="location 3">L3</option>
-                <option value="location 4">L4</option>
-                <option value="location 5">L5</option>
-                <option value="location 6">L6</option>
-                <option value="location 7">L7</option>
+                <option value="location 1">Inside</option>
+                <option value="location 2">Outside</option>
+                <option value="location 3">Gym</option>
             </select>
           </div>
             <a href="Workout.php">
