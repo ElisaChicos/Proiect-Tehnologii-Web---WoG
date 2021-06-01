@@ -20,13 +20,12 @@
     <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
     <li><a href="/app/views/home/Start.php">Logout</a></li>
         </ul>
-    </div> 
+    
 
-    <div class="start-workout">
         <div class="login-box2">
-
+        <h2> Set 1 </h2> 
         <div id="app"></div>
-<img src="
+<img class="exercise" src="
 <?php
 session_start();
 $host="localhost";
@@ -44,19 +43,22 @@ while($row = mysqli_fetch_array($result))
 
 ?>
   "> 
-    <button onclick="startTimer()">HAPPY LAMMA</button>
-        </div>
-    </div>
-</body>
-</html>
-<script type="text/javascript">
-function picture(){ 
-     var pic = "../documentatie/login-page.png";  
-    document.getElementById('bigpic').style.display='block';
-   
-}
 
-
+<div class="exercise_info"><?php
+$sql = "SELECT * FROM user_exemplu.images WHERE id='1';";
+$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
+while($row = mysqli_fetch_array($result))
+  {
+    echo $row["breathing_info"] ."<br>";
+    echo $row["step1"] ."<br>";
+    echo $row["step2"] ."<br>";
+    echo $row["step3"] ."<br>";
+    echo $row["step4"] ."<br>";
+    echo $row["reps"] ."<br>";
+  }
+?></div>
+    <button onclick="startTimer()">START EXERCISE</button>
+    <script type="text/javascript">
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
@@ -102,8 +104,6 @@ document.getElementById("app").innerHTML =`
   <span id="base-timer-label" class="base-timer__label">${formatTime(timeLeft)}</span>
 </div>
 `;
-
-
 
 function onTimesUp() {
   clearInterval(timerInterval);
@@ -170,3 +170,8 @@ function setCircleDasharray() {
 }
 
 </script>
+        </div>
+    </div>
+    
+</body>
+</html>

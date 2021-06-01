@@ -28,6 +28,15 @@
         <div class="login-box2">
             <h1>STATISTICS</h1>
             <h2>Top 10 most active users:</h2>
+            <?php
+            
+            $host="localhost";
+            $user="root";
+            $password="";
+            $db="user_exemplu";
+            
+
+            ?>
             <ol type="1">
                 <li class="enum"> </li>
                 <li class="enum"> </li>
