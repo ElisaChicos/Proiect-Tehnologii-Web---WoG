@@ -1,7 +1,12 @@
 <?php
 //require_once('config_create_account.php');
 
+session_start();
 
+$username_from_login = ($_SESSION['message']);
+ 
+
+/*
 $host="localhost";
 $user="root";
 $password="";
@@ -11,27 +16,28 @@ $aVar=mysqli_connect($host,$user,$password);
 
 mysqli_select_db($aVar,'user_exemplu');
 
-
+*/
+require_once("../home/config_create_account.php");
 
 if(isset($_POST['create'])){
-  $full_name    = $_POST['full_name'];
-  $username    = $_POST['username'];
+  $full_name   = $_POST['full_name'];
+  //$username    = $_POST['username'];
   $email       = $_POST['email'];
   $age         = $_POST['age'];
   $height      = $_POST['height'];
   $weight      = $_POST['weight'];
+  $password    = $_POST['password'];
 
-  $sql = "UPDATE `users` SET `full_name`='".$full_name."',`email`='".$email."',`age`='".$age."',`height`='".$height ."',`weight`='".$weight ."' WHERE `username`=$username";
- // $stmtinsert = $db->prepare($sql);
- // $result = $stmtinsert->execute([$full_name,$username,$email,$age,$height,$weight]);
- $result = mysqli_query($aVar,$sql);
+  $sql = "UPDATE user_exemplu.users SET full_name='$full_name',email='$email',age='$age',height='$height',weight='$weight',password='$password' WHERE username='$username_from_login'";
+ $stmtinsert = $db-> prepare($sql);
+ $result = $stmtinsert->execute([$full_name,$email,$age,$height,$weight]);
+ //$result = mysqli_query($aVar,$sql);
 
  if($result){
-      echo 'Successfuly saved.';
-  }
-  else{
-      echo 'Erorssss';
-  }
+ // $_SESSION['message'] = $username;
+  echo "<script> location.href='/app/views/home/Login.php'; </script>";
+  exit;
+ }
 }
 ?>
 <!DOCTYPE html>
@@ -49,19 +55,14 @@ if(isset($_POST['create'])){
         <div class="login-box2">
     
     <h2>Edit your profile</h2>
-    <form action="/app/views/home/Edit.php" method="post">
+    <form method="post" action="/app/views/home/Edit.php" >
     
     <div class="user-box">
         <input type="text"  name="full_name"  placeholder="" required >
         <label for="full_name">Full name</label>
           </div>
     
-          
-          <div class="user-box">
-          <input type="text" name="username" required>
-        <label for="username"> Username</label>
-          </div>
-
+        
         <div class="user-box">
         <input type="text" name="email"  required>
         <label for="email">Email</label>
@@ -80,6 +81,10 @@ if(isset($_POST['create'])){
           <div class="user-box">
           <input type="number" name="weight"  required>
         <label for="weight">Weight</label>
+          </div>
+          <div class="user-box">
+          <input type="password" name="password"  required>
+        <label for="password">Password</label>
           </div>
 
           <input type="submit" name="create" id="create" value="Save changes">

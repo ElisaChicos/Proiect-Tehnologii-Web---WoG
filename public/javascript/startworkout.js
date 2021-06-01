@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/Workout.css">
-    
-    <title>Workout</title>
-</head>
-<body>
-    
-    <div class="start-workout">
-        <ul class="menu">
-        <li><img class="logo" src="LOGO.png" alt="LOGO"> </li>
-        <li class="start"></li>
-        <li><a href="/app/views/home/Profil.php">Your profile</a></li>
-    <li><a href="/app/views/home/Informations.php">Informations</a></li>
-    <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
-    <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
-    <li><a href="/app/views/home/Start.php">Logout</a></li>
-        </ul>
-    </div> 
-
-    <div class="start-workout">
-        <div class="login-box2">
-
-        <div id="app"></div>
-
-   
-    <button onclick="startTimer()">HAPPY LAMMA</button>
-
-</body>
-</html>
-<script type="text/javascript">
 function picture(){ 
-     var pic = "../documentatie/login-page.png";  
+     var pic = "https://i.pinimg.com/236x/03/bc/32/03bc32988333edd0926af06fca736862.jpg"  
     document.getElementById('bigpic').style.display='block';
-   
+    print("here");
 }
 
 
@@ -64,7 +29,7 @@ let timeLeft = TIME_LIMIT;
 let timerInterval = null;
 let remainingPathColor = COLOR_CODES.info.color;
 
-document.getElementById("app").innerHTML =`
+document.getElementById("app").innerHTML =
 <div class="base-timer">
   <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
     <g class="base-timer__circle">
@@ -82,11 +47,13 @@ document.getElementById("app").innerHTML =`
       ></path>
     </g>
   </svg>
-  <span id="base-timer-label" class="base-timer__label">${formatTime(timeLeft)}</span>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(
+    timeLeft
+  )}</span>
 </div>
-`;
+;
 
-
+startTimer();
 
 function onTimesUp() {
   clearInterval(timerInterval);
@@ -152,4 +119,4 @@ function setCircleDasharray() {
     .setAttribute("stroke-dasharray", circleDasharray);
 }
 
-</script>
+

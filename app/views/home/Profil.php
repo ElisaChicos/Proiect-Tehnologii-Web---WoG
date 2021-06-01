@@ -31,7 +31,7 @@
 <p class="enum">Number # in top most active users</p>
 <p class="enum">Age 
 <?php     
-
+session_start();
 $host="localhost";
 $user="root";
 $password="";
@@ -43,7 +43,9 @@ mysqli_select_db($aVar,'user_exemplu');
 $username = $_POST['username'];
 
 
-//$sql = "SELECT `age` FROM `users` WHERE `username`= $username;";
+$_SESSION['message'] = $username;
+//$username_from_edit = ($_SESSION['message']);
+ //echo $username_from_edit;
 $sql = "SELECT * FROM user_exemplu.users WHERE username = '$username';";
 
 $result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));;
@@ -150,7 +152,7 @@ while($row = mysqli_fetch_array($result))
 </div>  <p>-->
 
 <a href="Edit.php" class="button">Edit your profile</a> 
-<input type="submit" action="Edit.php" method="post" class="button" value="Edit your profile">
+<!--<input type="submit" action="Edit.php" method="post" class="button" value="Edit your profile">-->
 </div>
 </body>
 </html>

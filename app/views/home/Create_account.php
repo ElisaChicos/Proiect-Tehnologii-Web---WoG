@@ -1,6 +1,5 @@
 <?php
-require_once('config_create_account.php');
-require_once("/app/views/config_create_account.php");
+require_once("../home/config_create_account.php");
 
 
 if(isset($_POST['create'])){
@@ -12,22 +11,20 @@ if(isset($_POST['create'])){
   $weight      = $_POST['weight'];
   $gender      = $_POST['gender'];
   $password    = $_POST['password'];
-  $image       = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
   $want        = $_POST['want'];
   $focus_part  = $_POST['focus_part'];
   
 
 
 
-  $sql = "INSERT INTO user_exemplu.users (full_name,username,email,age,height,weight,gender,password,image,want,focus_part) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+  $sql = "INSERT INTO user_exemplu.users (full_name,username,email,age,height,weight,gender,password,want,focus_part) VALUES(?,?,?,?,?,?,?,?,?,?)";
   $stmtinsert = $db->prepare($sql);
-  $result = $stmtinsert->execute([$full_name,$username,$email,$age,$height,$weight,$gender,$password,$image,$want,$focus_part]);
+  $result = $stmtinsert->execute([$full_name,$username,$email,$age,$height,$weight,$gender,$password,$want,$focus_part]);
   if($result){
-      echo 'Successfuly saved.';
+    echo "<script> location.href='/app/views/home/Login.php'; </script>";
+        exit;
   }
-  else{
-      echo 'Erorssss';
-  }
+
 }
 ?>
 <!DOCTYPE html>
@@ -46,10 +43,11 @@ if(isset($_POST['create'])){
         <div class="login-box2">
     
     <h2>Create account</h2>
-    <form action="Create_account.php" method="post">
+    <form action="/app/views/home/Create_account.php" method="post">
     <div class="container">
     <div class="row">
     
+    <div class="user-box">
     <input type="text"  name="full_name"  placeholder="" required >
         <label for="full_name">Full name</label>
       </div>
@@ -129,13 +127,13 @@ if(isset($_POST['create'])){
     I agree to the processing of my personal data.  I agree with the terms and <br> conditions. 
    </label>
  </div>
- <input type="submit" name="create" id="create" value="Sign Up">
+
  <a href="/app/views/home/Login.php">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Create account
+            <input type="submit" name="create" id="create" value="Sign Up">
           </a>
     
         
