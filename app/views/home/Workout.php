@@ -25,6 +25,8 @@
         <div class="login-box2">
         <h2> Set 1 </h2> 
         <div id="app"></div>
+        <button class="button2" onclick="startTimer()">START EXERCISE</button>
+        <button class="button" id="Clickme_to_load">NEXT EXERCISE</button>
 <img class="exercise" src="
 <?php
 session_start();
@@ -44,21 +46,37 @@ while($row = mysqli_fetch_array($result))
 ?>
   "> 
 
-<div class="exercise_info"><?php
+<div class="exercise_info">
+  <?php
 $sql = "SELECT * FROM user_exemplu.images WHERE id='1';";
 $result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
 while($row = mysqli_fetch_array($result))
   {
-    echo $row["breathing_info"] ."<br>";
-    echo $row["step1"] ."<br>";
+    echo "<div class=\"title\"> Proper breathing</div> <br>";
+    echo "<div class=\"enum\">".$row["breathing_info"] ."</div> <br>";
+    echo "<br><br><br><br><br>";
+    echo "<div class=\"title\"> Steps</div> <br>";
+    echo "<div class=\"enum\">".$row["step1"] ." <br>";
     echo $row["step2"] ."<br>";
     echo $row["step3"] ."<br>";
-    echo $row["step4"] ."<br>";
-    echo $row["reps"] ."<br>";
+    echo $row["step4"] ."</div><br>";
+    echo "<br><br><br><br><br>";
+    echo "<div class=\"title\"> Sets & Reps</div> <br>";
+    echo "<div class=\"enum\">".$row["reps"] ."</div><br>";
   }
-?></div>
-    <button onclick="startTimer()">START EXERCISE</button>
-    <script type="text/javascript">
+?>
+
+    </div> 
+   <p id="ajax_div">vai de mn</p>
+   
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<script type="text/javascript">
 const FULL_DASH_ARRAY = 283;
 const WARNING_THRESHOLD = 10;
 const ALERT_THRESHOLD = 5;
@@ -170,8 +188,26 @@ function setCircleDasharray() {
 }
 
 </script>
-        </div>
-    </div>
-    
-</body>
-</html>
+
+<script type="text/javascript">
+function ajaxRequest(url,divid){
+	var xmlhttp;
+	if (window.XMLHttpRequest){//for new browser
+		xmlhttp=new XMLHttpRequest();
+	}else{//for old browser
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	xmlhttp.onreadystatechange=function(){
+		if (xmlhttp.readyState==4 && xmlhttp.status==200){
+			var div=document.getElementById(divid);
+			div.innerHTML=xmlhttp.responseText;
+		}
+	}
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send();
+}
+var bt=document.getElementById("Clickme_to_load");//select button
+bt.onclick=(function(){//make a click event
+	ajaxRequest("/app/views/home/request.php","ajax_div");
+});
+</script>

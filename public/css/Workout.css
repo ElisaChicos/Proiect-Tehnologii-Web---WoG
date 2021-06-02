@@ -118,16 +118,19 @@ button {
 }
 
 .exercise {
-    position: relative;
     width: 25em;
     height: 17em;
-    top: -24%;
-    left: -27%;
+    top: -78%;
+    left: -25%;
+    padding-right: 2em;
 }
-
+.enum {
+    font: normal  1.2em Georgia, 'Times New Roman', Times, serif;
+  
+}
 .exercise_info {
     position: relative;
-    top: -60%;
+    top: -103%;
     color: rgb(255, 255, 255);
     text-align: justify;
     padding-left: 30em;
@@ -135,11 +138,13 @@ button {
 }
 
 .base-timer {
-    position: relative;
-    top: 350px;
-    left: 30%;
+    position:relative;
+    top: 270px;
+    left: 16%;
     width: 150px;
     height: 150px;
+    
+
 }
 
 .base-timer__svg {
@@ -188,6 +193,81 @@ button {
     justify-content: center;
     color: rgb(255, 255, 255);
     font-size: 48px;
+}
+
+.button2 {
+    text-decoration: none;
+    /*position: static;*/
+    -ms-flex-align: center;
+    margin-top: 300px;
+    margin-left: 100px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    background-color: rgb(45, 126, 89);
+    border: 2px solid rgb(33, 80, 59);
+    cursor: pointer;
+    width: max-content;
+    transition: 0.25s ease;
+    left:0;
+    
+}
+.button2:hover {
+    box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
+    color: brown;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.button2--transparent {
+    color: violet;
+    background-color: transparent;
+}
+.button {
+    text-decoration: none;
+    /*position: static;*/
+    -ms-flex-align: center;
+    margin-top: 300px;
+    margin-left: 530px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    background-color: rgb(45, 126, 89);
+    border: 2px solid rgb(33, 80, 59);
+    cursor: pointer;
+    width: max-content;
+    transition: 0.25s ease;
+    left:0;
+    
+}
+.button:hover {
+    box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
+    color: brown;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.button--transparent {
+    color: violet;
+    background-color: transparent;
+}
+.title{
+    text-decoration: none;
+    font: normal  1.2em Georgia, 'Times New Roman', Times, serif;
+    -ms-flex-align: right;
+    margin-top: -100px;
+    margin-left: -200px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(65, 184, 131);
+    position: relative;
+    top: -60%;
+    text-align: justify;
+    padding-left: 7em;
+    padding-right: 2.5em;
+    
 }
 
 @media only screen and (max-width:300px) {
@@ -357,3 +437,4 @@ button {
         text-align: center;
     }
 }
+
