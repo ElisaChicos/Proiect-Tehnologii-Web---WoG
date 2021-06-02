@@ -32,13 +32,19 @@
             <?php require_once("../phpFiles/displayTop.php");?>
             </ol>
             <p class="paragraph"> You can see the whole top by downloading it from right here: </p>
+
+            <span class="btn_container">
+
             <a href="/app/views/home/activeUsers.json" class="button2" download>
             <?php require_once("../phpFiles/generateJson.php");?>
             Download Top Active Users (JSON format)</a>
 
-            <a href="AboutUs.html" class="button2">
-            <?php require_once("../phpFiles/generatePdf.php");?>
-            &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</a>
+            <form action="../phpFiles/generatePdf.php" method="POST"> 
+            <button type="submit" class="button2" name="btn_pdf"> &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</button>
+            </form>
+           
+            </span>
+
             <h2> Personal Information</h2>
 
             <div class="enum">

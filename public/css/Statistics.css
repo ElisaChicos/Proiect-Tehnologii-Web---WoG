@@ -1,3 +1,19 @@
++::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(163, 189, 236);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(163, 189, 236);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(133, 164, 221)), color-stop(0.72, rgb(102, 127, 173)), color-stop(0.86, rgb(69, 85, 114)));
+}
+
 .enum {
     text-align: left;
     padding-bottom: 2em;
@@ -58,6 +74,11 @@
     width: max-content;
     transition: 0.25s ease;
     left: 0;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .button2:hover {
