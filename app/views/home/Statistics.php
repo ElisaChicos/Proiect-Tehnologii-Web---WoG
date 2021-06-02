@@ -28,29 +28,14 @@
         <div class="login-box2">
             <h1>STATISTICS</h1>
             <h2>Top 10 most active users:</h2>
-            <?php
-            
-            $host="localhost";
-            $user="root";
-            $password="";
-            $db="user_exemplu";
-            
-
-            ?>
             <ol type="1">
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
-                <li class="enum"> </li>
+            <?php require_once("../phpFiles/displayTop.php");?>
             </ol>
             <p class="paragraph"> You can see the whole top by downloading it from right here: </p>
-            <a href="AboutUs.html" class="button2">Download Top Active Users (JSON format)</a>
+            <a href="/app/views/home/activeUsers.json" class="button2" download>
+            <?php require_once("../phpFiles/generateJson.php");?>
+            
+            Download Top Active Users (JSON format)</a>
             <a href="AboutUs.html" class="button2">&nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</a>
             <h2> Personal Information</h2>
 
