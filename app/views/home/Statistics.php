@@ -13,7 +13,7 @@
 
 <div class="start_statistics">
     <ul class="menu">
-    <li><img class="logo" src="LOGO.png" alt="LOGO"> </li>
+    <li><img class="logo" src="/../public/images/LOGO.png" alt="LOGO"> </li>
     <li class="start"></li>
     <li><a href="/app/views/home/Profil.php">Your profile</a></li>
     <li><a href="/app/views/home/Generator.php">Start workout</a></li>
@@ -34,9 +34,11 @@
             <p class="paragraph"> You can see the whole top by downloading it from right here: </p>
             <a href="/app/views/home/activeUsers.json" class="button2" download>
             <?php require_once("../phpFiles/generateJson.php");?>
-            
             Download Top Active Users (JSON format)</a>
-            <a href="AboutUs.html" class="button2">&nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</a>
+
+            <a href="AboutUs.html" class="button2">
+            <?php require_once("../phpFiles/generatePdf.php");?>
+            &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</a>
             <h2> Personal Information</h2>
 
             <div class="enum">
