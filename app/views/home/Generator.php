@@ -10,7 +10,7 @@
 <body>
   <div class="start_generator">
   <ul class="menu">
-    <li><img class="logo" src="LOGO.png" alt="LOGO"> </li>
+    <li><img class="logo" src="/../public/images/LOGO.png" alt="LOGO"> </li>
     <li class="start"></li>
     <li><a href="/app/views/home/Profil.php">Your profile</a></li>
     <li><a href="/app/views/home/Workout.php">Start workout</a></li>

@@ -17,7 +17,7 @@ $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
 
 */
-require_once("../home/config_create_account.php");
+require_once("../phpFiles/config_create_account.php");
 
 if(isset($_POST['create'])){
   $full_name   = $_POST['full_name'];

@@ -11,7 +11,7 @@
 <body>
 <div class="start-profile">
     <ul class="menu">
-        <li><img class="logo" src="LOGO.png" alt="LOGO"> </li>
+        <li><img class="logo" src="/../public/images/LOGO.png" alt="LOGO"> </li>
         <li class="start"></li>
         <li><a href="/app/views/home/Profil.php">Your profile</a></li>
     <li><a href="/app/views/home/Generator.php">Start workout</a></li>
@@ -151,7 +151,7 @@ while($row = mysqli_fetch_array($result))
     <p class="enum">build muscles</p> 
 </div>  <p>-->
 
-<a href="Edit.php" class="button">Edit your profile</a> 
+<a href="/app/views/home/Edit.php" class="button">Edit your profile</a> 
 <!--<input type="submit" action="Edit.php" method="post" class="button" value="Edit your profile">-->
 </div>
 </body>

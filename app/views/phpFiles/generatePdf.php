@@ -5,9 +5,9 @@
                 $host="localhost";
                 $user="root";
                 $password="";
-                $db="images";
+                $db="users";
                 $aVar=mysqli_connect($host,$user,$password);
-                $query = "SELECT * FROM user_exemplu.images ORDER BY name_image DESC;";
+                $query = "SELECT * FROM user_exemplu.users ORDER BY username DESC;";
                 $result = mysqli_query($aVar,$query) or die( mysqli_error($aVar));
 
                 if(isset($_POST['btn_pdf'])){
@@ -42,7 +42,7 @@
                     $pdf->SetFont('Times','',12);
                     while($row = mysqli_fetch_array($result)){
                         $pdf->cell('20','10',++$counter, '1', '0', 'C');
-                        $pdf->cell('100','10',$row["name_image"], '1', '1', 'C');
+                        $pdf->cell('100','10',$row["username"], '1', '1', 'C');
                     }
 
                     $pdf->Output();

@@ -4,16 +4,17 @@
                 $host="localhost";
                 $user="root";
                 $password="";
-                $db="images";
+                $db="users";
                 $aVar=mysqli_connect($host,$user,$password);
-                $query = "SELECT * FROM user_exemplu.images ORDER BY name_image DESC;";
+                $query = "SELECT * FROM user_exemplu.users ORDER BY username DESC;";
                 $result = mysqli_query($aVar,$query) or die( mysqli_error($aVar));
                 $activeUsers = array();
+                $counter = 0;
                 while($row = mysqli_fetch_array($result))
                {
                  $activeUsers[] = array(
-                    'name' => $row["name_image"],
-                    'step1' => $row["step1"]
+                    'nr.crt' => ++$counter,
+                    'username' => $row["username"]
                  );
                }
                return json_encode($activeUsers);
