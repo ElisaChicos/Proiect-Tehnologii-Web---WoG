@@ -1,33 +1,5 @@
-<?php
+<?php require_once("../phpFiles/loginIntoAccount.php");?>
 
-$host="localhost";
-$user="root";
-$password="";
-$db="user_exemplu";
-
-$aVar=mysqli_connect($host,$user,$password);
-
-mysqli_select_db($aVar,'user_exemplu');
-
-
-//require_once('config_create_account.php');
-
-if(isset($_POST['submit'])){
-  $username=$_POST['username'];
-  $password=$_POST['password'];
-
-  $sql = "SELECT * FROM user_exemplu.users WHERE username='".$username."'AND password='".$password."'";
-  $result = mysqli_query($aVar,$sql);
-  if(mysqli_num_rows($result)==1){
-            echo 'Successfuly saved.';
-        }
-        else{
-            echo 'Erorssss';
-        }
-
-
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,15 +11,14 @@ if(isset($_POST['submit'])){
 </head>
 <body>
   <div class="start_login">
-
     <div class="login-box2">
 
 <h2>Login</h2>
 <form method="post" action="/app/views/home/Profil.php">
 
 <div class="user-box">
-    <input type="text" name="username" placeholder="" required>
-    <label>Username</label>
+    <input type="text" name="email" placeholder="" required>
+    <label>Email</label>
   </div>
 
   <div class="user-box">

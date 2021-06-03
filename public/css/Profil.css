@@ -11,7 +11,7 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(229, 158, 243)), color-stop(0.72, rgb(139, 57, 133)), color-stop(0.86, rgb(95, 46, 92)));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(226, 185, 151)), color-stop(0.72, rgb(221, 141, 76)), color-stop(0.86, rgb(219, 114, 28)));
 }
 
 .enum {

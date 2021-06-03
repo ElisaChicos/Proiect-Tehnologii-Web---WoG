@@ -21,138 +21,82 @@
     <li><a href="/app/views/home/Start.php">Logout</a></li>
         </ul>
 
-
-    
           <div class="login-box2">
             <h1>PROFILE</h1>
 <h2>Public information</h2>
-<p class="enum">Username  <?php echo $_POST['username']; ?>
+<p class="enum">Email:  <?php echo $_POST['email']; ?>
 </p>
 <p class="enum">Number # in top most active users</p>
-<p class="enum">Age 
+<p class="enum">Age: 
 <?php     
 session_start();
-$host="localhost";
-$user="root";
-$password="";
-$db="user_exemplu";
 
-$aVar=mysqli_connect($host,$user,$password);
-
+$aVar=mysqli_connect("localhost","root","", "user_exemplu");
 mysqli_select_db($aVar,'user_exemplu');
-$username = $_POST['username'];
+$email = $_POST['email'];
+$_SESSION['message'] = $email;
 
+$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
+$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
-$_SESSION['message'] = $username;
-//$username_from_edit = ($_SESSION['message']);
- //echo $username_from_edit;
-$sql = "SELECT * FROM user_exemplu.users WHERE username = '$username';";
-
-$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
-
-while($row = mysqli_fetch_array($result))
-  {
+while($row = mysqli_fetch_array($result)){
     echo $row["age"];
-  }
-
-
+}
 ?>
-
 </p>
-<p class="enum">Gender 
+<p class="enum">Gender: 
 <?php
 
-$host="localhost";
-$user="root";
-$password="";
-$db="user_exemplu";
-
-$aVar=mysqli_connect($host,$user,$password);
+$aVar=mysqli_connect("localhost","root","", "user_exemplu");
 
 mysqli_select_db($aVar,'user_exemplu');
-$username = $_POST['username'];
+$email = $_POST['email'];
+$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
+$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
-$sql = "SELECT * FROM user_exemplu.users WHERE username = '$username';";
-
-$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));;
-
-while($row = mysqli_fetch_array($result))
-  {
+while($row = mysqli_fetch_array($result)){
     echo $row["gender"];
-  }
-
-
+}
 ?>
-
-
 </p>
 
-<h2>
-    Private information
-</h2>
+<h2>Private information</h2>
 <p class="enum">
     Update information about you: <br>
     Don't worry, only you cand see the updates and information. :)
 </p>
-
 <p class="enum">Height: 
 <?php
 
-$host="localhost";
-$user="root";
-$password="";
-$db="user_exemplu";
-
-$aVar=mysqli_connect($host,$user,$password);
+$aVar=mysqli_connect("localhost","root","", "user_exemplu");
 
 mysqli_select_db($aVar,'user_exemplu');
-$username = $_POST['username'];
+$email = $_POST['email'];
+$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
+$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
-$sql = "SELECT * FROM user_exemplu.users WHERE username = '$username';";
-
-$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));;
-
-while($row = mysqli_fetch_array($result))
-  {
+while($row = mysqli_fetch_array($result)){
     echo $row["height"];
-  }
-
+}
 ?>
 </p>
 <p class="enum">Weight: 
 <?php
 
-$host="localhost";
-$user="root";
-$password="";
-$db="user_exemplu";
-
-$aVar=mysqli_connect($host,$user,$password);
+$aVar=mysqli_connect("localhost","root","", "user_exemplu");
 
 mysqli_select_db($aVar,'user_exemplu');
-$username = $_POST['username'];
+$email = $_POST['email'];
+$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
+$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
-$sql = "SELECT * FROM user_exemplu.users WHERE username = '$username';";
-
-$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));;
-
-while($row = mysqli_fetch_array($result))
-  {
+while($row = mysqli_fetch_array($result)){
     echo $row["weight"];
-  }
-
+}
 ?>
 </p>
 
-   <!-- <div>
-       You want to : </p>
-    <p class="enum">get toned</p>
-    <p class="enum">lose weight</p>
-    <p class="enum">build muscles</p> 
-</div>  <p>-->
-
 <a href="/app/views/home/Edit.php" class="button">Edit your profile</a> 
-<!--<input type="submit" action="Edit.php" method="post" class="button" value="Edit your profile">-->
 </div>
 </body>
 </html>

@@ -2,11 +2,7 @@
             
   require("../fpdf/fpdf.php");
 
-                $host="localhost";
-                $user="root";
-                $password="";
-                $db="users";
-                $aVar=mysqli_connect($host,$user,$password);
+                $aVar = mysqli_connect("localhost","root","","user_exemplu");
                 $query = "SELECT * FROM user_exemplu.users ORDER BY username DESC;";
                 $result = mysqli_query($aVar,$query) or die( mysqli_error($aVar));
 

@@ -20,12 +20,6 @@
     <div class="container">
     <div class="row">
     
-    <div class="user-box">
-    <input type="text"  name="full_name"  placeholder="" required >
-        <label for="full_name">Full name</label>
-      </div>
-
-      
       <div class="user-box">
       
         <input type="text" name="username" required>

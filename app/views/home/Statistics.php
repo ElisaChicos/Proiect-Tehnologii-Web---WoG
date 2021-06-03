@@ -39,8 +39,8 @@
             <?php require_once("../phpFiles/generateJson.php");?>
             Download Top Active Users (JSON format)</a>
 
-            <form action="../phpFiles/generatePdf.php" method="POST"> 
-            <button type="submit" class="button2" name="btn_pdf"> &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</button>
+            <form action="../phpFiles/generatePdf.php"  method="POST" target="_blank"> 
+            <button type="submit" class="button2" name="btn_pdf"  > &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</button>
             </form>
            
             </span>
@@ -48,17 +48,13 @@
             <h2> Personal Information</h2>
 
             <div class="enum">
-                <p> → You are number # in top most active users</p>
-
-                <p> → Workout # days/week </p>
-
-                <p> → Workout # days/month </p>
-
-                <p> → You have with # kg less!</p>
+            <?php require_once("../phpFiles/userStatistics.php");?>
             </div>
 
             <p class="paragraph"> You can also download your private informations as RSS data feed: </p>
-            <a href="AboutUs.html" class="button">Download Your Statistics here</a>
+            <a href="/app/views/home/userStatisticsRSS.xml" class="button">
+            <?php require_once("../phpFiles/generateRSSDataFeed.php");?>
+            Download Your Statistics here</a>
 
             <p class="paragraph"> If you want to see how your body looks like right now, we have this tool ready for you: </p>
             <a href="http://www.bmivisualizer.com/" class="button">CLICK HERE</a>
