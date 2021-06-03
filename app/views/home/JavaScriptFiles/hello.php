@@ -4,11 +4,11 @@
 <br>
 <br><br>
 <br><br>
-<br><br>
 <br>
+<div id="content">
         <div id="app"></div>
         <button class="button2" onclick="startTimer()">START EXERCISE</button>
-        <button class="button" id="getTxt">NEXT EXERCISE</button>
+        <button class="button" id="getTxt2">NEXT EXERCISE</button>
 
 <img class="exercise" src="
 <?php
@@ -48,6 +48,8 @@ while($row = mysqli_fetch_array($result))
     echo "<div class=\"title\"> Sets & Reps</div> <br>";
     echo "<div class=\"enum\">".$row["reps"] ."</div><br>";
   }
+  
 ?>
 
-</div>
+</div></div>
+

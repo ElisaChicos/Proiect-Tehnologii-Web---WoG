@@ -118,13 +118,13 @@ button {
 }
 
 .exercise {
+    position: relative;
     width: 25em;
     height: 17em;
-    top: -78%;
+    top: -100%;
     left: -25%;
     padding-right: 2em;
 }
-
 .enum {
     font: normal  1.2em Georgia, 'Times New Roman', Times, serif;
 

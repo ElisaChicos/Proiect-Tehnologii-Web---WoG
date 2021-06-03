@@ -20,14 +20,13 @@
     <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
     <li><a href="/app/views/home/Start.php">Logout</a></li>
         </ul>
-  
+        <button class="button" id="getTxt">NEXT EXERCISE</button>
         <div class="login-box2"  id="content">
       
         <h2> Set 1 </h2> 
         <div id="app"></div>
         <button class="button2" onclick="startTimer()">START EXERCISE</button>
-        <button class="button" id="getTxt">NEXT EXERCISE</button>
-
+       
     <img class="exercise" src="
     <?php
     session_start();
@@ -187,12 +186,12 @@
           .setAttribute("stroke-dasharray", circleDasharray);
       }
 
-      
-      window.onload=function(){
+
+        (function(){
         var getTxt = document.getElementById("getTxt");
         var content = document.getElementById("content");
         var xhr =  new XMLHttpRequest();
-
+        
         getTxt.addEventListener("click",function(){
 
             xhr.addEventListener('readystatechange',function(){
@@ -200,10 +199,13 @@
                 
             });
             
+            
+            
             xhr.open("GET","http://localhost:3000/app/views/home/JavaScriptFiles/hello.php",true);
             xhr.send();
-        });
+              
+        });    
+      })();
 
-        
-    };
-    </script>
+</script>
+    
