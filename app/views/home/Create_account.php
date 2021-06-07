@@ -67,7 +67,7 @@
       <div id="radios">
         <p> I want to:
         <select name="want">
-        <option> Choose an option </option>
+        <option selected disabled> Choose an option </option>
         <option value="lose_weight"> Lose weight </option>
         <option value="get_toned"> Get toned </option>
         <option value="build_muscles"> Build muscles </option>
@@ -79,7 +79,7 @@
        <div id="radios">
           <p>Choose what's your focus part:
           <select name="focus_part">
-          <option> Choose an option </option>
+          <option selected disabled> Choose an option </option>
           <option value="arms"> Arms </option>
           <option value="abs"> Abs </option>
           <option value="butt"> Butt </option>
@@ -100,7 +100,7 @@
             <span></span>
             <span></span>
             <span></span>
-            <input type="submit" name="create" id="create" value="Sign Up">
+            <input type="submit" name="create" id="create" value="SIGN UP">
           </a>
     
         

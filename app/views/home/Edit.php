@@ -63,13 +63,13 @@ if(isset($_POST['create'])){
         <label for="password">Password</label>
           </div>
 
-          <input type="submit" name="create" id="create" value="Save changes">
+          
           <a href="/app/views/home/Profil.php">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Save changes
+            <input type="submit" name="create" id="create" value="SAVE CHANGES">
           </a>
 
     </form>

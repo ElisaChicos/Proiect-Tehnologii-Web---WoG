@@ -233,7 +233,7 @@ button {
     overflow: hidden;
     transition: .5s;
     margin-top: 10px;
-    letter-spacing: 4px
+    letter-spacing: 3px;
 }
 
 .login-box2 a:hover {
@@ -252,6 +252,34 @@ button {
     padding-top: 2em;
     padding-bottom: 2em;
     font-size: 10px;
+}
+
+input[type="submit"] {
+    background: #04454900;
+    color: #03e9f4;
+    border-color: #04454900;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+option {
+    background: #044549;
+    color: #fff;
+}
+
+select {
+    background: #022d3000;
+    color: #fff;
+    width: 12em;
+    height: 3em;
+    font: normal bold 0.7em Georgia, 'Times New Roman', Times, serif;
 }
 
 @keyframes click-wave {

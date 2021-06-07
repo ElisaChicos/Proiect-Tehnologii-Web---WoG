@@ -36,13 +36,12 @@
         Forgot your password?
       </a>
     </div>
-    <input type="submit" name="submit" value="LOGIN">
       <a href="/app/views/home/Profil.php">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        Login
+        <input type="submit" name="submit" value="LOGIN">
       </a>
 
     <p>First time here? </p>
