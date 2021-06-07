@@ -11,7 +11,7 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(226, 185, 151)), color-stop(0.72, rgb(221, 141, 76)), color-stop(0.86, rgb(219, 114, 28)));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(156, 134, 116)), color-stop(0.72, rgb(150, 115, 87)), color-stop(0.86, rgb(109, 79, 55)));
 }
 
 .enum {
@@ -63,7 +63,7 @@ html {
     padding: 0;
     background-size: 100%;
     font-family: sans-serif;
-    background-image: url("https://images.unsplash.com/photo-1571019613576-2b22c76fd955?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-image: url("https://images.unsplash.com/photo-1599058918144-1ffabb6ab9a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1049&q=80");
     text-align: center;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,7 +159,7 @@ h1 {
     padding: 40px;
     height: 900px;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.932);
+    background: rgba(0, 0, 0, 0.644);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;

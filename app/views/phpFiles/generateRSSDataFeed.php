@@ -1,39 +1,62 @@
-<?php 
+<?php
 
-function getRssData(){
-header('Content-type: application/rss+xml; charset=ISO-8859-1'); 
-
-$aVar = mysqli_connect("localhost","root","","user_exemplu");
-
-echo "<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>\n";
-echo "<channel>\n";
-
-echo "<title>RSS Feed For Your Informations</title>\n";
-echo "<description>Here are your personal informations and statistics</description>\n";
-
-$email = ($_SESSION['message']);
-$query = "SELECT * FROM user_exemplu.users where email = '$email';";
+$host="localhost";
+$user="root";
+$password="";
+$db="users";
+$aVar=mysqli_connect($host,$user,$password);
+//$email = ($_SESSION['message']);
+$query = "SELECT * FROM user_exemplu.users where email = 'ziua@gmail.com';";
+$publish_Date = strtotime("today");
 $result = mysqli_query($aVar,$query) or die( mysqli_error($aVar));
-
-while($row = mysqli_fetch_array($result)) {
-      echo "<item>\n";
-         echo "<title> Number in top: </title>\n";
-         echo "<description>" . $row["id"] . "</description>\n";
-         echo "<title> Workout days/week: </title>\n";
-         echo "<description>" . $row["gender"] . "</description>\n";
-         echo "<title> Workout days/month: </title>\n";
-         echo "<description>" . $row["want"] . "</description>\n";
-         echo "<title> Kg less: </title>\n";
-         echo "<description>" . ($row["old_weight"] - $row["weight"]) . "</description>\n";
-     echo "</item>\n";
+while($row = mysqli_fetch_array($result)){
+        $id = $row["id"];
+        $weight = $row["old_weight"] - $row["weight"];
 }
+    $items = array(
+        array("title"       => "Number in top active users:",
+              "description" => "You are number " . $id . " in top most active users.",
+              "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+              "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
+        , array("title"       => "Workout days/week:",
+                "description" => "?",
+                "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+                "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
+        , array("title"       => "Workout days/month:",
+                "description" => "?",
+                "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+                "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
+        , array("title"       => "Weight loss:",
+                "description" => "You have with " . $weight . " kg less.",
+                "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+                "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
+    );
 
-echo "</channel>\n";
-echo "</rss>\n";
-}
+    $output = '<?xml version="1.0" encoding="ISO-8859-1"?>';
+    $output .= '<rss version="2.0">';
+    $output .= "<channel>";
+    $output .= "<title>Statistics Update | RSS</title>";
+    $output .= "<description>New update on statistics</description>";
+    $output .= "<link>http://localhost:3000/app/views/home/Statistics.php</link>";
+    $output .= "<language>en-us</language>";
+    $output .= "<category>Statistics</category>";
 
-            $filename = 'userStatisticsRSS.xml';
-            if(file_put_contents($filename, getRssData())){
+    foreach ($items as $item) {
+        $output .= "<item>";
+        $output .= "<title>" . $item["title"] . "</title>";
+        $output .= "<description>" . $item["description"] . "</description>";
+        $output .= "<link>" . $item["link"] . "</link>";
+        $output .= "<pubDate>" . date("Y-m-d h:i:sa", $publish_Date) . "</pubDate>";
+        $output .= "</item>";
+    }
+    $output .= "</channel>";
+    $output .= "</rss>";
+ 
+    header("Content-Type: application/rss+xml; charset=ISO-8859-1");
+  
+ 
+    $filename = 'rssFeed.xml';
+            if(file_put_contents($filename, $output)){
                 echo '';
             }else{
                 echo 'There is a error.';

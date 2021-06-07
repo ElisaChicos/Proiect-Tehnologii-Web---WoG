@@ -5,7 +5,6 @@ $username_from_login = ($_SESSION['message']);
 require_once("../phpFiles/config_create_account.php");
 
 if(isset($_POST['create'])){
-  //$username    = $_POST['username'];
   $email       = $_POST['email'];
   $age         = $_POST['age'];
   $height      = $_POST['height'];
@@ -15,10 +14,8 @@ if(isset($_POST['create'])){
   $sql = "UPDATE user_exemplu.users SET email='$email',age='$age',height='$height',weight='$weight',password='$password' WHERE username='$username_from_login'";
  $stmtinsert = $db-> prepare($sql);
  $result = $stmtinsert->execute([$email,$age,$height,$weight]);
- //$result = mysqli_query($aVar,$sql);
 
  if($result){
- // $_SESSION['message'] = $username;
   echo "<script> location.href='/app/views/home/Login.php'; </script>";
   exit;
  }

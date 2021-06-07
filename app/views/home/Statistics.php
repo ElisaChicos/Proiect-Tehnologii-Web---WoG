@@ -27,6 +27,7 @@
 
         <div class="login-box2">
             <h1>STATISTICS</h1>
+            <a href="../phpFiles/rssFeed.xml" target="_blank" type="application/rss+xml"><img src="/../public/images/feed-icon.png" class="rss-btn"></a>
             <h2>Top 10 most active users:</h2>
             <ol type="1">
             <?php require_once("../phpFiles/displayTop.php");?>
@@ -51,14 +52,9 @@
             <?php require_once("../phpFiles/userStatistics.php");?>
             </div>
 
-            <p class="paragraph"> You can also download your private informations as RSS data feed: </p>
-            <a href="/app/views/home/userStatisticsRSS.xml" class="button">
-            <?php require_once("../phpFiles/generateRSSDataFeed.php");?>
-            Download Your Statistics here</a>
-
             <p class="paragraph"> If you want to see how your body looks like right now, we have this tool ready for you: </p>
-            <a href="http://www.bmivisualizer.com/" class="button">CLICK HERE</a>
-            <a href="https://bodyvisualizer.com/" class="button">CLICK HERE</a>
+            <a href="http://www.bmivisualizer.com/" class="button" target="_blank">CLICK HERE</a>
+            <a href="https://bodyvisualizer.com/" class="button" target="_blank">CLICK HERE</a>
         </div>
     </div>
 </body>

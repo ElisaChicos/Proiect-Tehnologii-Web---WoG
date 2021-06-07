@@ -26,8 +26,7 @@
 <h2>Public information</h2>
 <p class="enum">Email:  <?php echo $_POST['email']; ?>
 </p>
-<p class="enum">Number # in top most active users</p>
-<p class="enum">Age: 
+<p class="enum">Number 
 <?php     
 session_start();
 
@@ -36,6 +35,22 @@ mysqli_select_db($aVar,'user_exemplu');
 $email = $_POST['email'];
 $_SESSION['message'] = $email;
 
+$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
+$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
+
+while($row = mysqli_fetch_array($result)){
+    echo $row["id"];
+}
+?> in top most active users</p>
+
+
+<p class="enum">Age: 
+<?php
+
+$aVar=mysqli_connect("localhost","root","", "user_exemplu");
+
+mysqli_select_db($aVar,'user_exemplu');
+$email = $_POST['email'];
 $sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
 $result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 

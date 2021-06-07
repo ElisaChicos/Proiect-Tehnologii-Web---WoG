@@ -90,7 +90,7 @@
 
  <div id="terms">
    <label>
-   <input type="checkbox" class="option-input-checkbox" />
+   <input type="checkbox" class="option-input-checkbox" required/>
     I agree to the processing of my personal data.  I agree with the terms and <br> conditions. 
    </label>
  </div>
