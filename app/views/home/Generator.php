@@ -17,7 +17,9 @@
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
     <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
-    <li><a href="/app/views/home/Start.php">Logout</a></li>
+    <li><a href="/app/views/home/Start.php">
+    <?php require_once("../phpFiles/logOut.php"); ?>
+    Logout</a></li>
     </ul>
 
       <div class="login-box2">

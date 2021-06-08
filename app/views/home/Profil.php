@@ -18,21 +18,24 @@
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
     <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
-    <li><a href="/app/views/home/Start.php">Logout</a></li>
+    <li><a href="/app/views/home/Start.php">
+    <?php require_once("../phpFiles/logOut.php"); ?>
+    Logout</a></li>
         </ul>
 
           <div class="login-box2">
             <h1>PROFILE</h1>
 <h2>Public information</h2>
-<p class="enum">Email:  <?php echo $_POST['email']; ?>
+<p class="enum">Email:  <?php
+session_start();
+echo $_SESSION['email']; ?>
 </p>
 <p class="enum">Number 
+    
 <?php     
-session_start();
-
 $aVar=mysqli_connect("localhost","root","", "user_exemplu");
 mysqli_select_db($aVar,'user_exemplu');
-$email = $_POST['email'];
+$email = $_SESSION['email'];
 $_SESSION['message'] = $email;
 
 $sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
@@ -50,7 +53,7 @@ while($row = mysqli_fetch_array($result)){
 $aVar=mysqli_connect("localhost","root","", "user_exemplu");
 
 mysqli_select_db($aVar,'user_exemplu');
-$email = $_POST['email'];
+$email = $_SESSION['email'];
 $sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
 $result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
@@ -65,7 +68,7 @@ while($row = mysqli_fetch_array($result)){
 $aVar=mysqli_connect("localhost","root","", "user_exemplu");
 
 mysqli_select_db($aVar,'user_exemplu');
-$email = $_POST['email'];
+$email = $_SESSION['email'];
 $sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
 $result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
@@ -86,7 +89,7 @@ while($row = mysqli_fetch_array($result)){
 $aVar=mysqli_connect("localhost","root","", "user_exemplu");
 
 mysqli_select_db($aVar,'user_exemplu');
-$email = $_POST['email'];
+$email = $_SESSION['email'];
 $sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
 $result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
@@ -101,7 +104,7 @@ while($row = mysqli_fetch_array($result)){
 $aVar=mysqli_connect("localhost","root","", "user_exemplu");
 
 mysqli_select_db($aVar,'user_exemplu');
-$email = $_POST['email'];
+$email = $_SESSION['email'];
 $sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
 $result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 

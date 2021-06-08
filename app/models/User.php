@@ -1,7 +1,7 @@
 <?php
 
 class User {
-    protected $email;
+    public $email;
     
     public function __construct($email){
         $this->email = $email;

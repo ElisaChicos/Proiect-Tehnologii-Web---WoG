@@ -13,14 +13,6 @@
 
 <h2>Login</h2>
 
-<?php
-  session_start();
-  if(isset($_SESSION["email"]) && isset($_SESSION["password"])){
-    
-  }
-
-
-?>
 
 <form method="POST" action="../phpFiles/loginIntoAccount.php">
 
@@ -44,7 +36,7 @@
         Forgot your password?
       </a>
     </div>
-      <a href="/app/views/home/Profil.php">
+      <a>
         <span></span>
         <span></span>
         <span></span>
