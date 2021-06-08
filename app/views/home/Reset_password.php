@@ -18,7 +18,10 @@
     <input type="email" pattern="([a-zA-z]*@gmail.com|[0][1-9]{9})" placeholder="" required>
     <label>Email</label>
     </div>
-        <button type="submit" formaction="../phpFiles/sendMail.php"> Send mail </button>
+    <button type="submit" class="send-mail-btn"> 
+    <?php require_once("../phpFiles/sendMail.php");?>    
+    Send mail </button>
+        
 
     <div class="user-input">
     <input type="password" placeholder="" required> 

@@ -1,5 +1,3 @@
-<?php require_once("../phpFiles/loginIntoAccount.php");?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +12,17 @@
     <div class="login-box2">
 
 <h2>Login</h2>
-<form method="post" action="/app/views/home/Profil.php">
+
+<?php
+  session_start();
+  if(isset($_SESSION["email"]) && isset($_SESSION["password"])){
+    
+  }
+
+
+?>
+
+<form method="POST" action="../phpFiles/loginIntoAccount.php">
 
 <div class="user-box">
     <input type="text" name="email" placeholder="" required>

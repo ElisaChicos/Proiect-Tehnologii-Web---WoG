@@ -16,7 +16,7 @@
 <h2>We’d Like to Hear From You</h2>
 <p>At WoG.com, we strive to help all people make informed decisions about their health. Got something to share or see something that doesn’t ad here to our standards? </p>
 <p>We want to know! We’re always working to improve our site and appreciate feedback at wog@gmail.com. </p>
- <img src="ilustratie.jpg" alt="jumping_rope_cat">
+ <img src="/../public/images/ilustratie.jpg" alt="jumping_rope_cat">
 </div>
 </body>
 </html>
