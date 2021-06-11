@@ -22,8 +22,12 @@
 
     function getUser($email, $password) {
         global $conn;
-        $queryStmt =  $conn -> prepare("SELECT * FROM user_exemplu.users email='".$email."'AND password='".$password."';");
-        //$queryStmt -> bind_param('ss', $email, $password);
+        $queryStmt =  $conn -> prepare('
+            SELECT * 
+            FROM user_exemplu.users
+            WHERE email = ? AND password = ?;
+        ');
+        $queryStmt -> bind_param('ss', $email, $password);
 
         $queryStmt -> execute();
         $results = $queryStmt -> get_result();

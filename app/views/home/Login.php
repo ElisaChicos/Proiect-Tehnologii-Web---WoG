@@ -13,13 +13,13 @@
 
 <h2>Login</h2>
 <?php
-  require_once("../phpFiles/loginUtils.php");
+  /*require_once("../phpFiles/loginUtils.php");
   if(isset($_SESSION["email"]) && isset($_SESSION["password"])){
     $user = getUser($_SESSION["email"], $_SESSION["password"]);
           if($user != null) {
             echo "";
           }
-  }
+  }*/
 ?>
 
 <form method="POST" action="../phpFiles/loginIntoAccount.php">
@@ -49,7 +49,7 @@
         <span></span>
         <span></span>
         <span></span>
-        <input type="submit" name="submit" value="LOGIN">
+        <input type="submit" name="submit" id = "buttonSubmit" value="LOGIN">
       </a>
 
     <p>First time here? </p>
