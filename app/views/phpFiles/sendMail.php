@@ -6,7 +6,10 @@ If you didn't request a password reset, feel free to delete this email and carry
 
 All the best,
 The WoG Team"; 
-$headers = "From: wog@gmail.com" . "\r\n" . 
-"CC: alinaadrianah@gmail.com"; 
-mail($to,$subject,$txt,$headers); 
-?> 
+$headers = "From: elisachicos68@gmail.com"; 
+
+if(mail($to,$subject,$txt,$headers))
+    echo 'succes';
+else
+    echo 'not sent';
+?>  

@@ -1,14 +1,26 @@
+<script>
+(function(){
+        var getTxt = document.getElementById("getTxt");
+        var content = document.getElementById("content");
+        var xhr =  new XMLHttpRequest();
+        
+        getTxt.addEventListener("click",function(){
+
+            xhr.addEventListener('readystatechange',function(){
+                content.innerHTML = this.responseText;
+                
+            });
+            
+            xhr.open("GET","http://localhost:3000/app/views/home/JavaScriptFiles/hello2.php",true);
+            xhr.send();
+              
+        });    
+      })();
+
+</script>
 <h2> Set 2 </h2> 
-<br>
-<br>
-<br>
-<br><br>
-<br><br>
-<br>
 <div id="content">
-        <div id="app"></div>
-        <button class="button2" onclick="startTimer()">START EXERCISE</button>
-        <button class="button" id="getTxt2">NEXT EXERCISE</button>
+      
 
 <img class="exercise" src="
 <?php
@@ -50,6 +62,9 @@ while($row = mysqli_fetch_array($result))
   }
   
 ?>
+<button class="button" id="getTxt">NEXT</button>
 
 </div></div>
+
+
 

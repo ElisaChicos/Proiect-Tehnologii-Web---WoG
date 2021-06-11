@@ -11,16 +11,35 @@
     <div class="start-page">
         <div class="change-pass-box">
     <h2>Reset password</h2>
-    <form>
+    <form action="" method="post">
 
     <div class="user-input">
     
-    <input type="email" pattern="([a-zA-z]*@gmail.com|[0][1-9]{9})" placeholder="" required>
+    <input type="email" placeholder="" required>
     <label>Email</label>
     </div>
-    <button type="submit" class="send-mail-btn"> 
-    <?php require_once("../phpFiles/sendMail.php");?>    
-    Send mail </button>
+    <input type="submit" value="Send details to embassy" />
+    <input type="hidden" name="button_pressed" value="1" />
+<?php
+
+if(isset($_POST['button_pressed']))
+{
+    $to = "elisachicos68@gmail.com"; 
+    $subject = "Reset password";;
+    $txt = "No need to worry, you can reset your WoG password by clicking the link below: 	
+        If you didn't request a password reset, feel free to delete this email and carry on enjoying your workouts!
+
+        All the best,
+        The WoG Team"; 
+    $headers = "From: elisachicos68@gmail.com"; 
+
+    if( mail($to, $subject, $txt, $headers)){
+        echo 'Email Sent.';}
+    else{
+        echo 'eroare boy';}
+}
+?>
+   
         
 
     <div class="user-input">
