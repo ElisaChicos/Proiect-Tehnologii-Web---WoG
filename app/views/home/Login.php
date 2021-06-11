@@ -12,7 +12,15 @@
     <div class="login-box2">
 
 <h2>Login</h2>
-
+<?php
+  require_once("../phpFiles/loginUtils.php");
+  if(isset($_SESSION["email"]) && isset($_SESSION["password"])){
+    $user = getUser($_SESSION["email"], $_SESSION["password"]);
+          if($user != null) {
+            echo "";
+          }
+  }
+?>
 
 <form method="POST" action="../phpFiles/loginIntoAccount.php">
 

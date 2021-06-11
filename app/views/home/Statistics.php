@@ -20,7 +20,7 @@
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
     <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
-    <li><a href="/app/views/home/Start.php">
+    <li><a href="/app/views/home/Login.php">
     <?php require_once("../phpFiles/logOut.php"); ?>
     Logout</a></li>
     </ul>
