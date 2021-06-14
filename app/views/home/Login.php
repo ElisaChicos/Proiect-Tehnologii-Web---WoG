@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/Login.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script>
+
+   
     <title>Login</title>
 </head>
 <body>
@@ -22,7 +27,7 @@
   }*/
 ?>
 
-<form method="POST" action="../phpFiles/loginIntoAccount.php">
+<form method = "POST" action = "../phpFiles/loginIntoAccount.php">
 
 <div class="user-box">
     <input type="text" name="email" placeholder="" required>
@@ -49,7 +54,7 @@
         <span></span>
         <span></span>
         <span></span>
-        <input type="submit" name="submit" id = "buttonSubmit" value="LOGIN">
+        <input type="submit" name="Submit" id="submit" onclick="loadXMLDoc()"  value="LOGIN">
       </a>
 
     <p>First time here? </p>
@@ -65,6 +70,31 @@
 </form>
 </div>
 </div>
+<script type="text/javascript">
+function loadXMLDoc() {
+    var xmlhttp = new XMLHttpRequest();
+    
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   
+           if (xmlhttp.status == 200) {
+               document.getElementById("submit").innerHTML = xmlhttp.responseText;
+           }
+           else if (xmlhttp.status == 400) {
+              alert('There was an error 400');
+           }
+           else {
+               alert('something else other than 200 was returned');
+                //function_alert("We can not find your account! Please enter a valid email and password, or create a new account!");
+           }
+        }
+    };
+
+    xmlhttp.open("GET", "../phpFiles/loginIntoAccount.php");
+    xmlhttp.send();
+
+}
+</script>
 
 </body>
 </html>
