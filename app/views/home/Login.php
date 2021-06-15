@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/Login.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script>
-
-   
     <title>Login</title>
 </head>
 <body>
@@ -17,30 +16,37 @@
     <div class="login-box2">
 
 <h2>Login</h2>
-<?php
-  /*require_once("../phpFiles/loginUtils.php");
-  if(isset($_SESSION["email"]) && isset($_SESSION["password"])){
-    $user = getUser($_SESSION["email"], $_SESSION["password"]);
-          if($user != null) {
-            echo "";
-          }
-  }*/
-?>
 
-<form method = "POST" action = "../phpFiles/loginIntoAccount.php">
+<form method = "POST" action= "../phpFiles/loginIntoAccount.php" id = "myForm">
 
 <div class="user-box">
-    <input type="text" name="email" placeholder="" required>
-    <label>Email</label>
+    <input type="text" name="email" id = "email" placeholder="" value="" required>
+    <label id="emailId">Email</label>
   </div>
 
   <div class="user-box">
-    <input type="password" name="password" placeholder="" required>
+  <svg class="close" viewBox="0 0 100 100">
+		<path id="top-eye-part" d="M10,50 Q50,-10 90,50" fill="none" stroke-width="5"></path>
+		<path id="bottom-eye-part" d="M10,50 Q50,110 90,50" fill="none" stroke-width="5"></path>
+		<circle cx="50" cy="50" r="10" fill="black"></circle>
+	  </svg>
+  <input type="password" name="password" id = "password" value="" placeholder="" required>
     <label>Password</label>
+    
 </div>
 
-  
-      <div class="forgot_pass">
+<div id ="result">error message</div>
+
+      <a>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <input type="submit" name="submit" id="submit" value="LOGIN">
+      </a>
+
+
+    <div class="forgot_pass">
       <a href="/app/views/home/Reset_password.php">
         <span></span>
         <span></span>
@@ -49,13 +55,7 @@
         Forgot your password?
       </a>
     </div>
-      <a>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <input type="submit" name="Submit" id="submit" onclick="loadXMLDoc()"  value="LOGIN">
-      </a>
+
 
     <p>First time here? </p>
 
@@ -67,34 +67,46 @@
             Create account
           </a>
 
+        
 </form>
+<script src= "/app/views/home/JavaScriptFiles/showPass.js"></script> 
+<!--<script src="/public/javaScript/login-form.js"></script>-->
 </div>
 </div>
-<script type="text/javascript">
-function loadXMLDoc() {
-    var xmlhttp = new XMLHttpRequest();
-    
+<!-- <script type="text/javascript">
+function submitForm(){
+ 
+  var selectForm = document.getElementById("myForm");
 
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   
-           if (xmlhttp.status == 200) {
-               document.getElementById("submit").innerHTML = xmlhttp.responseText;
-           }
-           else if (xmlhttp.status == 400) {
-              alert('There was an error 400');
-           }
-           else {
-               alert('something else other than 200 was returned');
-                //function_alert("We can not find your account! Please enter a valid email and password, or create a new account!");
-           }
+  if (window.XMLHttpRequest)
+    {
+        xmlhttp = new XMLHttpRequest();
+    }
+    else
+    {
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function(){
+    if (xmlhttp.readyState == 4)
+    {
+        msg=xmlhttp.responseText;
+        if(msg=="1")
+        {
+            alert("gasit");
         }
-    };
-
-    xmlhttp.open("GET", "../phpFiles/loginIntoAccount.php");
+        else if(msg=="0")
+        {
+          alert("negasit");
+        }
+    }
+    }
+    xmlhttp.open("GET",  "../phpFiles/loginIntoAccount.php", true);
     xmlhttp.send();
 
-}
+    //selectForm.onsubmit = function(){ 
+    //    return false;
+    //}
+} -->
 </script>
-
 </body>
 </html>
