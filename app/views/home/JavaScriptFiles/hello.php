@@ -1,25 +1,4 @@
-<script>
-(function(){
-        var getTxt = document.getElementById("getTxt");
-        var content = document.getElementById("content");
-        var xhr =  new XMLHttpRequest();
-        
-        getTxt.addEventListener("click",function(){
-
-            xhr.addEventListener('readystatechange',function(){
-                content.innerHTML = this.responseText;
-                
-            });
-            
-            xhr.open("GET","http://localhost:3000/app/views/home/JavaScriptFiles/hello2.php",true);
-            xhr.send();
-              
-        });    
-      })();
-
-</script>
 <h2> Set 2 </h2> 
-<div id="content">
       
 
 <img class="exercise" src="
@@ -62,9 +41,28 @@ while($row = mysqli_fetch_array($result))
   }
   
 ?>
-<button class="button" id="getTxt">NEXT</button>
-
-</div></div>
+<button class="button" id="getTxt2">NEXT</button>
 
 
+</div>
 
+<!--
+<script>
+
+        var getTxt2 = document.getElementById("getTxt2");
+
+        var xhr =  new XMLHttpRequest();
+        
+        getTxt2.addEventListener("click",function(){
+
+            xhr.addEventListener('readystatechange',function(){
+                content.innerHTML = this.responseText;
+                
+            });
+            
+            xhr.open("GET","http://localhost:3000/app/views/home/JavaScriptFiles/hello2.php",true);
+            xhr.send();
+              
+        });  
+</script>
+-->
