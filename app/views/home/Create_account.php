@@ -16,6 +16,7 @@
         <div class="login-box2">
     
     <h2>Create account</h2>
+
     <form action="/app/views/home/Create_account.php" method="post">
     <div class="container">
     <div class="row">
@@ -101,7 +102,7 @@
             <span></span>
             <span></span>
             <input type="submit" name="create" id="create" value="SIGN UP">
-          </a>
+  </a>
     
         
     

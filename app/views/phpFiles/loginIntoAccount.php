@@ -1,70 +1,78 @@
 <?php
+session_start();
 
-    function findUserInDatabase($get_email, $get_password, $email, $password){
-        if($email == $get_email && $password == $get_password){
-            return 1;
-        }
-        return null;
-    }
-
-    if(isset($_POST['submit'])){
-        
-    if(!isset($_POST['email'])){ 
-        exit;
-    }
-    if(!isset($_POST['password'])){
-        exit;
-    }
-    $email=$_POST['email'];
-    $password=$_POST['password'];
-    
-    require_once "../phpFiles/functions.php";
-
-    if(emptyInputLogin($email, $password) != false){
-        
-        exit();
-    }
-    if(invalidEmailFormat($email) != false){
-        $_SESSION['error']="invalidformat";
-        //header('Location: /app/views/home/Login.php?error=invalidformat');
-        exit();
-    }
-
-    $host="localhost";
-    $user="root";
-    $password="";
-    $db="user_exemplu";
-
-    $aVar=mysqli_connect($host,$user,$password);
-    mysqli_select_db($aVar,'user_exemplu');
-
-    $query = "SELECT * FROM user_exemplu.users where email = '$email';";
-    $result = mysqli_query($aVar,$query) or die( mysqli_error($aVar));
-    $numberOfRows = mysqli_num_rows($result);
-    if($numberOfRows == 0 ){
-        //header('Location: /app/views/home/Login.php?error=invalidaccount');
-        $_SESSION['error']="invalidaccount";
-        exit();
-    }else{
-    while($row = mysqli_fetch_array($result)){
-
-        if(findUserInDatabase($row["email"], $row["password"], $email, $password)==1){
-            session_start();
-            $_SESSION["email"] = $email;
-            $_SESSION["password"] = $password;
-            header('Location: /app/views/home/Profil.php');
-            exit();
+    function findUserInDatabase($db_email, $db_password, $input_email, $input_password){
+        if($input_email === $db_email){
+            if(password_verify($input_password, $db_password)==1){
+               return 1;
             }
-            else{
-                //header('Location: /app/views/home/Login.php?error=wronguserorpass');
-                $_SESSION['error']="wronguserorpass";
-                exit();
-          }
+        }
+        return 0;
     }
+
+    $status = true;
+    $message = array();
+    
+    $email = isset($_POST["email"]) ? $_POST["email"] : '';
+    $password = isset($_POST["password"]) ? $_POST["password"] : '';
+    
+    if(!isset($_POST["email"]) || !isset($_POST["password"]) || empty($email) || empty($password)){
+        $status = false;
+        $message[] = 'Please fill in all the inputs.';
+        //echo 'nu e setat';
     }
-}
-else{
-    header('Location: /app/views/home/Login.php');
-    exit();
-}
+    
+    $servername="localhost";
+    $user="root";
+    $db_password="";
+    $db="user_exemplu";
+    
+
+    $conn = new mysqli($servername, $user, $db_password, $db);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+
+    //$aVar=mysqli_connect($host,$user,$password);
+    //mysqli_select_db($aVar,$db);
+
+    //if($status == true){
+    //$query = "SELECT * FROM user_exemplu.users where email = '$email';";
+    //$result = mysqli_query($aVar,$query) or die( mysqli_error($aVar));
+    //$sql = "SELECT email, password FROM user_exemplu.users WHERE email = ? ;";
+
+    $stmt = $conn->prepare("SELECT email, password FROM user_exemplu.users WHERE email = ? ;");
+    $stmt->bind_param('s', $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $numberOfRows = $result->num_rows;
+
+    if($numberOfRows == 0 ){
+        $status = false;
+        $message[] = 'Invalid user/password.';
+        //echo 'nu gasesc in db';        
+    }else{
+
+        while($row = $result->fetch_assoc()){ 
+                if(findUserInDatabase($row["email"], $row["password"], $email, $password)==1){
+                    $_SESSION["email"] = $email;
+                    //echo 'succes';
+                    //$_SESSION["password"] = $password;
+                    $status = true;
+                    $message[] = 'You in.';
+                }else{
+                    $status = false;
+                    $message[] = 'Incorrect email/password.';   
+                   // echo " ".'parola incorecta';         
+                }
+        }
+    }
+    
+    echo json_encode(
+        array(
+            'status' => $status,
+            'message' => $message
+        )
+    );
+
 ?>

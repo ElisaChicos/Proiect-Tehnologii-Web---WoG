@@ -16,11 +16,12 @@ if(isset($_POST['create'])){
     $weight      = $_POST['weight'];
     $old_weight  = $weight;
     $gender      = $_POST['gender'];
-    $password    = $_POST['password'];
+    $pass    = $_POST['password'];
     $want        = $_POST['want'];
     $focus_part  = $_POST['focus_part'];
     
-  
+    $hashPass = password_hash($pass, PASSWORD_DEFAULT);
+    $password = $hashPass;
   
   
     $sql = "INSERT INTO user_exemplu.users (username,email,age,height,weight,old_weight,gender,password,want,focus_part) VALUES(?,?,?,?,?,?,?,?,?,?)";

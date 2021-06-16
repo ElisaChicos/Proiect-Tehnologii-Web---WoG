@@ -17,7 +17,7 @@ session_start();
 
 <h2>Login</h2>
 
-<form method = "POST" action= "../phpFiles/loginIntoAccount.php" id = "myForm">
+<form method = "POST" id = "myForm" action="../phpFiles/loginIntoAccount.php" >
 
 <div class="user-box">
     <input type="text" name="email" id = "email" placeholder="" value="" required>
@@ -30,21 +30,22 @@ session_start();
 		<path id="bottom-eye-part" d="M10,50 Q50,110 90,50" fill="none" stroke-width="5"></path>
 		<circle cx="50" cy="50" r="10" fill="black"></circle>
 	  </svg>
-  <input type="password" name="password" id = "password" value="" placeholder="" required>
+  
+    <input type="password" name="password" id = "password" value="" placeholder="" required>
     <label>Password</label>
-    
-</div>
+    </div>
 
-<div id ="result">error message</div>
+    <div class= "error-message" id="error-message">
+    <p> Error message</p>
+    </div>
 
-      <a>
+    <div>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <input type="submit" name="submit" id="submit" value="LOGIN">
-      </a>
-
+    <button class ="buttonSubmit" id="btn" type="submit" > LOGIN </button>
+    </div>
 
     <div class="forgot_pass">
       <a href="/app/views/home/Reset_password.php">
@@ -59,54 +60,69 @@ session_start();
 
     <p>First time here? </p>
 
-        <a href="/app/views/home/Create_account.php">
+    <a href="/app/views/home/Create_account.php">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Create account
-          </a>
+    </a>
 
         
 </form>
-<script src= "/app/views/home/JavaScriptFiles/showPass.js"></script> 
-<!--<script src="/public/javaScript/login-form.js"></script>-->
-</div>
-</div>
-<!-- <script type="text/javascript">
-function submitForm(){
- 
-  var selectForm = document.getElementById("myForm");
+<script src= "/app/views/home/JavaScriptFiles/showPassword.js"></script> 
+<script >
+ const form = {
+    email: document.getElementById("email"),
+    password: document.getElementById("password"),
+    submit: document.getElementById("btn"),
+    message: document.getElementById("error-message")
+};
+const formular = document.getElementById("myForm");
+function handleForm(event){event.preventDefault();}
+formular.addEventListener('submit', handleForm);
+form.submit.addEventListener('click', () => {
+    var ajax;
+    if(window.XMLHttpRequest) { 
+       ajax = new XMLHttpRequest();
+    } else { 
+       ajax = new ActiveXObject("Microsoft.XMLHTTP");
+    }
 
-  if (window.XMLHttpRequest)
-    {
-        xmlhttp = new XMLHttpRequest();
-    }
-    else
-    {
-        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.onreadystatechange = function(){
-    if (xmlhttp.readyState == 4)
-    {
-        msg=xmlhttp.responseText;
-        if(msg=="1")
-        {
-            alert("gasit");
+    ajax.onload = () => {
+        var response = null;
+        try{
+            response = JSON.parse(ajax.responseText);
+        }catch(e){
+            console.error('error at parsing Json');
         }
-        else if(msg=="0")
-        {
-          alert("negasit");
-        }
-    }
-    }
-    xmlhttp.open("GET",  "../phpFiles/loginIntoAccount.php", true);
-    xmlhttp.send();
 
-    //selectForm.onsubmit = function(){ 
-    //    return false;
-    //}
-} -->
+        if(response){
+            getAndHandleResponse(response);
+        }
+
+    }
+    const requestData = `email=${form.email.value}&password=${form.password.value}`;
+    console.log(requestData);
+    ajax.open("POST", '../phpFiles/loginIntoAccount.php', true);
+    ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    ajax.send(requestData);
+  });
+
+    function getAndHandleResponse(response){
+
+    if(response.status){
+      document.getElementById("error-message").innerHTML = response.message ;
+        location.href = '/app/views/home/Profil.php';
+    } else {
+        document.getElementById("error-message").innerHTML = response.message ;
+        form.message.style.color = 'white';
+        form.message.style.marginBottom = "30px";
+    }
+}
 </script>
+</div>
+</div>
+ 
 </body>
 </html>
