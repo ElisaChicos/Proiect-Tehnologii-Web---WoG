@@ -316,6 +316,10 @@ select {
     color: #b5deeb;
 }
 
+option {
+    color: black;
+}
+
 @media only screen and (max-width:300px) {
     body,
     html {

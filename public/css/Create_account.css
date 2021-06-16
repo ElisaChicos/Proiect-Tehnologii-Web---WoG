@@ -72,7 +72,7 @@ p {
     top: 50%;
     left: 50%;
     width: 700px;
-    height: 1100px;
+    height: 1150px;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.726);
     box-sizing: border-box;
@@ -124,7 +124,62 @@ p {
     font-size: 12px;
 }
 
+.login-box2 form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+.login-box2 form .signUpBtn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.login-box2 .signUpBtn span {
+    position: absolute;
+    display: block;
+}
+
+.login-box2 .signUpBtn:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
 .login-box2 a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.buttonSubmit {
+    background: #04454900;
+    color: #03e9f4;
+    border-color: #04454900;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.buttonSubmit:hover {
     background: #03e9f4;
     color: #fff;
     border-radius: 5px;
@@ -136,7 +191,8 @@ p {
     display: block;
 }
 
-.login-box2 a span:nth-child(1) {
+.login-box2 a span:nth-child(1),
+.signUpBtn span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -155,7 +211,8 @@ p {
     }
 }
 
-.login-box2 a span:nth-child(2) {
+.login-box2 a span:nth-child(2),
+.signUpBtn span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -175,7 +232,8 @@ p {
     }
 }
 
-.login-box2 a span:nth-child(3) {
+.login-box2 a span:nth-child(3),
+.signUpBtn span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -195,7 +253,8 @@ p {
     }
 }
 
-.login-box2 a span:nth-child(4) {
+.login-box2 a span:nth-child(4),
+.signUpBtn span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -215,37 +274,10 @@ p {
     }
 }
 
-button {
-    background: rgba(0, 0, 0, 0);
-    text-decoration: none;
-    border: none;
-    text-align: center;
-}
-
-.login-box2 form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 10px;
-    letter-spacing: 3px;
-}
-
-.login-box2 a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
-}
-
-.login-box2 span {
-    position: relative;
-    display: block;
+.login-box2 .error-message p {
+    color: rgba(0, 0, 0, 0);
+    font-size: 10px;
+    padding-bottom: 1em;
 }
 
 #terms {

@@ -64,7 +64,7 @@ html {
 
 .login-box2 {
     position: relative;
-    top: 50%;
+    top: 48%;
     left: 50%;
     width: 700px;
     padding: 40px;
@@ -112,7 +112,7 @@ html {
 
 .login-box2 .user-box input:focus~label,
 .login-box2 .user-box input:valid~label {
-    top: -20px;
+    top: -15px;
     left: 0;
     color: #d17103;
     font-size: 12px;

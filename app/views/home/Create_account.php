@@ -1,5 +1,3 @@
-<?php require_once("../phpFiles/config_create_account.php");
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,53 +15,60 @@
     
     <h2>Create account</h2>
 
-    <form action="/app/views/home/Create_account.php" method="post">
+    <form action="../phpFiles/config_create_account.php" method="POST" id="myForm">
+
     <div class="container">
     <div class="row">
     
       <div class="user-box">
       
-        <input type="text" name="username" required>
+        <input type="text" name="username" id="username" required>
         <label for="username"> Username</label>
       </div>
 
     <div class="user-box">
    
-        <input type="text" name="email"  required>
+        <input type="text" name="email" id="email" required>
         <label for="email">Email</label>
       </div>
 
       <div class="user-box">
       
-        <input type="number" name="age"  required>
+        <input type="number" name="age" id="age" required>
         <label for="age">Age</label>
       </div>
 
       <div class="user-box">
       
-        <input type="number"  name="height"  required>
-        <label for="height">Height</label>
+        <input type="number"  name="height" id="height" required>
+        <label for="height">Height (ex: 189cm)</label>
       </div>
 
       <div class="user-box">
       
-        <input type="number" name="weight"  required>
-        <label for="weight">Weight</label>
-      </div>
-
-     
-      <div class="user-box">
-      
-        <input type="text" name="gender"  required>
-        <label for="gender"> Gender</label>
+        <input type="number" name="weight"  id="weight" required>
+        <label for="weight">Weight (ex: 57kg)</label>
       </div>
 
       <div class="user-box">
      
-        <input type="password" name="password"  required>
+        <input type="password" name="password" id="password" required>
         <label for="password"> Password</label>
       </div>
 
+      <div class= "error-message" id="error-message">
+    <p> Error message</p>
+    </div>
+
+    <div id="radios">
+        <p> Gender:
+        <select name="gender">
+        <option selected disabled> Choose an option </option>
+        <option value="female"> Female </option>
+        <option value="male"> Male </option>
+        </select>
+        </p>
+       </div>
 
       <div id="radios">
         <p> I want to:
@@ -96,13 +101,13 @@
    </label>
  </div>
 
- <a href="/app/views/home/Login.php">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <input type="submit" name="create" id="create" value="SIGN UP">
-  </a>
+  <div class="signUpBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    <button class ="buttonSubmit"  id="create" type="submit"> SIGN UP </button>
+    </div>
     
         
     
@@ -117,6 +122,7 @@
               </a>
           
     </form>
+    <script src = "/app/views/home/JavaScriptFiles/signupAjaxCall.js"></script> 
     </div>
     </div>
 

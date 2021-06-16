@@ -2,7 +2,7 @@
 session_start();
 
 $username_from_login = ($_SESSION['message']);
-require_once("../phpFiles/config_create_account.php");
+//require_once("../phpFiles/config_create_account.php");
 
 if(isset($_POST['create'])){
   $email       = $_POST['email'];
@@ -40,28 +40,34 @@ if(isset($_POST['create'])){
     
         
         <div class="user-box">
-        <input type="text" name="username"  required>
+        <input type="text" name="username">
         <label for="username">Username</label>
           </div>
 
           <div class="user-box">
-          <input type="number" name="age"  required>
+          <input type="number" name="age">
         <label for="age">Age</label>
           </div>
 
           <div class="user-box">
-          <input type="number"  name="height"  required>
+          <input type="number"  name="height">
         <label for="height">Height</label>
           </div>
 
           <div class="user-box">
-          <input type="number" name="weight"  required>
+          <input type="number" name="weight">
         <label for="weight">Weight</label>
           </div>
+
           <div class="user-box">
-          <input type="password" name="password"  required>
-        <label for="password">Password</label>
+          <input type="password" name="currentPassword">
+        <label for="currentPassword">Current Password</label>
           </div>
+          <div class="user-box">
+          <input type="password" name="newPassword">
+        <label for="newPassword">New Password</label>
+          </div>
+
 
           
           <a href="/app/views/home/Profil.php">
