@@ -88,6 +88,13 @@ img {
     position: relative;
 }
 
+.img-start{
+    position: relative;
+    width: 50em;
+    height: 25em;
+    padding-top: 2em;
+}
+
 h1 {
     text-align: center;
     font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
@@ -112,33 +119,36 @@ h1 {
 }
 
 button {
+
     top: -100%;
     padding-top: 0;
     margin-top: 0;
 }
 
+.containerr{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 20px;
+}
 .exercise {
     position: relative;
     width: 25em;
     height: 17em;
-    top: -100%;
-    left: -25%;
-    padding-right: 2em;
+    margin-left:5em;
+   
+}
+
+.exercise_info {
+    position: relative;
+    color: rgb(255, 255, 255);
+    margin-top: 5em;
+    text-align: justify;
+    margin-right: 2em;
 }
 .enum {
     font: normal  1.2em Georgia, 'Times New Roman', Times, serif;
 
 }
-
-.exercise_info {
-    position: relative;
-    top: -103%;
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    padding-left: 30em;
-    padding-right: 2.5em;
-}
-
 .base-timer {
     position:relative;
     top: 270px;
@@ -227,11 +237,11 @@ button {
     background-color: transparent;
 }
 .button {
+    position: relative;
     text-decoration: none;
-    /*position: static;*/
     -ms-flex-align: center;
-    margin-top: 300px;
-    margin-left: 530px;
+    margin-top: 10em;
+    margin-left: 0px;
     padding: 10px 10px;
     font-size: 15px;
     font-weight: 900;
@@ -255,6 +265,37 @@ button {
     color: violet;
     background-color: transparent;
 }
+
+.button3 {
+    position: relative;
+    text-decoration: none;
+    -ms-flex-align: center;
+    margin-bottom: 50px;
+    margin-left: 180px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    background-color: rgb(45, 126, 89);
+    border: 2px solid rgb(33, 80, 59);
+    cursor: pointer;
+    width: max-content;
+    transition: 0.25s ease;
+    left:0;
+    
+}
+.button3:hover {
+    box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
+    color: brown;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.button3--transparent {
+    color: violet;
+    background-color: transparent;
+}
+
 .title{
     text-decoration: none;
     font: normal  1.2em Georgia, 'Times New Roman', Times, serif;
@@ -265,7 +306,6 @@ button {
     font-weight: 900;
     color: rgb(65, 184, 131);
     position: relative;
-    top: -60%;
     text-align: justify;
     padding-left: 7em;
     padding-right: 2.5em;

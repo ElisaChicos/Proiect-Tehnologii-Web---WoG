@@ -39,15 +39,18 @@ session_start();
     <p> Error message</p>
     </div>
 
-    <div>
-        <span></span>
+
+    <div class="forgot_pass">
+    <span></span>
         <span></span>
         <span></span>
         <span></span>
     <button class ="buttonSubmit" id="btn" type="submit" > LOGIN </button>
+        
+      
     </div>
 
-    <div class="forgot_pass">
+    <div class="forgot_pass2">
       <a href="/app/views/home/Reset_password.php">
         <span></span>
         <span></span>

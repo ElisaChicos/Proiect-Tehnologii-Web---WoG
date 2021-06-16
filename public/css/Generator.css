@@ -269,8 +269,8 @@ select {
     appearance: none;
     outline: 0;
     box-shadow: none;
-    border: 0 !important;
-    background: #03e8f471;
+    border: 0;
+    background: #353f3f69;
     background-image: none;
 }
 
@@ -284,7 +284,7 @@ select::-ms-expand {
     width: 20em;
     height: 3em;
     line-height: 3;
-    background: #2c3e50;
+    background: #35495e;
     overflow: hidden;
     border-radius: .25em;
     margin: 10px;

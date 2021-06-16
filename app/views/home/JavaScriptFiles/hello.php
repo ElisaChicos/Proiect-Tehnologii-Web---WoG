@@ -1,6 +1,6 @@
 <h2> Set 2 </h2> 
       
-
+<div class="containerr">
 <img class="exercise" src="
 <?php
 session_start();
@@ -41,28 +41,9 @@ while($row = mysqli_fetch_array($result))
   }
   
 ?>
-<button class="button" id="getTxt2">NEXT</button>
+
+</div>
+<button class="button3" id="getTxt2">NEXT EXERCISE</button>
 
 
 </div>
-
-<!--
-<script>
-
-        var getTxt2 = document.getElementById("getTxt2");
-
-        var xhr =  new XMLHttpRequest();
-        
-        getTxt2.addEventListener("click",function(){
-
-            xhr.addEventListener('readystatechange',function(){
-                content.innerHTML = this.responseText;
-                
-            });
-            
-            xhr.open("GET","http://localhost:3000/app/views/home/JavaScriptFiles/hello2.php",true);
-            xhr.send();
-              
-        });  
-</script>
--->
