@@ -331,104 +331,135 @@
             
            }
            if (strcmp($group1val, "Arms")==0){
-                $random_group1_ex1 = rand(10,15);
+                $array = array(12,13,15);
+                $random_group1_ex1 = $array[array_rand($array)];
               
             }
             if (strcmp($group1val, "Back")==0){
-                $random_group1_ex1 = rand(16,20);
+                $array = array(16,17,20);
+                $random_group1_ex1 = $array[array_rand($array)];
               
             }
-            if (strcmp($group1val, "Chest")==0){
-                $random_group1_ex1 = rand(21,24);
+            if (strcmp($group1val, "Chest")==0){//de revenit
+                $array = array(0);
+                $random_group1_ex1 = $array[array_rand($array)];
                
             }
             if (strcmp($group1val, "Glutes")==0){
-                $random_group1_ex1 = rand(25,30);
+                $array = array(25,26,27,28,30);
+                $random_group1_ex1 = $array[array_rand($array)];
             }
     
             if (strcmp($group1val, "Shoulders")==0){
-                $random_group1_ex1 = rand(31,35);
+                $array = array(31,32,34,35);
+                $random_group1_ex1 = $array[array_rand($array)];
               
             }
             if (strcmp($group1val, "Legs")==0){
-                $random_group1_ex1 = rand(36,44);
+                $array = array(37,38,39,40,41,42,43,44);
+                $random_group1_ex1 = $array[array_rand($array)];
             
             }
             if (strcmp($group2val, "Abs")==0){
                $random_group2_ex1 = rand(1,9);
             }
-          if (strcmp($group2val, "Arms")==0){
-               $random_group2_ex1 = rand(10,15);
-             
+            if (strcmp($group2val, "Arms")==0){
+                $array = array(12,13,15);
+                $random_group2_ex1 = $array[array_rand($array)];
            }
            if (strcmp($group2val, "Back")==0){
-               $random_group2_ex1 = rand(16,20);
+                $array = array(16,17,20);
+                $random_group2_ex1 = $array[array_rand($array)];
          
            }
            if (strcmp($group2val, "Chest")==0){
-               $random_group2_ex1 = rand(21,24);
+                $array = array(0);
+                $random_group2_ex1 = $array[array_rand($array)];
         
            }
            if (strcmp($group2val, "Glutes")==0){
-               $random_group2_ex1 = rand(25,30);
+                $array = array(25,26,27,28,30);
+                $random_group2_ex1 = $array[array_rand($array)];
            }
     
            if (strcmp($group2val, "Shoulders")==0){
-               $random_group2_ex1 = rand(31,35);
+                $array = array(31,32,34,35);
+                $random_group2_ex1 = $array[array_rand($array)];
        
            }
            if (strcmp($group2val, "Legs")==0){
-               $random_group2_ex1 = rand(36,44);
-        
+                $array = array(37,38,39,40,41,42,43,44);
+                $random_group2_ex1 = $array[array_rand($array)];
            }
+           if (strcmp($group3val, "Abs")==0){
+            $random_group3_ex1 = rand(1,9);
+            }
           if (strcmp($group3val, "Arms")==0){
-               $random_group3_ex1 = rand(10,15);
-      
+            $array = array(12,13,15);
+            $random_group3_ex1 = $array[array_rand($array)];
            }
            if (strcmp($group3val, "Back")==0){
-               $random_group3_ex1 = rand(16,20);
-        
+            $array = array(16,17,20);
+            $random_group3_ex1 = $array[array_rand($array)];
+          
            }
            if (strcmp($group3val, "Chest")==0){
-               $random_group3_ex1 = rand(21,24);
+            $array = array(0);
+            $random_group3_ex1 = $array[array_rand($array)];
+           
         
            }
            if (strcmp($group3val, "Glutes")==0){
-               $random_group3_ex1 = rand(25,30);
+            $array = array(25,26,27,28,30);
+            $random_group3_ex1 = $array[array_rand($array)];
            }
     
            if (strcmp($group3val, "Shoulders")==0){
-               $random_group3_ex1 = rand(31,35);
+            $array = array(31,32,34,35);
+            $random_group3_ex1 = $array[array_rand($array)];
         
            }
            if (strcmp($group3val, "Legs")==0){
-               $random_group3_ex1 = rand(36,44);
-         
+            $array = array(37,38,39,40,41,42,43,44);
+            $random_group3_ex1 = $array[array_rand($array)];
            }
-          if (strcmp($group4val, "Arms")==0){
-               $random_group4_ex1 = rand(10,15);
-           
-           }
-           if (strcmp($group4val, "Back")==0){
-               $random_group4_ex1 = rand(16,20);
+           if (strcmp($group4val, "Abs")==0){
+            $random_group4_ex1 = rand(1,9);
         
+       }
+          if (strcmp($group4val, "Arms")==0){
+            $array = array(12,13,15);
+            $random_group4_ex1 = $array[array_rand($array)];
+          
+      
            }
-           if (strcmp($group4val, "Chest")==0){
-               $random_group4_ex1 = rand(21,24);
+           if (strcmp($grou4val, "Back")==0){
+            $array = array(16,17,20);
+            $random_group4_ex1 = $array[array_rand($array)];
           
            }
+           if (strcmp($group3val, "Chest")==0){
+            $array = array(0);
+            $random_group3_ex1 = $array[array_rand($array)];
+           
+        
+           }
            if (strcmp($group4val, "Glutes")==0){
-               $random_group4_ex1 = rand(25,30);
+            $array = array(25,26,27,28,30);
+            $random_group4_ex1 = $array[array_rand($array)];
            }
     
            if (strcmp($group4val, "Shoulders")==0){
-               $random_group4_ex1 = rand(31,35);
-    
+            $array = array(31,32,34,35);
+            $random_group4_ex1 = $array[array_rand($array)];
+        
            }
            if (strcmp($group4val, "Legs")==0){
-               $random_group4_ex1 = rand(36,44);
+            $array = array(37,38,39,40,41,42,43,44);
+            $random_group4_ex1 = $array[array_rand($array)];
            }
-    
+           
+    ///////SEMN DE CARTE BLANAO
           
            if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Arms")==0 ){
              $array = array(2,5);
