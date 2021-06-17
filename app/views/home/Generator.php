@@ -1,3 +1,37 @@
+<?php 
+
+session_start();
+$host="localhost";
+$user="root";
+$password="";
+$db="images";
+$aVar=mysqli_connect($host,$user,$password);
+mysqli_select_db($aVar,'user_exemplu');
+
+
+
+
+if(isset($_POST['submit'])){
+    $alg1=$_POST['group1'];
+    echo $alg1;
+    $_SESSION['alg1'] = $alg1;
+
+}
+
+
+/*
+$sql = "SELECT * FROM user_exemplu.images WHERE id='2';";
+$result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
+while($row = mysqli_fetch_array($result))
+  {
+    echo $row["path"];
+  }
+
+?>
+*/
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,23 +55,23 @@
     <?php require_once("../phpFiles/logOut.php"); ?>
     Logout</a></li>
     </ul>
-
+  
       <div class="login-box2">
   
-      <form>
+      <form method="post " action="/app/views/home/Workout.php">
         <h2>Generate workout</h2>
 
       <p>What groups of muscles you want to work on?</p>
       <div class="select">
-        <select name="group 1" id="1">
+        <select name="group1">
           <option selected disabled>Choose an option</option>
-          <option value="Group 1">Legs</option>
-            <option value="Group 2">Glutes</option>
-            <option value="Group 3">Abs</option>
-            <option value="Group 4">Shoulders</option>
-            <option value="Group 5">Arms</option>
-            <option value="Group 6">Back</option>
-            <option value="Group 7">Chest</option>
+            <option value="Legs">Legs</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Abs">Abs</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Arms">Arms</option>
+            <option value="Back">Back</option>
+            <option value="Chest">Chest</option>
         </select>
       </div>
 
@@ -100,6 +134,8 @@
                 <option value="location 3">Gym</option>
             </select>
           </div>
+           
+           <input type="submit" name="submit" id="submit" value="Submit">
             <a href="Workout.php">
               <span></span>
               <span></span>

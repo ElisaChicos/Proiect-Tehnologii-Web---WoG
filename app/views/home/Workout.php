@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+$algg1 = $_SESSION['alg1'];
+
+echo $algg1;
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
