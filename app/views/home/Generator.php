@@ -122,9 +122,9 @@ if(isset($_POST['submit'])){
           <div class="select">
           <select name="location" id="location" value="">
             <option selected disabled>Choose an option</option>
-                <option value="inside">Inside</option>
-                <option value="outside">Outside</option>
-                <option value="gym">Gym</option>
+                <option value="Inside">Inside</option>
+                <option value="Outside">Outside</option>
+                <option value="Gym">Gym</option>
             </select>
           </div>
            
