@@ -1,25 +1,5 @@
 <?php
 session_start();
-
-$username_from_login = ($_SESSION['message']);
-//require_once("../phpFiles/config_create_account.php");
-
-if(isset($_POST['create'])){
-  $email       = $_POST['email'];
-  $age         = $_POST['age'];
-  $height      = $_POST['height'];
-  $weight      = $_POST['weight'];
-  $password    = $_POST['password'];
-
-  $sql = "UPDATE user_exemplu.users SET email='$email',age='$age',height='$height',weight='$weight',password='$password' WHERE username='$username_from_login'";
- $stmtinsert = $db-> prepare($sql);
- $result = $stmtinsert->execute([$email,$age,$height,$weight]);
-
- if($result){
-  echo "<script> location.href='/app/views/home/Login.php'; </script>";
-  exit;
- }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,49 +16,59 @@ if(isset($_POST['create'])){
         <div class="login-box2">
     
     <h2>Edit your profile</h2>
-    <form method="post" action="/app/views/home/Edit.php" >
+    <form method="POST" action= "../phpFiles/editProfile.php" id = "myForm">
     
         
         <div class="user-box">
-        <input type="text" name="username">
+        <input type="text" name="username" id="username">
         <label for="username">Username</label>
           </div>
 
           <div class="user-box">
-          <input type="number" name="age">
-        <label for="age">Age</label>
-          </div>
-
-          <div class="user-box">
-          <input type="number"  name="height">
+          <input type="number"  name="height" id="height">
         <label for="height">Height</label>
           </div>
 
           <div class="user-box">
-          <input type="number" name="weight">
+          <input type="number" name="weight" id="weight">
         <label for="weight">Weight</label>
           </div>
 
           <div class="user-box">
-          <input type="password" name="currentPassword">
+          <input type="password" name="currentPassword" id="currentPassword">
         <label for="currentPassword">Current Password</label>
           </div>
           <div class="user-box">
-          <input type="password" name="newPassword">
+          <input type="password" name="newPassword" id="newPassword">
         <label for="newPassword">New Password</label>
           </div>
 
+          <div class= "error-message" id="error-message">
+          <p> Error message</p>
+          </div> 
 
-          
         <div class="saveBtn">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <button class ="buttonSubmit"  id="submit" type="submit"> SAVE CHANGES </button>
+        <button class ="buttonSubmit" id="btn" type="submit" name="saveEdit"> SAVE CHANGES </button>
         </div>
 
+
+        <div >
+        <a href="/app/views/home/Profil.php">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Return to your profile
+       </a>
+
+    </div>
+      
     </form>
+    <script src= "/app/views/home/JavaScriptFiles/editAjaxCall.js"></script>
     </div>
     </div>
 

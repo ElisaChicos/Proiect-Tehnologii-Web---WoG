@@ -1,5 +1,6 @@
   <?php
 
+
   $status = true;
   $message = array();
 
@@ -37,7 +38,7 @@
         $message[] = 'Please choose a valid email.';
   }else{
 
-    if($age < 5 || $age > 120 || $height < 50|| $height > 250 || $weight < 10 || $weight > 500){
+    if($age < 5 || $age > 120 || $height < 50|| $height > 250 || $weight < 30 || $weight > 500){
       $status = false;
       $message[] = 'Please fill in with correct informations.';
     }else{

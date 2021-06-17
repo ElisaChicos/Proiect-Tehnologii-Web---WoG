@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/Profil.css">
     <title>Profile</title>
-  
 </head>
+
 <body>
 <div class="start-profile">
     <ul class="menu">
@@ -18,16 +21,17 @@
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
     <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
-    <li><a href="/app/views/home/Login.php">
-    <?php require_once("../phpFiles/logOut.php"); ?>
-    Logout</a></li>
-        </ul>
+    <li class="signoutBtn" >
+    <form method= "POST" action = "../phpFiles/logOut.php">
+       <button type="submit" id="btnSignOut" name="logout">LogOut</button>
+    </form>
+    </li>
+    </ul>
 
           <div class="login-box2">
             <h1>PROFILE</h1>
 <h2>Public information</h2>
 <p class="enum">Email:  <?php
-session_start();
 echo $_SESSION['email']; ?>
 </p>
 <p class="enum">Number 

@@ -1,15 +1,11 @@
 const form = {
     username: document.getElementById("username"),
-    email: document.getElementById("email"),
-    age: document.getElementById("age"),
     height: document.getElementById("height"),
     weight: document.getElementById("weight"),
-    gender: document.getElementById("gender"),
-    password: document.getElementById("password"),
-    want: document.getElementById("want"),
-    focus_part: document.getElementById("focus_part"),
+    currentPassword: document.getElementById("currentPassword"),
+    newPassword: document.getElementById("newPassword"),
     message: document.getElementById("error-message"),
-    submit: document.getElementById("create"),
+    submit: document.getElementById("btn"),
 };
 const formular = document.getElementById("myForm");
 
@@ -36,11 +32,10 @@ form.submit.addEventListener('click', () => {
         }
 
     }
-    const requestData = `username=${form.username.value}&email=${form.email.value}&age=${form.age.value}&height=${form.height.value}
-    &weight=${form.weight.value}&gender=${form.gender.value}&want=${form.want.value}&focus_part=${form.focus_part.value}
-    &password=${form.password.value}`;
+    const requestData = `username=${form.username.value}&height=${form.height.value}&weight=${form.weight.value}
+    &currentPassword=${form.currentPassword.value}&newPassword=${form.newPassword.value}`;
     console.log(requestData);
-    ajax.open("POST", '../phpFiles/config_create_account.php', true);
+    ajax.open("POST", '../phpFiles/editProfile.php', true);
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     ajax.send(requestData);
 });
@@ -51,7 +46,7 @@ function getAndHandleResponse(response) {
         document.getElementById("error-message").innerHTML = response.message;
         form.message.style.color = 'rgba(255, 255, 255, 0)';
         form.message.style.marginBottom = "25px";
-        location.href = '/app/views/home/Login.php';
+        location.href = '/app/views/home/Profil.php';
     } else {
         document.getElementById("error-message").innerHTML = response.message;
         form.message.style.color = 'white';

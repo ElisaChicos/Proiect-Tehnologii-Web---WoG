@@ -11,44 +11,28 @@
     <div class="start-page">
         <div class="change-pass-box">
     <h2>Reset password</h2>
-    <form action="" method="post">
+    <form action="../phpFiles/sendMail.php" method="POST">
 
     <div class="user-input">
     
-    <input type="email" placeholder="" required>
+    <input type="email" id="password">
     <label>Email</label>
     </div>
-    <input type="submit" value="Send details to embassy" />
-    <input type="hidden" name="button_pressed" value="1" />
-<?php
-
-if(isset($_POST['button_pressed']))
-{
-    $to = "elisachicos68@gmail.com"; 
-    $subject = "Reset password";;
-    $txt = "No need to worry, you can reset your WoG password by clicking the link below: 	
-        If you didn't request a password reset, feel free to delete this email and carry on enjoying your workouts!
-
-        All the best,
-        The WoG Team"; 
-    $headers = "From: elisachicos68@gmail.com"; 
-
-    if( mail($to, $subject, $txt, $headers)){
-        echo 'Email Sent.';}
-    else{
-        echo 'eroare boy';}
-}
-?>
-   
-        
+    <div class="sMail">
+    <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    <button class ="buttonSubmit" id="btn" type="submit" name="btnSendMail"> Send mail </button>  
+    </div>
 
     <div class="user-input">
-    <input type="password" placeholder="" required> 
+    <input type="password" id="password"> 
     <label>New password</label>
     </div>
 
     <div class="user-input">
-    <input type="password" placeholder="" required> 
+    <input type="password" id="password"> 
     <label>Confirm password</label>
     </div>
 

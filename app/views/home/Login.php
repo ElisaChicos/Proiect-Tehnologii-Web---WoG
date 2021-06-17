@@ -1,7 +1,6 @@
 <?php
 session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,9 +44,7 @@ session_start();
         <span></span>
         <span></span>
         <span></span>
-    <button class ="buttonSubmit" id="btn" type="submit" > LOGIN </button>
-        
-      
+    <button class ="buttonSubmit" id="btn" type="submit" > LOGIN </button>  
     </div>
 
     <div class="forgot_pass2">
@@ -74,9 +71,7 @@ session_start();
         
 </form>
 <script src= "/app/views/home/JavaScriptFiles/showPassword.js"></script> 
-<script src= "/app/views/home/JavaScriptFiles/loginAjaxCall.js">
-
-</script>
+<script src= "/app/views/home/JavaScriptFiles/loginAjaxCall.js"></script>
 </div>
 </div>
  

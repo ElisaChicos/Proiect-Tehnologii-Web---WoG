@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +22,12 @@
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
     <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
-    <li><a href="/app/views/home/Login.php">
-    <?php require_once("../phpFiles/logOut.php"); ?>
-    Logout</a></li>
-        </ul>
+    <li class="signoutBtn">
+    <form method= "POST" action = "../phpFiles/logOut.php">
+       <button type="submit" id="btnSignOut" name="logout">LogOut</button>
+    </form>
+    </li>
+    </ul>
        
         <div class="login-box2">
         <div id="content">

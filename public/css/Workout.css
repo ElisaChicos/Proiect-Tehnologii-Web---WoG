@@ -88,7 +88,7 @@ img {
     position: relative;
 }
 
-.img-start{
+.img-start {
     position: relative;
     width: 50em;
     height: 25em;
@@ -119,23 +119,22 @@ h1 {
 }
 
 button {
-
     top: -100%;
     padding-top: 0;
     margin-top: 0;
 }
 
-.containerr{
+.containerr {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 20px;
 }
+
 .exercise {
     position: relative;
     width: 25em;
     height: 17em;
-    margin-left:5em;
-   
+    margin-left: 5em;
 }
 
 .exercise_info {
@@ -145,18 +144,17 @@ button {
     text-align: justify;
     margin-right: 2em;
 }
-.enum {
-    font: normal  1.2em Georgia, 'Times New Roman', Times, serif;
 
+.enum {
+    font: normal 1.2em Georgia, 'Times New Roman', Times, serif;
 }
+
 .base-timer {
-    position:relative;
+    position: relative;
     top: 270px;
     left: 16%;
     width: 150px;
     height: 150px;
-    
-
 }
 
 .base-timer__svg {
@@ -222,9 +220,9 @@ button {
     cursor: pointer;
     width: max-content;
     transition: 0.25s ease;
-    left:0;
-    
+    left: 0;
 }
+
 .button2:hover {
     box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
     color: brown;
@@ -236,6 +234,7 @@ button {
     color: violet;
     background-color: transparent;
 }
+
 .button {
     position: relative;
     text-decoration: none;
@@ -251,9 +250,9 @@ button {
     cursor: pointer;
     width: max-content;
     transition: 0.25s ease;
-    left:0;
-    
+    left: 0;
 }
+
 .button:hover {
     box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
     color: brown;
@@ -281,9 +280,9 @@ button {
     cursor: pointer;
     width: max-content;
     transition: 0.25s ease;
-    left:0;
-    
+    left: 0;
 }
+
 .button3:hover {
     box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
     color: brown;
@@ -296,9 +295,9 @@ button {
     background-color: transparent;
 }
 
-.title{
+.title {
     text-decoration: none;
-    font: normal  1.2em Georgia, 'Times New Roman', Times, serif;
+    font: normal 1.2em Georgia, 'Times New Roman', Times, serif;
     -ms-flex-align: right;
     margin-top: -100px;
     margin-left: -200px;
@@ -309,7 +308,26 @@ button {
     text-align: justify;
     padding-left: 7em;
     padding-right: 2.5em;
-    
+}
+
+#btnSignOut {
+    width: 17.2em;
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.884);
+    z-index: 2;
+    padding: 1.5em;
+    transition: box-shadow .3s;
+}
+
+#btnSignOut:hover {
+    background-color: rgb(136, 0, 0);
+    box-shadow: 0 0 15px rgb(65, 0, 0);
+    color: white;
 }
 
 @media only screen and (max-width:300px) {
@@ -479,4 +497,3 @@ button {
         text-align: center;
     }
 }
-

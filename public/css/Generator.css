@@ -58,6 +58,26 @@ li a:hover {
     color: white;
 }
 
+#btnSignOut {
+    width: 17.2em;
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    padding: 1.5em;
+    transition: box-shadow .3s;
+}
+
+#btnSignOut:hover {
+    background-color: rgb(136, 0, 0);
+    box-shadow: 0 0 15px rgb(65, 0, 0);
+    color: white;
+}
+
 body,
 html {
     margin: 0;
@@ -210,14 +230,6 @@ p {
     100% {
         bottom: 100%;
     }
-}
-
-button {
-    background: rgba(0, 0, 0, 0);
-    padding-top: 50px;
-    text-decoration: none;
-    border: none;
-    text-align: center;
 }
 
 .login-box2 form a {

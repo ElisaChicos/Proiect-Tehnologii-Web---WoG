@@ -9,6 +9,13 @@
 </head>
 <body>
     <div class="all">
+    <a href="/app/views/home/Start.php">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Return to Main page 
+    </a>
      <h2>Our Mission</h2>
 
 <p>At WoG.com, we strive to help all people make informed decisions about their health. No matter your fitness background and level, these workouts and exercise guides will help you get (and stay) in great shape.</p>
