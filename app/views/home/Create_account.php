@@ -62,7 +62,7 @@
 
     <div id="radios">
         <p> Gender:
-        <select name="gender">
+        <select name="gender" id="gender">
         <option selected disabled> Choose an option </option>
         <option value="female"> Female </option>
         <option value="male"> Male </option>
@@ -70,9 +70,9 @@
         </p>
        </div>
 
-      <div id="radios">
+      <div id="radios" >
         <p> I want to:
-        <select name="want">
+        <select name="want" id="want">
         <option selected disabled> Choose an option </option>
         <option value="lose_weight"> Lose weight </option>
         <option value="get_toned"> Get toned </option>
@@ -84,7 +84,7 @@
               
        <div id="radios">
           <p>Choose what's your focus part:
-          <select name="focus_part">
+          <select name="focus_part" id="focus_part">
           <option selected disabled> Choose an option </option>
           <option value="arms"> Arms </option>
           <option value="abs"> Abs </option>

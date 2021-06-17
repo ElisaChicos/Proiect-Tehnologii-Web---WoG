@@ -19,14 +19,15 @@
   $height = isset($_POST["height"]) ? $_POST["height"] : '';
   $weight = isset($_POST["weight"]) ? $_POST["weight"] : '';
   $old_weight  = $weight;
-  $gender = isset($_POST["gender"]) ? $_POST["gender"] : 'female';
+  $gender = isset($_POST["gender"]) ? $_POST["gender"] : '';
   $pass = isset($_POST["password"]) ? $_POST["password"] : '';
   $want        =  isset($_POST['want']) ? $_POST["want"] : 'lose_weight';
   $focus_part  =  isset($_POST['focus_part']) ? $_POST['focus_part'] : 'abs';
 
 
   if(!isset($_POST['username']) || empty($username) || !isset($_POST["email"]) || empty($email) || !isset($_POST["age"]) || empty($age) 
-  || !isset($_POST["height"]) || empty($height) || !isset($_POST["weight"]) || empty($weight) || !isset($_POST["password"]) || empty($pass)){
+  || !isset($_POST["height"]) || empty($height) || !isset($_POST["weight"]) || empty($weight) || !isset($_POST["password"]) || empty($pass)
+  || !isset($_POST["gender"]) || empty($gender)){
           $status = false;
           $message[] = 'Please fill in all the inputs.';
   }else{

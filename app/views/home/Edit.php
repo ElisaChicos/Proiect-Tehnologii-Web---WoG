@@ -70,13 +70,13 @@ if(isset($_POST['create'])){
 
 
           
-          <a href="/app/views/home/Profil.php">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <input type="submit" name="create" id="create" value="SAVE CHANGES">
-          </a>
+        <div class="saveBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <button class ="buttonSubmit"  id="submit" type="submit"> SAVE CHANGES </button>
+        </div>
 
     </form>
     </div>

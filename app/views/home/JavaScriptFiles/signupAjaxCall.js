@@ -6,6 +6,9 @@ const form = {
     weight: document.getElementById("weight"),
     gender: document.getElementById("gender"),
     password: document.getElementById("password"),
+    gender: document.getElementById("gender"),
+    want: document.getElementById("want"),
+    focus_part: document.getElementById("focus_part"),
     message: document.getElementById("error-message"),
     submit: document.getElementById("create"),
 };
@@ -35,7 +38,8 @@ form.submit.addEventListener('click', () => {
 
     }
     const requestData = `username=${form.username.value}&email=${form.email.value}&age=${form.age.value}&height=${form.height.value}
-    &weight=${form.weight.value}&gender=${form.gender.value}&password=${form.password.value}`;
+    &weight=${form.weight.value}&gender=${form.gender.value}&want=${form.want.value}&focus_part=${form.focus_part.value}
+    &password=${form.password.value}`;
     console.log(requestData);
     ajax.open("POST", '../phpFiles/config_create_account.php', true);
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
