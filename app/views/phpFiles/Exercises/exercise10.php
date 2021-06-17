@@ -1,4 +1,4 @@
-<h2> Set 2 </h2> 
+<h2> Exercise 10 </h2> 
       
 <div class="containerr">
 <img class="exercise" src="
@@ -10,7 +10,10 @@ $password="";
 $db="images";
 $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
-$sql = "SELECT * FROM user_exemplu.images WHERE id='2';";
+
+$ex = rand(1,9);
+
+$sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";
 $result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
 while($row = mysqli_fetch_array($result))
   {
@@ -22,7 +25,7 @@ while($row = mysqli_fetch_array($result))
 
 <div class="exercise_info">
 <?php
-$sql = "SELECT * FROM user_exemplu.images WHERE id='2';";
+$sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";
 $result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
 while($row = mysqli_fetch_array($result))
   {
@@ -43,7 +46,7 @@ while($row = mysqli_fetch_array($result))
 ?>
 
 </div>
-<button class="button3" id="getTxt2">NEXT EXERCISE</button>
+<button class="button3" id="getTxt10">NEXT EXERCISE</button>
 
 
 </div>

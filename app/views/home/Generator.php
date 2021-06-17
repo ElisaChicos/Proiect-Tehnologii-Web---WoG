@@ -1,5 +1,29 @@
-<?php
-    session_start();
+<?php 
+
+session_start();
+$host="localhost";
+$user="root";
+$password="";
+$db="images";
+$aVar=mysqli_connect($host,$user,$password);
+mysqli_select_db($aVar,'user_exemplu');
+
+
+
+
+if(isset($_POST['submit'])){
+  
+    $_SESSION['group1'] = $group1val;
+    $_SESSION['group2'] = $group2val;
+    $_SESSION['group3'] = $group3val;
+    $_SESSION['group4'] = $group4val;
+    $_SESSION['time']   = $timeval;
+    $_SESSION['location'] = $locationval;
+
+   
+}
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,84 +51,87 @@
     </li>
     </ul>
     
+  
       <div class="login-box2">
   
-      <form>
+      <form method="GET" action="/app/views/home/Workout.php">
         <h2>Generate workout</h2>
 
       <p>What groups of muscles you want to work on?</p>
       <div class="select">
-        <select name="group 1" id="1">
+        <select name="group1" id="group1" value="">
           <option selected disabled>Choose an option</option>
-          <option value="Group 1">Legs</option>
-            <option value="Group 2">Glutes</option>
-            <option value="Group 3">Abs</option>
-            <option value="Group 4">Shoulders</option>
-            <option value="Group 5">Arms</option>
-            <option value="Group 6">Back</option>
-            <option value="Group 7">Chest</option>
+            <option value="Legs">Legs</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Abs">Abs</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Arms">Arms</option>
+            <option value="Back">Back</option>
+            <option value="Chest">Chest</option>
         </select>
       </div>
 
 
       <div class="select">
-        <select name="group 2" id="2">
-          <option selected disabled>Choose an option</option>
-          <option value="Group 1">Legs</option>
-            <option value="Group 2">Glutes</option>
-            <option value="Group 3">Abs</option>
-            <option value="Group 4">Shoulders</option>
-            <option value="Group 5">Arms</option>
-            <option value="Group 6">Back</option>
-            <option value="Group 7">Chest</option>
+      <select name="group2" id="group2" value="">
+        <option selected disabled>Choose an option</option>
+            <option value="Legs">Legs</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Abs">Abs</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Arms">Arms</option>
+            <option value="Back">Back</option>
+            <option value="Chest">Chest</option>
         </select>
       </div>
       <div class="select">
-        <select name="group 3" id="3">
-          <option selected disabled>Choose an option</option>
-          <option value="Group 1">Legs</option>
-            <option value="Group 2">Glutes</option>
-            <option value="Group 3">Abs</option>
-            <option value="Group 4">Shoulders</option>
-            <option value="Group 5">Arms</option>
-            <option value="Group 6">Back</option>
-            <option value="Group 7">Chest</option>
+      <select name="group3" id="group3" value="">
+        <option selected disabled>Choose an option</option>
+            <option value="Legs">Legs</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Abs">Abs</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Arms">Arms</option>
+            <option value="Back">Back</option>
+            <option value="Chest">Chest</option>
         </select>
       </div>
       <div class="select">
-        <select name="group 4" id="4">
-          <option selected disabled>Choose an option</option>
-          <option value="Group 1">Legs</option>
-            <option value="Group 2">Glutes</option>
-            <option value="Group 3">Abs</option>
-            <option value="Group 4">Shoulders</option>
-            <option value="Group 5">Arms</option>
-            <option value="Group 6">Back</option>
-            <option value="Group 7">Chest</option>
+      <select name="group4" id="group4" value="">
+        <option selected disabled>Choose an option</option>
+            <option value="Legs">Legs</option>
+            <option value="Glutes">Glutes</option>
+            <option value="Abs">Abs</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Arms">Arms</option>
+            <option value="Back">Back</option>
+            <option value="Chest">Chest</option>
         </select>
       </div>
     
           <p>How long you want your workout? </p>
           <div class="select">
-            <select name="group 5" id="5">
+          <select name="time" id="time" value="">
               <option selected disabled>Choose an option</option>
-              <option value="time 1">15 minutes</option>
-                <option value="time 2">30 minutes</option>
-                <option value="time 3">45 minutes</option>
-                <option value="time 4">1 hour</option>
-                <option value="time 5">1 hour 30 minutes</option>
+              <option value="15min">15 minutes</option>
+                <option value="30min">30 minutes</option>
+                <option value="45min">45 minutes</option>
+                <option value="1h">1 hour</option>
+                <option value="1h30m">1 hour 30 minutes</option>
             </select>
           </div>
 
           <p>Where do you want to do your workout?</p>
           <div class="select">
-            <select name="location" >
+          <select name="location" id="location" value="">
             <option selected disabled>Choose an option</option>
-                <option value="location 1">Inside</option>
-                <option value="location 2">Outside</option>
-                <option value="location 3">Gym</option>
+                <option value="inside">Inside</option>
+                <option value="outside">Outside</option>
+                <option value="gym">Gym</option>
             </select>
           </div>
+           
+           <input type="submit" name="submit" id="submit" value="Submit">
             <a href="Workout.php">
               <span></span>
               <span></span>
