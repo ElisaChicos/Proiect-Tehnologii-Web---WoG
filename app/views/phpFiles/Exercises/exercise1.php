@@ -1,15 +1,17 @@
 <h2> Exercise 1 </h2> 
-      
+
 <div class="containerr">
 <img class="exercise" src="
 <?php
 session_start();
+   
 $host="localhost";
 $user="root";
 $password="";
 $db="images";
 $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
+
 
 $ex = rand(1,9);
 

@@ -54,25 +54,735 @@
     $timeval     = $_GET['time'];
     $locationval = $_GET['location'];
 
+  
 
-    if($timeval == 45){
+    if($timeval == 45){ // 45min
         echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax6exercise.js\"></script>";
+        if (strcmp($group1val, "Abs")==0){
+            $random_group1_ex1 = rand(1,9);
+        
+       }
+       if (strcmp($group1val, "Arms")==0){
+            $random_group1_ex1 = rand(10,15);
+          
+        }
+        if (strcmp($group1val, "Back")==0){
+            $random_group1_ex1 = rand(16,20);
+          
+        }
+        if (strcmp($group1val, "Chest")==0){
+            $random_group1_ex1 = rand(21,24);
+           
+        }
+        if (strcmp($group1val, "Glutes")==0){
+            $random_group1_ex1 = rand(25,30);
+          
+
+        }
+
+        if (strcmp($group1val, "Shoulders")==0){
+            $random_group1_ex1 = rand(31,35);
+          
+        }
+        if (strcmp($group1val, "Legs")==0){
+            $random_group1_ex1 = rand(36,44);
+        
+        }
+        if (strcmp($group2val, "Abs")==0){
+           $random_group2_ex1 = rand(1,9);
+        }
+      if (strcmp($group2val, "Arms")==0){
+           $random_group2_ex1 = rand(10,15);
+         
+       }
+       if (strcmp($group2val, "Back")==0){
+           $random_group2_ex1 = rand(16,20);
+     
+       }
+       if (strcmp($group2val, "Chest")==0){
+           $random_group2_ex1 = rand(21,24);
+    
+       }
+       if (strcmp($group2val, "Glutes")==0){
+           $random_group2_ex1 = rand(25,30);
+       }
+
+       if (strcmp($group2val, "Shoulders")==0){
+           $random_group2_ex1 = rand(31,35);
+   
+       }
+       if (strcmp($group2val, "Legs")==0){
+           $random_group2_ex1 = rand(36,44);
+    
+       }
+      if (strcmp($group3val, "Arms")==0){
+           $random_group3_ex1 = rand(10,15);
+  
+       }
+       if (strcmp($group3val, "Back")==0){
+           $random_group3_ex1 = rand(16,20);
+    
+       }
+       if (strcmp($group3val, "Chest")==0){
+           $random_group3_ex1 = rand(21,24);
+    
+       }
+       if (strcmp($group3val, "Glutes")==0){
+           $random_group3_ex1 = rand(25,30);
+     
+
+       }
+
+       if (strcmp($group3val, "Shoulders")==0){
+           $random_group3_ex1 = rand(31,35);
+    
+       }
+       if (strcmp($group3val, "Legs")==0){
+           $random_group3_ex1 = rand(36,44);
+     
+       }
+      if (strcmp($group4val, "Arms")==0){
+           $random_group4_ex1 = rand(10,15);
+       
+       }
+       if (strcmp($group4val, "Back")==0){
+           $random_group4_ex1 = rand(16,20);
+    
+       }
+       if (strcmp($group4val, "Chest")==0){
+           $random_group4_ex1 = rand(21,24);
+      
+       }
+       if (strcmp($group4val, "Glutes")==0){
+           $random_group4_ex1 = rand(25,30);
+     
+       }
+
+       if (strcmp($group4val, "Shoulders")==0){
+           $random_group4_ex1 = rand(31,35);
+
+       }
+       if (strcmp($group4val, "Legs")==0){
+           $random_group4_ex1 = rand(36,44);
+       }
+ 
     }
-    if($timeval == 15)
+    if($timeval == 15) // 15 min
     {
         echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax2exercise.js\"></script>";
     }
-    if($timeval == 30){
+    if($timeval == 30){ // 30min
         echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajaxexercise.js\"></script>";
+        if (strcmp($group1val, "Abs")==0){
+            $random_group1_ex1 = rand(1,9);
+        
+       }
+       if (strcmp($group1val, "Arms")==0){
+            $random_group1_ex1 = rand(10,15);
+          
+        }
+        if (strcmp($group1val, "Back")==0){
+            $random_group1_ex1 = rand(16,20);
+          
+        }
+        if (strcmp($group1val, "Chest")==0){
+            $random_group1_ex1 = rand(21,24);
+           
+        }
+        if (strcmp($group1val, "Glutes")==0){
+            $random_group1_ex1 = rand(25,30);
+          
+
+        }
+
+        if (strcmp($group1val, "Shoulders")==0){
+            $random_group1_ex1 = rand(31,35);
+          
+        }
+        if (strcmp($group1val, "Legs")==0){
+            $random_group1_ex1 = rand(36,44);
+        
+        }
+        if (strcmp($group2val, "Abs")==0){
+           $random_group2_ex1 = rand(1,9);
+        }
+      if (strcmp($group2val, "Arms")==0){
+           $random_group2_ex1 = rand(10,15);
+         
+       }
+       if (strcmp($group2val, "Back")==0){
+           $random_group2_ex1 = rand(16,20);
+     
+       }
+       if (strcmp($group2val, "Chest")==0){
+           $random_group2_ex1 = rand(21,24);
+    
+       }
+       if (strcmp($group2val, "Glutes")==0){
+           $random_group2_ex1 = rand(25,30);
+       }
+
+       if (strcmp($group2val, "Shoulders")==0){
+           $random_group2_ex1 = rand(31,35);
+   
+       }
+       if (strcmp($group2val, "Legs")==0){
+           $random_group2_ex1 = rand(36,44);
+    
+       }
+      if (strcmp($group3val, "Arms")==0){
+           $random_group3_ex1 = rand(10,15);
+  
+       }
+       if (strcmp($group3val, "Back")==0){
+           $random_group3_ex1 = rand(16,20);
+    
+       }
+       if (strcmp($group3val, "Chest")==0){
+           $random_group3_ex1 = rand(21,24);
+    
+       }
+       if (strcmp($group3val, "Glutes")==0){
+           $random_group3_ex1 = rand(25,30);
+     
+
+       }
+
+       if (strcmp($group3val, "Shoulders")==0){
+           $random_group3_ex1 = rand(31,35);
+    
+       }
+       if (strcmp($group3val, "Legs")==0){
+           $random_group3_ex1 = rand(36,44);
+     
+       }
+      if (strcmp($group4val, "Arms")==0){
+           $random_group4_ex1 = rand(10,15);
+       
+       }
+       if (strcmp($group4val, "Back")==0){
+           $random_group4_ex1 = rand(16,20);
+    
+       }
+       if (strcmp($group4val, "Chest")==0){
+           $random_group4_ex1 = rand(21,24);
+      
+       }
+       if (strcmp($group4val, "Glutes")==0){
+           $random_group4_ex1 = rand(25,30);
+     
+       }
+
+       if (strcmp($group4val, "Shoulders")==0){
+           $random_group4_ex1 = rand(31,35);
+
+       }
+       if (strcmp($group4val, "Legs")==0){
+           $random_group4_ex1 = rand(36,44);
+       }
+ 
     }
-    if($timeval == 1)
+    if($timeval == 1) // 1h
     {
         echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax8exercise.js\"></script>";
-    }
-    if($timeval == 130)
+        if (strcmp($group1val, "Abs")==0){
+            $random_group1_ex1 = rand(1,9);
+            $random_group1_ex2 = rand(1,9);
+            if($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 = rand(1,9);
+            }
+       }
+       if (strcmp($group1val, "Arms")==0){
+            $random_group1_ex1 = rand(10,15);
+            $random_group1_ex2 = rand(10,15);
+            if($random_group1_ex1 == $random_group1_ex2){
+               $random_group1_ex2 = rand(10,15);
+           }
+        }
+        if (strcmp($group1val, "Back")==0){
+            $random_group1_ex1 = rand(16,20);
+            $random_group1_ex2 = rand(16,20);
+            if($random_group1_ex1 == $random_group1_ex2){
+               $random_group1_ex2 = rand(16,20);
+           }
+        }
+        if (strcmp($group1val, "Chest")==0){
+            $random_group1_ex1 = rand(21,24);
+            $random_group1_ex2 = rand(21,24);
+            if($random_group1_ex1 == $random_group1_ex2){
+               $random_group1_ex2 =rand(21,24);
+              }
+        }
+        if (strcmp($group1val, "Glutes")==0){
+            $random_group1_ex1 = rand(25,30);
+            $random_group1_ex2 = rand(25,30);
+            if($random_group1_ex1 == $random_group1_ex2){
+               $random_group1_ex2 = rand(25,30);
+             }
+
+        }
+
+        if (strcmp($group1val, "Shoulders")==0){
+            $random_group1_ex1 = rand(31,35);
+            $random_group1_ex2 = rand(31,35);
+            if($random_group1_ex1 == $random_group1_ex2){
+               $random_group1_ex2 = rand(31,35);
+               }
+        }
+        if (strcmp($group1val, "Legs")==0){
+            $random_group1_ex1 = rand(36,44);
+            $random_group1_ex2 = rand(36,44);
+            if($random_group1_ex1 == $random_group1_ex2){
+               $random_group1_ex2 =rand(36,44);
+              }
+        }
+        if (strcmp($group2val, "Abs")==0){
+           $random_group2_ex1 = rand(1,9);
+           $random_group2_ex2 = rand(1,9);
+           if($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 = rand(1,9);
+             }
+      }
+      if (strcmp($group2val, "Arms")==0){
+           $random_group2_ex1 = rand(10,15);
+           $random_group2_ex2 = rand(10,15);
+           if($random_group2_ex1 == $random_group2_ex2)
+           {
+              $random_group2_ex2 = rand(10,15);
+            }
+       }
+       if (strcmp($group2val, "Back")==0){
+           $random_group2_ex1 = rand(16,20);
+           $random_group2_ex2 = rand(16,20);
+           if($random_group2_ex1 == $random_group2_ex2){
+              $random_group2_ex2 = rand(16,20);
+              }
+       }
+       if (strcmp($group2val, "Chest")==0){
+           $random_group2_ex1 = rand(21,24);
+           $random_group2_ex2 = rand(21,24);
+           if($random_group2_ex1 == $random_group2_ex2){
+              $random_group2_ex2 =rand(21,24);
+             }
+       }
+       if (strcmp($group2val, "Glutes")==0){
+           $random_group2_ex1 = rand(25,30);
+           $random_group2_ex2 = rand(25,30);
+           if($random_group2_ex1 == $random_group2_ex2){
+              $random_group2_ex2 = rand(25,30);
+             }
+
+       }
+
+       if (strcmp($group2val, "Shoulders")==0){
+           $random_group2_ex1 = rand(31,35);
+           $random_group2_ex2 = rand(31,35);
+           if($random_group2_ex1 == $random_group2_ex2){
+              $random_group2_ex2 = rand(31,35);
+             }
+       }
+       if (strcmp($group2val, "Legs")==0){
+           $random_group2_ex1 = rand(36,44);
+           $random_group2_ex2 = rand(36,44);
+           if($random_group2_ex1 == $random_group2_ex2){
+              $random_group2_ex2 =rand(36,44);
+             }
+       }
+      if (strcmp($group3val, "Arms")==0){
+           $random_group3_ex1 = rand(10,15);
+           $random_group3_ex2 = rand(10,15);
+           if($random_group3_ex1 == $random_group3_ex2)
+           {
+              $random_group3_ex2 = rand(10,15);
+               }
+       }
+       if (strcmp($group3val, "Back")==0){
+           $random_group3_ex1 = rand(16,20);
+           $random_group3_ex2 = rand(16,20);
+           if($random_group3_ex1 == $random_group3_ex2){
+              $random_group3_ex2 = rand(16,20);
+              }
+       }
+       if (strcmp($group3val, "Chest")==0){
+           $random_group3_ex1 = rand(21,24);
+           $random_group3_ex2 = rand(21,24);
+           if($random_group3_ex1 == $random_group3_ex2){
+              $random_group3_ex2 =rand(21,24);
+             }
+       }
+       if (strcmp($group3val, "Glutes")==0){
+           $random_group3_ex1 = rand(25,30);
+           $random_group3_ex2 = rand(25,30);
+           if($random_group3_ex1 == $random_group3_ex2){
+              $random_group3_ex2 = rand(25,30);
+             }
+
+       }
+
+       if (strcmp($group3val, "Shoulders")==0){
+           $random_group3_ex1 = rand(31,35);
+           $random_group3_ex2 = rand(31,35);
+           if($random_group3_ex1 == $random_group3_ex2){
+              $random_group3_ex2 = rand(31,35);
+              }
+       }
+       if (strcmp($group3val, "Legs")==0){
+           $random_group3_ex1 = rand(36,44);
+           $random_group3_ex2 = rand(36,44);
+           if($random_group3_ex1 == $random_group3_ex2){
+              $random_group3_ex2 =rand(36,44);
+              }
+       }
+      if (strcmp($group4val, "Arms")==0){
+           $random_group4_ex1 = rand(10,15);
+           $random_group4_ex2 = rand(10,15);
+           if($random_group4_ex1 == $random_group4_ex2)
+           {
+              $random_group4_ex2 = rand(10,15);
+               }
+       }
+       if (strcmp($group4val, "Back")==0){
+           $random_group4_ex1 = rand(16,20);
+           $random_group4_ex2 = rand(16,20);
+           if($random_group4_ex1 == $random_group4_ex2){
+              $random_group4_ex2 = rand(16,20);
+             }
+       }
+       if (strcmp($group4val, "Chest")==0){
+           $random_group4_ex1 = rand(21,24);
+           $random_group4_ex2 = rand(21,24);
+           if($random_group4_ex1 == $random_group4_ex2){
+              $random_group4_ex2 =rand(21,24);
+             }
+       }
+       if (strcmp($group4val, "Glutes")==0){
+           $random_group4_ex1 = rand(25,30);
+           $random_group4_ex2 = rand(25,30);
+           if($random_group4_ex1 == $random_group4_ex2){
+              $random_group4_ex2 = rand(25,30);
+            }
+
+       }
+
+       if (strcmp($group4val, "Shoulders")==0){
+           $random_group4_ex1 = rand(31,35);
+           $random_group4_ex2 = rand(31,35);
+           if($random_group4_ex1 == $random_group4_ex2){
+              $random_group4_ex2 = rand(31,35);
+             }
+       }
+       if (strcmp($group4val, "Legs")==0){
+           $random_group4_ex1 = rand(36,44);
+           $random_group4_ex2 = rand(36,44);
+           if($random_group4_ex1 == $random_group4_ex2){
+              $random_group4_ex2 =rand(36,44);
+             }
+       }
+ 
+   }
+    if($timeval == 130) // 1h30min
     {
         echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax12exercise.js\"></script>";
+        if (strcmp($group1val, "Abs")==0){
+             $random_group1_ex1 = rand(1,9);
+             $random_group1_ex2 = rand(1,9);
+             if($random_group1_ex1 == $random_group1_ex2){
+                 $random_group1_ex2 = rand(1,9);
+             }
+                 $random_group1_ex3 = rand(1,9);
+                 if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
+                    $random_group1_ex3 = rand(1,9);
+             
+        }
+        if (strcmp($group1val, "Arms")==0){
+             $random_group1_ex1 = rand(10,15);
+             $random_group1_ex2 = rand(10,15);
+             if($random_group1_ex1 == $random_group1_ex2)
+             {
+                $random_group1_ex2 = rand(10,15);
+            }
+                $random_group1_ex3 = rand(10,15);
+                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
+                   $random_group1_ex3 =rand(10,15);
+            
+         }
+         if (strcmp($group1val, "Back")==0){
+             $random_group1_ex1 = rand(16,20);
+             $random_group1_ex2 = rand(16,20);
+             if($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 = rand(16,20);
+            }
+                $random_group1_ex3 = rand(16,20);
+                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
+                   $random_group1_ex3 = rand(16,20);
+           
+         }
+         if (strcmp($group1val, "Chest")==0){
+             $random_group1_ex1 = rand(21,24);
+             $random_group1_ex2 = rand(21,24);
+             if($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 =rand(21,24);
+            }
+                $random_group1_ex3 = rand(21,24);
+                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
+                   $random_group1_ex3 =rand(21,24);
+           
+         }
+         if (strcmp($group1val, "Glutes")==0){
+             $random_group1_ex1 = rand(25,30);
+             $random_group1_ex2 = rand(25,30);
+             if($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 = rand(25,30);
+            }
+                $random_group1_ex3 = rand(25,30);
+                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
+                   $random_group1_ex3 =rand(25,30);
+            
 
+         }
+
+         if (strcmp($group1val, "Shoulders")==0){
+             $random_group1_ex1 = rand(31,35);
+             $random_group1_ex2 = rand(31,35);
+             if($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 = rand(31,35);
+            }
+                $random_group1_ex3 = rand(31,35);
+                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
+                   $random_group1_ex3 =rand(31,35);
+            
+         }
+         if (strcmp($group1val, "Legs")==0){
+             $random_group1_ex1 = rand(36,44);
+             $random_group1_ex2 = rand(36,44);
+             if($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 =rand(36,44);
+            }
+                $random_group1_ex3 = rand(36,44);
+                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
+                   $random_group1_ex3 = rand(36,44);
+            
+         }
+         if (strcmp($group2val, "Abs")==0){
+            $random_group2_ex1 = rand(1,9);
+            $random_group2_ex2 = rand(1,9);
+            if($random_group2_ex1 == $random_group2_ex2){
+                $random_group2_ex2 = rand(1,9);
+            }
+                $random_group2_ex3 = rand(1,9);
+                if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
+                   $random_group2_ex3 = rand(1,9);
+         
+       }
+       if (strcmp($group2val, "Arms")==0){
+            $random_group2_ex1 = rand(10,15);
+            $random_group2_ex2 = rand(10,15);
+            if($random_group2_ex1 == $random_group2_ex2)
+            {
+               $random_group2_ex2 = rand(10,15);
+            }
+               
+                $random_group2_ex3 = rand(10,15);
+               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
+                  $random_group2_ex3 =rand(10,15);
+           
+        }
+        if (strcmp($group2val, "Back")==0){
+            $random_group2_ex1 = rand(16,20);
+            $random_group2_ex2 = rand(16,20);
+            if($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 = rand(16,20);
+            }
+               $random_group2_ex3 = rand(16,20);
+               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
+                  $random_group2_ex3 = rand(16,20);
+           
+        }
+        if (strcmp($group2val, "Chest")==0){
+            $random_group2_ex1 = rand(21,24);
+            $random_group2_ex2 = rand(21,24);
+            if($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 =rand(21,24);
+            }
+               $random_group2_ex3 = rand(21,24);
+               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
+                  $random_group2_ex3 =rand(21,24);
+           
+        }
+        if (strcmp($group2val, "Glutes")==0){
+            $random_group2_ex1 = rand(25,30);
+            $random_group2_ex2 = rand(25,30);
+            if($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 = rand(25,30);
+            }
+               $random_group2_ex3 = rand(25,30);
+               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
+                  $random_group2_ex3 =rand(25,30);
+           
+
+        }
+
+        if (strcmp($group2val, "Shoulders")==0){
+            $random_group2_ex1 = rand(31,35);
+            $random_group2_ex2 = rand(31,35);
+            if($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 = rand(31,35);
+            }
+               $random_group2_ex3 = rand(31,35);
+               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
+                  $random_group2_ex3 =rand(31,35);
+           
+        }
+        if (strcmp($group2val, "Legs")==0){
+            $random_group2_ex1 = rand(36,44);
+            $random_group2_ex2 = rand(36,44);
+            if($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 =rand(36,44);
+            }
+               $random_group2_ex3 = rand(36,44);
+               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
+                  $random_group2_ex3 = rand(36,44);
+           
+        }
+       if (strcmp($group3val, "Arms")==0){
+            $random_group3_ex1 = rand(10,15);
+            $random_group3_ex2 = rand(10,15);
+            if($random_group3_ex1 == $random_group3_ex2)
+            {
+               $random_group3_ex2 = rand(10,15);
+            }
+               $random_group3_ex3 = rand(10,15);
+               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
+                  $random_group3_ex3 =rand(10,15);
+           
+        }
+        if (strcmp($group3val, "Back")==0){
+            $random_group3_ex1 = rand(16,20);
+            $random_group3_ex2 = rand(16,20);
+            if($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 = rand(16,20);
+            }
+               $random_group3_ex3 = rand(16,20);
+               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
+                  $random_group3_ex3 = rand(16,20);
+           
+        }
+        if (strcmp($group3val, "Chest")==0){
+            $random_group3_ex1 = rand(21,24);
+            $random_group3_ex2 = rand(21,24);
+            if($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 =rand(21,24);
+            }
+               $random_group3_ex3 = rand(21,24);
+               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
+                  $random_group3_ex3 =rand(21,24);
+           
+        }
+        if (strcmp($group3val, "Glutes")==0){
+            $random_group3_ex1 = rand(25,30);
+            $random_group3_ex2 = rand(25,30);
+            if($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 = rand(25,30);
+            }
+               $random_group3_ex3 = rand(25,30);
+               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
+                  $random_group3_ex3 =rand(25,30);
+           
+
+        }
+
+        if (strcmp($group3val, "Shoulders")==0){
+            $random_group3_ex1 = rand(31,35);
+            $random_group3_ex2 = rand(31,35);
+            if($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 = rand(31,35);
+            }
+               $random_group3_ex3 = rand(31,35);
+               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
+                  $random_group3_ex3 =rand(31,35);
+           
+        }
+        if (strcmp($group3val, "Legs")==0){
+            $random_group3_ex1 = rand(36,44);
+            $random_group3_ex2 = rand(36,44);
+            if($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 =rand(36,44);
+            }
+               $random_group3_ex3 = rand(36,44);
+               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
+                  $random_group3_ex3 = rand(36,44);
+           
+        }
+       if (strcmp($group4val, "Arms")==0){
+            $random_group4_ex1 = rand(10,15);
+            $random_group4_ex2 = rand(10,15);
+            if($random_group4_ex1 == $random_group4_ex2)
+            {
+               $random_group4_ex2 = rand(10,15);
+            }
+               $random_group4_ex3 = rand(10,15);
+               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
+                  $random_group4_ex3 =rand(10,15);
+           
+        }
+        if (strcmp($group4val, "Back")==0){
+            $random_group4_ex1 = rand(16,20);
+            $random_group4_ex2 = rand(16,20);
+            if($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(16,20);
+            }
+               $random_group4_ex3 = rand(16,20);
+               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
+                  $random_group4_ex3 = rand(16,20);
+           
+        }
+        if (strcmp($group4val, "Chest")==0){
+            $random_group4_ex1 = rand(21,24);
+            $random_group4_ex2 = rand(21,24);
+            if($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 =rand(21,24);
+            }
+               $random_group4_ex3 = rand(21,24);
+               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
+                  $random_group4_ex3 =rand(21,24);
+           
+        }
+        if (strcmp($group4val, "Glutes")==0){
+            $random_group4_ex1 = rand(25,30);
+            $random_group4_ex2 = rand(25,30);
+            if($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(25,30);
+            }
+               $random_group4_ex3 = rand(25,30);
+               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
+                  $random_group4_ex3 =rand(25,30);
+        
+
+        }
+
+        if (strcmp($group4val, "Shoulders")==0){
+            $random_group4_ex1 = rand(31,35);
+            $random_group4_ex2 = rand(31,35);
+            if($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(31,35);
+            }
+               $random_group4_ex3 = rand(31,35);
+               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
+                  $random_group4_ex3 =rand(31,35);
+           
+        }
+        if (strcmp($group4val, "Legs")==0){
+            $random_group4_ex1 = rand(36,44);
+            $random_group4_ex2 = rand(36,44);
+            if($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 =rand(36,44);
+            }
+               $random_group4_ex3 = rand(36,44);
+               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
+                  $random_group4_ex3 = rand(36,44);
+           }
+        
+  
     }
 
 
