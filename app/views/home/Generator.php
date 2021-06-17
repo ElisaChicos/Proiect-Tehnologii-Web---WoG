@@ -9,8 +9,6 @@ $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
 
 
-
-
 if(isset($_POST['submit'])){
   
     $_SESSION['group1'] = $group1val;
@@ -22,9 +20,8 @@ if(isset($_POST['submit'])){
 
    
 }
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,11 +110,11 @@ if(isset($_POST['submit'])){
           <div class="select">
           <select name="time" id="time" value="">
               <option selected disabled>Choose an option</option>
-              <option value="15min">15 minutes</option>
-                <option value="30min">30 minutes</option>
-                <option value="45min">45 minutes</option>
-                <option value="1h">1 hour</option>
-                <option value="1h30m">1 hour 30 minutes</option>
+              <option value="15">15 minutes</option>
+                <option value="30">30 minutes</option>
+                <option value="45">45 minutes</option>
+                <option value="1">1 hour</option>
+                <option value="130">1 hour 30 minutes</option>
             </select>
           </div>
 
