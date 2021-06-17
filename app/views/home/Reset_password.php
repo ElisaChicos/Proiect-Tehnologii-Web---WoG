@@ -15,9 +15,11 @@
 
     <div class="user-input">
     
-    <input type="email" id="password">
+    <input type="email" id="email" name="email" required>
     <label>Email</label>
     </div>
+
+
     <div class="sMail">
     <span></span>
         <span></span>
@@ -27,13 +29,22 @@
     </div>
 
     <div class="user-input">
-    <input type="password" id="password"> 
+    <input type="text" id="token" name="token">
+    <label>Input the token send via gmail</label>
+    </div>
+
+    <div class="user-input">
+    <input type="password" id="newPassword" name="newPassword"> 
     <label>New password</label>
     </div>
 
     <div class="user-input">
-    <input type="password" id="password"> 
+    <input type="password" id="confirmPassword" name="confirmPassword"> 
     <label>Confirm password</label>
+    </div>
+
+    <div class= "error-message" id="error-message">
+    <p> Error message</p>
     </div>
 
         <a href="/app/views/home/Login.php">

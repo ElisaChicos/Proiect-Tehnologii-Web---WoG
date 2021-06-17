@@ -204,8 +204,11 @@ svg.close #top-eye-part {
 .buttonSubmit {
     background: #04454900;
     color: #03e9f4;
-    border-color: #04454900;
-    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-style: outset;
+    border-color: #044549;
+    border-radius: 7px;
+    letter-spacing: 0;
     font-size: 16px;
 }
 

@@ -94,11 +94,13 @@
 
     if((isset($_POST["currentPassword"]) && !isset($_POST["newPassword"]))
     || (!empty($current_pass) && empty($new_password)) ){
-        echo 'Please choose a new password.';
+        $status = false;
+        $message[] =  'Please choose a new password.';
     }else{
         if((!isset($_POST["currentPassword"]) && isset($_POST["newPassword"]))
         ||  (empty($current_pass) && !empty($new_password))){
-            echo 'Please write your current password.';
+            $status = false;
+            $message[] =  'Please write your current password.';
         }else{
             if(isset($_POST["currentPassword"]) && isset($_POST["newPassword"]) && !empty($current_pass) && !empty($new_password)){
                 $stmt = $conn->prepare("SELECT email, password FROM user_exemplu.users WHERE email = ? ;");
@@ -123,7 +125,6 @@
                     }else{
                         $status = false;
                         $message[] =  'There was a problem at updating your password.';
-                        echo 'Updated succesfully.';
                     }
                 }else{
                     $status = false;
