@@ -22,10 +22,6 @@ class Home extends Controller {
         $this->view('home/Statistics');
     }
 
-    public function calendar(){
-        $this->view('home/Calendar');
-    }
-
     public function edit(){
         $this->view('home/Edit');
     }

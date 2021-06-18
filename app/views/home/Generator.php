@@ -40,7 +40,6 @@ if(isset($_POST['submit'])){
     <li><a href="/app/views/home/Workout.php">Start workout</a></li>
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
-    <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
     <li class="signoutBtn" >
     <form method= "POST" action = "../phpFiles/logOut.php">
        <button type="submit" id="btnSignOut" name="logout">LogOut</button>
@@ -128,13 +127,13 @@ if(isset($_POST['submit'])){
             </select>
           </div>
            
-           <input type="submit" name="submit" id="submit" value="Submit">
             <a href="Workout.php">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-              Generate workout
+              <input type="submit" name="submit" id="submit" value="Generate workout">
+              
             </a>
     </form>
     </div>

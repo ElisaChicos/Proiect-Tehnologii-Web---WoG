@@ -29,7 +29,7 @@ form.submit.addEventListener('click', () => {
 
     }
     const requestData = `email=${form.email.value}`;
-    console.log(requestData);
+    // console.log(requestData);
     ajax.open("POST", '../phpFiles/sendMail.php', true);
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     ajax.send(requestData);
@@ -45,7 +45,6 @@ function getAndHandleResponse(response) {
         const form_succes = {
             token: document.getElementById("token"),
             newPassword: document.getElementById("newPassword"),
-            confirmPassword: document.getElementById("confirmPassword"),
             message: document.getElementById("error-message"),
             submit: document.getElementById("btn2"),
         };
@@ -62,34 +61,33 @@ function getAndHandleResponse(response) {
             }
 
             ajax2.onload = () => {
-                var response = null;
+                var response2 = null;
                 try {
-                    response = JSON.parse(ajax2.responseText);
+                    response2 = JSON.parse(ajax2.responseText);
                 } catch (e) {
                     console.error('error at parsing Json');
                 }
-                if (response) {
-                    getAndHandleResponseSucces(response);
+                if (response2) {
+                    getAndHandleResponseSucces(response2);
                 }
 
             }
-            const requestData = `token=${form_succes.token.value}&newPassword=${form_succes.newPassword.value}
-            &confirmPassword=${form_succes.confirmPassword.value}`;
-            console.log(requestData);
+            const requestData2 = `token=${form_succes.token.value}&newPassword=${form_succes.newPassword.value}`;
+            //console.log(requestData2);
             ajax2.open("POST", '../phpFiles/resetPassword.php', true);
             ajax2.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            ajax2.send(requestData);
+            ajax2.send(requestData2);
         });
 
-        function getAndHandleResponseSucces(response) {
+        function getAndHandleResponseSucces(response2) {
 
-            if (response.status) {
-                document.getElementById("error-message").innerHTML = response.message;
+            if (response2.status) {
+                document.getElementById("error-message").innerHTML = response2.message;
                 form_succes.message.style.color = 'rgba(255, 255, 255, 0)';
                 form_succes.message.style.marginBottom = "25px";
                 location.href = '/app/views/home/Login.php';
             } else {
-                document.getElementById("error-message").innerHTML = response.message;
+                document.getElementById("error-message").innerHTML = response2.message;
                 form_succes.message.style.color = 'rgb(172, 0, 0)';
                 form_succes.message.style.marginBottom = "30px";
             }

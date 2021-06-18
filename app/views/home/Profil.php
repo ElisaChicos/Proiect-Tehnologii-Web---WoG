@@ -20,7 +20,6 @@ session_start();
     <li><a href="/app/views/home/Generator.php">Start workout</a></li>
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
-    <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
     <li class="signoutBtn" >
     <form method= "POST" action = "../phpFiles/logOut.php">
        <button type="submit" id="btnSignOut" name="logout">LogOut</button>
@@ -31,8 +30,18 @@ session_start();
           <div class="login-box2">
             <h1>PROFILE</h1>
 <h2>Public information</h2>
-<p class="enum">Email:  <?php
-echo $_SESSION['email']; ?>
+<p class="enum">Username:  <?php
+$aVar=mysqli_connect("localhost","root","", "user_exemplu");
+
+mysqli_select_db($aVar,'user_exemplu');
+$email = $_SESSION['email'];
+$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
+$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
+
+while($row = mysqli_fetch_array($result)){
+    echo $row["username"];
+}
+?>
 </p>
 <p class="enum">Number 
     
@@ -85,7 +94,12 @@ while($row = mysqli_fetch_array($result)){
 <h2>Private information</h2>
 <p class="enum">
     Update information about you: <br>
-    Don't worry, only you cand see the updates and information. :)
+    Don't worry, only you cand see these informations. :)
+</p>
+<p class="enum">Email: 
+<?php
+echo $_SESSION["email"];
+?>
 </p>
 <p class="enum">Height: 
 <?php

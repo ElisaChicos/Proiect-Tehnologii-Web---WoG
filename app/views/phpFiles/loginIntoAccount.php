@@ -20,7 +20,7 @@ session_start();
         $status = false;
         $message[] = 'Please fill in all the inputs.';
         //echo 'nu e setat';
-    }
+    }else{
     
     $servername="localhost";
     $user="root";
@@ -67,7 +67,7 @@ session_start();
                 }
         }
     }
-    
+}
     echo json_encode(
         array(
             'status' => $status,

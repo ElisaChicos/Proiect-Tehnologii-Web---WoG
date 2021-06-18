@@ -16,7 +16,7 @@ session_start();
 
 <h2>Login</h2>
 
-<form method = "POST" id = "myForm" action="../phpFiles/loginIntoAccount.php" >
+<form  id = "myForm">
 
 <div class="user-box">
     <input type="text" name="email" id = "email" placeholder="" value="" required>

@@ -32,8 +32,7 @@ form.submit.addEventListener('click', () => {
         }
 
     }
-    const requestData = `username=${form.username.value}&height=${form.height.value}&weight=${form.weight.value}
-    &currentPassword=${form.currentPassword.value}&newPassword=${form.newPassword.value}`;
+    const requestData = `username=${form.username.value}&height=${form.height.value}&weight=${form.weight.value}&currentPassword=${form.currentPassword.value}&newPassword=${form.newPassword.value}`;
     console.log(requestData);
     ajax.open("POST", '../phpFiles/editProfile.php', true);
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');

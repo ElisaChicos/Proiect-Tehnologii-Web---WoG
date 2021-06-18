@@ -12,7 +12,7 @@ session_start();
 </head>
 <body>
     <div class="start-page">
-        <div class="change-pass-box">
+    <div class="change-pass-box">
     <h2>Reset password</h2>
     <form action="../phpFiles/sendMail.php" method="POST" id="myForm1">
 
@@ -44,11 +44,6 @@ session_start();
     <label>New password</label>
     </div>
 
-    <div class="user-input">
-    <input type="password" id="confirmPassword" name="confirmPassword"> 
-    <label>Confirm password</label>
-    </div>
-
     <div class= "error-message" id="error-message">
     <p> Error message</p>
     </div>
@@ -62,8 +57,8 @@ session_start();
     </div>
 
     </form>
-    <!-- <script src= "/app/views/home/JavaScriptFiles/resetPassAjaxCall.js"></script> -->
         </div>
     </div>
+      <script src= "/app/views/home/JavaScriptFiles/resetPassAjaxCall.js"></script>
 </body>
 </html>

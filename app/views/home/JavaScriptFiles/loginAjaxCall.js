@@ -30,7 +30,7 @@ form.submit.addEventListener('click', () => {
 
     }
     const requestData = `email=${form.email.value}&password=${form.password.value}`;
-    console.log(requestData);
+    //console.log(requestData);
     ajax.open("POST", '../phpFiles/loginIntoAccount.php', true);
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     ajax.send(requestData);

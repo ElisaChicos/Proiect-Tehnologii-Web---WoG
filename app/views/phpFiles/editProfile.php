@@ -35,7 +35,7 @@
     if(empty($username) && empty($age) && empty($height) && empty($weight) && empty($current_pass) && empty($new_password)){
         $status = false;
         $message[] = 'You need to modify an input to save the changes.';
-    }
+    }else 
 
     if(isset($_POST["username"]) && !empty($username)){
         $stmt = $conn->prepare("UPDATE user_exemplu.users SET username=? WHERE email=?");
@@ -72,8 +72,9 @@
     
     }
 
+
     if(isset($_POST["weight"]) && !empty($weight)){
-        if($weight > 30 && $weight < 500){
+        if($weight > 30 && $weight < 500 ){
             $stmt = $conn->prepare("UPDATE user_exemplu.users SET weight=? WHERE email=?");
             $stmt->bind_param('ss',$weight ,$email);
             $stmt->execute();

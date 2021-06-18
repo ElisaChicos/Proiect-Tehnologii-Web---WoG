@@ -24,6 +24,7 @@
   $pass = isset($_POST["password"]) ? $_POST["password"] : '';
   $want        =  isset($_POST['want']) ? $_POST["want"] : 'lose_weight';
   $focus_part  =  isset($_POST['focus_part']) ? $_POST['focus_part'] : 'abs';
+  $activity_points = 0;
 
 
   if(!isset($_POST['username']) || empty($username) || !isset($_POST["email"]) || empty($email) || !isset($_POST["age"]) || empty($age) 
@@ -52,9 +53,9 @@
     if($numberOfRows == 0 ){
       $hashPass = password_hash($pass, PASSWORD_DEFAULT);
       $password = $hashPass;
-      $sql = "INSERT INTO user_exemplu.users (username,email,age,height,weight,old_weight,gender,password,want,focus_part) VALUES(?,?,?,?,?,?,?,?,?,?)";
+      $sql = "INSERT INTO user_exemplu.users (username,email,age,height,weight,old_weight,gender,password,want,focus_part,activity_points) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
       $stmt = $conn->prepare($sql);
-      $stmt->bind_param("ssiddissss",$username,$email,$age,$height,$weight,$old_weight,$gender,$password,$want,$focus_part);
+      $stmt->bind_param("ssiddissssi",$username,$email,$age,$height,$weight,$old_weight,$gender,$password,$want,$focus_part,$activity_points);
       $result = $stmt->execute();
       if($result){
           $status = true;

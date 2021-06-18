@@ -39,7 +39,7 @@ form.submit.addEventListener('click', () => {
     const requestData = `username=${form.username.value}&email=${form.email.value}&age=${form.age.value}&height=${form.height.value}
     &weight=${form.weight.value}&gender=${form.gender.value}&want=${form.want.value}&focus_part=${form.focus_part.value}
     &password=${form.password.value}`;
-    console.log(requestData);
+    //console.log(requestData);
     ajax.open("POST", '../phpFiles/config_create_account.php', true);
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     ajax.send(requestData);

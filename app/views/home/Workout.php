@@ -19,7 +19,6 @@
         <li><a href="/app/views/home/Profil.php">Your profile</a></li>
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
-    <li><a href="/app/views/home/Calendar.php">Calendar</a></li>
     <li class="signoutBtn">
     <form method= "POST" action = "../phpFiles/logOut.php">
        <button type="submit" id="btnSignOut" name="logout">LogOut</button>
