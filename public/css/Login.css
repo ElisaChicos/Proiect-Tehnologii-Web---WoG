@@ -120,7 +120,7 @@ h2 {
     overflow: hidden;
     transition: .5s;
     margin-top: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .login-box2 form .forgot_pass {
@@ -206,9 +206,9 @@ svg.close #top-eye-part {
     color: #03e9f4;
     text-transform: uppercase;
     border-style: outset;
-    border-color: #044549;
+    border-color: #04454900;
     border-radius: 7px;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     font-size: 16px;
 }
 

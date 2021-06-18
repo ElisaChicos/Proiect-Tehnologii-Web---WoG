@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
     <div class="start-page">
         <div class="change-pass-box">
     <h2>Reset password</h2>
-    <form action="../phpFiles/sendMail.php" method="POST">
+    <form action="../phpFiles/sendMail.php" method="POST" id="myForm1">
 
     <div class="user-input">
     
@@ -25,9 +28,12 @@
         <span></span>
         <span></span>
         <span></span>
-    <button class ="buttonSubmit" id="btn" type="submit" name="btnSendMail"> Send mail </button>  
+    <button class ="buttonSendMail" id="btn" type="submit" name="btnSendMail"> Send mail </button>  
     </div>
+    </form>
 
+
+    <form action="../phpFiles/resetPassword.php" method="POST" id="myForm2">
     <div class="user-input">
     <input type="text" id="token" name="token">
     <label>Input the token send via gmail</label>
@@ -47,13 +53,13 @@
     <p> Error message</p>
     </div>
 
-        <a href="/app/views/home/Login.php">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Change password
-        </a>
+    <div class="resetPass">
+    <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    <button class ="buttonSubmit" id="btn" type="submit" name="resetPass"> Change password </button>  
+    </div>
 
     </form>
         </div>
