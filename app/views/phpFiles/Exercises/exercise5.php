@@ -24,6 +24,14 @@ $timeval = $_SESSION['timeval'];
       $random_group1_ex2 = $_SESSION['random_group1_ex2'];
       $ex = $random_group1_ex2;
     }
+    else
+          {
+            if($timeval == 130)
+            {
+              $random_group1_ex2 = $_SESSION['random_group1_ex2'];
+              $ex = $random_group1_ex2;
+            }
+          }
   }
 
   $sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";

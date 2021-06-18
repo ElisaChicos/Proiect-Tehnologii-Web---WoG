@@ -17,6 +17,14 @@ mysqli_select_db($aVar,'user_exemplu');
       $random_group4_ex2 = $_SESSION['random_group4_ex2'];
       $ex = $random_group4_ex2;
     }
+    else
+    {
+      if($timeval == 130)
+      {
+        $random_group4_ex2 = $_SESSION['random_group4_ex2'];
+        $ex = $random_group4_ex2;
+      }
+    }
 
 
 $sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";

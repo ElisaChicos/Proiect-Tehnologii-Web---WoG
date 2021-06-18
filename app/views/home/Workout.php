@@ -405,30 +405,31 @@
             
            }
            if (strcmp($group1val, "Arms")==0){
-                $array = array(12,13,15);
+                $array = array(12,13,15,53);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Back")==0){
-                $array = array(16,17,20);
+                $array = array(16,17,20,45,52);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Chest")==0){
-                $random_group1_ex1 = 12;
+                $array = array(12,46,51);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
                
             }
             if (strcmp($group1val, "Glutes")==0){
-                $array = array(25,26,27,28,30);
+                $array = array(25,26,27,28,30,47,50);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
             }
     
             if (strcmp($group1val, "Shoulders")==0){
-                $array = array(31,32,34,35);
+                $array = array(31,32,34,35,48,49);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
@@ -444,30 +445,31 @@
                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
             }
             if (strcmp($group2val, "Arms")==0){
-                $array = array(12,13,15);
+                $array = array(12,13,15,53);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
            if (strcmp($group2val, "Back")==0){
-                $array = array(16,17,20);
+                $array = array(16,17,20,45,52);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
          
            }
            if (strcmp($group2val, "Chest")==0){
              
-                $random_group2_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
         
            }
            if (strcmp($group2val, "Glutes")==0){
-                $array = array(25,26,27,28,30);
+                $array = array(25,26,27,28,30,47,50);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
     
            if (strcmp($group2val, "Shoulders")==0){
-                $array = array(31,32,34,35);
+                $array = array(31,32,34,35,48,49);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
        
@@ -482,30 +484,31 @@
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
             }
           if (strcmp($group3val, "Arms")==0){
-            $array = array(12,13,15);
+            $array = array(12,13,15,53);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
            if (strcmp($group3val, "Back")==0){
-            $array = array(16,17,20);
+            $array = array(16,17,20,45,52);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
           
            }
            if (strcmp($group3val, "Chest")==0){
           
-            $random_group3_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
         
            }
            if (strcmp($group3val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
+            $array = array(25,26,27,28,30,47,50);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
     
            if (strcmp($group3val, "Shoulders")==0){
-            $array = array(31,32,34,35);
+            $array = array(31,32,34,35,48,49);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
@@ -520,31 +523,32 @@
         
        }
           if (strcmp($group4val, "Arms")==0){
-            $array = array(12,13,15);
+            $array = array(12,13,15,53);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
       
            }
-           if (strcmp($grou4val, "Back")==0){
-            $array = array(16,17,20);
+           if (strcmp($group4val, "Back")==0){
+            $array = array(16,17,20,45,52);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
           
            }
-           if (strcmp($group3val, "Chest")==0){
+           if (strcmp($group4val, "Chest")==0){
           
-            $random_group3_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
         
            }
            if (strcmp($group4val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
+            $array = array(25,26,27,28,30,47,50);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            }
     
            if (strcmp($group4val, "Shoulders")==0){
-            $array = array(31,32,34,35);
+            $array = array(31,32,34,35,48,49);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
         
@@ -765,31 +769,35 @@
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
            }
            if (strcmp($group1val, "Arms")==0){
-                $array = array(12,13);
+                $array = array(12,13,53);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Back")==0){
                 
-                $random_group1_ex1 = 17;
+                $array = array(17,45,52);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Chest")==0){
-                $random_group1_ex1 = 12;
+                $array = array(12,46,51);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
                
             }
             if (strcmp($group1val, "Glutes")==0){
         
-                $random_group1_ex1 = 26;
+                $array = array(26,47,50);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
             }
     
             if (strcmp($group1val, "Shoulders")==0){
                
-                $random_group1_ex1 = 32;
+                $array = array(32,48,49);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
@@ -805,30 +813,34 @@
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
             }
             if (strcmp($group2val, "Arms")==0){
-                $array = array(12,13);
+                $array = array(12,13,53);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
            if (strcmp($group2val, "Back")==0){
               
-                $random_group2_ex1 = 17;
+            $array = array(17,45,52);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
          
            }
            if (strcmp($group2val, "Chest")==0){
-                $random_group2_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
         
            }
            if (strcmp($group2val, "Glutes")==0){
                
-                $random_group2_ex1 = 26;
+            $array = array(26,47,50);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
     
            if (strcmp($group2val, "Shoulders")==0){
                
-                $random_group2_ex1 = 32;
+            $array = array(32,48,49);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
            if (strcmp($group2val, "Legs")==0){
@@ -842,32 +854,35 @@
                 $_SESSION['random_group3_ex1'] = $random_group3_ex1;
             }
           if (strcmp($group3val, "Arms")==0){
-            $array = array(12,13);
+            $array = array(12,13,53);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
            if (strcmp($group3val, "Back")==0){
             
-            $random_group3_ex1 = 17;
+            $array = array(17,45,52);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
           
            }
            if (strcmp($group3val, "Chest")==0){
            
-            $random_group3_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            
         
            }
            if (strcmp($group3val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
-            $random_group3_ex1 = 26;
+            $array = array(26,47,50);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
     
            if (strcmp($group3val, "Shoulders")==0){
            
-            $random_group3_ex1 = 32;
+            $array = array(32,48,49);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
         
            }
@@ -883,32 +898,36 @@
 
             }
           if (strcmp($group4val, "Arms")==0){
-            $array = array(12,13);
+            $array = array(12,13,53);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
           
       
            }
            if (strcmp($group4val, "Back")==0){
-            $random_group4_ex1 = 17;
+            $array = array(17,45,52);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
           
            }
            if (strcmp($group4val, "Chest")==0){
-            $random_group4_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            
         
            }
            if (strcmp($group4val, "Glutes")==0){
        
-            $random_group4_ex1 = 26;
+            $array = array(26,47,50);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            }
     
            if (strcmp($group4val, "Shoulders")==0){
            
-            $random_group4_ex1 = 32;
+            $array = array(32,48,49);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
         
            }
@@ -1889,30 +1908,31 @@
             
            }
            if (strcmp($group1val, "Arms")==0){
-                $array = array(12,13,15);
+                $array = array(12,13,15,53);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Back")==0){
-                $array = array(16,17,20);
+                $array = array(16,17,20,45,52);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Chest")==0){
-                $random_group1_ex1 = 12;
+                $array = array(12,46,51);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
                
             }
             if (strcmp($group1val, "Glutes")==0){
-                $array = array(25,26,27,28,30);
+                $array = array(25,26,27,28,30,47,50);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
             }
     
             if (strcmp($group1val, "Shoulders")==0){
-                $array = array(31,32,34,35);
+                $array = array(31,32,34,35,48,49);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
@@ -1928,30 +1948,31 @@
                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
             }
             if (strcmp($group2val, "Arms")==0){
-                $array = array(12,13,15);
+                $array = array(12,13,15,53);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
            if (strcmp($group2val, "Back")==0){
-                $array = array(16,17,20);
+                $array = array(16,17,20,45,52);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
          
            }
            if (strcmp($group2val, "Chest")==0){
               
-                $random_group2_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
         
            }
            if (strcmp($group2val, "Glutes")==0){
-                $array = array(25,26,27,28,30);
+                $array = array(25,26,27,28,30,47,50);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
     
            if (strcmp($group2val, "Shoulders")==0){
-                $array = array(31,32,34,35);
+                $array = array(31,32,34,35,49,48);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
        
@@ -1966,29 +1987,30 @@
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
             }
           if (strcmp($group3val, "Arms")==0){
-            $array = array(12,13,15);
+            $array = array(12,13,15,53);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
            if (strcmp($group3val, "Back")==0){
-            $array = array(16,17,20);
+            $array = array(16,17,20,45,52);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
           
            }
            if (strcmp($group3val, "Chest")==0){
-            $random_group3_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
         
            }
            if (strcmp($group3val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
+            $array = array(25,26,27,28,30,47,50);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
     
            if (strcmp($group3val, "Shoulders")==0){
-            $array = array(31,32,34,35);
+            $array = array(31,32,34,35,48,49);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
@@ -2003,31 +2025,32 @@
         
        }
           if (strcmp($group4val, "Arms")==0){
-            $array = array(12,13,15);
+            $array = array(12,13,15,53);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
       
            }
-           if (strcmp($grou4val, "Back")==0){
-            $array = array(16,17,20);
+           if (strcmp($group4val, "Back")==0){
+            $array = array(16,17,20,45,52);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
           
            }
            if (strcmp($group4val, "Chest")==0){
 
-            $random_group4_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
         
            }
            if (strcmp($group4val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
+            $array = array(25,26,27,28,30,47,50);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            }
     
            if (strcmp($group4val, "Shoulders")==0){
-            $array = array(31,32,34,35);
+            $array = array(31,32,34,35,48,49);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
         
@@ -2049,31 +2072,35 @@
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
            }
            if (strcmp($group1val, "Arms")==0){
-                $array = array(12,13);
+                $array = array(12,13,53);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Back")==0){
                 
-                $random_group1_ex1 = 17;
+                $array = array(17,45,52);
+            $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
             if (strcmp($group1val, "Chest")==0){
-                $random_group1_ex1 = 12;
+                $array = array(12,46,51);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
                
             }
             if (strcmp($group1val, "Glutes")==0){
         
-                $random_group1_ex1 = 26;
+                $array = array(26,47,50);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
             }
     
             if (strcmp($group1val, "Shoulders")==0){
                
-                $random_group1_ex1 = 32;
+                $array = array(32,48,49);
+                $random_group1_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group1_ex1'] = $random_group1_ex1;
               
             }
@@ -2089,30 +2116,34 @@
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
             }
             if (strcmp($group2val, "Arms")==0){
-                $array = array(12,13);
+                $array = array(12,13,53);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
            if (strcmp($group2val, "Back")==0){
               
-                $random_group2_ex1 = 17;
+            $array = array(17,45,52);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
          
            }
            if (strcmp($group2val, "Chest")==0){
-                $random_group2_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
         
            }
            if (strcmp($group2val, "Glutes")==0){
                
-                $random_group2_ex1 = 26;
+            $array = array(26,47,50);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
     
            if (strcmp($group2val, "Shoulders")==0){
                
-                $random_group2_ex1 = 32;
+            $array = array(32,48,49);
+            $random_group2_ex1 = $array[array_rand($array)];
                 $_SESSION['random_group2_ex1'] = $random_group2_ex1;
            }
            if (strcmp($group2val, "Legs")==0){
@@ -2126,32 +2157,35 @@
                 $_SESSION['random_group3_ex1'] = $random_group3_ex1;
             }
           if (strcmp($group3val, "Arms")==0){
-            $array = array(12,13);
+            $array = array(12,13,53);
             $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
            if (strcmp($group3val, "Back")==0){
             
-            $random_group3_ex1 = 17;
+            $array = array(17,45,52);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
           
            }
            if (strcmp($group3val, "Chest")==0){
            
-            $random_group3_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            
         
            }
            if (strcmp($group3val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
-            $random_group3_ex1 = 26;
+            $array = array(26,47,50);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
            }
     
            if (strcmp($group3val, "Shoulders")==0){
            
-            $random_group3_ex1 = 32;
+            $array = array(32,48,49);
+            $random_group3_ex1 = $array[array_rand($array)];
             $_SESSION['random_group3_ex1'] = $random_group3_ex1;
         
            }
@@ -2167,32 +2201,35 @@
 
             }
           if (strcmp($group4val, "Arms")==0){
-            $array = array(12,13);
+            $array = array(12,13,53);
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
           
       
            }
            if (strcmp($group4val, "Back")==0){
-            $random_group4_ex1 = 17;
+            $array = array(17,45,52);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
           
            }
            if (strcmp($group4val, "Chest")==0){
-            $random_group4_ex1 = 12;
+            $array = array(12,46,51);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            
         
            }
            if (strcmp($group4val, "Glutes")==0){
        
-            $random_group4_ex1 = 26;
+            $array = array(26,47,50);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            }
     
            if (strcmp($group4val, "Shoulders")==0){
-           
-            $random_group4_ex1 = 32;
+            $array = array(32,48,49);
+            $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
         
            }
@@ -2279,7 +2316,7 @@
             $random_group1_ex1 = rand(36,44);
             $random_group1_ex2 = rand(36,44);
             while($random_group1_ex1 == $random_group1_ex2){
-                $random_group1_ex2 = rand(1,9);
+                $random_group1_ex2 = rand(36,44);
             }
             $_SESSION['random_group1_ex1'] = $random_group1_ex1;
             $_SESSION['random_group1_ex2'] = $random_group1_ex2;
@@ -2515,7 +2552,7 @@
             
            }
            if (strcmp($group1val, "Arms")==0){
-                $array = array(12,13,15);
+                $array = array(12,13,15,53);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2526,7 +2563,7 @@
               
             }
             if (strcmp($group1val, "Back")==0){
-                $array = array(16,17,20);
+                $array = array(16,17,20,45,52);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2538,7 +2575,7 @@
             }
             if (strcmp($group1val, "Chest")==0){ 
                
-                $array = array(12,46);
+                $array = array(12,46,51);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2551,7 +2588,7 @@
             }
     
             if (strcmp($group1val, "Glutes")==0){
-                $array = array(25,26,27,28,30);
+                $array = array(25,26,27,28,30,47,50);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2562,7 +2599,7 @@
             }
     
             if (strcmp($group1val, "Shoulders")==0){
-                $array = array(31,32,34,35);
+                $array = array(31,32,34,35,49);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2593,7 +2630,7 @@
                 $_SESSION['random_group2_ex2'] = $random_group2_ex2;
             }
             if (strcmp($group2val, "Arms")==0){
-                $array = array(12,13,15);
+                $array = array(12,13,15,53);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2603,7 +2640,7 @@
                 $_SESSION['random_group2_ex2'] = $random_group2_ex2;
            }
            if (strcmp($group2val, "Back")==0){
-                $array = array(16,17,20);
+                $array = array(16,17,20,45,52);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2615,7 +2652,7 @@
            }
            if (strcmp($group2val, "Chest")==0){ 
                
-            $array = array(12,46);
+            $array = array(12,46,51);
             $random_group2_ex1 = $array[array_rand($array)];
             $random_group2_ex2 = $array[array_rand($array)];
             while($random_group2_ex1 == $random_group2_ex2){
@@ -2627,7 +2664,7 @@
         }
 
            if (strcmp($group2val, "Glutes")==0){
-                $array = array(25,26,27,28,30);
+                $array = array(25,26,27,28,30,47,50);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2638,7 +2675,7 @@
            }
     
            if (strcmp($group2val, "Shoulders")==0){
-                $array = array(31,32,34,35);
+                $array = array(31,32,34,35,49);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2668,7 +2705,7 @@
             $_SESSION['random_group3_ex2'] = $random_group3_ex2;
             }
           if (strcmp($group3val, "Arms")==0){
-            $array = array(12,13,15);
+            $array = array(12,13,15,53);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -2678,7 +2715,7 @@
             $_SESSION['random_group3_ex2'] = $random_group3_ex2;
            }
            if (strcmp($group3val, "Back")==0){
-            $array = array(16,17,20);
+            $array = array(16,17,20,45,52);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -2690,7 +2727,7 @@
            }
            if (strcmp($group3val, "Chest")==0){ 
                
-            $array = array(12,46);
+            $array = array(12,46,51);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -2700,7 +2737,7 @@
             $_SESSION['random_group3_ex2'] = $random_group3_ex2;
             }
            if (strcmp($group3val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
+            $array = array(25,26,27,28,30,47,50);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -2711,7 +2748,7 @@
            }
     
            if (strcmp($group3val, "Shoulders")==0){
-            $array = array(31,32,34,35);
+            $array = array(31,32,34,35,49);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -2741,7 +2778,7 @@
         
        }
           if (strcmp($group4val, "Arms")==0){
-            $array = array(12,13,15);
+            $array = array(12,13,15,53);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -2751,8 +2788,8 @@
             $_SESSION['random_group4_ex2'] = $random_group4_ex2;
       
            }
-           if (strcmp($grou4val, "Back")==0){
-            $array = array(16,17,20);
+           if (strcmp($group4val, "Back")==0){
+            $array = array(16,17,20,45,52);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -2764,7 +2801,7 @@
            }
            if (strcmp($group4val, "Chest")==0){ 
                
-            $array = array(12,46);
+            $array = array(12,46,51);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -2775,7 +2812,7 @@
         
         }
            if (strcmp($group4val, "Glutes")==0){
-            $array = array(25,26,27,28,30);
+            $array = array(25,26,27,28,30,47,50);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -2786,7 +2823,7 @@
            }
     
            if (strcmp($group4val, "Shoulders")==0){
-            $array = array(31,32,34,35);
+            $array = array(31,32,34,35,49);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -2823,7 +2860,7 @@
                 $_SESSION['random_group1_ex2'] = $random_group1_ex2;
            }
            if (strcmp($group1val, "Arms")==0){
-                $array = array(12,13);
+                $array = array(12,13,53);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2834,7 +2871,7 @@
               
             }
             if (strcmp($group1val, "Back")==0){
-                $array = array(17,45);
+                $array = array(17,45,52);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2847,7 +2884,7 @@
             }
             if (strcmp($group1val, "Chest")==0){ 
                
-                $array = array(12,46);
+                $array = array(12,46,51);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2859,7 +2896,7 @@
                
             }
             if (strcmp($group1val, "Glutes")==0){ 
-                $array = array(26,47);
+                $array = array(26,47,50);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2872,7 +2909,7 @@
     
             if (strcmp($group1val, "Shoulders")==0){ 
 
-                $array = array(32,48);
+                $array = array(32,48,49);
                 $random_group1_ex1 = $array[array_rand($array)];
                 $random_group1_ex2 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex2){
@@ -2904,7 +2941,7 @@
                 $_SESSION['random_group2_ex2'] = $random_group2_ex2;
             }
             if (strcmp($group2val, "Arms")==0){
-                $array = array(12,13);
+                $array = array(12,13,53);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2914,7 +2951,7 @@
                 $_SESSION['random_group2_ex2'] = $random_group2_ex2;
            }
             if (strcmp($group2val, "Back")==0){
-                $array = array(17,45);
+                $array = array(17,45,52);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2927,7 +2964,7 @@
             }
             if (strcmp($group2val, "Chest")==0){ 
                
-                $array = array(12,46);
+                $array = array(12,46,51);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2939,7 +2976,7 @@
                
             }
             if (strcmp($group2val, "Glutes")==0){ 
-                $array = array(26,47);
+                $array = array(26,47,50);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2952,7 +2989,7 @@
     
             if (strcmp($group2val, "Shoulders")==0){ 
 
-                $array = array(32,48);
+                $array = array(32,48,49);
                 $random_group2_ex1 = $array[array_rand($array)];
                 $random_group2_ex2 = $array[array_rand($array)];
                 while($random_group2_ex1 == $random_group2_ex2){
@@ -2984,7 +3021,7 @@
                 $_SESSION['random_group3_ex2'] = $random_group3_ex2;
             }
           if (strcmp($group3val, "Arms")==0){
-            $array = array(12,13);
+            $array = array(12,13,53);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -2994,7 +3031,7 @@
             $_SESSION['random_group3_ex2'] = $random_group3_ex2;
            }
            if (strcmp($group3val, "Back")==0){
-            $array = array(17,45);
+            $array = array(17,45,52);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -3007,7 +3044,7 @@
         }
         if (strcmp($group3val, "Chest")==0){ 
            
-            $array = array(12,46);
+            $array = array(12,46,51);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -3019,7 +3056,7 @@
            
         }
         if (strcmp($group3val, "Glutes")==0){ 
-            $array = array(26,47);
+            $array = array(26,47,50);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -3032,7 +3069,7 @@
 
         if (strcmp($group3val, "Shoulders")==0){ 
 
-            $array = array(32,48);
+            $array = array(32,48,49);
             $random_group3_ex1 = $array[array_rand($array)];
             $random_group3_ex2 = $array[array_rand($array)];
             while($random_group3_ex1 == $random_group3_ex2){
@@ -3064,7 +3101,7 @@
 
             }
           if (strcmp($group4val, "Arms")==0){
-            $array = array(12,13);
+            $array = array(12,13,53);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -3074,7 +3111,7 @@
             $_SESSION['random_group4_ex2'] = $random_group4_ex2;
            }
            if (strcmp($group4val, "Back")==0){
-            $array = array(17,45);
+            $array = array(17,45,52);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -3087,7 +3124,7 @@
         }
         if (strcmp($group4val, "Chest")==0){ 
            
-            $array = array(12,46);
+            $array = array(12,46,51);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -3099,7 +3136,7 @@
            
         }
         if (strcmp($group4val, "Glutes")==0){ 
-            $array = array(26,47);
+            $array = array(26,47,50);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -3112,7 +3149,7 @@
 
         if (strcmp($group4val, "Shoulders")==0){ 
 
-            $array = array(32,48);
+            $array = array(32,48,49);
             $random_group4_ex1 = $array[array_rand($array)];
             $random_group4_ex2 = $array[array_rand($array)];
             while($random_group4_ex1 == $random_group4_ex2){
@@ -3137,309 +3174,1341 @@
     }
 }
 
-   /*
     if($timeval == 130) // 1h30min
     {
         echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax12exercise.js\"></script>";
+        
+               //////// GYM
+      if(strcmp($locationval, "Gym")==0){
+       
         if (strcmp($group1val, "Abs")==0){
-             $random_group1_ex1 = rand(1,9);
-             $random_group1_ex2 = rand(1,9);
-             if($random_group1_ex1 == $random_group1_ex2){
-                 $random_group1_ex2 = rand(1,9);
-             }
-                 $random_group1_ex3 = rand(1,9);
-                 if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
-                    $random_group1_ex3 = rand(1,9);
-             
+            $random_group1_ex1 = rand(1,9);
+            $random_group1_ex2 = rand(1,9);
+            while($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 = rand(1,9);
+            }
+            $random_group1_ex3 = rand(1,9);
+            while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                $random_group1_ex3 = rand(1,9);
+            }
+            $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+            $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+            $_SESSION['random_group1_ex2'] = $random_group1_ex2;
         }
-        if (strcmp($group1val, "Arms")==0){
-             $random_group1_ex1 = rand(10,15);
-             $random_group1_ex2 = rand(10,15);
-             if($random_group1_ex1 == $random_group1_ex2)
-             {
+       if (strcmp($group1val, "Arms")==0){
+            $random_group1_ex1 = rand(10,15);
+            $random_group1_ex2 = rand(10,15);
+            while($random_group1_ex1 == $random_group1_ex2){
                 $random_group1_ex2 = rand(10,15);
             }
+            $random_group1_ex3 = rand(10,15);
+            while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
                 $random_group1_ex3 = rand(10,15);
-                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
-                   $random_group1_ex3 =rand(10,15);
-            
-         }
-         if (strcmp($group1val, "Back")==0){
-             $random_group1_ex1 = rand(16,20);
-             $random_group1_ex2 = rand(16,20);
-             if($random_group1_ex1 == $random_group1_ex2){
+            }
+            $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+            $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+            $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+          
+        }
+        if (strcmp($group1val, "Back")==0){
+            $random_group1_ex1 = rand(16,20);
+            $random_group1_ex2 = rand(16,20);
+            while($random_group1_ex1 == $random_group1_ex2){
                 $random_group1_ex2 = rand(16,20);
             }
+            $random_group1_ex3 = rand(16,20);
+            while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
                 $random_group1_ex3 = rand(16,20);
-                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
-                   $random_group1_ex3 = rand(16,20);
-           
-         }
-         if (strcmp($group1val, "Chest")==0){
-             $random_group1_ex1 = rand(21,24);
-             $random_group1_ex2 = rand(21,24);
-             if($random_group1_ex1 == $random_group1_ex2){
-                $random_group1_ex2 =rand(21,24);
             }
+            $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+            $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+            $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+          
+        }
+        if (strcmp($group1val, "Chest")==0){
+            $random_group1_ex1 = rand(21,24);
+            $random_group1_ex2 = rand(21,24);
+            while($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 = rand(21,24);
+            }
+            $random_group1_ex3 = rand(21,24);
+            while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
                 $random_group1_ex3 = rand(21,24);
-                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
-                   $random_group1_ex3 =rand(21,24);
+            }
+            $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+            $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+            $_SESSION['random_group1_ex2'] = $random_group1_ex2;
            
-         }
-         if (strcmp($group1val, "Glutes")==0){
-             $random_group1_ex1 = rand(25,30);
-             $random_group1_ex2 = rand(25,30);
-             if($random_group1_ex1 == $random_group1_ex2){
+        }
+        if (strcmp($group1val, "Glutes")==0){
+            $random_group1_ex1 = rand(25,30);
+            $random_group1_ex2 = rand(25,30);
+            while($random_group1_ex1 == $random_group1_ex2){
                 $random_group1_ex2 = rand(25,30);
             }
+            $random_group1_ex3 = rand(25,30);
+            while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
                 $random_group1_ex3 = rand(25,30);
-                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
-                   $random_group1_ex3 =rand(25,30);
-            
+            }
+            $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+            $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+            $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+        }
 
-         }
-
-         if (strcmp($group1val, "Shoulders")==0){
-             $random_group1_ex1 = rand(31,35);
-             $random_group1_ex2 = rand(31,35);
-             if($random_group1_ex1 == $random_group1_ex2){
+        if (strcmp($group1val, "Shoulders")==0){
+            $random_group1_ex1 = rand(31,35);
+            $random_group1_ex2 = rand(31,35);
+            while($random_group1_ex1 == $random_group1_ex2){
                 $random_group1_ex2 = rand(31,35);
             }
+            $random_group1_ex3 = rand(31,35);
+            while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
                 $random_group1_ex3 = rand(31,35);
-                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
-                   $random_group1_ex3 =rand(31,35);
-            
-         }
-         if (strcmp($group1val, "Legs")==0){
-             $random_group1_ex1 = rand(36,44);
-             $random_group1_ex2 = rand(36,44);
-             if($random_group1_ex1 == $random_group1_ex2){
-                $random_group1_ex2 =rand(36,44);
             }
-                $random_group1_ex3 = rand(36,44);
-                if($random_group1_ex3 == $random_group1_ex1 || $random_group1_ex3 == $random_group1_ex2)
-                   $random_group1_ex3 = rand(36,44);
-            
-         }
-         if (strcmp($group2val, "Abs")==0){
-            $random_group2_ex1 = rand(1,9);
-            $random_group2_ex2 = rand(1,9);
-            if($random_group2_ex1 == $random_group2_ex2){
+            $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+            $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+            $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+          
+        }
+        if (strcmp($group1val, "Legs")==0){
+            $random_group1_ex1 = rand(36,44);
+            $random_group1_ex2 = rand(36,44);
+            while($random_group1_ex1 == $random_group1_ex2){
+                $random_group1_ex2 = rand(36,44);
+            }
+            $random_group1_ex3 = rand(36,44);
+            while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                $random_group1_ex3 = rand(1,9);
+            }
+            $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+            $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+            $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+           
+        
+        }
+        if (strcmp($group2val, "Abs")==0){
+           $random_group2_ex1 = rand(1,9);
+           $random_group2_ex2 = rand(1,9);
+           while($random_group2_ex1 == $random_group2_ex2){
                 $random_group2_ex2 = rand(1,9);
             }
+            $random_group2_ex3 = rand(1,9);
+            while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
                 $random_group2_ex3 = rand(1,9);
-                if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
-                   $random_group2_ex3 = rand(1,9);
+            }
+            $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+            $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+            $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+       
+        }
+      if (strcmp($group2val, "Arms")==0){
+           $random_group2_ex1 = rand(10,15);
+           $random_group2_ex2 = rand(10,15);
+           while($random_group2_ex1 == $random_group2_ex2){
+                $random_group2_ex2 = rand(10,15);
+            }
+            $random_group2_ex3 = rand(10,15);
+            while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                $random_group2_ex3 = rand(10,15);
+            }
+            $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+            $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+            $_SESSION['random_group2_ex2'] = $random_group2_ex2;
          
        }
-       if (strcmp($group2val, "Arms")==0){
-            $random_group2_ex1 = rand(10,15);
-            $random_group2_ex2 = rand(10,15);
-            if($random_group2_ex1 == $random_group2_ex2)
-            {
-               $random_group2_ex2 = rand(10,15);
-            }
-               
-                $random_group2_ex3 = rand(10,15);
-               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
-                  $random_group2_ex3 =rand(10,15);
-           
-        }
-        if (strcmp($group2val, "Back")==0){
-            $random_group2_ex1 = rand(16,20);
-            $random_group2_ex2 = rand(16,20);
-            if($random_group2_ex1 == $random_group2_ex2){
+       if (strcmp($group2val, "Back")==0){
+           $random_group2_ex1 = rand(16,20);
+           $random_group2_ex2 = rand(16,20);
+           while($random_group2_ex1 == $random_group2_ex2){
                $random_group2_ex2 = rand(16,20);
-            }
-               $random_group2_ex3 = rand(16,20);
-               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
-                  $random_group2_ex3 = rand(16,20);
-           
-        }
-        if (strcmp($group2val, "Chest")==0){
-            $random_group2_ex1 = rand(21,24);
-            $random_group2_ex2 = rand(21,24);
-            if($random_group2_ex1 == $random_group2_ex2){
-               $random_group2_ex2 =rand(21,24);
-            }
-               $random_group2_ex3 = rand(21,24);
-               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
-                  $random_group2_ex3 =rand(21,24);
-           
-        }
-        if (strcmp($group2val, "Glutes")==0){
-            $random_group2_ex1 = rand(25,30);
-            $random_group2_ex2 = rand(25,30);
-            if($random_group2_ex1 == $random_group2_ex2){
-               $random_group2_ex2 = rand(25,30);
-            }
-               $random_group2_ex3 = rand(25,30);
-               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
-                  $random_group2_ex3 =rand(25,30);
-           
-
-        }
-
-        if (strcmp($group2val, "Shoulders")==0){
-            $random_group2_ex1 = rand(31,35);
-            $random_group2_ex2 = rand(31,35);
-            if($random_group2_ex1 == $random_group2_ex2){
-               $random_group2_ex2 = rand(31,35);
-            }
-               $random_group2_ex3 = rand(31,35);
-               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
-                  $random_group2_ex3 =rand(31,35);
-           
-        }
-        if (strcmp($group2val, "Legs")==0){
-            $random_group2_ex1 = rand(36,44);
-            $random_group2_ex2 = rand(36,44);
-            if($random_group2_ex1 == $random_group2_ex2){
-               $random_group2_ex2 =rand(36,44);
-            }
-               $random_group2_ex3 = rand(36,44);
-               if($random_group2_ex3 == $random_group2_ex1 || $random_group2_ex3 == $random_group2_ex2)
-                  $random_group2_ex3 = rand(36,44);
-           
-        }
-       if (strcmp($group3val, "Arms")==0){
-            $random_group3_ex1 = rand(10,15);
-            $random_group3_ex2 = rand(10,15);
-            if($random_group3_ex1 == $random_group3_ex2)
-            {
-               $random_group3_ex2 = rand(10,15);
-            }
-               $random_group3_ex3 = rand(10,15);
-               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
-                  $random_group3_ex3 =rand(10,15);
-           
-        }
-        if (strcmp($group3val, "Back")==0){
-            $random_group3_ex1 = rand(16,20);
-            $random_group3_ex2 = rand(16,20);
-            if($random_group3_ex1 == $random_group3_ex2){
-               $random_group3_ex2 = rand(16,20);
-            }
-               $random_group3_ex3 = rand(16,20);
-               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
-                  $random_group3_ex3 = rand(16,20);
-           
-        }
-        if (strcmp($group3val, "Chest")==0){
-            $random_group3_ex1 = rand(21,24);
-            $random_group3_ex2 = rand(21,24);
-            if($random_group3_ex1 == $random_group3_ex2){
-               $random_group3_ex2 =rand(21,24);
-            }
-               $random_group3_ex3 = rand(21,24);
-               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
-                  $random_group3_ex3 =rand(21,24);
-           
-        }
-        if (strcmp($group3val, "Glutes")==0){
-            $random_group3_ex1 = rand(25,30);
-            $random_group3_ex2 = rand(25,30);
-            if($random_group3_ex1 == $random_group3_ex2){
-               $random_group3_ex2 = rand(25,30);
-            }
-               $random_group3_ex3 = rand(25,30);
-               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
-                  $random_group3_ex3 =rand(25,30);
-           
-
-        }
-
-        if (strcmp($group3val, "Shoulders")==0){
-            $random_group3_ex1 = rand(31,35);
-            $random_group3_ex2 = rand(31,35);
-            if($random_group3_ex1 == $random_group3_ex2){
-               $random_group3_ex2 = rand(31,35);
-            }
-               $random_group3_ex3 = rand(31,35);
-               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
-                  $random_group3_ex3 =rand(31,35);
-           
-        }
-        if (strcmp($group3val, "Legs")==0){
-            $random_group3_ex1 = rand(36,44);
-            $random_group3_ex2 = rand(36,44);
-            if($random_group3_ex1 == $random_group3_ex2){
-               $random_group3_ex2 =rand(36,44);
-            }
-               $random_group3_ex3 = rand(36,44);
-               if($random_group3_ex3 == $random_group3_ex1 || $random_group3_ex3 == $random_group3_ex2)
-                  $random_group3_ex3 = rand(36,44);
-           
-        }
-       if (strcmp($group4val, "Arms")==0){
-            $random_group4_ex1 = rand(10,15);
-            $random_group4_ex2 = rand(10,15);
-            if($random_group4_ex1 == $random_group4_ex2)
-            {
-               $random_group4_ex2 = rand(10,15);
-            }
-               $random_group4_ex3 = rand(10,15);
-               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
-                  $random_group4_ex3 =rand(10,15);
-           
-        }
-        if (strcmp($group4val, "Back")==0){
-            $random_group4_ex1 = rand(16,20);
-            $random_group4_ex2 = rand(16,20);
-            if($random_group4_ex1 == $random_group4_ex2){
-               $random_group4_ex2 = rand(16,20);
-            }
-               $random_group4_ex3 = rand(16,20);
-               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
-                  $random_group4_ex3 = rand(16,20);
-           
-        }
-        if (strcmp($group4val, "Chest")==0){
-            $random_group4_ex1 = rand(21,24);
-            $random_group4_ex2 = rand(21,24);
-            if($random_group4_ex1 == $random_group4_ex2){
-               $random_group4_ex2 =rand(21,24);
-            }
-               $random_group4_ex3 = rand(21,24);
-               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
-                  $random_group4_ex3 =rand(21,24);
-           
-        }
-        if (strcmp($group4val, "Glutes")==0){
-            $random_group4_ex1 = rand(25,30);
-            $random_group4_ex2 = rand(25,30);
-            if($random_group4_ex1 == $random_group4_ex2){
-               $random_group4_ex2 = rand(25,30);
-            }
-               $random_group4_ex3 = rand(25,30);
-               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
-                  $random_group4_ex3 =rand(25,30);
-        
-
-        }
-
-        if (strcmp($group4val, "Shoulders")==0){
-            $random_group4_ex1 = rand(31,35);
-            $random_group4_ex2 = rand(31,35);
-            if($random_group4_ex1 == $random_group4_ex2){
-               $random_group4_ex2 = rand(31,35);
-            }
-               $random_group4_ex3 = rand(31,35);
-               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
-                  $random_group4_ex3 =rand(31,35);
-           
-        }
-        if (strcmp($group4val, "Legs")==0){
-            $random_group4_ex1 = rand(36,44);
-            $random_group4_ex2 = rand(36,44);
-            if($random_group4_ex1 == $random_group4_ex2){
-               $random_group4_ex2 =rand(36,44);
-            }
-               $random_group4_ex3 = rand(36,44);
-               if($random_group4_ex3 == $random_group4_ex1 || $random_group4_ex3 == $random_group4_ex2)
-                  $random_group4_ex3 = rand(36,44);
            }
-    }
+           $random_group2_ex3 = rand(16,20);
+           while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+               $random_group2_ex3 = rand(16,20);
+           }
+           $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+           $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+           $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+      
+     
+       }
+       if (strcmp($group2val, "Chest")==0){
+           $random_group2_ex1 = rand(21,24);
+           $random_group2_ex2 = rand(21,24);
+           while($random_group2_ex1 == $random_group2_ex2){
+                $random_group2_ex2 = rand(21,24);
+            }
+            $random_group2_ex3 = rand(21,24);
+            while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                $random_group2_ex3 = rand(21,24);
+            }
+            $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+            $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+            $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+    
+       }
+       if (strcmp($group2val, "Glutes")==0){
+           $random_group2_ex1 = rand(25,30);
+           $random_group2_ex2 = rand(25,30);
+            while($random_group2_ex1 == $random_group2_ex2){
+                $random_group2_ex2 = rand(25,30);
+            }
+            $random_group2_ex3 = rand(25,30);
+            while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                $random_group2_ex3 = rand(25,30);
+            }
+            $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+            $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+            $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+       
+       }
 
-*/
+       if (strcmp($group2val, "Shoulders")==0){
+           $random_group2_ex1 = rand(31,35);
+           $random_group2_ex2 = rand(31,35);
+           while($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 = rand(31,35);
+           }
+           $random_group2_ex3 = rand(31,35);
+           while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+               $random_group2_ex3 = rand(31,35);
+           }
+           $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+           $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+           $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+      
+       }
+       if (strcmp($group2val, "Legs")==0){
+           $random_group2_ex1 = rand(36,44);
+           $random_group2_ex2 = rand(36,44);
+           while($random_group2_ex1 == $random_group2_ex2){
+               $random_group2_ex2 = rand(36,44);
+           }
+           $random_group2_ex3 = rand(36,44);
+           while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+               $random_group2_ex3 = rand(36,44);
+           }
+           $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+           $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+           $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+      
+    
+       }
+       if (strcmp($group3val, "Abs")==0){
+        $random_group3_ex1 = rand(1,9);
+        $random_group3_ex2 = rand(1,9);
+        while($random_group3_ex1 == $random_group3_ex2){
+             $random_group3_ex2 = rand(1,9);
+         }
+         $random_group3_ex3 = rand(1,9);
+         while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+             $random_group3_ex3 = rand(1,9);
+         }
+         $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+         $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+         $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+        }
+
+      if (strcmp($group3val, "Arms")==0){
+           $random_group3_ex1 = rand(10,15);
+           $random_group3_ex2 = rand(10,15);
+           while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 = rand(1,9);
+            }
+            $random_group3_ex3 = rand(10,15);
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = rand(10,15);
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+       
+  
+       }
+       if (strcmp($group3val, "Back")==0){
+           $random_group3_ex1 = rand(16,20);
+           $random_group3_ex2 = rand(16,20);
+           while($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 = rand(16,20);
+           }
+           $random_group3_ex3 = rand(16,20);
+           while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+               $random_group3_ex3 = rand(16,20);
+           }
+           $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+           $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+           $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+    
+       }
+       if (strcmp($group3val, "Chest")==0){
+           $random_group3_ex1 = rand(21,24);
+           $random_group3_ex2 = rand(21,24);
+           while($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 = rand(21,24);
+           }
+           $random_group3_ex3 = rand(21,24);
+           while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+               $random_group3_ex3 = rand(21,24);
+           }
+           $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+           $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+           $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+    
+       }
+       if (strcmp($group3val, "Glutes")==0){
+           $random_group3_ex1 = rand(25,30);
+           $random_group3_ex2 = rand(25,30);
+           while($random_group3_ex1 == $random_group3_ex2){
+               $random_group3_ex2 = rand(25,30);
+           }
+           $random_group3_ex3 = rand(25,30);
+           while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+               $random_group3_ex3 = rand(25,30);
+           }
+           $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+           $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+           $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+       }
+
+       if (strcmp($group3val, "Shoulders")==0){
+           $random_group3_ex1 = rand(31,35);
+           $random_group3_ex2 = rand(31,35);
+           while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 = rand(31,35);
+            }
+            $random_group3_ex3 = rand(31,35);
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = rand(31,35);
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+    
+       }
+       if (strcmp($group3val, "Legs")==0){
+           $random_group3_ex1 = rand(36,44);
+           $random_group3_ex2 = rand(36,44);
+           while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 = rand(36,44);
+            }
+            $random_group3_ex3 = rand(36,44);
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = rand(36,44);
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+     
+       }
+       if (strcmp($group4val, "Abs")==0){
+         $random_group4_ex1 = rand(1,9);
+         $random_group4_ex2 = rand(1,9);
+         while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 = rand(1,9);
+            }
+            $random_group4_ex3 = rand(1,9);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(1,9);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+        }
+          if (strcmp($group4val, "Arms")==0){
+           $random_group4_ex1 = rand(10,15);
+           $random_group4_ex2 = rand(10,15);
+           while($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(10,15);
+           }
+           $random_group4_ex3 = rand(10,15);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(10,15);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+           $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+           $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+       
+       }
+       if (strcmp($group4val, "Back")==0){
+           $random_group4_ex1 = rand(16,20);
+           $random_group4_ex2 = rand(16,20);
+           while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 = rand(16,20);
+            }
+            $random_group4_ex3 = rand(16,20);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(16,20);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+    
+       }
+       if (strcmp($group4val, "Chest")==0){
+           $random_group4_ex1 = rand(21,24);
+           $random_group4_ex2 = rand(21,24);
+           while($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(21,24);
+           }
+           $random_group4_ex3 = rand(21,24);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(21,24);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+           $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+           $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+      
+       }
+       if (strcmp($group4val, "Glutes")==0){
+           $random_group4_ex1 = rand(25,30);
+           $random_group4_ex2 = rand(25,30);
+           while($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(25,30);
+           }
+           $random_group4_ex3 = rand(25,30);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(25,30);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+           $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+           $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+       }
+
+       if (strcmp($group4val, "Shoulders")==0){
+           $random_group4_ex1 = rand(31,35);
+           $random_group4_ex2 = rand(31,35);
+           while($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(31,35);
+           }
+           $random_group4_ex3 = rand(31,35);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(31,35);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+           $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+           $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+
+       }
+       if (strcmp($group4val, "Legs")==0){
+           $random_group4_ex1 = rand(36,44);
+           $random_group4_ex2 = rand(36,44);
+           while($random_group4_ex1 == $random_group4_ex2){
+               $random_group4_ex2 = rand(36,44);
+           }
+           $random_group4_ex3 = rand(36,44);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(36,44);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+           $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+           $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+       }
+        }
+
+
+        ///////////INSIDE
+        if(strcmp($locationval, "Inside")==0){
+       
+            if (strcmp($group1val, "Abs")==0){
+                $random_group1_ex1 = rand(1,9);
+                $random_group1_ex2 = rand(1,9);
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 = rand(1,9);
+                }
+                $random_group1_ex3 = rand(1,9);
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = rand(1,9);
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+            
+           }
+           if (strcmp($group1val, "Arms")==0){
+                $array = array(12,13,15,53);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+              
+            }
+            if (strcmp($group1val, "Back")==0){
+                $array = array(16,17,20,45,52);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+              
+            }
+            if (strcmp($group1val, "Chest")==0){  //de revenit
+               
+                $array = array(12,46,51);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+               
+               
+            }
+    
+            if (strcmp($group1val, "Glutes")==0){
+                $array = array(25,26,27,28,30,50,47);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+            }
+    
+            if (strcmp($group1val, "Shoulders")==0){
+                $array = array(31,32,34,35,49);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+              
+            }
+            if (strcmp($group1val, "Legs")==0){
+                $array = array(37,38,39,40,41,42,43,44);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+            
+            }
+            if (strcmp($group2val, "Abs")==0){
+               $random_group2_ex1 = rand(1,9);
+               $random_group2_ex2 = rand(1,9);
+               while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =rand(1,9);
+                }
+                $random_group2_ex3 = rand(1,9);
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = rand(1,9);
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+            }
+            if (strcmp($group2val, "Arms")==0){
+                $array = array(12,13,15,53);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+           }
+           if (strcmp($group2val, "Back")==0){
+                $array = array(16,17,20,45,52);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+         
+           }
+           if (strcmp($group2val, "Chest")==0){ // de revenit
+               
+            $array = array(12,46,51);
+            $random_group2_ex1 = $array[array_rand($array)];
+            $random_group2_ex2 = $array[array_rand($array)];
+            while($random_group2_ex1 == $random_group2_ex2){
+                $random_group2_ex2 =$array[array_rand($array)];
+            }
+            $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+            $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+            $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+            $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+        
+        }
+
+           if (strcmp($group2val, "Glutes")==0){
+                $array = array(25,26,27,28,30,47,50);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+           }
+    
+           if (strcmp($group2val, "Shoulders")==0){
+                $array = array(31,32,34,35,49);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+       
+           }
+           if (strcmp($group2val, "Legs")==0){
+                $array = array(37,38,39,40,41,42,43,44);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+           }
+           if (strcmp($group3val, "Abs")==0){
+            $random_group3_ex1 = rand(1,9);
+            $random_group3_ex2 = rand(1,9);
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =rand(1,9);
+            }
+            $random_group3_ex3 = rand(1,9);
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = rand(1,9);
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+            }
+          if (strcmp($group3val, "Arms")==0){
+            $array = array(12,13,15,53);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+           }
+           if (strcmp($group3val, "Back")==0){
+            $array = array(16,17,20,45,52);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+          
+           }
+           if (strcmp($group3val, "Chest")==0){ //de revenit
+               
+            $array = array(12,46,51);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+            }
+           if (strcmp($group3val, "Glutes")==0){
+            $array = array(25,26,27,28,30,47,50);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+           }
+    
+           if (strcmp($group3val, "Shoulders")==0){
+            $array = array(31,32,34,35,49);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+           }
+           if (strcmp($group3val, "Legs")==0){
+            $array = array(37,38,39,40,41,42,43,44);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+           }
+           if (strcmp($group4val, "Abs")==0){
+            $random_group4_ex1 = rand(1,9);
+            $random_group4_ex2 =rand(1,9);
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =rand(1,9);
+            }
+            $random_group4_ex3 = rand(1,9);
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = rand(1,9);
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+        
+       }
+          if (strcmp($group4val, "Arms")==0){
+            $array = array(12,13,15,53);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            } 
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+      
+           }
+           if (strcmp($group4val, "Back")==0){
+            $array = array(16,17,20,52,45);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+          
+           }
+           if (strcmp($group4val, "Chest")==0){ //de rev
+               
+            $array = array(12,46,51);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+        
+        }
+           if (strcmp($group4val, "Glutes")==0){
+            $array = array(25,26,27,28,30,50,47);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+           }
+    
+           if (strcmp($group4val, "Shoulders")==0){
+            $array = array(31,32,34,35,49);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+        
+           }
+           if (strcmp($group4val, "Legs")==0){
+            $array = array(37,38,39,40,41,42,43,44);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+           }
+            }
+
+
+            ///////OUTSIDE
+            if(strcmp($locationval, "Outside")==0){
+       
+            if (strcmp($group1val, "Abs")==0){
+                $array = array(2,4,5);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+           }
+           if (strcmp($group1val, "Arms")==0){ //revenit
+                $array = array(12,13,53);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+              
+            }
+            if (strcmp($group1val, "Back")==0){ //rev
+                $array = array(17,45,52);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+                
+              
+            }
+            if (strcmp($group1val, "Chest")==0){  //rev
+               
+                $array = array(12,46,51);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+                 
+            }
+            if (strcmp($group1val, "Glutes")==0){  //rev
+                $array = array(26,47,50);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+
+            }
+    
+            if (strcmp($group1val, "Shoulders")==0){  //rev
+
+                $array = array(32,48,49);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+              
+            }
+            if (strcmp($group1val, "Legs")==0){ 
+                $array = array(37,38,39,40,41,42,43,44);
+                $random_group1_ex1 = $array[array_rand($array)];
+                $random_group1_ex2 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex2){
+                    $random_group1_ex2 =$array[array_rand($array)];
+                }
+                $random_group1_ex3 = $array[array_rand($array)];
+                while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
+                    $random_group1_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group1_ex3'] = $random_group1_ex3;
+                $_SESSION['random_group1_ex1'] = $random_group1_ex1;
+                $_SESSION['random_group1_ex2'] = $random_group1_ex2;
+            
+            }
+            if (strcmp($group2val, "Abs")==0){
+                $array = array(2,4,5);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+            }
+            if (strcmp($group2val, "Arms")==0){ //no
+                $array = array(12,13,53);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+           }
+            if (strcmp($group2val, "Back")==0){//no
+                $array = array(17,45,52);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+                
+              
+            }
+            if (strcmp($group2val, "Chest")==0){  //no
+               
+                $array = array(12,46,51);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+               
+               
+            }
+            if (strcmp($group2val, "Glutes")==0){ //no
+                $array = array(26,47,50);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+
+            }
+    
+            if (strcmp($group2val, "Shoulders")==0){  //no
+
+                $array = array(32,48,49);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+              
+            }
+          
+           if (strcmp($group2val, "Legs")==0){
+                $array = array(37,38,39,40,41,42,43,44);
+                $random_group2_ex1 = $array[array_rand($array)];
+                $random_group2_ex2 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex2){
+                    $random_group2_ex2 =$array[array_rand($array)];
+                }
+                $random_group2_ex3 = $array[array_rand($array)];
+                while($random_group2_ex1 == $random_group2_ex3 || $random_group2_ex2 == $random_group2_ex3 ){
+                    $random_group2_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group2_ex3'] = $random_group2_ex3;
+                $_SESSION['random_group2_ex1'] = $random_group2_ex1;
+                $_SESSION['random_group2_ex2'] = $random_group2_ex2;
+           }
+           if (strcmp($group3val, "Abs")==0){
+                $array = array(2,4,5);
+                $random_group3_ex1 = $array[array_rand($array)];
+                $random_group3_ex2 = $array[array_rand($array)];
+                while($random_group3_ex1 == $random_group3_ex2){
+                    $random_group3_ex2 =$array[array_rand($array)];
+                }
+                $random_group3_ex3 = $array[array_rand($array)];
+                while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                    $random_group3_ex3 = $array[array_rand($array)];
+                }
+                $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+                $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+                $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+            }
+          if (strcmp($group3val, "Arms")==0){ //no
+            $array = array(12,13,53);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+           }
+           if (strcmp($group3val, "Back")==0){//no
+            $array = array(17,45,52);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+            
+          
+        }
+        if (strcmp($group3val, "Chest")==0){ //no
+           
+            $array = array(12,46,51);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+           
+           
+        }
+        if (strcmp($group3val, "Glutes")==0){ //no
+            $array = array(26,47,50);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+
+        }
+
+        if (strcmp($group3val, "Shoulders")==0){ //no
+
+            $array = array(32,48,49);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+          
+        }
+           if (strcmp($group3val, "Legs")==0){
+            $array = array(37,38,39,40,41,42,43,44);
+            $random_group3_ex1 = $array[array_rand($array)];
+            $random_group3_ex2 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex2){
+                $random_group3_ex2 =$array[array_rand($array)];
+            }
+            $random_group3_ex3 = $array[array_rand($array)];
+            while($random_group3_ex1 == $random_group3_ex3 || $random_group3_ex2 == $random_group3_ex3 ){
+                $random_group3_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group3_ex3'] = $random_group3_ex3;
+            $_SESSION['random_group3_ex1'] = $random_group3_ex1;
+            $_SESSION['random_group3_ex2'] = $random_group3_ex2;
+           }
+           if (strcmp($group4val, "Abs")==0){
+            $array = array(2,4,5);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+
+            }
+          if (strcmp($group4val, "Arms")==0){ //no
+            $array = array(12,13,53);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+           }
+           if (strcmp($group4val, "Back")==0){ //no
+            $array = array(17,45,52);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+            
+          
+        }
+        if (strcmp($group4val, "Chest")==0){ //no
+           
+            $array = array(12,46,51);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+           
+           
+        }
+        if (strcmp($group4val, "Glutes")==0){ //no
+            $array = array(26,47,50);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+
+        }
+
+        if (strcmp($group4val, "Shoulders")==0){ 
+
+            $array = array(32,48,49);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+          
+        }
+
+           if (strcmp($group4val, "Legs")==0){
+            $array = array(37,38,39,40,41,42,43,44);
+            $random_group4_ex1 = $array[array_rand($array)];
+            $random_group4_ex2 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex2){
+                $random_group4_ex2 =$array[array_rand($array)];
+            }
+            $random_group4_ex3 = $array[array_rand($array)];
+            while($random_group4_ex1 == $random_group4_ex3 || $random_group4_ex2 == $random_group4_ex3 ){
+                $random_group4_ex3 = $array[array_rand($array)];
+            }
+            $_SESSION['random_group4_ex3'] = $random_group4_ex3;
+            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
+            $_SESSION['random_group4_ex2'] = $random_group4_ex2;
+           }
+
+}
+
     ?>
