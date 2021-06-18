@@ -40,6 +40,7 @@ $result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
 
 while($row = mysqli_fetch_array($result)){
     echo $row["username"];
+    $_SESSION["username"] = $row["username"];
 }
 ?>
 </p>

@@ -47,6 +47,12 @@
     left: 0;
 }
 
+#rssBtn {
+    width: 3em;
+    height: 3em;
+    margin-left: 57em;
+}
+
 .button:hover {
     box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
     color: brown;

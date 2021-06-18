@@ -32,8 +32,12 @@
 
 
         <div class="login-box2">
-            <h1>STATISTICS</h1>
-            <a href="../phpFiles/rssFeed.xml" target="_blank" type="application/rss+xml"><img src="/../public/images/feed-icon.png" class="rss-btn"></a>
+            <form method = "POST" action = "../phpFiles/generateRSSDataFeed.php" target="_blank">
+            <a href="../phpFiles/rssFeed.xml" type="application/rss+xml">
+            <input type="image" src="/../public/images/feed-icon.png" alt="Submit" name="rssBtn" id="rssBtn"></a>
+            
+            </form>      
+            <h1>STATISTICS</h1>    
             <h2>Top 10 most active users:</h2>
             <ol type="1">
             <?php require_once("../phpFiles/displayTop.php");?>
@@ -46,8 +50,8 @@
             <?php require_once("../phpFiles/generateJson.php");?>
             Download Top Active Users (JSON format)</a>
 
-            <form action="../phpFiles/generatePdf.php"  method="POST" target="_blank"> 
-            <button type="submit" class="button2" name="btn_pdf"  > &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</button>
+            <form action = "../phpFiles/generatePdf.php"  method="POST" target="_blank"> 
+            <button type = "submit" class="button2" name="btn_pdf"  > &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</button>
             </form>
            
             </span>

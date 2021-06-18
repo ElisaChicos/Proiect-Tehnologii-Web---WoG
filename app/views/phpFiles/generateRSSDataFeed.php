@@ -1,12 +1,12 @@
 <?php
-
+session_start();
 $host="localhost";
 $user="root";
 $password="";
 $db="users";
 $aVar=mysqli_connect($host,$user,$password);
-//$email = ($_SESSION['message']);
-$query = "SELECT * FROM user_exemplu.users where email = 'ziua@gmail.com';";
+$email = $_SESSION['email'];
+$query = "SELECT * FROM user_exemplu.users where email = '$email';";
 $publish_Date = strtotime("today");
 $result = mysqli_query($aVar,$query) or die( mysqli_error($aVar));
 while($row = mysqli_fetch_array($result)){
@@ -16,19 +16,19 @@ while($row = mysqli_fetch_array($result)){
     $items = array(
         array("title"       => "Number in top active users:",
               "description" => "You are number " . $id . " in top most active users.",
-              "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+              "link"        => "/app/views/home/Statistics.php",
               "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
         , array("title"       => "Workout days/week:",
                 "description" => "?",
-                "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+                "link"        => "/app/views/home/Statistics.php",
                 "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
         , array("title"       => "Workout days/month:",
                 "description" => "?",
-                "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+                "link"        => "/app/views/home/Statistics.php",
                 "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
         , array("title"       => "Weight loss:",
                 "description" => "You have with " . $weight . " kg less.",
-                "link"        => "http://localhost:3000/app/views/home/Statistics.php",
+                "link"        => "/app/views/home/Statistics.php",
                 "pubDate"     => date("Y-m-d h:i:sa", $publish_Date))
     );
 
@@ -37,7 +37,7 @@ while($row = mysqli_fetch_array($result)){
     $output .= "<channel>";
     $output .= "<title>Statistics Update | RSS</title>";
     $output .= "<description>New update on statistics</description>";
-    $output .= "<link>http://localhost:3000/app/views/home/Statistics.php</link>";
+    $output .= "<link>/app/views/home/Statistics.php</link>";
     $output .= "<language>en-us</language>";
     $output .= "<category>Statistics</category>";
 

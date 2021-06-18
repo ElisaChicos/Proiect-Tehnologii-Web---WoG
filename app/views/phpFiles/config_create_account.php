@@ -49,6 +49,7 @@
     $stmt->execute();
     $result = $stmt->get_result();
     $numberOfRows = $result->num_rows;
+    $stmt->close();
 
     if($numberOfRows == 0 ){
       $hashPass = password_hash($pass, PASSWORD_DEFAULT);
@@ -57,6 +58,7 @@
       $stmt = $conn->prepare($sql);
       $stmt->bind_param("ssiddissssi",$username,$email,$age,$height,$weight,$old_weight,$gender,$password,$want,$focus_part,$activity_points);
       $result = $stmt->execute();
+      $stmt->close();
       if($result){
           $status = true;
           $message[] = 'Account created succesfully.';

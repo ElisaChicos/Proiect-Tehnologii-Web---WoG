@@ -31,7 +31,7 @@ session_start();
     $conn = new mysqli($servername, $user, $db_password, $db);
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-      }
+    }
 
     //$aVar=mysqli_connect($host,$user,$password);
     //mysqli_select_db($aVar,$db);
@@ -45,6 +45,7 @@ session_start();
     $stmt->bind_param('s', $email);
     $stmt->execute();
     $result = $stmt->get_result();
+    $stmt->close();
     $numberOfRows = $result->num_rows;
 
     if($numberOfRows == 0 ){
