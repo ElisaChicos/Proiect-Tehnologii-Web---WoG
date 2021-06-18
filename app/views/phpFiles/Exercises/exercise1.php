@@ -13,25 +13,34 @@ $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
 
 $timeval = $_SESSION['timeval'];
-if($timeval == 45)
-{
-  $random_group1_ex1 = $_SESSION['random_group1_ex1'];
-  $ex = $random_group1_ex1;
-}
-else{
-  if($timeval == 15)
-  { 
-    $random_2exercises1 = $_SESSION['random_2exercises1'];
-    $ex = $random_2exercises1;
-  }
-  else{
-    if($timeval == 30)
+    if($timeval == 45)
     {
       $random_group1_ex1 = $_SESSION['random_group1_ex1'];
       $ex = $random_group1_ex1;
     }
-  }
-}
+    else{
+      if($timeval == 15)
+      { 
+        $random_2exercises1 = $_SESSION['random_2exercises1'];
+        $ex = $random_2exercises1;
+      }
+      else{
+        if($timeval == 30)
+        {
+          $random_group1_ex1 = $_SESSION['random_group1_ex1'];
+          $ex = $random_group1_ex1;
+        }
+        else
+        {
+          if($timeval == 1)
+          {
+            $random_group1_ex1 = $_SESSION['random_group1_ex1'];
+          $ex = $random_group1_ex1;
+          }
+        }
+        
+      }
+    }
 
 
 

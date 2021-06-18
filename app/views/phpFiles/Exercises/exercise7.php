@@ -11,7 +11,12 @@ $db="images";
 $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
 
-$ex = rand(1,9);
+$timeval = $_SESSION['timeval'];
+  if($timeval == 1)
+    {
+      $random_group3_ex2 = $_SESSION['random_group3_ex2'];
+      $ex = $random_group3_ex2;
+    }
 
 $sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";
 $result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));

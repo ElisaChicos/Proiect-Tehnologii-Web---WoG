@@ -12,13 +12,21 @@ $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
 
 $timeval = $_SESSION['timeval'];
-if($timeval == 45)
-{
-  $random_2exercises1 = $_SESSION['random_2exercises1'];
-  $ex = $random_2exercises1;
-}
+  if($timeval == 45)
+  {
+    $random_2exercises1 = $_SESSION['random_2exercises1'];
+    $ex = $random_2exercises1;
+  }
+  else
+  {
+    if($timeval == 1)
+    {
+      $random_group1_ex2 = $_SESSION['random_group1_ex2'];
+      $ex = $random_group1_ex2;
+    }
+  }
 
-$sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";
+  $sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";
 $result = mysqli_query($aVar,$sql) or die( mysqli_error($aVar));
 while($row = mysqli_fetch_array($result))
   {
