@@ -23,6 +23,13 @@ else{
     $random_2exercises2 = $_SESSION['random_2exercises2'];
     $ex = $random_2exercises2;
   }
+  else{
+    if($timeval == 30)
+    {
+      $random_group2_ex1 = $_SESSION['random_group2_ex1'];
+      $ex = $random_group2_ex1;
+    }
+  }
 }
 
 

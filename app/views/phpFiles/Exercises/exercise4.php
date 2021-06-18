@@ -16,6 +16,12 @@ if($timeval == 45)
 {
   $random_group4_ex1 = $_SESSION['random_group4_ex1'];
   $ex = $random_group4_ex1;
+} else{
+  if($timeval == 30)
+  {
+    $random_group4_ex1 = $_SESSION['random_group4_ex1'];
+    $ex = $random_group4_ex1;
+  }
 }
 
 $sql = "SELECT * FROM user_exemplu.images WHERE id=$ex;";
