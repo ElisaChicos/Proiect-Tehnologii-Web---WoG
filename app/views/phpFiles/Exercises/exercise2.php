@@ -17,6 +17,14 @@ if($timeval == 45)
   $random_group2_ex1 = $_SESSION['random_group2_ex1'];
   $ex = $random_group2_ex1;
 }
+else{
+  if($timeval == 15)
+  { 
+    $random_2exercises2 = $_SESSION['random_2exercises2'];
+    $ex = $random_2exercises2;
+  }
+}
+
 
 
 
