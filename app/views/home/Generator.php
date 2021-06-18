@@ -8,6 +8,14 @@ $db="images";
 $aVar=mysqli_connect($host,$user,$password);
 mysqli_select_db($aVar,'user_exemplu');
 
+$group1val   = isset($_POST["group1"]) ? $_POST["group1"] : 'Abs';
+$group2val   = isset($_POST["group2"]) ? $_POST["group2"] : 'Legs';
+$group3val   = isset($_POST["group3"]) ? $_POST["group3"] : 'Glutes';
+$group4val   = isset($_POST["group4"]) ? $_POST["group4"] : 'Back';
+$timeval     = isset($_POST["time"]) ? $_POST["time"] : '30';
+$locationval = isset($_POST["location"]) ? $_POST["location"] : 'Inside';
+
+
 
 if(isset($_POST['submit'])){
   
@@ -17,9 +25,15 @@ if(isset($_POST['submit'])){
     $_SESSION['group4'] = $group4val;
     $_SESSION['time']   = $timeval;
     $_SESSION['location'] = $locationval;
-
-   
+    
+  
 }
+
+if($group1val == $group2val || $group1val == $group3val || $group1val == $group4val)
+{
+    echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax6exercise.js\"></script>";
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +118,7 @@ if(isset($_POST['submit'])){
             <option value="Chest">Chest</option>
         </select>
       </div>
-    
+    <div id="content"></div>
           <p>How long you want your workout? </p>
           <div class="select">
           <select name="time" id="time" value="">
