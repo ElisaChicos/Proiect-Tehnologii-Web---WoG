@@ -24,6 +24,14 @@ $timeval = $_SESSION['timeval'];
       $random_group2_ex2 = $_SESSION['random_group2_ex2'];
       $ex = $random_group2_ex2;
     }
+    else
+    {
+      if($timeval == 130)
+      {
+        $random_group2_ex2 = $_SESSION['random_group2_ex2'];
+        $ex = $random_group2_ex2;
+      }
+    }
   }
 
 
