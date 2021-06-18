@@ -14,6 +14,7 @@ if (isset($_POST['logout'])) {
             $params["secure"], $params["httponly"]
         );
     }
+    session_destroy();
     header('Location: /app/views/home/Login.php'); 
     }  
 }

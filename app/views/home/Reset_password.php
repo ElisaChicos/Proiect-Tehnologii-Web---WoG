@@ -58,10 +58,11 @@ session_start();
         <span></span>
         <span></span>
         <span></span>
-    <button class ="buttonSubmit" id="btn" type="submit" name="resetPass"> Change password </button>  
+    <button class ="buttonSubmit" id="btn2" type="submit" name="resetPass"> Change password </button>  
     </div>
 
     </form>
+    <!-- <script src= "/app/views/home/JavaScriptFiles/resetPassAjaxCall.js"></script> -->
         </div>
     </div>
 </body>

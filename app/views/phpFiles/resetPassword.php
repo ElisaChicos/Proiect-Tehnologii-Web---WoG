@@ -7,7 +7,7 @@ session_start();
         return 0;
     }
 
-    $email = isset($_SESSION["email"]) ? $_SESSION["email"] : '';
+    $email = isset($_SESSION["emailForReset"]) ? $_SESSION["emailForReset"] : '';
     $token = isset($_POST["token"]) ? $_POST["token"] : '';
     $new_password = isset($_POST["newPassword"]) ? $_POST["newPassword"] : '';
     $confirm_password = isset($_POST["confirmPassword"]) ? $_POST["confirmPassword"] : '';
@@ -28,7 +28,10 @@ if(empty($email) && empty($token) && empty($new_password) && empty($confirm_pass
 } else if ((!empty($new_password) && empty($confirm_password)) || (empty($new_password) && !empty($confirm_password))){
     $status = false;
     $message[] = 'Complete both password inputs.';   
-}else {
+}else if (empty($new_password) && empty($confirm_password)){
+    $status = false;
+    $message[] = 'Choose a password.';   
+}else{
     
     $servername="localhost";
     $user="root";
@@ -45,45 +48,59 @@ if(empty($email) && empty($token) && empty($new_password) && empty($confirm_pass
     $result = $stmt->get_result();
     $numberOfRows = $result->num_rows;
     $stmt->close();
+
     if($numberOfRows == 0 ){
         $status = false;
         $message[] = 'This account does not exist.';       
     }else{
         if(!empty($token)){
-        if(checkToken($token, $sendedToken)==1){
-            if($new_password == $confirm_password){
-                $hashPass = password_hash($new_password, PASSWORD_DEFAULT);
-                $newHashPassword = $hashPass;
-                $stmt = $conn->prepare("UPDATE user_exemplu.users SET password=? WHERE email=?");
-                $stmt->bind_param('ss', $newHashPassword,$email);
-                $stmt->execute();
-                if($stmt->execute()){
-                    $stmt->close();
-                    $status = true;
-                    $message[] = 'Updated succesfully.';
+            if(checkToken($token, $sendedToken)==1){
+                if($new_password == $confirm_password){
+                    $hashPass = password_hash($new_password, PASSWORD_DEFAULT);
+                    $newHashPassword = $hashPass;
+                    $stmt = $conn->prepare("UPDATE user_exemplu.users SET password=? WHERE email=?");
+                    $stmt->bind_param('ss', $newHashPassword,$email);
+                    $stmt->execute();
+
+                    if($stmt->execute()){
+                        $stmt->close();
+                        $_SESSION = array();
+                        if (ini_get("session.use_cookies")) {
+                            $params = session_get_cookie_params();
+                            setcookie(session_name(), '', time() - 42000,
+                                $params["path"], $params["domain"],
+                                $params["secure"], $params["httponly"]
+                            );
+                        }
+                        session_destroy();
+        
+                        $status = true;
+                        $message[] = 'Updated succesfully.';
+                            
+                    }else{
+                        $status = false;
+                        $message[] =  'There was a problem at updating your password.';
+                    }
+
                 }else{
                     $status = false;
-                    $message[] =  'There was a problem at updating your password.';
+                    $message[] = "Your password's don't match."; 
                 }
             }else{
                 $status = false;
-                $message[] = "Your password's don't match."; 
+                $message[] = 'Your token is not correct. Please check again.'; 
             }
         }else{
             $status = false;
-            $message[] = 'Your token is not correct. Please check again.'; 
-        }
-    }else{
-        $status = false;
-        $message[] = 'Your token input can not be empty.';   
-    }
+            $message[] = 'Your token input can not be empty.';   
     }
 }
+}
+
 echo json_encode(
     array(
         'status' => $status,
         'message' => $message
     )
 );
-
 ?>

@@ -49,7 +49,7 @@ function getAndHandleResponse(response) {
         location.href = '/app/views/home/Profil.php';
     } else {
         document.getElementById("error-message").innerHTML = response.message;
-        form.message.style.color = 'white';
+        form.message.style.color = 'rgb(172, 0, 0)';
         form.message.style.marginBottom = "30px";
     }
 }
