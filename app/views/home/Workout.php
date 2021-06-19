@@ -8,7 +8,6 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/css/Workout.css">
-    <script type="text/javascript" href="app/wiews/home/JavaScriptFiles/startworkout.js" defer></script>
     
     <title>Workout</title>
 </head>
@@ -30,7 +29,7 @@ session_start();
        
         <div class="login-box2">
         <div id="content">
-        <img src="/documentatie/startimg.gif" class="img-start" />
+        <img src="/documentatie/startimg.gif" class="img-start" alt="start" />
         <br>
         <button class="button" id="getTxt">START WORKOUT</button>
 

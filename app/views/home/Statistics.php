@@ -34,9 +34,8 @@
         <div class="login-box2">
            
             <a href="../phpFiles/rssFeed.xml" type="application/rss+xml" target="_blank" class="rssPage">
-            <img src="/../public/images/feed-icon.png" class="rssPage"></a>
+            <img src="/../public/images/feed-icon.png" class="rssPage" alt="rssPage"></a>
             
-            </form>      
             <h1>STATISTICS</h1>    
             <h2>Top 10 most active users:</h2>
             <ol type="1">
@@ -44,7 +43,7 @@
             </ol>
             <p class="paragraph"> You can see the whole top by downloading it from right here: </p>
 
-            <span class="btn_container">
+            <div class="btn_container">
 
             <a href="/app/views/home/activeUsers.json" class="button2" download>
             <?php require_once("../phpFiles/generateJson.php");?>
@@ -54,7 +53,7 @@
             <button type = "submit" class="button2" name="btn_pdf"  > &nbsp;Download Top Active Users (PDF format)&nbsp;&nbsp;</button>
             </form>
            
-            </span>
+</div>
 
             <h2> Personal Information</h2>
 

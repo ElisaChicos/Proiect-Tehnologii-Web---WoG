@@ -60,7 +60,7 @@
     <p> Error message</p>
     </div>
 
-    <div id="radios">
+    <div id="radios1">
         <p> Gender:
         <select name="gender" id="gender">
         <option selected disabled> Choose an option </option>
@@ -70,7 +70,7 @@
         </p>
        </div>
 
-      <div id="radios" >
+      <div id="radios2" >
         <p> I want to:
         <select name="want" id="want">
         <option selected disabled> Choose an option </option>
@@ -82,7 +82,7 @@
        </div>
 
               
-       <div id="radios">
+       <div id="radios3">
           <p>Choose what's your focus part:
           <select name="focus_part" id="focus_part">
           <option selected disabled> Choose an option </option>
@@ -120,7 +120,8 @@
                 <span></span>
                 Login
               </a>
-          
+    </div>
+    </div>
     </form>
     <script src = "/app/views/home/JavaScriptFiles/signupAjaxCall.js"></script> 
     </div>

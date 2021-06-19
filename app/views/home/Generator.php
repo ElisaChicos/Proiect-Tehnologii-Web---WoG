@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
 
       <p>What groups of muscles you want to work on?</p>
       <div class="select">
-        <select name="group1" id="group1" value="">
+        <select name="group1" id="group1">
           <option selected disabled>Choose an option</option>
             <option value="Legs">Legs</option>
             <option value="Glutes">Glutes</option>
@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
 
 
       <div class="select">
-      <select name="group2" id="group2" value="">
+      <select name="group2" id="group2" >
         <option selected disabled>Choose an option</option>
             <option value="Legs">Legs</option>
             <option value="Glutes">Glutes</option>
@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
         </select>
       </div>
       <div class="select">
-      <select name="group3" id="group3" value="">
+      <select name="group3" id="group3" >
         <option selected disabled>Choose an option</option>
             <option value="Legs">Legs</option>
             <option value="Glutes">Glutes</option>
@@ -98,7 +98,7 @@ if(isset($_POST['submit'])){
         </select>
       </div>
       <div class="select">
-      <select name="group4" id="group4" value="">
+      <select name="group4" id="group4" >
         <option selected disabled>Choose an option</option>
             <option value="Legs">Legs</option>
             <option value="Glutes">Glutes</option>
@@ -110,12 +110,12 @@ if(isset($_POST['submit'])){
         </select>
       </div>
     
-  
-    </div>
+
+
 
           <p>How long you want your workout? </p>
           <div class="select">
-          <select name="time" id="time" value="">
+          <select name="time" id="time" >
               <option selected disabled>Choose an option</option>
               <option value="15">15 minutes</option>
                 <option value="30">30 minutes</option>
@@ -127,7 +127,7 @@ if(isset($_POST['submit'])){
 
           <p>Where do you want to do your workout?</p>
           <div class="select">
-          <select name="location" id="location" value="">
+          <select name="location" id="location" >
             <option selected disabled>Choose an option</option>
                 <option value="Inside">Inside</option>
                 <option value="Outside">Outside</option>
@@ -135,11 +135,17 @@ if(isset($_POST['submit'])){
             </select>
           </div>
            
-
+        <div class="forgot_pass">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    <button class ="buttonSubmit" id="submit" type="submit" > GENERATE WORKOUT </button>  
+    </div>
       
    
   
-    </div>
+    <!--
              <a href="Workout.php">
               <span></span>
               <span></span>
@@ -147,10 +153,11 @@ if(isset($_POST['submit'])){
               <span></span>
               <input type="submit" name="submit" id="submit" value="Generate workout">
             </a>
+            -->
     </form>
+    </div>
+    </div>
   
-    </div>
-    </div>
 
 </body>
 </html>

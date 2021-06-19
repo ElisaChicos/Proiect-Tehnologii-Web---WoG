@@ -124,5 +124,6 @@ session_start();
 
     <a href="/app/views/home/Edit.php" class="button">Edit your profile</a> 
 </div>
+    </div>
 </body>
 </html>
