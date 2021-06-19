@@ -36,9 +36,7 @@ session_start();
         </div> </div>
         <div id="app"></div><!-- cronometru -->
          <!--  <button class="button2" onclick="startTimer()">START EXERCISE</button> -->
-          
-      
-            </div>
+        </div>
   
       
         

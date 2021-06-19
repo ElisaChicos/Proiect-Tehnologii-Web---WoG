@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
     <li><img class="logo" src="/../public/images/LOGO.png" alt="LOGO"> </li>
     <li class="start"></li>
     <li><a href="/app/views/home/Profil.php">Your profile</a></li>
-    <li><a href="/app/views/home/Workout.php">Start workout</a></li>
+    <li><a href="/app/views/home/Generator.php">Start workout</a></li>
     <li><a href="/app/views/home/Informations.php">Informations</a></li>
     <li><a href="/app/views/home/Statistics.php">Statistics</a></li>
     <li class="signoutBtn" >
