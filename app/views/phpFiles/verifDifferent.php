@@ -17,37 +17,64 @@
     $status = true;
     $message = array();
 
-    if(isset($_POST["group1"]) && (!isset($_POST["group2"]) || !isset($_POST["group3"]) !isset($_POST["group4"]))){
+    if(isset($_POST["group1"]) && (!isset($_POST["group2"]) || !isset($_POST["group3"]) || !isset($_POST["group4"]))){
         $status = false;
         $message[] = 'Please select all the boxes!';   
-    }else if(isset($_POST["group2"]) && (!isset($_POST["group1"]) || !isset($_POST["group3"]) !isset($_POST["group4"]))){
-        $status = false;
-        $message[] = 'Please select all the boxes!'; 
-    }else if(isset($_POST["group3"]) && (!isset($_POST["group1"]) || !isset($_POST["group2"]) !isset($_POST["group4"]))){
-        $status = false;
-        $message[] = 'Please select all the boxes!'; 
-    }else if(isset($_POST["group4"]) && (!isset($_POST["group1"]) || !isset($_POST["group2"]) !isset($_POST["group3"]))){
-        $status = false;
-        $message[] = 'Please select all the boxes!'; 
     }else 
+        if(isset($_POST["group2"]) && (!isset($_POST["group1"]) || !isset($_POST["group3"]) || !isset($_POST["group4"]))){
+        $status = false;
+        $message[] = 'Please select all the boxes!'; 
+    }else if(isset($_POST["group3"]) && (!isset($_POST["group1"]) || !isset($_POST["group2"]) || !isset($_POST["group4"]))){
+        $status = false;
+        $message[] = 'Please select all the boxes!'; 
+    }else if(isset($_POST["group4"]) && (!isset($_POST["group1"]) || !isset($_POST["group2"]) || !isset($_POST["group3"]))){
+        $status = false;
+        $message[] = 'Please select all the boxes!'; 
+    }else{
+        if(isset($_POST["group1"]) == isset($_POST["group2"]) || isset($_POST["group1"]) == isset($_POST["group3"]) || isset($_POST["group1"]) == isset($_POST["group4"]) )
+        {
+            $status = false;
+            $message[] = 'Choose different options!'; 
+        }
+        else{
+            if(isset($_POST["group2"]) == isset($_POST["group1"]) || isset($_POST["group2"]) == isset($_POST["group3"]) || isset($_POST["group2"]) == isset($_POST["group4"]) )
+        {
+            $status = false;
+            $message[] = 'Choose different options!'; 
+        }
+        else
+        {
+            if(isset($_POST["group3"]) == isset($_POST["group1"]) || isset($_POST["group3"]) == isset($_POST["group2"]) || isset($_POST["group3"]) == isset($_POST["group4"]) )
+        {
+            $status = false;
+            $message[] = 'Choose different options!'; 
+        }
+        else{
+        if(isset($_POST["group4"]) == isset($_POST["group2"]) || isset($_POST["group4"]) == isset($_POST["group3"]) || isset($_POST["group4"]) == isset($_POST["group1"]) )
+        {
+            $status = false;
+            $message[] = 'Choose different options!'; 
+        }
+        else
+        {
+            $_SESSION['group1'] = $group1val;
+            $_SESSION['group2'] = $group2val;
+            $_SESSION['group3'] = $group3val;
+            $_SESSION['group4'] = $group4val;
+            $_SESSION['time']   = $timeval;
+            $_SESSION['location'] = $locationval;
+        
+            $status = true;
+            $message[] = 'Have fun!'; 
+
+        }
+    }
+        }
+        }
+    }
     
 
-
-
-
-
-
-
-
-
-
-    $_SESSION['group1'] = $group1val;
-    $_SESSION['group2'] = $group2val;
-    $_SESSION['group3'] = $group3val;
-    $_SESSION['group4'] = $group4val;
-    $_SESSION['time']   = $timeval;
-    $_SESSION['location'] = $locationval;
-
+   
     echo json_encode(
         array(
             'status' => $status,
