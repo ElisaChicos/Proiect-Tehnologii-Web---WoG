@@ -1,265 +1,271 @@
-body,html{
-    margin:0;
+body,
+html {
+    margin: 0;
     height: 100%;
     width: 100%;
-    
 }
 
-h2{
-  text-align: center;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  font-size: 30px;
-  font:normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
-
+h2 {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 30px;
+    font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
 }
 
-.start{
-  height: 100%;
-  margin:0;
-  padding:0;
-  font-family: sans-serif;
-  background-attachment: fixed;
-  background-position: center;
-  background-image: url("https://images.pexels.com/photos/4761352/pexels-photo-4761352.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 100%;
+.start {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("https://images.pexels.com/photos/4761352/pexels-photo-4761352.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
 }
 
 .start-box {
     position: relative;
-    top:50%;
+    top: 50%;
     left: 50%;
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.733);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
     text-align: center;
-  }
+}
 
 .start-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
 }
 
 .start-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #03e9f4;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
 }
 
 .start-box a:hover {
-  background: #03e9f4;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
 
 .start-box a span {
-  position: absolute;
-  display: block;
+    position: absolute;
+    display: block;
 }
 
 .start-box a span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: btn-anim1 1s linear infinite;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
 }
 
 @keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-  50%,100% {
-    left: 100%;
-  }
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
 }
 
 .start-box a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: .25s
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
 }
 
 @keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-  50%,100% {
-    top: 100%;
-  }
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
 }
 
 .start-box a span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: .5s
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
 }
 
 @keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-  50%,100% {
-    right: 100%;
-  }
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
 }
 
 .start-box a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: .75s
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
 }
 
 @keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,100% {
-    bottom: 100%;
-  }
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
 }
 
-
-
-@media only screen and (min-width:200px) and (max-width:380px){
-.start{
+@media only screen and (max-width:300px) {
+    .start {
         background-image: url("https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-        background-repeat: no-repeat;
-        background-size: cover;
         background-size: 130% 100%;
-        background-position: center;
-      }
-.start-box {
-        top:45%;
+    }
+    .start-box h2 {
+        font-size: 40px;
+    }
+    .start-box {
+        top: 50%;
         left: 50%;
         width: 250px;
-        height: 300px;
-      }
-      
-  .start-box form a {
-    padding: 5px 10px;
-    font-size: 15px;
-    margin-top: 10px;
-    letter-spacing: 2px;
-  }
+        height: 450px;
+    }
+    .start-box form a {
+        padding: 5px 10px;
+        font-size: 18px;
+        margin-top: 2.5em;
+        letter-spacing: 1px;
+    }
 }
 
+@media only screen and (min-width:300px) and (max-width:380px) {
+    .start {
+        background-image: url("https://images.unsplash.com/photo-1594381898411-846e7d193883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        background-size: 130% 100%;
+    }
+    .start-box h2 {
+        font-size: 40px;
+    }
+    .start-box {
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 450px;
+    }
+    .start-box form a {
+        padding: 5px 10px;
+        font-size: 22px;
+        margin-top: 2.5em;
+        letter-spacing: 1px;
+    }
+}
 
-@media screen and (min-width:380px) and (max-width:700px){
-    .start{
+@media screen and (min-width:380px) and (max-width:700px) {
+    .start {
         width: 100%;
         height: 100%;
         background-size: 150% 100%;
         background-position: center;
-      }
-      .start-box {
-        top:50%;
-        left: 50%;
-        width: 400px;
-        height: 400px;
-        padding: 40px;
-      }
-    
-    .start-box h2 {
-      padding-bottom: 0;
-      margin-bottom: 0;
-      font-size: 30px;
     }
-    
+    .start-box {
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        height: 450px;
+        padding: 40px;
+    }
+    .start-box h2 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
     .start-box form a {
-      padding: 10px 20px;
-      padding-top: 1em;
-      font-size: 20px;
-      
+        margin-top: 2.5em;
+        font-size: 20px;
     }
 }
 
-@media screen and (min-width:700px) and (max-width:900px){
-  .start{
-      width: 100%;
-      height: 100%;
-      background-size: 200% 170%;
-      background-position: center;
+@media screen and (min-width:700px) and (max-width:900px) {
+    .start {
+        width: 100%;
+        height: 100%;
+        background-size: 200% 170%;
+        background-position: center;
     }
     .start-box {
-      top:50%;
-      left: 50%;
-      width: 600px;
-      height: 600px;
-      padding: 40px;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        height: 600px;
+        padding: 40px;
     }
-  
-  .start-box h2 {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-size: 45px;
-  }
-  
-  .start-box form a {
-    padding: 10px 20px;
-    padding-top: 1em;
-    font-size: 30px;
-    
-  }
+    .start-box h2 {
+        margin-bottom: 0.5em;
+        font-size: 50px;
+    }
+    .start-box form a {
+        margin-top: 1.8em;
+        font-size: 35px;
+    }
 }
-@media screen and (min-width:900px) and (max-width:1500px){
-  .start{
-      width: 100%;
-      height: 100%;
-      background-size: 200% 170%;
-      background-position: center;
+
+@media screen and (min-width:900px) and (max-width:1500px) {
+    .start {
+        width: 100%;
+        height: 100%;
+        background-size: 200% 170%;
+        background-position: center;
     }
     .start-box {
-      top:50%;
-      left: 50%;
-      width: 650px;
-      height: 650px;
-      padding: 40px;
+        top: 50%;
+        left: 50%;
+        width: 650px;
+        height: 650px;
+        padding: 40px;
     }
-  
-  .start-box h2 {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-size: 50px;
-  }
-  
-  .start-box form a {
-    padding: 10px 20px;
-    padding-top: 1.5em;
-    font-size: 40px;
-    
-  }
+    .start-box h2 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 55px;
+    }
+    .start-box form a {
+        margin-top: 2em;
+        font-size: 40px;
+    }
 }
