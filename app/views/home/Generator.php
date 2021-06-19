@@ -1,6 +1,31 @@
 <?php
 session_start();
+$host="localhost";
+$user="root";
+$password="";
+$db="images";
+$aVar=mysqli_connect($host,$user,$password);
+mysqli_select_db($aVar,'user_exemplu');
+$group1val   = isset($_POST["group1"]) ? $_POST["group1"] : 'Abs';
+$group2val   = isset($_POST["group2"]) ? $_POST["group2"] : 'Legs';
+$group3val   = isset($_POST["group3"]) ? $_POST["group3"] : 'Glutes';
+$group4val   = isset($_POST["group4"]) ? $_POST["group4"] : 'Back';
+$timeval     = isset($_POST["time"]) ? $_POST["time"] : '30';
+$locationval = isset($_POST["location"]) ? $_POST["location"] : 'Inside';
+if(isset($_POST['submit'])){
+  
+    $_SESSION['group1'] = $group1val;
+    $_SESSION['group2'] = $group2val;
+    $_SESSION['group3'] = $group3val;
+    $_SESSION['group4'] = $group4val;
+    $_SESSION['time']   = $timeval;
+    $_SESSION['location'] = $locationval;
+
+
+}
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -84,8 +109,8 @@ session_start();
             <option value="Chest">Chest</option>
         </select>
       </div>
-      <div class= "error-message" id="error-message">
-    <p> Error message</p>
+    
+  
     </div>
 
           <p>How long you want your workout? </p>
@@ -111,22 +136,19 @@ session_start();
           </div>
            
 
-          <div class="forgot_pass">
-    <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    <button class ="buttonSubmit" id="submit" type="submit" > GENERATE WORKOUT </button>  
+      
+   
+  
     </div>
-            <!-- <a href="Workout.php">
+             <a href="Workout.php">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               <input type="submit" name="submit" id="submit" value="Generate workout">
-            </a> -->
+            </a>
     </form>
-    <script src= "/app/views/home/JavaScriptFiles/AjaxVerifGenerator.js"></script>
+  
     </div>
     </div>
 

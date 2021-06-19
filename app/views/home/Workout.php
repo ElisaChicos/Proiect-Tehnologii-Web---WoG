@@ -195,7 +195,46 @@ session_start();
            $_SESSION['random_group4_ex1'] = $random_group4_ex1;
        }
 
-      
+        if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Abs")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Abs")==0 ){
+            $random_2exercises1 = rand(1,9);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+           }
+
+
+ if (strcmp($group1val, "Arms")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Arms")==0 && strcmp($group1val, "Arms")==0 ){
+            $random_2exercises1 =rand(10,15);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Back")==0 && strcmp($group2val, "Back")==0 || strcmp($group2val, "Back")==0 && strcmp($group1val, "Back")==0 ){
+            
+            $random_2exercises1 = rand(16,20);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Chest")==0 && strcmp($group2val, "Chest")==0 || strcmp($group2val, "Chest")==0 && strcmp($group1val, "Chest")==0 ){
+           
+            $random_2exercises1 = rand(21,25);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Glutes")==0 && strcmp($group2val, "Glutes")==0 || strcmp($group2val, "Glutes")==0 && strcmp($group1val, "Glutes")==0 ){
+            $random_2exercises1 = rand(25,30);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+if (strcmp($group1val, "Shoulders")==0 && strcmp($group2val, "Shoulders")==0 || strcmp($group2val, "Shoulders")==0 && strcmp($group1val, "Shoulders")==0 ){
+            $random_2exercises1 = rand(31,35);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Legs")==0 && strcmp($group2val, "Legs")==0 || strcmp($group2val, "Legs")==0 && strcmp($group1val, "Legs")==0 ){
+            $random_2exercises1 = rand(36,44);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
        if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Arms")==0 ){
          $array = array(2,5);
          $random_2exercises1 = $array[array_rand($array)];
@@ -305,6 +344,47 @@ session_start();
                $random_2exercises2 = $array[array_rand($array)];
                $_SESSION['random_2exercises2'] = $random_2exercises2;
            }
+           
+if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 || strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 ){
+    $random_2exercises2 = rand(1,9);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+   }
+
+
+if (strcmp($group3val, "Arms")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Arms")==0 && strcmp($group3val, "Arms")==0 ){
+    $random_2exercises2 =rand(10,15);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+if (strcmp($group3val, "Back")==0 && strcmp($group4val, "Back")==0 || strcmp($group4val, "Back")==0 && strcmp($group3val, "Back")==0 ){
+    
+    $random_2exercises2 = rand(16,20);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+
+if (strcmp($group3val, "Chest")==0 && strcmp($group4val, "Chest")==0 || strcmp($group4val, "Chest")==0 && strcmp($group3val, "Chest")==0 ){
+   
+    $random_2exercises2 = rand(21,25);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+
+if (strcmp($group3val, "Glutes")==0 && strcmp($group4val, "Glutes")==0 || strcmp($group4val, "Glutes")==0 && strcmp($group3val, "Glutes")==0 ){
+    $random_2exercises2 = rand(25,30);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+
+if (strcmp($group3val, "Shoulders")==0 && strcmp($group4val, "Shoulders")==0 || strcmp($group4val, "Shoulders")==0 && strcmp($group3val, "Shoulders")==0 ){
+    $random_2exercises2 = rand(31,35);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($group4val, "Legs")==0 && strcmp($group3val, "Legs")==0 ){
+    $random_2exercises2 = rand(36,44);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
            if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Chest")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Chest")==0){
                $array = array(2,4,21);
                $random_2exercises2 = $array[array_rand($array)];
@@ -560,6 +640,51 @@ session_start();
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            }
           
+if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Abs")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Abs")==0 ){
+    
+    $random_2exercises1 = rand(1,9);
+    $_SESSION['random_2exercises1'] = $random_2exercises1;
+ }
+
+
+ if (strcmp($group1val, "Arms")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Arms")==0 && strcmp($group1val, "Arms")==0 ){
+    $array = array(12,13,15,53);        
+    $random_2exercises1 =$array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Back")==0 && strcmp($group2val, "Back")==0 || strcmp($group2val, "Back")==0 && strcmp($group1val, "Back")==0 ){
+    $array = array(16,17,20,45,52);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Chest")==0 && strcmp($group2val, "Chest")==0 || strcmp($group2val, "Chest")==0 && strcmp($group1val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Glutes")==0 && strcmp($group2val, "Glutes")==0 || strcmp($group2val, "Glutes")==0 && strcmp($group1val, "Glutes")==0 ){
+    $array = array(25,26,27,28,30,47,50);
+    $random_2exercises1 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+if (strcmp($group1val, "Shoulders")==0 && strcmp($group2val, "Shoulders")==0 || strcmp($group2val, "Shoulders")==0 && strcmp($group1val, "Shoulders")==0 ){
+    $array = array(31,32,34,35,48,49);        
+    $random_2exercises1 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Legs")==0 && strcmp($group2val, "Legs")==0 || strcmp($group2val, "Legs")==0 && strcmp($group1val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);       
+    $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
            if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Arms")==0 ){
              $array = array(2,5);
              $random_2exercises1 = $array[array_rand($array)];
@@ -658,7 +783,52 @@ session_start();
                 $_SESSION['random_2exercises1'] = $random_2exercises1;
             }
         
+              
+if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Abs")==0 ){
     
+    $random_2exercises2 = rand(1,9);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+ }
+
+
+ if (strcmp($group3val, "Arms")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Arms")==0 && strcmp($group3val, "Arms")==0 ){
+    $array = array(12,13,15,53);        
+    $random_2exercises2 =$array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Back")==0 && strcmp($group4val, "Back")==0 || strcmp($group4val, "Back")==0 && strcmp($group3val, "Back")==0 ){
+    $array = array(16,17,20,45,52);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Chest")==0 && strcmp($group4val, "Chest")==0 || strcmp($group4val, "Chest")==0 && strcmp($group3val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Glutes")==0 && strcmp($group4val, "Glutes")==0 || strcmp($group4val, "Glutes")==0 && strcmp($group3val, "Glutes")==0 ){
+    $array = array(25,26,27,28,30,47,50);
+    $random_2exercises2 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+if (strcmp($group3val, "Shoulders")==0 && strcmp($group4val, "Shoulders")==0 || strcmp($group4val, "Shoulders")==0 && strcmp($group3val, "Shoulders")==0 ){
+    $array = array(31,32,34,35,48,49);        
+    $random_2exercises2 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($group4val, "Legs")==0 && strcmp($group3val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);       
+    $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
             if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Arms")==0 ){
                 $array = array(2,5);
                 $random_2exercises2 = $array[array_rand($array)];
@@ -937,7 +1107,53 @@ session_start();
             $random_group4_ex1 = $array[array_rand($array)];
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
            }
-          
+                   
+if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Abs")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Abs")==0 ){
+    $array = array(2,4,5);
+    $random_2exercises1 =$array[array_rand($array)];
+    $_SESSION['random_2exercises1'] = $random_2exercises1;
+ }
+
+
+ if (strcmp($group1val, "Arms")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Arms")==0 && strcmp($group1val, "Arms")==0 ){
+    $array = array(12,13,53);      
+    $random_2exercises1 =$array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Back")==0 && strcmp($group2val, "Back")==0 || strcmp($group2val, "Back")==0 && strcmp($group1val, "Back")==0 ){
+    $array = array(17,45,52);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Chest")==0 && strcmp($group2val, "Chest")==0 || strcmp($group2val, "Chest")==0 && strcmp($group1val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Glutes")==0 && strcmp($group2val, "Glutes")==0 || strcmp($group2val, "Glutes")==0 && strcmp($group1val, "Glutes")==0 ){
+    $array = array(26,47,50);
+    $random_2exercises1 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+if (strcmp($group1val, "Shoulders")==0 && strcmp($group2val, "Shoulders")==0 || strcmp($group2val, "Shoulders")==0 && strcmp($group1val, "Shoulders")==0 ){
+    $array = array(32,48,49);
+     
+    $random_2exercises1 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Legs")==0 && strcmp($group2val, "Legs")==0 || strcmp($group2val, "Legs")==0 && strcmp($group1val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);     
+    $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
            if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Arms")==0 ){
              $array = array(2,5);
              $random_2exercises1 = $array[array_rand($array)];
@@ -1036,6 +1252,54 @@ session_start();
                 $random_2exercises1 = 40; 
                 $_SESSION['random_2exercises1'] = $random_2exercises1;
             }
+
+                               
+if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Abs")==0 ){
+    $array = array(2,4,5);
+    $random_2exercises2 =$array[array_rand($array)];
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+ }
+
+
+ if (strcmp($group3val, "Arms")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Arms")==0 && strcmp($group3val, "Arms")==0 ){
+    $array = array(12,13,53);      
+    $random_2exercises2 =$array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Back")==0 && strcmp($group4val, "Back")==0 || strcmp($group4val, "Back")==0 && strcmp($group3val, "Back")==0 ){
+    $array = array(17,45,52);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Chest")==0 && strcmp($group4val, "Chest")==0 || strcmp($group4val, "Chest")==0 && strcmp($group3val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Glutes")==0 && strcmp($group4val, "Glutes")==0 || strcmp($group4val, "Glutes")==0 && strcmp($group3val, "Glutes")==0 ){
+    $array = array(26,47,50);
+    $random_2exercises2 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+if (strcmp($group3val, "Shoulders")==0 && strcmp($group4val, "Shoulders")==0 || strcmp($group4val, "Shoulders")==0 && strcmp($group3val, "Shoulders")==0 ){
+    $array = array(32,48,49);
+     
+    $random_2exercises2 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($group4val, "Legs")==0 && strcmp($group3val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);     
+    $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
             if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Arms")==0 ){
                 $array = array(2,5);
                 $random_2exercises2 = $array[array_rand($array)];
@@ -1147,6 +1411,10 @@ session_start();
         //////// GYM
       if(strcmp($locationval, "Gym")==0){
 
+        if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Abs")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Abs")==0 ){
+            $random_2exercises1 = rand(1,9);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+           }
         if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Arms")==0 ){
           $array = array(2,5);
           $random_2exercises1 = $array[array_rand($array)];
@@ -1177,6 +1445,10 @@ session_start();
              $random_2exercises1 = $array[array_rand($array)];
              $_SESSION['random_2exercises1'] = $random_2exercises1;
          }
+         if (strcmp($group1val, "Arms")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Arms")==0 && strcmp($group1val, "Arms")==0 ){
+            $random_2exercises1 =rand(10,15);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
          if (strcmp($group1val, "Arms")==0 && strcmp($group2val, "Back")==0 || strcmp($group2val, "Arms")==0 && strcmp($group1val, "Back")==0 ){
              $random_2exercises1 = 19;
              $_SESSION['random_2exercises1'] = $random_2exercises1;
@@ -1200,6 +1472,11 @@ session_start();
              $random_2exercises1 = 15;
              $_SESSION['random_2exercises1'] = $random_2exercises1;
          }
+         if (strcmp($group1val, "Back")==0 && strcmp($group2val, "Back")==0 || strcmp($group2val, "Back")==0 && strcmp($group1val, "Back")==0 ){
+            
+            $random_2exercises1 = rand(16,20);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
          if (strcmp($group1val, "Back")==0 && strcmp($group2val, "Chest")==0 || strcmp($group2val, "Back")==0 && strcmp($group1val, "Chest")==0 ){
              $array = array(22,24);
              $random_2exercises1 = $array[array_rand($array)];
@@ -1219,6 +1496,11 @@ session_start();
              $random_2exercises1 = 38;
              $_SESSION['random_2exercises1'] = $random_2exercises1;
          }
+         if (strcmp($group1val, "Chest")==0 && strcmp($group2val, "Chest")==0 || strcmp($group2val, "Chest")==0 && strcmp($group1val, "Chest")==0 ){
+           
+            $random_2exercises1 = rand(21,25);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
          if (strcmp($group1val, "Chest")==0 && strcmp($group2val, "Glutes")==0 || strcmp($group2val, "Chest")==0 && strcmp($group1val, "Glutes")==0 ){
              $array = array(23,25,29);
              $random_2exercises1 = $array[array_rand($array)];
@@ -1233,6 +1515,10 @@ session_start();
              $random_2exercises1 = 44;
              $_SESSION['random_2exercises1'] = $random_2exercises1;
          }
+         if (strcmp($group1val, "Glutes")==0 && strcmp($group2val, "Glutes")==0 || strcmp($group2val, "Glutes")==0 && strcmp($group1val, "Glutes")==0 ){
+            $random_2exercises1 = rand(25,30);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
          if (strcmp($group1val, "Glutes")==0 && strcmp($group2val, "Shoulders")==0 || strcmp($group2val, "Glutes")==0 && strcmp($group1val, "Shoulders")==0 ){
              $random_2exercises1 = 33;
              $_SESSION['random_2exercises1'] = $random_2exercises1;
@@ -1242,10 +1528,60 @@ session_start();
              $random_2exercises1 = $array[array_rand($array)];
              $_SESSION['random_2exercises1'] = $random_2exercises1;
          }
+         if (strcmp($group1val, "Shoulders")==0 && strcmp($group2val, "Shoulders")==0 || strcmp($group2val, "Shoulders")==0 && strcmp($group1val, "Shoulders")==0 ){
+            $random_2exercises1 = rand(31,35);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
          if (strcmp($group1val, "Shoulders")==0 && strcmp($group2val, "Legs")==0 || strcmp($group2val, "Shoulders")==0 && strcmp($group1val, "Legs")==0 ){
              $random_2exercises1 = 36;
              $_SESSION['random_2exercises1'] = $random_2exercises1;
          }
+         if (strcmp($group1val, "Legs")==0 && strcmp($group2val, "Legs")==0 || strcmp($group2val, "Legs")==0 && strcmp($group1val, "Legs")==0 ){
+            $random_2exercises1 = rand(36,44);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 || strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 ){
+    $random_2exercises2 = rand(1,9);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+   }
+
+
+if (strcmp($group3val, "Arms")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Arms")==0 && strcmp($group3val, "Arms")==0 ){
+    $random_2exercises2 =rand(10,15);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+if (strcmp($group3val, "Back")==0 && strcmp($group4val, "Back")==0 || strcmp($group4val, "Back")==0 && strcmp($group3val, "Back")==0 ){
+    
+    $random_2exercises2 = rand(16,20);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+
+if (strcmp($group3val, "Chest")==0 && strcmp($group4val, "Chest")==0 || strcmp($group4val, "Chest")==0 && strcmp($group3val, "Chest")==0 ){
+   
+    $random_2exercises2 = rand(21,25);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+
+if (strcmp($group3val, "Glutes")==0 && strcmp($group4val, "Glutes")==0 || strcmp($group4val, "Glutes")==0 && strcmp($group3val, "Glutes")==0 ){
+    $random_2exercises2 = rand(25,30);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+
+if (strcmp($group3val, "Shoulders")==0 && strcmp($group4val, "Shoulders")==0 || strcmp($group4val, "Shoulders")==0 && strcmp($group3val, "Shoulders")==0 ){
+    $random_2exercises2 = rand(31,35);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
+if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($group4val, "Legs")==0 && strcmp($group3val, "Legs")==0 ){
+    $random_2exercises2 = rand(36,44);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+}
+
          if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Arms")==0 ){
              $array = array(2,5);
              $random_2exercises2 = $array[array_rand($array)];
@@ -1448,8 +1784,98 @@ session_start();
                  $random_2exercises1 = 35; 
                  $_SESSION['random_2exercises1'] = $random_2exercises1;
              }
-         
-     
+                       
+if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Abs")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Abs")==0 ){
+    
+    $random_2exercises1 = rand(1,9);
+    $_SESSION['random_2exercises1'] = $random_2exercises1;
+ }
+
+
+ if (strcmp($group1val, "Arms")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Arms")==0 && strcmp($group1val, "Arms")==0 ){
+    $array = array(12,13,15,53);        
+    $random_2exercises1 =$array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Back")==0 && strcmp($group2val, "Back")==0 || strcmp($group2val, "Back")==0 && strcmp($group1val, "Back")==0 ){
+    $array = array(16,17,20,45,52);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Chest")==0 && strcmp($group2val, "Chest")==0 || strcmp($group2val, "Chest")==0 && strcmp($group1val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Glutes")==0 && strcmp($group2val, "Glutes")==0 || strcmp($group2val, "Glutes")==0 && strcmp($group1val, "Glutes")==0 ){
+    $array = array(25,26,27,28,30,47,50);
+    $random_2exercises1 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+if (strcmp($group1val, "Shoulders")==0 && strcmp($group2val, "Shoulders")==0 || strcmp($group2val, "Shoulders")==0 && strcmp($group1val, "Shoulders")==0 ){
+    $array = array(31,32,34,35,48,49);        
+    $random_2exercises1 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Legs")==0 && strcmp($group2val, "Legs")==0 || strcmp($group2val, "Legs")==0 && strcmp($group1val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);       
+    $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+               
+if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Abs")==0 ){
+    
+    $random_2exercises2 = rand(1,9);
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+ }
+
+
+ if (strcmp($group3val, "Arms")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Arms")==0 && strcmp($group3val, "Arms")==0 ){
+    $array = array(12,13,15,53);        
+    $random_2exercises2 =$array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Back")==0 && strcmp($group4val, "Back")==0 || strcmp($group4val, "Back")==0 && strcmp($group3val, "Back")==0 ){
+    $array = array(16,17,20,45,52);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Chest")==0 && strcmp($group4val, "Chest")==0 || strcmp($group4val, "Chest")==0 && strcmp($group3val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Glutes")==0 && strcmp($group4val, "Glutes")==0 || strcmp($group4val, "Glutes")==0 && strcmp($group3val, "Glutes")==0 ){
+    $array = array(25,26,27,28,30,47,50);
+    $random_2exercises2 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+if (strcmp($group3val, "Shoulders")==0 && strcmp($group4val, "Shoulders")==0 || strcmp($group4val, "Shoulders")==0 && strcmp($group3val, "Shoulders")==0 ){
+    $array = array(31,32,34,35,48,49);        
+    $random_2exercises2 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($group4val, "Legs")==0 && strcmp($group3val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);       
+    $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
              if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Arms")==0 ){
                  $array = array(2,5);
                  $random_2exercises2 = $array[array_rand($array)];
@@ -1554,7 +1980,53 @@ session_start();
  
              ///////OUTSIDE
              if(strcmp($locationval, "Outside")==0){
-           
+                              
+if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Abs")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Abs")==0 ){
+    $array = array(2,4,5);
+    $random_2exercises1 =$array[array_rand($array)];
+    $_SESSION['random_2exercises1'] = $random_2exercises1;
+ }
+
+
+ if (strcmp($group1val, "Arms")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Arms")==0 && strcmp($group1val, "Arms")==0 ){
+    $array = array(12,13,53);      
+    $random_2exercises1 =$array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Back")==0 && strcmp($group2val, "Back")==0 || strcmp($group2val, "Back")==0 && strcmp($group1val, "Back")==0 ){
+    $array = array(17,45,52);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Chest")==0 && strcmp($group2val, "Chest")==0 || strcmp($group2val, "Chest")==0 && strcmp($group1val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+ if (strcmp($group1val, "Glutes")==0 && strcmp($group2val, "Glutes")==0 || strcmp($group2val, "Glutes")==0 && strcmp($group1val, "Glutes")==0 ){
+    $array = array(26,47,50);
+    $random_2exercises1 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+
+if (strcmp($group1val, "Shoulders")==0 && strcmp($group2val, "Shoulders")==0 || strcmp($group2val, "Shoulders")==0 && strcmp($group1val, "Shoulders")==0 ){
+    $array = array(32,48,49);
+     
+    $random_2exercises1 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
+
+if (strcmp($group1val, "Legs")==0 && strcmp($group2val, "Legs")==0 || strcmp($group2val, "Legs")==0 && strcmp($group1val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);     
+    $random_2exercises1 = $array[array_rand($array)];
+            $_SESSION['random_2exercises1'] = $random_2exercises1;
+        }
             if (strcmp($group1val, "Abs")==0 && strcmp($group2val, "Arms")==0 || strcmp($group2val, "Abs")==0 && strcmp($group1val, "Arms")==0 ){
               $array = array(2,5);
               $random_2exercises1 = $array[array_rand($array)];
@@ -1653,11 +2125,61 @@ session_start();
                  $random_2exercises1 = 40; 
                  $_SESSION['random_2exercises1'] = $random_2exercises1;
              }
+
+
+                                
+if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Abs")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Abs")==0 ){
+    $array = array(2,4,5);
+    $random_2exercises2 =$array[array_rand($array)];
+    $_SESSION['random_2exercises2'] = $random_2exercises2;
+ }
+
+
+ if (strcmp($group3val, "Arms")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Arms")==0 && strcmp($group3val, "Arms")==0 ){
+    $array = array(12,13,53);      
+    $random_2exercises2 =$array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Back")==0 && strcmp($group4val, "Back")==0 || strcmp($group4val, "Back")==0 && strcmp($group3val, "Back")==0 ){
+    $array = array(17,45,52);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Chest")==0 && strcmp($group4val, "Chest")==0 || strcmp($group4val, "Chest")==0 && strcmp($group3val, "Chest")==0 ){
+    $array = array(12,46,51);
+            $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+ if (strcmp($group3val, "Glutes")==0 && strcmp($group4val, "Glutes")==0 || strcmp($group4val, "Glutes")==0 && strcmp($group3val, "Glutes")==0 ){
+    $array = array(26,47,50);
+    $random_2exercises2 =  $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+
+if (strcmp($group3val, "Shoulders")==0 && strcmp($group4val, "Shoulders")==0 || strcmp($group4val, "Shoulders")==0 && strcmp($group3val, "Shoulders")==0 ){
+    $array = array(32,48,49);
+     
+    $random_2exercises2 = $array[array_rand($array)]; rand(31,35);
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
+
+if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($group4val, "Legs")==0 && strcmp($group3val, "Legs")==0 ){
+    $array = array(37,38,39,40,41,42,43,44);     
+    $random_2exercises2 = $array[array_rand($array)];
+            $_SESSION['random_2exercises2'] = $random_2exercises2;
+        }
              if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Arms")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Arms")==0 ){
                  $array = array(2,5);
                  $random_2exercises2 = $array[array_rand($array)];
                  $_SESSION['random_2exercises2'] = $random_2exercises2;
                 }
+
                 if (strcmp($group3val, "Abs")==0 && strcmp($group4val, "Back")==0 || strcmp($group4val, "Abs")==0 && strcmp($group3val, "Back")==0 ){
                     $array = array(2,17); 
                     $random_2exercises2 = $array[array_rand($array)];
