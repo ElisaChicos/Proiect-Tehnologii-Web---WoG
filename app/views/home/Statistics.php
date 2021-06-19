@@ -31,9 +31,10 @@
 
 
         <div class="login-box2">
-            <form method = "POST" action = "../phpFiles/generateRSSDataFeed.php" target="_blank">
-            <a href="../phpFiles/rssFeed.xml" type="application/rss+xml">
-            <input type="image" src="/../public/images/feed-icon.png" alt="Submit" name="rssBtn" id="rssBtn"></a>
+            <form method = "POST" action = "../phpFiles/generateRSSDataFeed.php">
+            <a href="../phpFiles/rssFeed.xml" type="application/rss+xml" target="_blank" class="rssPage">
+            <img src="/../public/images/feed-icon.png" class="rssPage">
+            </a>
             
             </form>      
             <h1>STATISTICS</h1>    

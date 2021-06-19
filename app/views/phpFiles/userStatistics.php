@@ -11,9 +11,9 @@
     }
     $email = $_SESSION['email'];
     $username = $_SESSION['username'];
+    echo "<br>";
     $maxActivityPoints = 0;
 
-    echo "<br>";
     $stmt = $conn->prepare("SELECT activity_points FROM user_exemplu.users order by activity_points DESC LIMIT 1;");
     $stmt->execute();
     if($stmt->execute()){
@@ -70,8 +70,12 @@
         while($row = $result->fetch_assoc()){
             echo "<p> → You are number " . $position . " in top most active users</p>";
 
-            echo "<p> → You have with " . $maxActivityPoints - $row["activity_points"] . " activity points less than the most active user </p>";
-     
+            if($position == 1){
+                echo "<p> → You are the most active user. Congrats!</p>";
+            }else{
+                echo "<p> → You have with " . $maxActivityPoints - $row["activity_points"] . " activity points less than the most active user </p>";
+            }
+
             echo "<p> → You have with " . $row["old_weight"] - $row["weight"] . " kg less!</p>";
 
             if($row["activity_points"] > $activityPointsLastPosition){
