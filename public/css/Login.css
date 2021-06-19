@@ -377,6 +377,12 @@ button {
 }
 
 @media only screen and (min-width:300px) and (max-width:500px) {
+    body,
+    html {
+        margin: 0;
+        height: 110%;
+        width: 100%;
+    }
     .start_login {
         height: 100%;
         background-image: url("https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=631&q=80");
@@ -389,8 +395,11 @@ button {
         padding: 10px;
     }
     .login-box2 p {
-        font-size: 25px;
+        font-size: 15px;
         margin-top: 30px;
+    }
+    svg {
+        margin-left: 15em;
     }
 }
 
@@ -418,7 +427,7 @@ button {
         padding: 10px;
     }
     .login-box2 p {
-        font-size: 25px;
+        font-size: 15px;
         margin-top: 50px;
     }
     .login-box2 h2 {
@@ -433,8 +442,20 @@ button {
         font-size: 30px;
     }
     .login-box2 form a {
-        font-size: 2em;
+        font-size: 1.5em;
         padding-top: 1em;
+    }
+    #emailId {
+        font-size: 2em;
+    }
+    .login-box2 form .forgot_pass {
+        margin-bottom: 0.5em;
+    }
+    .buttonSubmit {
+        font-size: 25px;
+    }
+    svg {
+        margin-left: 35em;
     }
 }
 
@@ -448,12 +469,12 @@ button {
     .login-box2 {
         top: 50%;
         left: 50%;
-        width: 550px;
+        width: 700px;
         height: 970px;
         padding: 10px;
     }
     .login-box2 p {
-        font-size: 25px;
+        font-size: 15px;
         margin-top: 50px;
     }
     .login-box2 h2 {
@@ -479,5 +500,8 @@ button {
     }
     .buttonSubmit {
         font-size: 35px;
+    }
+    svg {
+        margin-left: 35em;
     }
 }

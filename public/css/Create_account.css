@@ -37,18 +37,6 @@ html {
     background-size: 100%;
 }
 
-.upload {
-    width: 50%;
-    padding: 10px 0;
-    padding-left: 160px;
-    font-size: 20px;
-    color: #fff;
-    left: 100px;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-
 h2 {
     text-align: center;
     padding-top: 2em;
@@ -388,19 +376,12 @@ select {
 @media only screen and (max-width:330px) {
     body,
     html {
-        height: 180%;
+        height: 200%;
         width: 170%;
     }
     .start_create {
         background-image: url("https://images.unsplash.com/photo-1617133973515-f714c8e8f51e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
         background-size: 170% 120%;
-    }
-    .upload {
-        width: 50%;
-        padding: 10px 0;
-        padding-left: 160px;
-        font-size: 20px;
-        left: 100px;
     }
     h2 {
         font: normal bold 5em Georgia, 'Times New Roman', Times, serif;
@@ -415,26 +396,28 @@ select {
         top: 50%;
         left: 50%;
         width: 700px;
-        height: 1700px;
+        height: 2200px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 h2 {
         margin: 0 0 30px;
+        margin-bottom: 1em;
     }
     .login-box2 .user-box input {
         width: 40%;
         padding: 10px 2px;
-        font-size: 18px;
-        margin-bottom: 30px;
+        font-size: 30px;
+        margin-bottom: 3em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
-        font-size: 25px;
+        font-size: 35px;
+        margin-bottom: 2em;
         right: 0;
     }
     .login-box2 .user-box input:focus~label,
     .login-box2 .user-box input:valid~label {
-        top: -10px;
+        top: -5px;
     }
     #radios {
         font-size: 27px;
@@ -444,7 +427,7 @@ select {
     }
     .login-box2 form a {
         padding: 15px 25px;
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 20px;
         letter-spacing: 0;
     }
@@ -462,24 +445,20 @@ select {
         font-size: 50px;
         line-height: 50px;
     }
+    .buttonSubmit {
+        font-size: 40px;
+    }
 }
 
 @media only screen and (min-width:330px) and (max-width:500px) {
     body,
     html {
-        height: 160%;
+        height: 170%;
         width: 140%;
     }
     .start_create {
         background-image: url("https://images.unsplash.com/photo-1616279968481-f8717a710ef6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA0fHxmaXRuZXNzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
         background-size: 120% 100%;
-    }
-    .upload {
-        width: 50%;
-        padding: 10px 0;
-        padding-left: 140px;
-        font-size: 20px;
-        left: 100px;
     }
     h2 {
         font: normal bold 3em Georgia, 'Times New Roman', Times, serif;
@@ -494,7 +473,7 @@ select {
         top: 50%;
         left: 50%;
         width: 670px;
-        height: 1600px;
+        height: 1700px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 h2 {
@@ -503,17 +482,18 @@ select {
     .login-box2 .user-box input {
         width: 40%;
         padding: 10px 2px;
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: 25px;
+        margin-bottom: 2.5em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
-        font-size: 20px;
+        font-size: 30px;
+        margin-bottom: 1.5em;
         right: 0;
     }
     .login-box2 .user-box input:focus~label,
     .login-box2 .user-box input:valid~label {
-        top: -10px;
+        top: -5px;
     }
     #radios {
         font-size: 24px;
@@ -542,23 +522,19 @@ select {
         font-size: 40px;
         line-height: 40px;
     }
+    .buttonSubmit {
+        font-size: 30px;
+    }
 }
 
 @media screen and (min-width:500px) and (max-width:600px) {
     body,
     html {
-        height: 160%;
+        height: 170%;
         width: 150%;
     }
     .start_create {
         background-size: 120% 100%;
-    }
-    .upload {
-        width: 50%;
-        padding: 10px 0;
-        padding-left: 250px;
-        font-size: 20px;
-        left: 100px;
     }
     h2 {
         font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
@@ -573,18 +549,19 @@ select {
         top: 50%;
         left: 50%;
         width: 1000px;
-        height: 1600px;
+        height: 1700px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 .user-box input {
-        width: 30%;
+        width: 40%;
         padding: 10px 2px;
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: 25px;
+        margin-bottom: 2.5em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
-        font-size: 25px;
+        font-size: 30px;
+        margin-bottom: 1.5em;
         right: 0;
     }
     .login-box2 .user-box input:focus~label,
@@ -599,7 +576,7 @@ select {
     }
     .login-box2 form a {
         padding: 15px 25px;
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 20px;
         letter-spacing: 0;
     }
@@ -618,23 +595,19 @@ select {
         font-size: 40px;
         line-height: 40px;
     }
+    .buttonSubmit {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:900px) {
     body,
     html {
-        height: 130%;
+        height: 150%;
         width: 130%;
     }
     .start_create {
         background-size: 170% 100%;
-    }
-    .upload {
-        width: 50%;
-        padding: 10px 0;
-        padding-left: 250px;
-        font-size: 20px;
-        left: 100px;
     }
     h2 {
         font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
@@ -649,29 +622,30 @@ select {
         top: 50%;
         left: 50%;
         width: 1200px;
-        height: 1600px;
+        height: 2200px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 .user-box input {
-        width: 30%;
+        width: 40%;
         padding: 10px 2px;
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: 35px;
+        margin-bottom: 2.5em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
-        font-size: 25px;
+        font-size: 40px;
+        margin-bottom: 1.5em;
         right: 0;
     }
     .login-box2 .user-box input:focus~label,
     .login-box2 .user-box input:valid~label {
         top: -5px;
     }
-    #radios {
-        font-size: 30px;
-    }
-    #radios p {
+    .buttonSubmit {
         font-size: 40px;
+    }
+    .login-box2 h2 {
+        margin-bottom: 2em;
     }
     .login-box2 form a {
         padding: 15px 25px;
@@ -694,6 +668,14 @@ select {
         font-size: 40px;
         line-height: 40px;
     }
+    #radios1,
+    #radios2,
+    #radios3 {
+        font-size: 20px;
+    }
+    #radios p {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width:900px) and (max-width:1030px) {
@@ -704,13 +686,6 @@ select {
     }
     .start_create {
         background-size: 150% 100%;
-    }
-    .upload {
-        width: 50%;
-        padding: 10px 0;
-        padding-left: 250px;
-        font-size: 20px;
-        left: 100px;
     }
     h2 {
         font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
@@ -725,23 +700,27 @@ select {
         top: 50%;
         left: 50%;
         width: 1000px;
-        height: 1600px;
+        height: 1900px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 .user-box input {
-        width: 30%;
+        width: 40%;
         padding: 10px 2px;
-        font-size: 16px;
-        margin-bottom: 30px;
+        font-size: 35px;
+        margin-bottom: 2.5em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
-        font-size: 25px;
+        font-size: 40px;
+        margin-bottom: 1.5em;
         right: 0;
     }
     .login-box2 .user-box input:focus~label,
     .login-box2 .user-box input:valid~label {
         top: -5px;
+    }
+    .buttonSubmit {
+        font-size: 35px;
     }
     #radios {
         font-size: 30px;
@@ -751,7 +730,7 @@ select {
     }
     .login-box2 form a {
         padding: 15px 25px;
-        font-size: 30px;
+        font-size: 35px;
         margin-top: 20px;
         letter-spacing: 0;
     }

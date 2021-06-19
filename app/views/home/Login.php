@@ -58,7 +58,7 @@ session_start();
     </div>
 
 
-    <p>First time here? </p>
+    <p>You don't have an account?</p>
 
     <a href="/app/views/home/Create_account.php">
             <span></span>
