@@ -59,7 +59,7 @@ html {
 }
 
 .start-profile {
-    height: 120%;
+    height: 130%;
     margin: 0;
     padding: 0;
     background-size: 100%;
@@ -177,7 +177,7 @@ h1 {
     left: 60%;
     width: 950px;
     padding: 40px;
-    height: 950px;
+    height: 1000px;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.644);
     box-sizing: border-box;

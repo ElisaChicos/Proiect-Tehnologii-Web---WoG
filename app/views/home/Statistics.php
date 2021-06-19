@@ -30,7 +30,6 @@
     </ul>
 
 
-
         <div class="login-box2">
             <form method = "POST" action = "../phpFiles/generateRSSDataFeed.php" target="_blank">
             <a href="../phpFiles/rssFeed.xml" type="application/rss+xml">
@@ -62,7 +61,7 @@
             <?php require_once("../phpFiles/userStatistics.php");?>
             </div>
 
-            <p class="paragraph"> If you want to see how your body looks like right now, we have this tool ready for you: </p>
+            <p class="paragraph1"> If you want to see how your body looks like right now, these tools are exactly what you are looking for: </p>
             <a href="http://www.bmivisualizer.com/" class="button" target="_blank">CLICK HERE</a>
             <a href="https://bodyvisualizer.com/" class="button" target="_blank">CLICK HERE</a>
         </div>

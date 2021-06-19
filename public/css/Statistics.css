@@ -27,8 +27,18 @@
     text-indent: 2%;
     white-space: normal;
     padding-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     font: normal 1.1em Georgia, 'Times New Roman', Times, serif;
+}
+
+.paragraph1 {
+    border-radius: 15px;
+    word-spacing: 4px;
+    text-indent: 2%;
+    white-space: normal;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font: normal 1.3em Georgia, 'Times New Roman', Times, serif;
 }
 
 .button {

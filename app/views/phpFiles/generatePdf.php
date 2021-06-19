@@ -36,9 +36,11 @@
         $pdf->AliasNbPages();
         $pdf->AddPage();
         $pdf->SetFont('Times','b',12);
-        $pdf->SetLeftMargin(45);
-        $pdf->cell('20','10','Nr. crt', '1', '0', 'C');
-        $pdf->cell('100','10','Username', '1', '1', 'C');
+        $pdf->SetLeftMargin(25);
+        $pdf->cell('30','10','Nr. crt', '1', '0', 'C');
+        $pdf->cell('50','10','Username', '1', '0', 'C');
+        $pdf->cell('40','10','Age', '1', '0', 'C');
+        $pdf->cell('40','10','Gender', '1', '1', 'C');
         
         $counter = 0;
         $pdf->SetFont('Times','',12);
@@ -50,8 +52,10 @@
           $result = $stmt->get_result();
           $stmt->close();
           while($row = $result->fetch_assoc()){
-            $pdf->cell('20','10',++$counter, '1', '0', 'C');
-            $pdf->cell('100','10',$row["username"], '1', '1', 'C');
+            $pdf->cell('30','10',++$counter, '1', '0', 'C');
+            $pdf->cell('50','10',$row["username"], '1', '0', 'C');
+            $pdf->cell('40','10',$row["age"], '1', '0', 'C');
+            $pdf->cell('40','10',$row["gender"], '1', '1', 'C');
             }
         }else{
             echo 'Error';

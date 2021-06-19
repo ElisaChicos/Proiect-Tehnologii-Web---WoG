@@ -23,7 +23,9 @@
                     while($row = $result->fetch_assoc()){
                         $activeUsers[] = array(
                             'nr.crt' => ++$counter,
-                            'username' => $row["username"]
+                            'username' => $row["username"],
+                            'age' => $row["age"],
+                            'gender' => $row["gender"]
                         );
                     }
                 return json_encode($activeUsers);

@@ -44,20 +44,39 @@ while($row = mysqli_fetch_array($result)){
 }
 ?>
 </p>
+
 <p class="enum">Number 
     
 <?php     
-$aVar=mysqli_connect("localhost","root","", "user_exemplu");
-mysqli_select_db($aVar,'user_exemplu');
-$email = $_SESSION['email'];
-$_SESSION['message'] = $email;
 
-$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
-$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
+    $servername="localhost";
+    $user="root";
+    $db_password="";
+    $db="user_exemplu";
 
-while($row = mysqli_fetch_array($result)){
-    echo $row["id"];
-}
+    $conn = new mysqli($servername, $user, $db_password, $db);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $email = $_SESSION['email'];
+
+    $position = 1;
+    $stmt = $conn->prepare("SELECT email, activity_points FROM user_exemplu.users order by activity_points DESC;");
+    $stmt->execute();
+    if($stmt->execute()){
+        $result = $stmt->get_result();
+        $stmt->close();
+        while($row = $result->fetch_assoc()){
+            if($row["email"] === $email){
+                break;
+            }else{
+                $position++;
+            }
+        }
+    }else{
+        echo 'Error';
+    }
+    echo $position;
 ?> in top most active users</p>
 
 
@@ -94,14 +113,28 @@ while($row = mysqli_fetch_array($result)){
 
 <h2>Private information</h2>
 <p class="enum">
-    Update information about you: <br>
-    Don't worry, only you cand see these informations. :)
+&nbsp;&nbsp;Don't worry, only you cand see these informations. :)
 </p>
 <p class="enum">Email: 
 <?php
 echo $_SESSION["email"];
 ?>
 </p>
+
+<p class="enum">Activity points (how many workouts have you done):  <?php
+$aVar=mysqli_connect("localhost","root","", "user_exemplu");
+
+mysqli_select_db($aVar,'user_exemplu');
+$email = $_SESSION['email'];
+$sql = "SELECT * FROM user_exemplu.users WHERE email = '$email';";
+$result = mysqli_query($aVar,$sql) or die(mysqli_error($aVar));;
+
+while($row = mysqli_fetch_array($result)){
+    echo $row["activity_points"];
+}
+?>
+</p>
+
 <p class="enum">Height: 
 <?php
 
@@ -117,6 +150,7 @@ while($row = mysqli_fetch_array($result)){
 }
 ?>
 </p>
+
 <p class="enum">Weight: 
 <?php
 
