@@ -1,14 +1,7 @@
 <?php
 
-    $servername="localhost";
-    $user="root";
-    $db_password="";
-    $db="user_exemplu";
+    require_once("../phpFiles/dbConn.php");    
 
-    $conn = new mysqli($servername, $user, $db_password, $db);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
     $email = $_SESSION['email'];
     $username = $_SESSION['username'];
     echo "<br>";

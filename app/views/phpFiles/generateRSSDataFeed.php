@@ -1,29 +1,8 @@
 <?php
-    session_start();
-    $servername="localhost";
-    $user="root";
-    $db_password="";
-    $db="user_exemplu";
-
-    $conn = new mysqli($servername, $user, $db_password, $db);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    // session_start();
+    require_once("../phpFiles/dbConn.php");
     $email = $_SESSION['email'];
-
-    $maxActivityPoints = 0; //nr 1 in top
-
-    $stmt = $conn->prepare("SELECT activity_points FROM user_exemplu.users order by activity_points DESC LIMIT 1;");
-    $stmt->execute();
-    if($stmt->execute()){
-        $result = $stmt->get_result();
-        $stmt->close();
-        while($row = $result->fetch_assoc()){
-            $maxActivityPoints = $row["activity_points"];
-        }
-    }else{
-        echo 'Error';
-    }
+    $activityPoints = $_SESSION['activity_points'];
 
     $position = 1; //position for current user in top
     $stmt = $conn->prepare("SELECT email, activity_points FROM user_exemplu.users order by activity_points DESC;");
@@ -39,7 +18,28 @@
             }
         }
     }else{
-        echo 'Error';
+        //echo 'Error';
+    }
+
+    $maxActivityPoints = 0; //nr 1 in top
+
+    $stmt = $conn->prepare("SELECT activity_points FROM user_exemplu.users order by activity_points DESC LIMIT 1;");
+    $stmt->execute();
+    if($stmt->execute()){
+        $result = $stmt->get_result();
+        $stmt->close();
+        while($row = $result->fetch_assoc()){
+            $maxActivityPoints = $row["activity_points"];
+        }
+    }else{
+        //echo 'Error';
+    }
+
+    $variable ='';
+    if($position == 1){
+        $variable = "You are the most active user. Congrats!";
+    }else{
+        $variable = "You have with " . $maxActivityPoints - $activityPoints . " activity points less than the most active user" ;
     }
 
     $emailLastPosition = ''; 
@@ -57,7 +57,7 @@
             $activityPointsLastPosition = $row['activity_points'];
         }
     }else{
-        echo 'Error';
+        //echo 'Error';
     }
 
     $isInTop = '';
@@ -69,7 +69,6 @@
 
     while($row = $result->fetch_assoc()){
             $weight = $row["old_weight"] - $row["weight"];
-            $variable = $maxActivityPoints - $row["activity_points"];
             if($row["activity_points"] > $activityPointsLastPosition){
                 $isInTop = ' You are in top 10!';
             }else{
@@ -99,7 +98,7 @@
                 "link"        => "/app/views/home/Statistics.php")
             
             , array("title"       => "Nr. 1 vs you in Top:",
-                "description" => "You have with " . $variable . " activity points less than the most active user",
+                "description" => $variable,
                 "link"        => "/app/views/home/Statistics.php")
             
             , array("title"       => "Weight loss:",
@@ -111,10 +110,11 @@
                 "link"        => "/app/views/home/Statistics.php")
         );
 
+        //$output = 'header("Content-Type: application/rss+xml; charset=ISO-8859-1");';
         $output = '<?xml version="1.0" encoding="ISO-8859-1"?>';
         $output .= '<rss version="2.0">';
         $output .= "<channel>";
-        $output .= "<title>Statistics Update | RSS</title>";
+        $output .= "<title>Statistics Update | RSS </title>";
         $output .= "<description>New update on statistics</description>";
         $output .= "<link>/app/views/home/Statistics.php</link>";
         $output .= "<language>en-us</language>";
@@ -130,16 +130,13 @@
         $output .= "</channel>";
         $output .= "</rss>";
     
-        header("Content-Type: application/rss+xml; charset=ISO-8859-1");
-    
-    
-        $filename = 'rssFeed.xml';
+        $filename = '../phpFiles/rssFeed.xml';
                 if(file_put_contents($filename, $output)){
-                    echo '';
+                   // echo '';
                 }else{
-                    echo 'There is a error.';
+                    //echo 'There is a error.';
                 }
         }else{
-            echo 'error';
+           // echo 'error';
         }
 ?>
