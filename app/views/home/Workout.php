@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +47,6 @@
     </html>
     <?php
 
-    session_start();
     $group1val   = $_GET['group1'];
     $group2val   = $_GET['group2'];
     $group3val   = $_GET['group3'];

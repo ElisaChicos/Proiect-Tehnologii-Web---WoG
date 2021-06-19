@@ -6,9 +6,9 @@ const form = {
     timeval: document.getElementById("time"),
     locationval: document.getElementById("location"),
     message: document.getElementById("error-message"),
-    submit: document.getElementById("submit"),
+    submit: document.getElementById("submitForm"),
 };
-const formular = document.getElementById("myForm");
+const formular = document.getElementById("myform");
 
 function handleForm(event) { event.preventDefault(); }
 formular.addEventListener('submit', handleForm);
@@ -46,7 +46,7 @@ function getAndHandleResponse(response) {
         document.getElementById("error-message").innerHTML = response.message;
         form.message.style.color = 'rgba(255, 255, 255, 0)';
         form.message.style.marginBottom = "25px";
-        location.href = '/app/views/home/Workout.php';
+        //location.href = '/app/views/home/Workout.php';
     } else {
         document.getElementById("error-message").innerHTML = response.message;
         form.message.style.color = 'rgb(172, 0, 0)';

@@ -30,7 +30,7 @@ session_start();
   
       <div class="login-box2">
   
-      <form method="GET" action="/app/views/home/Workout.php" id="myform">
+      <form  id="myform">
         <h2>Generate workout</h2>
 
       <p>What groups of muscles you want to work on?</p>
@@ -110,18 +110,25 @@ session_start();
             </select>
           </div>
            
-            <a href="Workout.php">
+
+          <div class="forgot_pass">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    <button class ="buttonSubmit" id="submitForm" type="submit" > GENERATE WORKOUT </button>  
+    </div>
+            <!-- <a href="Workout.php">
               <span></span>
               <span></span>
               <span></span>
               <span></span>
               <input type="submit" name="submit" id="submit" value="Generate workout">
-              
-            </a>
+            </a> -->
     </form>
-    <script src= "/app/views/home/JavaScriptFiles/AjaxVerifGenerator.js"></script>
     </div>
     </div>
 
 </body>
+<script src= "/app/views/home/JavaScriptFiles/AjaxVerifGenerator.js"></script>
 </html>
