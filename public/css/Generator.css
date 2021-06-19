@@ -351,6 +351,13 @@ option {
     color: black;
 }
 
+.login-box2 .error-message p {
+    color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
 @media only screen and (max-width:300px) {
     body,
     html {

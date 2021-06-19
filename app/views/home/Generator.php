@@ -1,39 +1,5 @@
-<?php 
-
+<?php
 session_start();
-$host="localhost";
-$user="root";
-$password="";
-$db="images";
-$aVar=mysqli_connect($host,$user,$password);
-mysqli_select_db($aVar,'user_exemplu');
-
-$group1val   = isset($_POST["group1"]) ? $_POST["group1"] : 'Abs';
-$group2val   = isset($_POST["group2"]) ? $_POST["group2"] : 'Legs';
-$group3val   = isset($_POST["group3"]) ? $_POST["group3"] : 'Glutes';
-$group4val   = isset($_POST["group4"]) ? $_POST["group4"] : 'Back';
-$timeval     = isset($_POST["time"]) ? $_POST["time"] : '30';
-$locationval = isset($_POST["location"]) ? $_POST["location"] : 'Inside';
-
-
-
-if(isset($_POST['submit'])){
-  
-    $_SESSION['group1'] = $group1val;
-    $_SESSION['group2'] = $group2val;
-    $_SESSION['group3'] = $group3val;
-    $_SESSION['group4'] = $group4val;
-    $_SESSION['time']   = $timeval;
-    $_SESSION['location'] = $locationval;
-    
-  
-}
-/*
-if($group1val == $group2val || $group1val == $group3val || $group1val == $group4val)
-{
-    echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax6exercise.js\"></script>";
-}
-*/
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +30,7 @@ if($group1val == $group2val || $group1val == $group3val || $group1val == $group4
   
       <div class="login-box2">
   
-      <form method="GET" action="/app/views/home/Workout.php">
+      <form method="GET" action="/app/views/home/Workout.php" id="myform">
         <h2>Generate workout</h2>
 
       <p>What groups of muscles you want to work on?</p>
@@ -118,7 +84,10 @@ if($group1val == $group2val || $group1val == $group3val || $group1val == $group4
             <option value="Chest">Chest</option>
         </select>
       </div>
-    <div id="content"></div>
+      <div class= "error-message" id="error-message">
+    <p> Error message</p>
+    </div>
+
           <p>How long you want your workout? </p>
           <div class="select">
           <select name="time" id="time" value="">
@@ -150,6 +119,7 @@ if($group1val == $group2val || $group1val == $group3val || $group1val == $group4
               
             </a>
     </form>
+    <script src= "/app/views/home/JavaScriptFiles/AjaxVerifGenerator.js"></script>
     </div>
     </div>
 
