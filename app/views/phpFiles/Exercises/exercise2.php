@@ -84,7 +84,17 @@ while($row = mysqli_fetch_array($result))
 ?>
 
 </div>
-<button class="button3" id="getTxt2">NEXT EXERCISE</button>
+
+<button class="button3" id="getTxt2">
+<?php
+
+  if($timeval == 15)
+    echo "FINAL WORKOUT";
+  else
+    echo "NEXT EXERCISE";
+    
+?>
+</button>
 
 
 </div>

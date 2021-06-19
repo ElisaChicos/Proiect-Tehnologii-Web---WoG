@@ -14,6 +14,7 @@ var xhr9  = new XMLHttpRequest();
 var xhr10 = new XMLHttpRequest();
 var xhr11 = new XMLHttpRequest();
 var xhr12 = new XMLHttpRequest();
+var xhr13 = new XMLHttpRequest();
 
 
 
@@ -65,7 +66,16 @@ getTxt.addEventListener("click",function(){
                                                                                     getTxt11.addEventListener("click",function(){
                                                                                         xhr12.addEventListener('readystatechange',function(){
                                                                                             content.innerHTML=this.responseText;
-                                                                                        
+                                                                                            var getTxt13 = document.getElementById("getTxt13");
+                                                                                            getTxt13.addEventListener("click",function(){
+                                                                                                xhr13.addEventListener('readystatechange',function(){
+                                                                                                    content.innerHTML=this.responseText;
+                                                                                
+                                                                                                    
+                                                                                                });
+                                                                                                xhr13.open("GET","../phpFiles/Exercises/FinalWorkout.php",true);
+                                                                                                xhr13.send();  
+                                                                                            });
                                                                                         });
                                                                                         xhr12.open("GET","../phpFiles/Exercises/exercise12.php",true);
                                                                                         xhr12.send();  

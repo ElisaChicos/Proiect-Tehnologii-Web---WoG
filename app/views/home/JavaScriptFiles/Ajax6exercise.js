@@ -41,7 +41,15 @@ getTxt.addEventListener("click",function(){
                                             getTxt5.addEventListener("click",function(){
                                         xhr6.addEventListener('readystatechange',function(){
                                             content.innerHTML=this.responseText;
-                
+                                            var getTxt6 = document.getElementById("getTxt6");
+                                            getTxt6.addEventListener("click",function(){
+                                                xhr7.addEventListener('readystatechange',function(){
+                                                    content.innerHTML=this.responseText;
+                                                    
+                                                });
+                                                xhr7.open("GET","../phpFiles/Exercises/FinalWorkout.php",true);
+                                                xhr7.send();  
+                                            });
                                         });
                                         xhr6.open("GET","../phpFiles/Exercises/exercise6.php",true);
                                         xhr6.send();  

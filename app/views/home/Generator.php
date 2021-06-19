@@ -28,12 +28,12 @@ if(isset($_POST['submit'])){
     
   
 }
-
+/*
 if($group1val == $group2val || $group1val == $group3val || $group1val == $group4val)
 {
     echo "<script type=\"text/javascript\" src=\"JavaScriptFiles/Ajax6exercise.js\"></script>";
 }
-
+*/
 ?>
 
 <!DOCTYPE html>

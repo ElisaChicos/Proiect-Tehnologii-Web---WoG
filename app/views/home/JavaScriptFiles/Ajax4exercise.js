@@ -33,7 +33,14 @@ getTxt.addEventListener("click",function(){
                         getTxt3.addEventListener("click",function(){
                             xhr4.addEventListener('readystatechange',function(){
                                 content.innerHTML = this.responseText;
-            
+                                var getTxt4 = document.getElementById("getTxt4");
+                                getTxt4.addEventListener("click",function(){
+                                    xhr5.addEventListener('readystatechange',function(){
+                                        content.innerHTML=this.responseText;
+                                    });
+                                    xhr5.open("GET","../phpFiles/Exercises/FinalWorkout.php",true);
+                                    xhr5.send();  
+                                });
                             });
                             xhr4.open("GET","../phpFiles/Exercises/exercise4.php",true);
                             xhr4.send();  
