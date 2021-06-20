@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentație arhitecturală</title>
+</head>
+
+<body prefix="schema: http://schema.org">
+    <article resource="#" typeof="schema:ScholarlyArticle">
+        <h1 property="schema:name"> Workout Generator - User Guide </h1>
+        <div role="contentinfo">
+            <section typeof="sa:AuthorsList">
+                <h2> Autori </h2>
+                <ul>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Chicos">
+                            <meta property="schema:familyName" content="Elisa-Veronica">
+                            <span property="schema:name"> Chicos Elisa Veronica </span>
+                        </span>
+                    </li>
+                    <li typeof="sa:ContributorRole" property="schema:author">
+                        <span typeof="schema:Person">
+                            <meta property="schema:givenName" content="Haidau">
+                            <meta property="schema:familyName" content="Alina-Adriana">
+                            <span property="schema:name"> Haidau Alina-Adriana </span>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+            <section typeof="sa:Affiliations">
+                <h2> Afilieri </h2>
+                <ul>
+                    <li id="sa">
+                        <span typeof="schema:Organization" resource="https://www.info.uaic.ro/">
+                            <span property="schema:name">Faculty of Computer Science</span>
+                        <span property="schema:parentOrganization">
+                                <span typeof="schema:Organization">
+                                    <span property="schema:name" class="block-span"> University "Alexandru Ioan Cuza" </span>
+                        <span property="schema:location" typeof="schema:Place" class="block-span">
+                                        <span property="schema:address" typeof="schema:PostalAddress">
+                                            <span property="schema:addressRegion">Iasi</span> -
+                        <span property="schema:addressCountry">Romania</span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section id="start">
+            <h2> Pagina de pornire </h2>
+            <p>
+                Aceasta este prima pagină cand accesati aplicatia. Aveti posibilitatea de a va crea un cont nou daca nu sunteti in baza de date, sau va puteti loga in cazul in care nu este prima data cand accesati aplicatia.
+            </p>
+        </section>
+        <section id="autentificare">
+            <h2> Conectarea </h2>
+            <p>
+                In cazul in care nu aveti cont, pagina de Create account va permite sa va creati unul. Introduceti datele specificate (preferabil in formatul cerut), iar acestea vor fi retinute de catre noi. In cazul in care aveti cont, in pagina de Login introduceti
+                emailul cu care ati creat contul si parola aferenta acestuia. In cazul in care v-ati uitat parola aveti posibilitatea de a o schimba astfel: introduceti emailul folosit cand v-ati creat contul, si verificati mail box-ul. Daca adresa de
+                email este corecta ar trebui sa primiti un cod de verificare, altfel va fi afisat un mesaj de eroare 'This account does not exist.' daca email-ul nu exista in baza de date. Apoi introduceti codul si alegeti o noua parola.
+            </p>
+        </section>
+        <section id="profil">
+            <h2> Profil </h2>
+            <p>
+                Odată logați, veți ajunge la această pagină. Toate informatiile dumneavostra sunt afisat aici. Aveti posibilitatea de a va modifica unele informatii cum ar fi greutatea, username-ul, etc.
+            </p>
+
+            <h3> Start workout </h3>
+            <p>
+                Aici va veti putea alege grupele de muschi pe care doriti sa le lucrati, de asemenea locatia si durata workout-ului.
+            </p>
+
+            <h3> Informations </h3>
+            <p>
+                Pagina contine niste informatii despre sport.
+            </p>
+
+            <h3> Statistics </h3>
+            <p>
+                Daca ati navigat spre aceasta pagina, aveti detalii despre un Top 10 al celor mai activi utilizatori. Daca doriti sa vizualizati intregul top, aveti posibilitatea de a-l descarca in format JSON, respectiv PDF. Tot aici aveti informatii despre statisticile
+                personale si 2 link-uri catre niste tool-uri de vizualizare a corpului dumneavostra in functie de datele cerute.
+            </p>
+
+            <h3> Workout </h3>
+            <p>
+                Dupa ce ati introdus datele in pagina anterioara, veti fi redirectionat catre aceasta pagina. Dati click pe butonul de "start workout", si veti incepe antrenamentul. In functie de durata antrenamentului, veti avea mai multe sau mai putine exercitii. Va
+                recomandam sa cititi informatiile oferite despre numarul de repetari si cum sa mentineti o respiratie adecvata, cat si pasii pentru un workout eficient si corect.
+            </p>
+
+        </section>
+    </article>
+</body>
+
+</html>
