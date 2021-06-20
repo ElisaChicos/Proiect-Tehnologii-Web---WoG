@@ -34,14 +34,11 @@ session_start();
         <button class="button" id="getTxt">START WORKOUT</button>
 
         </div> </div>
-        <div id="app"></div><!-- cronometru -->
-         <!--  <button class="button2" onclick="startTimer()">START EXERCISE</button> -->
+        <div id="app"></div>
         </div>
-  
-      
         
-    </body>
-    </html>
+</body>
+</html>
     <?php
 
     $group1val   = $_GET['group1'];
