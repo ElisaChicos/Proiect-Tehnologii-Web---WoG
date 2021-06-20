@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>WoG</title>
+    <link rel="stylesheet" href="Documentatie.css">
+</head>
+
+<body prefix="schema: http://schema.org">
+
+    <header>
+        <h1>WoG - documentation</h1>
+    </header>
+    <div class="top-info" role="contentinfo">
+        <dl>
+            <dt>Autori</dt>
+            <dd typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                    <meta property="schema:givenName" content="Veronica">
+                    <meta property="schema:additionalName" content="Elisa">
+                    <meta property="schema:familyName" content="Chicos">
+                    <a href="https://github.com/ElisaChicos">
+                        <span property="schema:name">Chicos Elisa Veronica</span>
+                </a>
+                </span>
+            </dd>
+            <dd typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                    <meta property="schema:givenName" content="Adriana">
+                    <meta property="schema:additionalName" content="Alina">
+                    <meta property="schema:familyName" content="Haidau">
+                    <a href="https://github.com/Haidau-Alina-Adriana">
+                        <span property="schema:name">Haidau Alina-Adriana</span>
+                </a>
+                </span>
+            </dd>
+        </dl>
+        <section typeof="sa:Affiliations">
+            <h2> Afilieri </h2>
+            <ul>
+                <span typeof="schema:Organization" resource="https://www.info.uaic.ro/">
+                        <span property="schema:name">Faculty of Computer Science</span>
+                <span property="schema:parentOrganization">
+                            <span typeof="schema:Organization">
+                                <span property="schema:name" class="block-span"> University "Alexandru Ioan Cuza" </span>
+                <span property="schema:location" typeof="schema:Place" class="block-span">
+                                    <span property="schema:address" typeof="schema:PostalAddress">
+                                        <span property="schema:addressRegion">Iasi</span> -
+                <span property="schema:addressCountry">Romania</span>
+                </span>
+                </span>
+                </span>
+                </span>
+                </span>
+            </ul>
+        </section>
+    </div>
+
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2><span>1. </span>Cerință</h2>
+        <p>
+            Sa se creeze o aplicatie Web ce le ofera utilizatorilor diverse tipuri de antrenamente sportive personalizate in functie de greutate, inaltime, varsta, gen, etc.
+        </p>
+    </section>
+
+    <section id="introduction">
+        <h2><span>2. </span>Introducere</h2>
+        <p>
+            Specialiștii au constatat că multe dintre problemele de sănătate apărute pe parcursul vieții pot fi prevenite dacă urmăm un plan alimentar echilibrat și facem mișcare în mod regulat. Beneficiile sportului asupra fizicului ne sunt deja binecunoscute. Însă,
+            trebuie să știm că din ce în ce mai multe studii recente au dovedit că sportul contribuie atât la sănătatea fizică, dar și la cea mentală. Efectuate în mod regulat, activitățile fizice ne îmbunătățesc încrederea în noi și modul în care ne
+            percepem corpul, ne ajută să ne concentram mai ușor și să facem față cu succes stresului.
+            <br><br> Ne propunem să facem o aplicație web cu scopul de a ajuta persoanele care sunt in cautarea unui program eficient de exercitii fizice generat conform preferintelor utilizatorului si nevoilor sale.
+        </p>
+    </section>
+
+    <section id="architecture">
+        <h2><span>3. </span>Arhitectura aplicației</h2>
+        <p>
+            Aplicația folosește design pattern-ul MVC, iar diagrama de mai jos descrie pe scurt structura generala:<br><br>
+
+            <img src="arhitectura.png" alt="arhitectura" class="pages">
+        </p>
+    </section>
+    <section id="backend">
+        <h3><span>3.1 </span> Back-end </h3>
+        <p> Backend-ul este construit folosind paradigma MVC. </p>
+
+        <section id="backend">
+            <h3><span>3.1.1 </span>Baza de date</h3>
+            <p>
+                Baza de date users contine un id unic, un username folosit pentru afisarea clasamentului celor mai activi utilizatori, un email unic, parola, informatiile despre greutate, inaltime, gen, daca doreste sa slabeasca, sa se tonifieze sau sa creasca masa musculara,
+                si care este grupa de muschi cu cel mai mare nivel de interes. Baza de date mai contine si un camp old_weight care retine penultima greutate a utilizatorului care va fi comparata cu cea actuala, dar si un activity_points care se incremeneteaza
+                cand un utilizator termina un workout, si pe baza caruia se realizeaza clasamentul in pagina Statistics.
+            </p>
+            <p>
+                Cea de-a doua baza de date, images, contine exercitiile folosite pentru generarea workout-ului, cat si informatiile despre numarul de repetari, numarul de pasi si descrierea pasilor, si de asemenea un mod corect de respiratie pentru utilizator in timpul
+                exercitiului curent.
+            </p>
+
+            <img src="database.png" alt="database" class="pages">
+        </section>
+
+        <section id="backend">
+            <h3><span>3.1.2 </span>Php</h3>
+            <p>
+                Cu ajutorul limbajului de programare destinat backend-ului se realizeaza conexiunea la baza de date, cat si manipularea acesteia pentru a extrage/introduce datele utilizatorului curent. Tot cu ajutorul acestui limbaj, se transmit datele prin sesiune pentru
+                a ne asigura ca modificarile, cat si clasamentul se realizeaza din perspectiva utilizatorului logat.
+
+            </p>
+        </section>
+
+
+    </section>
+    <section>
+        <section id="frontend">
+            <h3><span>3.2 </span> Front-end </h3>
+
+            <section id="pages-start">
+                <h3><span>3.2.1 </span>Start</h3>
+                <p>
+                    Pagina Start ofera posibilitatea ca un nou utilizator sa isi creeze cont sau utilizatorii cu un cont existent sa se logheze, dar si un link catre informatii referitoare la proprietarii site-ului.
+                </p>
+
+                <img src="Start-page.png" alt="Start Page" class="pages">
+            </section>
+
+
+            <section id="pages-create-account">
+                <h3><span>3.2.2 </span>Create account</h3>
+                <p>
+                    În această pagină, utilizatorul isi poate face un cont introducand datele personale.
+                </p>
+
+                <img src="Create-account-page.png" alt="Create account Page" class="pages">
+
+
+            </section>
+
+            <section id="pages-login">
+                <h3><span>3.2.3 </span>Login</h3>
+                <p>
+                    In aceasta pagina utilizatorul se poate loga folosind email-ul si parola.
+                </p>
+
+                <img src="Login-page.png" alt="Login Page" class="pages">
+            </section>
+
+            <section id="pages-resetPass">
+                <h3><span>3.2.4 </span>Reset password</h3>
+                <p>
+                    In aceasta pagina utilizatorul isi poate reseta parola in cazul in care nu si-o mai aminteste.
+                </p>
+
+                <img src="Reset-page.png" alt="Reset Page" class="pages">
+            </section>
+
+            <section id="pages-profile">
+                <h3><span>3.2.5 </span>Profile</h3>
+                <p>
+                    Dupa ce utilizatorul s-a logat, sau si-a creat contul, va fi redirectionat catre pagina profilului sau, unde isi poate vedea atat informatiile publice, cat si cele private si respectiv le poate modifica.
+                </p>
+
+                <img src="Profile-page.png" alt="Profile Page" class="pages">
+            </section>
+
+            <section id="pages-edit-profile">
+                <h3><span>3.2.6 </span>Edit profile</h3>
+                <p>
+                    In acesta pagina utilizatorul isi poate modifica efectiv informatiile.
+                </p>
+
+                <img src="Edit-profile-page.png" alt="Edit Profile Page" class="pages">
+            </section>
+
+            <section id="pages-generator">
+                <h3><span>3.2.7 </span>Generator</h3>
+                <p>
+                    In acesta pagina utilizatorul alege ce grupe de muschi ar vrea sa lucreze in ziua respectiva, locatia unde se desfasoara workout-ul, dar si durata acestuia.
+                </p>
+
+                <img src="Generator-page.png" alt="Generator Page" class="pages">
+            </section>
+
+            <section id="pages-workout">
+                <h3><span>3.2.8 </span>Workout</h3>
+                <p>
+                    Dupa ce si-a creat workout-ul in pagina "Start workout", utilizatorul este redirectionat catre pagina aceasta, unde sunt prezentate exercitiile generate impreuna cu instructiuni detaliate si exemple foto.
+                </p>
+
+                <img src="Workout-page.png" alt="Workout Page" class="pages">
+            </section>
+
+            <section id="pages-informations">
+                <h3><span>3.2.9 </span>Informations</h3>
+                <p>
+                    Aceasta pagina contine informatii despre sport si cateva beneficii ale acestuia asupra corpului nostru.
+                </p>
+
+                <img src="Informations-page.png" alt="Informations Page" class="pages">
+            </section>
+
+            <section id="pages-statistics">
+                <h3><span>3.2.10 </span>Statistics</h3>
+                <p>
+                    In pagina Statistics se poate gasi un top al celor mai activi utilizatori, dar si niste statistici personale ale utilizatorului curent, care ulterior pot fi descarcate in formatele JSON si PDF.
+
+                </p>
+
+                <img src="Statistics-page.png" alt="Statistics Page" class="pages">
+            </section>
+
+            <section id="pages-about-us">
+                <h3><span>3.2.11 </span>About Us</h3>
+
+
+                <img src="AboutUs-page.png" alt="AboutUs Page" class="pages">
+            </section>
+        </section>
+
+
+        <section>
+            <h2><span>4. </span>Mod de functionare</h2>
+            <p>
+                <ol>
+                    <li>Utilizatorul are optiunea de a-si crea un cont nou, sau de a se loga.
+                    </li>
+                    <li>
+                        Dupa conectare, se memoreaza intr-o variabila email pastrata in sesiunea curenta emailul utilizatorului curent, iar acesta este redirectionat catre pagina Profil unde isi poate vizualiza datele, atat in Profil, cat si in pagina Statistici.
+                    </li>
+                    <li>
+                        Daca doreste sa se antreneze, utilizatorul navigheaza catre pagina Generator, unde isi introduce preferintele.
+                    </li>
+                    <li>
+                        In pagina Workout cu ajutorul unui apel Ajax se afiseaza primul exercitiu, iar la apasarea butonului "next exercise" se realizeaza de fiecare data un nou apel ajax.
+                    </li>
+                    <li>
+                        Dupa finalizarea workout-ului, apasarea butonului de "finish workout" se incrementeaza activity_points-ul userului curent, iar acesta este redirectionat catre pagina Generator de unde poate incepe un nou workout.
+                    </li>
+                    <li>
+                        Cand userul doreste sa se delogheze, butonul de "Logout" din meniu va distruge datele sesiunii si acesta este redirectionat catre Login.
+                    </li>
+                </ol>
+            </p>
+        </section>
+
+        <section id="Tehnologii">
+            <h2><span>5. </span>Tehnologii utilizate</h2>
+            <p>
+                Limbaje de programare precum : JavaScript (pentru interactivitate, pentru procesarea informatiilor prezentate), CSS (pentru prezentarea informatiilor), HTML5 (pentru structura semantica a informatiilor), PHP.
+            </p>
+            <p>
+                Tehnica de programare Ajax pentru crearea unei aplicatii interactive folosind limbajul JavaScript este folosita pentru a afisa mesaje de eroare ce informeaza utilizatorul ca nu este logat, ca informatiile introduse nu sunt corecte, ca mail-ul pentru resetarea
+                parolei a fost trimis cu succes, etc.
+                <img src="ajaxErrorMessage.png" alt="error-message" class="error-msg"> Tehnica Ajax mai este folosita si pentru a afisa exercitiile generate pentru workout-ul curent in maniera interactiva, fara reincarcarea paginii, cu un simplu click
+                de mouse. Acest lucru este posibil prin folosirea multipla a apelurilor ajax, realizat in cascada.
+            </p>
+        </section>
+
+        <section id="references">
+            <h2><span>6. </span>Referințe</h2>
+            <ul>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://www.w3schools.com/">
+                    <cite property="schema:name">
+                        <a href="https://www.w3schools.com/">w3schools</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://developer.mozilla.org/en-US/">
+                    <cite property="schema:name">
+                        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://www.geeksforgeeks.org/">
+                    <cite property="schema:name">
+                        <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://stackoverflow.com/">
+                    <cite property="schema:name">
+                        <a href="https://stackoverflow.com/">Stack Overflow</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://www.youtube.com/">
+                    <cite property="schema:name">
+                        <a href="https://www.youtube.com/">YouTube</a>
+                    </cite>
+                </li>
+
+
+            </ul>
+        </section>
+
+</body>
+
+</html>

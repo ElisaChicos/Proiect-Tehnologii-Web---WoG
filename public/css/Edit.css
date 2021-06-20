@@ -277,23 +277,11 @@ html {
     }
 }
 
-.upload {
-    width: 50%;
-    padding: 10px 0;
-    padding-left: 60px;
-    font-size: 20px;
-    color: #fff;
-    left: 100px;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-
 @media only screen and (max-width:300px) {
     body,
     html {
         margin: 0;
-        height: 750px;
+        height: 1000px;
         width: 100%;
     }
     .start_create {
@@ -311,21 +299,15 @@ html {
     }
     .login-box2 h2 {
         margin: 0 0 10px;
+        margin-bottom: 2em;
         font-size: 2em;
-    }
-    button {
-        padding-top: 3em;
-    }
-    .upload {
-        width: 50%;
-        padding: 0 0;
-        padding-left: 0;
-        font-size: 10px;
-        left: 0;
     }
     p {
         padding-bottom: 2em;
         font: normal 1.3em Georgia, 'Times New Roman', Times, serif;
+    }
+    .buttonSubmit {
+        padding-top: 0;
     }
 }
 
@@ -353,17 +335,11 @@ html {
     .login-box2 h2 {
         margin: 0 0 10px;
         padding-top: 0.2em;
+        margin-bottom: 2em;
         font-size: 30px;
     }
-    button {
-        padding-top: 3em;
-    }
-    .upload {
-        width: 50%;
-        padding: 0 0;
-        padding-left: 0;
-        font-size: 10px;
-        left: 0;
+    .buttonSubmit {
+        padding-top: 0;
     }
 }
 
@@ -377,28 +353,23 @@ html {
     }
     .login-box2 {
         width: 600px;
+        height: 850px;
         padding: 10px;
         background: rgba(0, 0, 0, 0.712);
     }
     .login-box2 h2 {
-        margin-bottom: 1em;
+        margin-top: 2em;
+        margin-bottom: 2em;
         font-size: 30px;
     }
-    button {
-        padding-top: 4em;
-    }
-    .upload {
-        width: 50%;
-        padding: 0 0;
-        padding-left: 0;
-        font-size: 20px;
-        left: 0;
+    .buttonSubmit {
+        padding-top: 0;
     }
 }
 
 @media screen and (min-width:700px) and (max-width:900px) {
     .start_create {
-        height: 150%;
+        height: 130%;
         width: 120%;
         margin: 0;
         padding: 0;
@@ -414,35 +385,31 @@ html {
         margin-bottom: 1em;
         font-size: 50px;
     }
-    button {
-        padding-top: 4em;
-    }
-    .upload {
-        width: 50%;
-        padding: 0 0;
-        padding-left: 3em;
-        font-size: 25px;
-        left: 0;
+    .buttonSubmit {
+        padding-top: 0;
+        font-size: 30px;
     }
     .login-box2 .user-box input {
-        font-size: 25px;
+        font-size: 30px;
+        margin-bottom: 1em;
     }
     .login-box2 .user-box label {
-        font-size: 30px;
+        font-size: 35px;
+        margin-bottom: 1em;
     }
     .login-box2 .user-box input:focus~label,
     .login-box2 .user-box input:valid~label {
-        font-size: 15px;
+        font-size: 20px;
     }
     .login-box2 form a {
         margin-top: 2em;
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width:900px) and (max-width:1030px) {
     .start_create {
-        height: 160%;
+        height: 140%;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -459,28 +426,24 @@ html {
         margin-top: 1em;
         font-size: 50px;
     }
-    button {
-        padding-top: 4em;
-    }
-    .upload {
-        width: 50%;
-        padding: 0 0;
-        padding-left: 2em;
+    .buttonSubmit {
+        padding-top: 0;
         font-size: 30px;
-        left: 0;
     }
     .login-box2 .user-box input {
-        font-size: 25px;
+        font-size: 30px;
+        margin-bottom: 1em;
     }
     .login-box2 .user-box label {
-        font-size: 30px;
+        font-size: 35px;
+        margin-bottom: 1em;
     }
     .login-box2 .user-box input:focus~label,
     .login-box2 .user-box input:valid~label {
-        font-size: 15px;
+        font-size: 20px;
     }
     .login-box2 form a {
         margin-top: 2em;
-        font-size: 35px;
+        font-size: 30px;
     }
 }
