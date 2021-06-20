@@ -10,7 +10,7 @@
 <body prefix="schema: http://schema.org">
 
     <header>
-        <h1>WoG - documentation</h1>
+        <h1>Documentatie</h1>
     </header>
     <div class="top-info" role="contentinfo">
         <dl>
@@ -46,7 +46,7 @@
                                 <span property="schema:name" class="block-span"> University "Alexandru Ioan Cuza" </span>
                 <span property="schema:location" typeof="schema:Place" class="block-span">
                                     <span property="schema:address" typeof="schema:PostalAddress">
-                                        <span property="schema:addressRegion">Iasi</span> -
+                                        <span property="schema:addressRegion">Iasi</span>
                 <span property="schema:addressCountry">Romania</span>
                 </span>
                 </span>
@@ -67,17 +67,17 @@
     <section id="introduction">
         <h2><span>2. </span>Introducere</h2>
         <p>
-            Specialiștii au constatat că multe dintre problemele de sănătate apărute pe parcursul vieții pot fi prevenite dacă urmăm un plan alimentar echilibrat și facem mișcare în mod regulat. Beneficiile sportului asupra fizicului ne sunt deja binecunoscute. Însă,
-            trebuie să știm că din ce în ce mai multe studii recente au dovedit că sportul contribuie atât la sănătatea fizică, dar și la cea mentală. Efectuate în mod regulat, activitățile fizice ne îmbunătățesc încrederea în noi și modul în care ne
-            percepem corpul, ne ajută să ne concentram mai ușor și să facem față cu succes stresului.
-            <br><br> Ne propunem să facem o aplicație web cu scopul de a ajuta persoanele care sunt in cautarea unui program eficient de exercitii fizice generat conform preferintelor utilizatorului si nevoilor sale.
+            Specialistii au constatat ca multe dintre problemele de sanatate aparute pe parcursul vietii pot fi prevenite daca urmam un plan alimentar echilibrat si facem miscare în mod regulat. Beneficiile sportului asupra fizicului ne sunt deja binecunoscute. Insa,
+            trebuie sa stim ca din ce in ce mai multe studii recente au dovedit ca sportul contribuie atat la sanatatea fizica, dar si la cea mentala. Efectuate în mod regulat, activitatile fizice ne imbunatatesc increderea in noi si modul în care ne
+            percepem corpul, ne ajuta sa ne concentram mai usor si să facem fata cu succes stresului.
+            <br><br> Ne propunem sa facem o aplicatie web cu scopul de a ajuta persoanele care sunt in cautarea unui program eficient de exercitii fizice generat conform preferintelor utilizatorului si nevoilor sale.
         </p>
     </section>
 
     <section id="architecture">
-        <h2><span>3. </span>Arhitectura aplicației</h2>
+        <h2><span>3. </span>Arhitectura aplicatiei</h2>
         <p>
-            Aplicația folosește design pattern-ul MVC, iar diagrama de mai jos descrie pe scurt structura generala:<br><br>
+            Aplicatia foloseste design pattern-ul MVC, iar diagrama de mai jos descrie pe scurt structura generala a aplicatiei:<br><br>
 
             <img src="arhitectura.png" alt="arhitectura" class="pages">
         </p>
@@ -104,8 +104,8 @@
         <section id="backend">
             <h3><span>3.1.2 </span>Php</h3>
             <p>
-                Cu ajutorul limbajului de programare destinat backend-ului se realizeaza conexiunea la baza de date, cat si manipularea acesteia pentru a extrage/introduce datele utilizatorului curent. Tot cu ajutorul acestui limbaj, se transmit datele prin sesiune pentru
-                a ne asigura ca modificarile, cat si clasamentul se realizeaza din perspectiva utilizatorului logat.
+                Cu ajutorul limbajului de programare php se realizeaza conexiunea la baza de date, cat si manipularea acesteia pentru a extrage/introduce datele utilizatorului curent. Tot cu ajutorul acestui limbaj, se transmit datele prin sesiune pentru a ne asigura
+                ca modificarile, cat si clasamentul se realizeaza din perspectiva utilizatorului logat.
 
             </p>
         </section>
@@ -129,7 +129,7 @@
             <section id="pages-create-account">
                 <h3><span>3.2.2 </span>Create account</h3>
                 <p>
-                    În această pagină, utilizatorul isi poate face un cont introducand datele personale.
+                    În această pagina, utilizatorul isi poate face un cont introducand datele personale.
                 </p>
 
                 <img src="Create-account-page.png" alt="Create account Page" class="pages">
@@ -247,18 +247,39 @@
         <section id="Tehnologii">
             <h2><span>5. </span>Tehnologii utilizate</h2>
             <p>
-                Limbaje de programare precum : JavaScript (pentru interactivitate, pentru procesarea informatiilor prezentate), CSS (pentru prezentarea informatiilor), HTML5 (pentru structura semantica a informatiilor), PHP.
+                Limbaje de programare precum : JavaScript (pentru interactivitate si pentru procesarea informatiilor prezentate), CSS (pentru prezentarea informatiilor si design web), HTML5 (pentru structura informatiilor), PHP.
             </p>
             <p>
                 Tehnica de programare Ajax pentru crearea unei aplicatii interactive folosind limbajul JavaScript este folosita pentru a afisa mesaje de eroare ce informeaza utilizatorul ca nu este logat, ca informatiile introduse nu sunt corecte, ca mail-ul pentru resetarea
                 parolei a fost trimis cu succes, etc.
-                <img src="ajaxErrorMessage.png" alt="error-message" class="error-msg"> Tehnica Ajax mai este folosita si pentru a afisa exercitiile generate pentru workout-ul curent in maniera interactiva, fara reincarcarea paginii, cu un simplu click
-                de mouse. Acest lucru este posibil prin folosirea multipla a apelurilor ajax, realizat in cascada.
+            </p>
+            <img src="ajaxErrorMessage.png" alt="error-message" class="error-msg">
+            <p>Tehnica Ajax mai este folosita si pentru a afisa exercitiile generate pentru workout-ul curent in maniera interactiva, fara reincarcarea paginii, cu un simplu click de mouse. Acest lucru este posibil prin folosirea multipla a apelurilor ajax,
+                realizate in cascada.
+            </p>
+        </section>
+
+        <section id="Librarii">
+            <h2><span>6. </span>Librarii</h2>
+            <p>
+                Pentru generarea pdf-ului ce contine clasamentul celor mai activi utilizatori s-a folosit libraria FPDF care genereaza un fisier PDF cu ajutorul limbajului de programare php. Cele mai importante fisiere din libraria fdpf sunt fpdf.php ce contine metodele
+                necesare pentru generarea efectiva si folderul cu fonturi.
+                <img src="fpdf.png" alt="fpdf hierarchy" class="error-msg">
+            </p>
+            <p>Pentru generarea PDF-ului se foloseste "$pdf->Output()", iar structura acestuia se realizeaza adaugand un Header si un Footer, cat si celulele tabelului si informatiile necesare:
+                <img src="generatePdfCode.png" alt="pdf generation" class="error-msg">
+
+            </p>
+            <p>
+                Pentru trimiterea unui email pentru resetarea parolei s-a folosit libraria PHPMailer, iar mai jos este evidentiata utilizarea acesteia:
+                <img src="sendMail.png" alt="send mail using phpmailer" class="pages"> </p>
+            <p>Trimiterea mail-ului se realizeaza folosind un server SMTP, la care suntem conectati cu un cont de email valid, parola corespunzatoare si un port, dupa care se realizeaaza structura mail-ului, respectiv adresa de pe care se trimite mailul,
+                destinatarul, subiectul, etc.
             </p>
         </section>
 
         <section id="references">
-            <h2><span>6. </span>Referințe</h2>
+            <h2><span>7. </span>Referinte</h2>
             <ul>
                 <li property="schema:citation" typeof="schema:WebSite" resource="https://www.w3schools.com/">
                     <cite property="schema:name">
@@ -285,8 +306,16 @@
                         <a href="https://www.youtube.com/">YouTube</a>
                     </cite>
                 </li>
-
-
+                <li property="schema:citation" typeof="schema:WebSite" resource=" http://www.fpdf.org/">
+                    <cite property="schema:name">
+                        <a href=" http://www.fpdf.org/">FPDF</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebSite" resource="https://github.com/PHPMailer/PHPMailer">
+                    <cite property="schema:name">
+                        <a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a>
+                    </cite>
+                </li>
             </ul>
         </section>
 

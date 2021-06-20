@@ -11,7 +11,7 @@
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(229, 158, 243)), color-stop(0.72, rgb(139, 57, 133)), color-stop(0.86, rgb(95, 46, 92)));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(167, 205, 218)), color-stop(0.72, rgb(130, 191, 211)), color-stop(0.86, rgb(67, 168, 199)));
 }
 
 .menu {
@@ -128,7 +128,7 @@ p {
     padding: 40px;
     height: 1000px;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.733);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
@@ -160,27 +160,6 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.login-box2 a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
-}
-
-.login-box2 a span {
-    position: absolute;
-    display: block;
-}
-
-.login-box2 a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: btn-anim1 1s linear infinite;
-}
-
 @keyframes btn-anim1 {
     0% {
         left: -100%;
@@ -189,16 +168,6 @@ input[type=submit]:hover {
     100% {
         left: 100%;
     }
-}
-
-.login-box2 a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
 }
 
 @keyframes btn-anim2 {
@@ -211,16 +180,6 @@ input[type=submit]:hover {
     }
 }
 
-.login-box2 a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-}
-
 @keyframes btn-anim3 {
     0% {
         right: -100%;
@@ -229,16 +188,6 @@ input[type=submit]:hover {
     100% {
         right: 100%;
     }
-}
-
-.login-box2 a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
 }
 
 @keyframes btn-anim4 {
@@ -251,28 +200,6 @@ input[type=submit]:hover {
     }
 }
 
-.login-box2 form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 5em;
-    letter-spacing: 4px
-}
-
-.login-box2 a:hover {
-    background: #03e9f4;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
-}
-
-
 .login-box2 form .forgot_pass {
     position: relative;
     display: inline-block;
@@ -283,7 +210,7 @@ input[type=submit]:hover {
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 20px;
+    margin-top: 4em;
     letter-spacing: 2px;
 }
 
@@ -298,7 +225,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
-.login-box2 a span:nth-child(1),
+
 .forgot_pass span:nth-child(1) {
     top: 0;
     left: -100%;
@@ -308,7 +235,6 @@ input[type=submit]:hover {
     animation: btn-anim1 1s linear infinite;
 }
 
-.login-box2 a span:nth-child(2),
 .forgot_pass span:nth-child(2) {
     top: -100%;
     right: 0;
@@ -319,7 +245,6 @@ input[type=submit]:hover {
     animation-delay: .25s
 }
 
-.login-box2 a span:nth-child(3),
 .forgot_pass span:nth-child(3) {
     bottom: 0;
     right: -100%;
@@ -330,7 +255,6 @@ input[type=submit]:hover {
     animation-delay: .5s
 }
 
-.login-box2 a span:nth-child(4),
 .forgot_pass span:nth-child(4) {
     bottom: -100%;
     left: 0;
@@ -340,6 +264,7 @@ input[type=submit]:hover {
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
 }
+
 .login-box2 span {
     position: relative;
     display: block;
@@ -362,6 +287,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
+
 @keyframes click-wave {
     0% {
         height: 40px;
@@ -454,10 +380,41 @@ option {
         background-size: 150% 150%;
         background-image: url("https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
     }
+    .login-box2 {
+        top: 50%;
+        left: 67%;
+        width: 675px;
+        padding: 40px;
+        height: 2000px;
+    }
+    .login-box2 h2 {
+        margin: 0 0 50px;
+        padding-bottom: 0;
+        padding-top: 1em;
+        font-size: 80px;
+    }
+    p {
+        word-spacing: 4px;
+        padding-top: 1.5em;
+        padding-bottom: 0;
+        font: normal 3em Georgia, 'Times New Roman', Times, serif;
+    }
+    .select {
+        width: 31em;
+        height: 5.5em;
+        margin-left: 70px;
+    }
+    select {
+        font-size: 40px;
+    }
+    img {
+        width: 6em;
+        height: 3em;
+    }
     .menu {
         width: 35%;
         height: 100%;
-        font-size: 52px;
+        font-size: 55px;
     }
     .menu,
     li a {
@@ -469,47 +426,24 @@ option {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 4em;
+        padding-top: 5.5em;
         font-size: 1em;
     }
-    .login-box2 {
-        top: 50%;
-        left: 67%;
-        width: 675px;
-        padding: 40px;
-        height: 1800px;
-        background: rgba(0, 0, 0, 0.925);
+    #btnSignOut {
+        width: 7em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
-    .login-box2 h2 {
-        margin: 0 0 30px;
-        padding-bottom: 0.5em;
-        padding-top: 1em;
-        font-size: 80px;
-    }
-    p {
-        word-spacing: 4px;
-        padding-top: 0;
-        padding-bottom: 0;
-        font: normal 3em Georgia, 'Times New Roman', Times, serif;
-    }
-    .login-box2 form a {
-        padding: 10px 20px;
+    .buttonSubmit {
         font-size: 50px;
-        transition: .5s;
-        margin-top: 40px;
-        letter-spacing: 2px;
     }
-    .select {
-        width: 30em;
-        height: 5em;
-        margin-left: 70px;
+    .login-box2 form .forgot_pass {
+        margin-top: 6em;
     }
-    select {
-        font-size: 40px;
-    }
-    img {
-        width: 6.5em;
-        height: 3.3em;
+    option {
+        font-size: 10px;
     }
 }
 
@@ -525,7 +459,7 @@ option {
         background-image: url("https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
     }
     .menu {
-        width: 35%;
+        width: 34%;
         height: 100%;
         font-size: 50px;
     }
@@ -539,16 +473,22 @@ option {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 3.5em;
+        padding-top: 5.5em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
         left: 67%;
         width: 750px;
         padding: 40px;
-        height: 2000px;
-        background: rgba(0, 0, 0, 0.925);
+        height: 2050px;
     }
     .login-box2 h2 {
         margin: 0 0 50px;
@@ -562,16 +502,9 @@ option {
         padding-bottom: 0;
         font: normal 4em Georgia, 'Times New Roman', Times, serif;
     }
-    .login-box2 form a {
-        padding: 10px 20px;
-        font-size: 60px;
-        transition: .5s;
-        margin-top: 50px;
-        letter-spacing: 2px;
-    }
     .select {
-        width: 35em;
-        height: 6em;
+        width: 36em;
+        height: 6.5em;
         margin-left: 70px;
     }
     select {
@@ -580,6 +513,15 @@ option {
     img {
         width: 7em;
         height: 3em;
+    }
+    .buttonSubmit {
+        font-size: 50px;
+    }
+    .login-box2 form .forgot_pass {
+        margin-top: 6em;
+    }
+    option {
+        font-size: 10px;
     }
 }
 
@@ -609,16 +551,22 @@ option {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 6.5em;
+        padding-top: 7.5em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 9.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
         left: 67%;
-        width: 900px;
+        width: 910px;
         padding: 40px;
-        height: 1800px;
-        background: rgba(0, 0, 0, 0.925);
+        height: 2100px;
     }
     .login-box2 h2 {
         margin: 0 0 50px;
@@ -628,19 +576,13 @@ option {
     }
     p {
         word-spacing: 4px;
-        padding-top: 0;
+        padding-top: 1em;
         padding-bottom: 0;
         font: normal 4em Georgia, 'Times New Roman', Times, serif;
     }
-    .login-box2 form a {
-        padding: 10px 20px;
-        font-size: 60px;
-        margin-top: 70px;
-        letter-spacing: 2px;
-    }
     .select {
-        width: 30em;
-        height: 5em;
+        width: 33em;
+        height: 6.5em;
         margin-left: 200px;
     }
     select {
@@ -652,6 +594,16 @@ option {
     img {
         width: 7em;
         height: 3em;
+    }
+    .buttonSubmit {
+        padding-top: 0;
+        font-size: 60px;
+    }
+    .login-box2 form .forgot_pass {
+        margin-top: 6em;
+    }
+    option {
+        font-size: 10px;
     }
 }
 
@@ -681,16 +633,22 @@ option {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 8em;
+        padding-top: 11.5em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 10.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
-        left: 67%;
-        width: 1050px;
+        left: 68%;
+        width: 1000px;
         padding: 40px;
         height: 2500px;
-        background: rgba(0, 0, 0, 0.925);
     }
     .login-box2 h2 {
         margin: 0 0 50px;
@@ -711,9 +669,12 @@ option {
         letter-spacing: 2px;
     }
     .select {
-        width: 50em;
-        height: 7em;
-        margin-left: 100px;
+        width: 52em;
+        height: 7.5em;
+        margin-left: 3em;
+    }
+    option {
+        font-size: 10px;
     }
     select {
         font-size: 40px;
@@ -724,6 +685,13 @@ option {
     img {
         width: 8em;
         height: 4em;
+    }
+    .buttonSubmit {
+        padding-top: 0;
+        font-size: 65px;
+    }
+    .login-box2 form .forgot_pass {
+        margin-top: 6em;
     }
 }
 
@@ -741,7 +709,7 @@ option {
     .menu {
         width: 20%;
         height: 100%;
-        font-size: 55px;
+        font-size: 53px;
     }
     .menu,
     li a {
@@ -753,16 +721,22 @@ option {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 5.5em;
+        padding-top: 7.5em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
         left: 60%;
         width: 1700px;
         padding: 40px;
-        height: 2000px;
-        background: rgba(0, 0, 0, 0.925);
+        height: 2300px;
     }
     .login-box2 h2 {
         margin: 0 0 50px;
@@ -776,16 +750,13 @@ option {
         padding-bottom: 0;
         font: normal 5em Georgia, 'Times New Roman', Times, serif;
     }
-    .login-box2 form a {
-        padding: 10px 20px;
-        font-size: 50px;
-        margin-top: 40px;
-        letter-spacing: 2px;
-    }
     .select {
-        width: 30em;
-        height: 5em;
-        margin-left: 550px;
+        width: 70em;
+        height: 8em;
+        margin-left: 20em;
+    }
+    option {
+        font-size: 15px;
     }
     select {
         font-size: 50px;
@@ -796,6 +767,13 @@ option {
     img {
         width: 7em;
         height: 3.5em;
+    }
+    .buttonSubmit {
+        padding-top: 0;
+        font-size: 65px;
+    }
+    .login-box2 form .forgot_pass {
+        margin-top: 6em;
     }
 }
 
@@ -813,7 +791,7 @@ option {
     .menu {
         width: 25%;
         height: 100%;
-        font-size: 83px;
+        font-size: 90px;
     }
     .menu,
     li a {
@@ -825,7 +803,7 @@ option {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 4em;
+        padding-top: 4.5em;
         font-size: 1em;
     }
     .login-box2 {
@@ -833,8 +811,14 @@ option {
         left: 63%;
         width: 2000px;
         padding: 40px;
-        height: 3500px;
-        background: rgba(0, 0, 0, 0.925);
+        height: 3800px;
+    }
+    #btnSignOut {
+        width: 10em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
     }
     .login-box2 h2 {
         margin: 0 0 50px;
@@ -855,12 +839,15 @@ option {
         letter-spacing: 2px;
     }
     .select {
-        width: 95em;
-        height: 10em;
-        margin-left: 200px;
+        width: 100em;
+        height: 15em;
+        margin-left: 10em;
     }
     select {
         font-size: 100px;
+    }
+    option {
+        font-size: 15px;
     }
     button {
         padding-top: 200px;
@@ -868,6 +855,13 @@ option {
     img {
         width: 7em;
         height: 3.5em;
+    }
+    .buttonSubmit {
+        padding-top: 0;
+        font-size: 100px;
+    }
+    .login-box2 form .forgot_pass {
+        margin-top: 8em;
     }
 }
 
@@ -884,7 +878,7 @@ option {
     .menu {
         width: 20%;
         height: 100%;
-        font-size: 97px;
+        font-size: 100px;
     }
     .menu,
     li a {
@@ -896,8 +890,22 @@ option {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 8em;
+        padding-top: 8.3em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 11em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
+    }
+    .buttonSubmit {
+        padding-top: 0;
+        font-size: 120px;
+    }
+    .login-box2 form .forgot_pass {
+        margin-top: 17em;
     }
     .login-box2 {
         top: 50%;
@@ -915,7 +923,7 @@ option {
     }
     p {
         word-spacing: 4px;
-        padding-top: 100px;
+        padding-top: 1em;
         padding-bottom: 0;
         font: normal 10em Georgia, 'Times New Roman', Times, serif;
     }
@@ -926,12 +934,15 @@ option {
         letter-spacing: 2px;
     }
     .select {
-        width: 120em;
-        height: 14em;
-        margin-left: 400px;
+        width: 125em;
+        height: 17em;
+        margin-left: 20em;
     }
     select {
         font-size: 100px;
+    }
+    option {
+        font-size: 15px;
     }
     button {
         padding-top: 400px;

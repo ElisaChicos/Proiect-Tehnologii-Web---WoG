@@ -241,13 +241,13 @@ h1 {
 @media only screen and (max-width:300px) {
     body,
     html {
-        width: 180%;
-        height: 220%;
+        width: 200%;
+        height: 260%;
     }
     .menu {
         width: 35%;
         height: 100%;
-        font-size: 45px;
+        font-size: 55px;
     }
     .menu,
     li a {
@@ -258,67 +258,82 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 2em;
+        padding-top: 4em;
         font-size: 1em;
     }
     h1 {
-        padding-top: 1em;
+        font-size: 60px;
     }
     .login-box2 {
         top: 50%;
-        left: 66%;
-        width: 550px;
-        padding: 20px;
-        height: 80%;
+        left: 67%;
+        width: 675px;
+        padding: 40px;
+        height: 3850px;
         background: rgba(0, 0, 0, 0.925);
     }
     .login-box2 h2 {
         margin: 0 0 20px;
         padding-bottom: 1em;
-        font-size: 30px;
+        font-size: 50px;
     }
     .enum {
-        font: normal bold 1.5em Georgia, 'Times New Roman', Times, serif;
+        font: normal bold 3em Georgia, 'Times New Roman', Times, serif;
         padding-bottom: 1em;
     }
     p {
         word-spacing: 4px;
-        font: normal 1.5em Georgia, 'Times New Roman', Times, serif;
+        font: normal 1em Georgia, 'Times New Roman', Times, serif;
     }
     .button {
         padding: 10px 10px;
-        font-size: 20px;
+        font-size: 35px;
         left: 0%;
     }
     .paragraph {
         padding-top: 1em;
         padding-bottom: 0.5em;
-        font: normal 2em Georgia, 'Times New Roman', Times, serif;
+        font: normal 3em Georgia, 'Times New Roman', Times, serif;
+    }
+    .paragraph1 {
+        font: normal 3em Georgia, 'Times New Roman', Times, serif;
     }
     .button2 {
+        font-size: 25px;
+    }
+    .btn_container {
         -ms-flex-align: unset;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 21px;
     }
     img {
         width: 6em;
         height: 3em;
+    }
+    #btnSignOut {
+        width: 7em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    .rssPage {
+        margin-left: 17em;
     }
 }
 
 @media only screen and (min-width:300px) and (max-width:325px) {
     body,
     html {
-        width: 170%;
-        height: 250%;
+        width: 200%;
+        height: 260%;
     }
     .menu {
-        width: 35%;
+        width: 34%;
         height: 100%;
-        font-size: 36px;
+        font-size: 50px;
     }
     .menu,
     li a {
@@ -329,7 +344,7 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 2em;
+        padding-top: 4em;
         font-size: 1em;
     }
     h1 {
@@ -337,48 +352,64 @@ h1 {
     }
     .login-box2 {
         top: 50%;
-        left: 67%;
-        width: 550px;
-        padding: 20px;
-        height: 90%;
+        left: 68%;
+        width: 820px;
+        padding: 40px;
+        height: 3600px;
         background: rgba(0, 0, 0, 0.925);
     }
     .login-box2 h2 {
         margin: 0 0 20px;
         padding-bottom: 1em;
-        font-size: 30px;
+        font-size: 50px;
     }
     .enum {
         font: normal bold 1.5em Georgia, 'Times New Roman', Times, serif;
     }
     p {
         word-spacing: 4px;
-        font: normal 1.5em Georgia, 'Times New Roman', Times, serif;
+        font: normal 2em Georgia, 'Times New Roman', Times, serif;
+    }
+    ol {
+        font-size: 1.7em;
     }
     .button {
         padding: 10px 10px;
-        font-size: 25px;
+        font-size: 35px;
         left: 0%;
     }
-    h1 {
-        padding-top: 1em;
-    }
-    .paragraph {
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        font: normal 2em Georgia, 'Times New Roman', Times, serif;
-    }
     .button2 {
+        font-size: 32px;
+    }
+    .btn_container {
         -ms-flex-align: unset;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 20px;
+    }
+    h1 {
+        font-size: 60px;
+        padding-top: 0;
+    }
+    .paragraph {
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        font: normal 3em Georgia, 'Times New Roman', Times, serif;
     }
     img {
         width: 7em;
         height: 3em;
+    }
+    .rssPage {
+        margin-left: 21em;
+    }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
 }
 
@@ -398,12 +429,24 @@ h1 {
         text-align: center;
         padding: 0;
         padding-left: 0;
+        padding-right: 0;
         padding-top: 2em;
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 5em;
+        padding-top: 6em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 9.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    h1 {
+        font-size: 60px;
+        padding-top: 0;
     }
     .login-box2 {
         top: 50%;
@@ -416,7 +459,7 @@ h1 {
     .login-box2 h2 {
         margin: 0 0 20px;
         padding-bottom: 1em;
-        font-size: 40px;
+        font-size: 50px;
     }
     .enum {
         font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
@@ -426,12 +469,25 @@ h1 {
     }
     .button {
         padding: 10px 10px;
-        font-size: 35px;
+        font-size: 40px;
         left: 2%;
+    }
+    .button2 {
+        font-size: 31px;
+    }
+    .btn_container {
+        -ms-flex-align: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .paragraph {
         padding-top: 1em;
         padding-bottom: 0.5em;
+        font: normal 2.5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .paragraph1 {
         font: normal 2.5em Georgia, 'Times New Roman', Times, serif;
     }
     .button2 {
@@ -446,9 +502,22 @@ h1 {
     .button:hover {
         box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
     }
+    .rssPage {
+        width: 6em;
+        height: 6em;
+        margin-left: 20em;
+        padding-top: 4em;
+    }
     img {
         width: 7em;
         height: 3em;
+    }
+    #btnSignOut {
+        width: 9.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
 }
 
@@ -468,15 +537,22 @@ h1 {
         text-align: center;
         padding: 0;
         padding-left: 0;
+        padding-right: 0;
         padding-top: 2em;
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 7em;
+        padding-top: 10em;
         font-size: 1em;
     }
+    #btnSignOut {
+        width: 10.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
     h1 {
-        padding-top: 2em;
         font-size: 70px;
     }
     .login-box2 {
@@ -490,7 +566,7 @@ h1 {
     .login-box2 h2 {
         margin: 0 0 20px;
         padding-bottom: 1em;
-        font-size: 45px;
+        font-size: 55px;
     }
     .enum {
         font: normal bold 1.7em Georgia, 'Times New Roman', Times, serif;
@@ -501,8 +577,18 @@ h1 {
     }
     .button {
         padding: 10px 10px;
-        font-size: 40px;
+        font-size: 50px;
         left: 2%;
+    }
+    .btn_container {
+        -ms-flex-align: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    ol {
+        font-size: 1.5em;
     }
     .paragraph {
         padding-top: 1em;
@@ -518,8 +604,17 @@ h1 {
         font-size: 35px;
         left: 5%;
     }
+    .paragraph1 {
+        font: normal 2.5em Georgia, 'Times New Roman', Times, serif;
+    }
     .button:hover {
         box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
+    }
+    .rssPage {
+        width: 6em;
+        height: 6em;
+        margin-left: 20em;
+        padding-top: 4em;
     }
     img {
         width: 8em;
@@ -536,23 +631,39 @@ h1 {
     .menu {
         width: 20%;
         height: 100%;
-        font-size: 50px;
+        font-size: 53px;
     }
     .menu,
     li a {
         text-align: center;
         padding: 0;
         padding-left: 0;
+        padding-right: 0;
         padding-top: 2em;
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 6.5em;
+        padding-top: 6em;
         font-size: 1em;
     }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    ol {
+        font-size: 1.5em;
+    }
     h1 {
-        padding-top: 1em;
-        font-size: 70px;
+        font-size: 80px;
+    }
+    .rssPage {
+        width: 7em;
+        height: 7em;
+        margin-left: 40em;
+        padding-top: 4em;
     }
     .login-box2 {
         top: 50%;
@@ -562,10 +673,13 @@ h1 {
         height: 90%;
         background: rgba(0, 0, 0, 0.925);
     }
+    .paragraph1 {
+        font: normal 2.5em Georgia, 'Times New Roman', Times, serif;
+    }
     .login-box2 h2 {
         margin: 0 0 20px;
         padding-bottom: 1em;
-        font-size: 50px;
+        font-size: 60px;
     }
     .enum {
         font: normal bold 2em Georgia, 'Times New Roman', Times, serif;
@@ -578,6 +692,13 @@ h1 {
         padding: 10px 10px;
         font-size: 50px;
         left: 2%;
+    }
+    .btn_container {
+        -ms-flex-align: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .paragraph {
         padding-top: 1em;
@@ -605,60 +726,85 @@ h1 {
 @media screen and (min-width:600px) and (max-width:900px) {
     body,
     html {
-        width: 150%;
-        height: 210%;
+        width: 200%;
+        height: 270%;
     }
     .menu {
-        width: 23%;
+        width: 25%;
         height: 100%;
-        font-size: 45px;
+        font-size: 90px;
     }
     .menu,
     li a {
         text-align: center;
         padding: 0;
         padding-left: 0;
+        padding-right: 0;
         padding-top: 2em;
         padding-bottom: 2em;
     }
+    .btn_container {
+        -ms-flex-align: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #btnSignOut {
+        width: 10em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
+    }
     .menu li.start {
-        padding-top: 2em;
-        font-size: 1.3em;
+        padding-top: 3em;
+        font-size: 1em;
     }
     h1 {
-        padding-top: 1em;
+        font-size: 150px;
+    }
+    .rssPage {
+        width: 9em;
+        height: 9em;
+        margin-left: 55em;
+        padding-top: 4em;
     }
     .login-box2 {
         top: 50%;
-        left: 62%;
-        width: 73%;
-        padding: 20px;
-        height: 90%;
+        left: 64%;
+        width: 2150px;
+        padding: 40px;
+        height: 7000px;
         background: rgba(0, 0, 0, 0.925);
     }
     .login-box2 h2 {
         margin: 0 0 20px;
         padding-bottom: 1em;
-        font-size: 60px;
+        font-size: 100px;
     }
     .enum {
-        font: normal bold 2em Georgia, 'Times New Roman', Times, serif;
-    }
-    h1 {
-        font: normal bold 6em Georgia, 'Times New Roman', Times, serif;
+        font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
     }
     p {
         font: normal 1.5em Georgia, 'Times New Roman', Times, serif;
     }
     .button {
         padding: 10px 10px;
-        font-size: 50px;
+        font-size: 75px;
         left: 2%;
     }
     .paragraph {
         padding-top: 1em;
         padding-bottom: 0.5em;
-        font: normal 3em Georgia, 'Times New Roman', Times, serif;
+        font: normal 5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .paragraph1 {
+        margin: 0;
+        font: normal 5.2em Georgia, 'Times New Roman', Times, serif;
+    }
+    ol {
+        font-size: 1.2em;
     }
     .button2 {
         -ms-flex-align: unset;
@@ -666,7 +812,7 @@ h1 {
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 50px;
+        font-size: 80px;
     }
     .button:hover {
         box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
@@ -680,56 +826,77 @@ h1 {
 @media screen and (min-width:900px) and (max-width:1500px) {
     body,
     html {
-        width: 170%;
-        height: 225%;
+        width: 200%;
+        height: 250%;
     }
     .menu {
         width: 20%;
         height: 100%;
-        font-size: 73px;
+        font-size: 100px;
     }
     .menu,
     li a {
         text-align: center;
         padding: 0;
         padding-left: 0;
+        padding-right: 0;
         padding-top: 2em;
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 16em;
-        font-size: 0.4em;
+        padding-top: 7em;
+        font-size: 1em;
+    }
+    #btnSignOut {
+        width: 10em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
+    }
+    .btn_container {
+        -ms-flex-align: unset;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .rssPage {
+        width: 12em;
+        height: 12em;
+        margin-left: 78em;
+        padding-top: 8em;
     }
     h1 {
-        padding-top: 1em;
+        font-size: 150px;
     }
     .login-box2 {
         top: 50%;
-        left: 60%;
-        width: 75%;
-        padding: 30px;
-        height: 90%;
+        left: 61%;
+        width: 3100px;
+        padding: 40px;
+        height: 8000px;
         background: rgba(0, 0, 0, 0.925);
     }
     h1 {
-        font: normal bold 8em Georgia, 'Times New Roman', Times, serif;
+        font: normal bold 10em Georgia, 'Times New Roman', Times, serif;
     }
     .login-box2 h2 {
         margin: 0 0 20px;
-        padding-bottom: 1em;
-        font-size: 90px;
+        padding-bottom: 2em;
+        font-size: 100px;
     }
     .enum {
-        font: normal bold 3em Georgia, 'Times New Roman', Times, serif;
+        font: normal bold 3.2em Georgia, 'Times New Roman', Times, serif;
     }
     p {
         word-spacing: 4px;
-        font: normal 1.5em Georgia, 'Times New Roman', Times, serif;
+        font: normal 2.2em Georgia, 'Times New Roman', Times, serif;
     }
     .button {
-        padding: 20px 20px;
-        font-size: 70px;
-        left: 3%;
+        padding: 10px 10px;
+        font-size: 95px;
+        left: 2%;
     }
     .button:hover {
         box-shadow: 0 4px 18px 0 rgba(#000, 0.1);
@@ -737,7 +904,14 @@ h1 {
     .paragraph {
         padding-top: 1em;
         padding-bottom: 0.5em;
-        font: normal 5em Georgia, 'Times New Roman', Times, serif;
+        font: normal 6em Georgia, 'Times New Roman', Times, serif;
+    }
+    .paragraph1 {
+        margin: 0;
+        font: normal 5.2em Georgia, 'Times New Roman', Times, serif;
+    }
+    ol {
+        font-size: 1.7em;
     }
     .button2 {
         -ms-flex-align: unset;
@@ -745,8 +919,8 @@ h1 {
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 70px;
-        left: 10%;
+        font-size: 100px;
+        margin-left: 2.5em;
     }
     img {
         width: 6em;

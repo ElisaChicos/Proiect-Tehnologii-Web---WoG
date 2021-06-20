@@ -376,7 +376,7 @@ select {
 @media only screen and (max-width:330px) {
     body,
     html {
-        height: 200%;
+        height: 210%;
         width: 170%;
     }
     .start_create {
@@ -396,7 +396,7 @@ select {
         top: 50%;
         left: 50%;
         width: 700px;
-        height: 2200px;
+        height: 2350px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 h2 {
@@ -406,8 +406,8 @@ select {
     .login-box2 .user-box input {
         width: 40%;
         padding: 10px 2px;
-        font-size: 30px;
-        margin-bottom: 3em;
+        font-size: 45px;
+        margin-bottom: 2em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
@@ -417,7 +417,8 @@ select {
     }
     .login-box2 .user-box input:focus~label,
     .login-box2 .user-box input:valid~label {
-        top: -5px;
+        top: -10px;
+        font-size: 10px;
     }
     #radios {
         font-size: 27px;
@@ -448,6 +449,14 @@ select {
     .buttonSubmit {
         font-size: 40px;
     }
+    select {
+        width: 10em;
+        height: 4em;
+        font-size: 30px;
+    }
+    option {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (min-width:330px) and (max-width:500px) {
@@ -473,7 +482,7 @@ select {
         top: 50%;
         left: 50%;
         width: 670px;
-        height: 1700px;
+        height: 1730px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 h2 {
@@ -525,6 +534,14 @@ select {
     .buttonSubmit {
         font-size: 30px;
     }
+    select {
+        width: 10em;
+        height: 4em;
+        font-size: 20px;
+    }
+    option {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:500px) and (max-width:600px) {
@@ -549,14 +566,14 @@ select {
         top: 50%;
         left: 50%;
         width: 1000px;
-        height: 1700px;
+        height: 2000px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 .user-box input {
         width: 40%;
         padding: 10px 2px;
-        font-size: 25px;
-        margin-bottom: 2.5em;
+        font-size: 35px;
+        margin-bottom: 2em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
@@ -587,7 +604,7 @@ select {
     }
     #terms {
         padding-top: 1em;
-        font-size: 20px;
+        font-size: 25px;
     }
     .option-input-checkbox:checked::before {
         height: 40px;
@@ -598,12 +615,20 @@ select {
     .buttonSubmit {
         font-size: 40px;
     }
+    select {
+        width: 10em;
+        height: 4em;
+        font-size: 30px;
+    }
+    option {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:900px) {
     body,
     html {
-        height: 150%;
+        height: 160%;
         width: 130%;
     }
     .start_create {
@@ -622,14 +647,14 @@ select {
         top: 50%;
         left: 50%;
         width: 1200px;
-        height: 2200px;
+        height: 2500px;
         background: rgba(0, 0, 0, 0.89);
     }
     .login-box2 .user-box input {
         width: 40%;
         padding: 10px 2px;
-        font-size: 35px;
-        margin-bottom: 2.5em;
+        font-size: 45px;
+        margin-bottom: 2em;
     }
     .login-box2 .user-box label {
         padding: 10px 0;
@@ -642,25 +667,25 @@ select {
         top: -5px;
     }
     .buttonSubmit {
-        font-size: 40px;
+        font-size: 50px;
     }
     .login-box2 h2 {
         margin-bottom: 2em;
     }
     .login-box2 form a {
         padding: 15px 25px;
-        font-size: 40px;
+        font-size: 50px;
         margin-top: 20px;
         letter-spacing: 0;
     }
     .option-input-checkbox {
-        height: 40px;
-        width: 40px;
-        margin-right: 0.5rem;
+        height: 70px;
+        width: 70px;
+        margin-right: 2em;
     }
     #terms {
         padding-top: 1em;
-        font-size: 30px;
+        font-size: 35px;
     }
     .option-input-checkbox:checked::before {
         height: 40px;
@@ -676,12 +701,20 @@ select {
     #radios p {
         font-size: 40px;
     }
+    select {
+        width: 10em;
+        height: 4em;
+        font-size: 30px;
+    }
+    option {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:900px) and (max-width:1030px) {
     body,
     html {
-        height: 120%;
+        height: 130%;
         width: 100%;
     }
     .start_create {
@@ -700,8 +733,11 @@ select {
         top: 50%;
         left: 50%;
         width: 1000px;
-        height: 1900px;
+        height: 2100px;
         background: rgba(0, 0, 0, 0.89);
+    }
+    .login-box2 h2 {
+        padding-bottom: 1.5em;
     }
     .login-box2 .user-box input {
         width: 40%;
@@ -720,7 +756,7 @@ select {
         top: -5px;
     }
     .buttonSubmit {
-        font-size: 35px;
+        font-size: 40px;
     }
     #radios {
         font-size: 30px;
@@ -730,13 +766,13 @@ select {
     }
     .login-box2 form a {
         padding: 15px 25px;
-        font-size: 35px;
+        font-size: 40px;
         margin-top: 20px;
         letter-spacing: 0;
     }
     .option-input-checkbox {
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
         margin-right: 0.5rem;
     }
     #terms {
@@ -748,5 +784,8 @@ select {
         width: 40px;
         font-size: 40px;
         line-height: 40px;
+    }
+    option {
+        font-size: 10px;
     }
 }

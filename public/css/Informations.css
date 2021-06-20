@@ -165,11 +165,6 @@ h1 {
         height: 240%;
         width: 200%;
     }
-    .start_generator {
-        height: 100%;
-        background-size: 100% 100%;
-        background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
-    }
     .menu {
         width: 35%;
         height: 100%;
@@ -185,7 +180,7 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 2em;
+        padding-top: 4em;
         font-size: 1em;
     }
     .login-box2 {
@@ -216,6 +211,13 @@ h1 {
         width: 6em;
         height: 3em;
     }
+    #btnSignOut {
+        width: 7em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
 }
 
 @media only screen and (min-width:300px) and (max-width:325px) {
@@ -230,7 +232,7 @@ h1 {
         background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
     }
     .menu {
-        width: 35%;
+        width: 34%;
         height: 100%;
         font-size: 50px;
     }
@@ -244,15 +246,15 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 2em;
+        padding-top: 4em;
         font-size: 1em;
     }
     .login-box2 {
         top: 50%;
-        left: 67%;
-        width: 850px;
+        left: 68%;
+        width: 820px;
         padding: 40px;
-        height: 9200px;
+        height: 9400px;
         background: rgba(0, 0, 0, 0.925);
     }
     .login-box2 h2 {
@@ -274,6 +276,13 @@ h1 {
     img {
         width: 7em;
         height: 3em;
+    }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
 }
 
@@ -303,16 +312,23 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 5em;
+        padding-top: 6em;
         font-size: 1em;
     }
     .login-box2 {
         top: 50%;
         left: 67%;
-        width: 850px;
+        width: 910px;
         padding: 40px;
         height: 9400px;
         background: rgba(0, 0, 0, 0.925);
+    }
+    #btnSignOut {
+        width: 9.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 h2 {
         margin: 0 0 50px;
@@ -342,11 +358,6 @@ h1 {
         height: 200%;
         width: 200%;
     }
-    .start_generator {
-        height: 100%;
-        background-size: 100% 100%;
-        background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
-    }
     .menu {
         width: 35%;
         height: 100%;
@@ -362,8 +373,15 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 7em;
+        padding-top: 10em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 10.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
@@ -401,11 +419,6 @@ h1 {
         height: 220%;
         width: 200%;
     }
-    .start_generator {
-        height: 100%;
-        background-size: 100% 100%;
-        background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
-    }
     .menu {
         width: 20%;
         height: 100%;
@@ -436,6 +449,13 @@ h1 {
         margin: 0 0 100px;
         padding-bottom: 0;
     }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
     h1 {
         font: normal bold 6em Georgia, 'Times New Roman', Times, serif;
     }
@@ -463,15 +483,10 @@ h1 {
         height: 270%;
         width: 200%;
     }
-    .start_generator {
-        height: 100%;
-        background-size: 100% 100%;
-        background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
-    }
     .menu {
         width: 25%;
         height: 100%;
-        font-size: 80px;
+        font-size: 90px;
     }
     .menu,
     li a {
@@ -488,15 +503,22 @@ h1 {
     }
     .login-box2 {
         top: 50%;
-        left: 62%;
-        width: 2250px;
+        left: 64%;
+        width: 2150px;
         padding: 40px;
-        height: 21000px;
+        height: 21800px;
         background: rgba(0, 0, 0, 0.925);
     }
     .login-box2 h2 {
         margin: 0 0 100px;
         padding-bottom: 0;
+    }
+    #btnSignOut {
+        width: 10em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
     }
     h1 {
         font: normal bold 10em Georgia, 'Times New Roman', Times, serif;
@@ -525,11 +547,6 @@ h1 {
         height: 210%;
         width: 200%;
     }
-    .start_generator {
-        height: 100%;
-        background-size: 100% 100%;
-        background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
-    }
     .menu {
         width: 20%;
         height: 100%;
@@ -545,13 +562,20 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 5.5em;
+        padding-top: 7em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 10em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
     }
     .login-box2 {
         top: 50%;
-        left: 60%;
-        width: 3200px;
+        left: 61%;
+        width: 3100px;
         padding: 40px;
         height: 18000px;
         background: rgba(0, 0, 0, 0.925);

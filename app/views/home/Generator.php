@@ -143,17 +143,6 @@ if(isset($_POST['submit'])){
     <button class ="buttonSubmit" id="submit" type="submit" > GENERATE WORKOUT </button>  
     </div>
       
-   
-  
-    <!--
-             <a href="Workout.php">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <input type="submit" name="submit" id="submit" value="Generate workout">
-            </a>
-            -->
     </form>
     </div>
     </div>

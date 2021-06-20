@@ -220,7 +220,7 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 2em;
+        padding-top: 4em;
         font-size: 1em;
     }
     .login-box2 {
@@ -228,12 +228,13 @@ h1 {
         left: 67%;
         width: 675px;
         padding: 40px;
-        height: 2900px;
+        height: 2850px;
         background: rgba(0, 0, 0, 0.925);
     }
     .login-box2 h2 {
         margin: 0 0 50px;
         padding-bottom: 0;
+        margin-bottom: 2em;
     }
     h2 {
         font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
@@ -252,6 +253,13 @@ h1 {
         width: 6em;
         height: 3em;
     }
+    #btnSignOut {
+        width: 7em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
 }
 
 @media only screen and (min-width:300px) and (max-width:325px) {
@@ -266,7 +274,7 @@ h1 {
         background-image: url("https://images.unsplash.com/photo-1593476123561-9516f2097158?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
     }
     .menu {
-        width: 35%;
+        width: 34%;
         height: 100%;
         font-size: 50px;
     }
@@ -280,7 +288,7 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 2em;
+        padding-top: 4em;
         font-size: 1em;
     }
     .login-box2 {
@@ -312,6 +320,13 @@ h1 {
         width: 7em;
         height: 3em;
     }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
 }
 
 @media only screen and (min-width:325px) and (max-width:400px) {
@@ -340,13 +355,20 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 5em;
+        padding-top: 6em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 9.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
         left: 67%;
-        width: 800px;
+        width: 900px;
         padding: 40px;
         height: 2500px;
         background: rgba(0, 0, 0, 0.925);
@@ -354,6 +376,7 @@ h1 {
     .login-box2 h2 {
         margin: 0 0 50px;
         padding-bottom: 0;
+        margin-bottom: 2em;
     }
     h2 {
         font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
@@ -365,7 +388,7 @@ h1 {
         font: normal bold 3em Georgia, 'Times New Roman', Times, serif;
     }
     .button {
-        font-size: 40px;
+        font-size: 50px;
         left: 7%;
     }
     img {
@@ -400,13 +423,20 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 7em;
+        padding-top: 10em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 10.5em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
-        left: 67%;
-        width: 1050px;
+        left: 68%;
+        width: 1000px;
         padding: 40px;
         height: 2400px;
         background: rgba(0, 0, 0, 0.925);
@@ -414,6 +444,7 @@ h1 {
     .login-box2 h2 {
         margin: 0 0 50px;
         padding-bottom: 0;
+        margin-bottom: 2em;
     }
     h2 {
         font: normal bold 4em Georgia, 'Times New Roman', Times, serif;
@@ -448,7 +479,7 @@ h1 {
     .menu {
         width: 20%;
         height: 100%;
-        font-size: 55px;
+        font-size: 53px;
     }
     .menu,
     li a {
@@ -460,20 +491,28 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 5.5em;
+        padding-top: 6em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 8em;
+        font-size: 55px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
     }
     .login-box2 {
         top: 50%;
         left: 60%;
         width: 1500px;
         padding: 40px;
-        height: 2500px;
-        background: rgba(0, 0, 0, 0.925);
+        height: 2700px;
+        background: rgba(0, 0, 0, 0.61);
     }
     .login-box2 h2 {
         margin: 0 0 50px;
         padding-bottom: 0;
+        margin-bottom: 2em;
     }
     h2 {
         font: normal bold 4.5em Georgia, 'Times New Roman', Times, serif;
@@ -485,7 +524,7 @@ h1 {
         font: normal bold 3.5em Georgia, 'Times New Roman', Times, serif;
     }
     .button {
-        font-size: 50px;
+        font-size: 55px;
         left: 2.5%;
     }
     img {
@@ -497,7 +536,7 @@ h1 {
 @media screen and (min-width:600px) and (max-width:900px) {
     body,
     html {
-        height: 200%;
+        height: 215%;
         width: 200%;
     }
     .start-profile {
@@ -508,7 +547,7 @@ h1 {
     .menu {
         width: 25%;
         height: 100%;
-        font-size: 80px;
+        font-size: 90px;
     }
     .menu,
     li a {
@@ -523,18 +562,24 @@ h1 {
         padding-top: 3em;
         font-size: 1em;
     }
+    #btnSignOut {
+        width: 10em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
+    }
     .login-box2 {
         top: 50%;
         left: 63%;
         width: 2200px;
         padding: 40px;
-        height: 3750px;
+        height: 4500px;
         background: rgba(0, 0, 0, 0.815);
     }
     .login-box2 h2 {
         margin: 0 0 50px;
-        padding-bottom: 0;
-        padding-top: 0.2em;
+        padding-bottom: 2em;
         font-size: 9em;
     }
     h2 {
@@ -564,8 +609,8 @@ h1 {
     }
     .start-profile {
         height: 100%;
-        background-size: 100% 110%;
-        background-image: url("https://images.unsplash.com/photo-1571019613576-2b22c76fd955?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+        background-size: 150% 100%;
+        background-image: url("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
     }
     .menu {
         width: 20%;
@@ -582,21 +627,27 @@ h1 {
         padding-bottom: 2em;
     }
     .menu li.start {
-        padding-top: 5.5em;
+        padding-top: 7em;
         font-size: 1em;
+    }
+    #btnSignOut {
+        width: 10em;
+        font-size: 80px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2.5em;
     }
     .login-box2 {
         top: 50%;
         left: 60%;
         width: 3000px;
         padding: 40px;
-        height: 4300px;
-        background: rgba(0, 0, 0, 0.925);
+        height: 4800px;
+        background: rgba(0, 0, 0, 0.651);
     }
     .login-box2 h2 {
         margin: 0 0 50px;
-        padding-bottom: 0;
-        padding-top: 0.2em;
+        padding-bottom: 2em;
         font-size: 9em;
     }
     h2 {
@@ -609,7 +660,7 @@ h1 {
         font: normal bold 6em Georgia, 'Times New Roman', Times, serif;
     }
     .button {
-        font-size: 150px;
+        font-size: 100px;
         left: 2%;
     }
     img {
