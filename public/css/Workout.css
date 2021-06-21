@@ -27,7 +27,6 @@ html {
     margin-top: 0;
     padding-bottom: 1em;
     color: rgb(255, 255, 255);
-    font-size: 30px;
     font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -282,9 +281,10 @@ button {
         width: 180%;
     }
     .start-workout {
-        height: 100%;
+        height: 158%;
         background-size: 100% 100%;
-        background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
+        background-color: rgb(13, 100, 150);
+        background-image: none;
     }
     .menu {
         width: 1400px;
@@ -323,13 +323,13 @@ button {
         color: #fff;
     }
     .login-box2 {
-        top: 55%;
+        top: 22%;
         left: 50%;
-        width: 900px;
+        width: 1000px;
         padding: 40px;
         padding-right: 0;
-        height: 1800px;
-        background: rgba(0, 0, 0, 0.678);
+        height: 800px;
+        background: rgba(0, 0, 0, 0);
     }
     #btnSignOut {
         width: 7em;
@@ -341,44 +341,104 @@ button {
     }
     .button {
         padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
         font-size: 50px;
+    }
+    .img-start {
+        width: 50em;
+        height: 25em;
+        margin-right: 2em;
+        padding-top: 10em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0;
+        margin-bottom: 0;
+        font: normal bold 5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 50em;
+        height: 30em;
+        margin-left: 3em;
+        margin-bottom: 10em;
+    }
+    .exercise_info {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 3em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 40px;
+    }
+    .enum {
+        font: normal 4em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 70px;
+        padding-left: 4em;
+        padding-right: 2.5em;
     }
 }
 
-@media only screen and (min-width:300px) and (max-width:500px) {
-    body,
+@media only screen and (min-width:300px) and (max-width:326px) {
     html {
-        height: 220%;
-        width: 200%;
+        height: 200%;
+        width: 220%;
+    }
+    body {
+        height: 200%;
+        width: 180%;
     }
     .start-workout {
-        height: 50%;
+        height: 158%;
         background-size: 100% 100%;
-        background-image: url("https://images.unsplash.com/photo-1517438984742-1262db08379e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80");
+        background-color: rgb(13, 100, 150);
+        background-image: none;
     }
     .menu {
-        width: 35%;
-        height: 100%;
-        font-size: 40px;
+        width: 1400px;
+        height: 200px;
+        font-size: 45px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
     }
     .menu,
     li a {
         text-align: center;
         padding: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0.7em;
+        padding-right: 1em;
         padding-top: 2em;
         padding-bottom: 2em;
     }
     .menu li.start {
         padding-top: 12em;
-        font-size: 1em;
+        font-size: 1.5em;
     }
     img {
-        width: 10em;
-        height: 4em;
+        width: 0;
+        height: 0;
         padding-top: 0em;
-        position: relative;
+        margin-left: 0;
+        left: 0;
     }
     h1 {
         text-align: center;
@@ -388,75 +448,830 @@ button {
         color: #fff;
     }
     .login-box2 {
-        top: 0;
-        left: 67%;
-        width: 675px;
+        top: 22%;
+        left: 50%;
+        width: 1200px;
         padding: 40px;
-        height: 1500px;
-        background: rgba(0, 0, 0, 0.925);
+        padding-right: 0;
+        height: 800px;
+        background: rgba(0, 0, 0, 0);
+    }
+    #btnSignOut {
+        width: 8em;
+        height: 6.6em;
+        font-size: 35px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    .button {
+        padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 50px;
+    }
+    .img-start {
+        width: 50em;
+        height: 25em;
+        margin-right: 2em;
+        padding-top: 10em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0;
+        margin-bottom: 0;
+        font: normal bold 5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 50em;
+        height: 30em;
+        margin-left: 10em;
+        margin-bottom: 10em;
+    }
+    .exercise_info {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 3em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 40px;
+    }
+    .enum {
+        font: normal 4em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 70px;
+        padding-left: 4em;
+        padding-right: 2.5em;
     }
 }
 
-@media screen and (min-width:500px) and (max-width:900px) {
-    body,
+@media only screen and (min-width:326px) and (max-width:370px) {
     html {
-        margin: 0;
-        height: 100%;
-        width: 100%;
+        height: 200%;
+        width: 220%;
     }
-    h2 {
-        text-align: center;
-        padding-top: 2em;
-        padding-bottom: 1em;
-        font-size: 30px;
-        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+    body {
+        height: 180%;
+        width: 180%;
     }
     .start-workout {
-        height: 150%;
-        width: 220%;
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-attachment: fixed;
-        background-image: url("https://images.unsplash.com/photo-1616279969965-e9a7d854a30d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1056&q=80");
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 158%;
         background-size: 100% 100%;
+        background-color: rgb(13, 100, 150);
+        background-image: none;
+    }
+    .menu {
+        width: 1400px;
+        height: 200px;
+        font-size: 45px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .menu,
+    li a {
         text-align: center;
+        padding: 0;
+        padding-left: 1.1em;
+        padding-right: 1.1em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .menu li.start {
+        padding-top: 12em;
+        font-size: 1.5em;
     }
     img {
-        width: 10em;
-        height: 4em;
-        padding-top: 15em;
+        width: 0;
+        height: 0;
+        padding-top: 0em;
+        margin-left: 0;
+        left: 0;
+    }
+    h1 {
+        text-align: center;
+        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+        margin: 0 0 30px;
+        padding-bottom: 1em;
+        color: #fff;
+    }
+    .login-box2 {
+        top: 23%;
+        left: 50%;
+        width: 1250px;
+        padding: 40px;
+        padding-right: 0;
+        height: 800px;
+        background: rgba(0, 0, 0, 0);
+    }
+    #btnSignOut {
+        width: 9em;
+        height: 6.6em;
+        font-size: 35px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 2em;
+    }
+    .button {
+        padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 50px;
+    }
+    .img-start {
+        width: 50em;
+        height: 25em;
+        margin-right: 2em;
+        padding-top: 10em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0;
+        margin-bottom: 0;
+        font: normal bold 5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 50em;
+        height: 30em;
+        margin-left: 10em;
+        margin-bottom: 10em;
+    }
+    .exercise_info {
         position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 3em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 40px;
+    }
+    .enum {
+        font: normal 4em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 70px;
+        padding-left: 4em;
+        padding-right: 2.5em;
     }
 }
 
-@media screen and (min-width:900px) and (max-width:1200px) {
-    body,
+@media screen and (min-width:370px) and (max-width:400px) {
     html {
-        margin: 0;
-        height: 100%;
-        width: 100%;
+        height: 200%;
+        width: 220%;
     }
-    h2 {
-        text-align: center;
-        padding-top: 2em;
-        padding-bottom: 1em;
-        font-size: 30px;
-        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+    body {
+        height: 178%;
+        width: 180%;
     }
     .start-workout {
-        height: 100%;
-        width: 150%;
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        background-attachment: fixed;
-        background-image: url("https://images.unsplash.com/photo-1616279969965-e9a7d854a30d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1056&q=80");
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 158%;
         background-size: 100% 100%;
+        background-color: rgb(13, 100, 150);
+        background-image: none;
+    }
+    .menu {
+        width: 1400px;
+        height: 200px;
+        font-size: 45px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .menu,
+    li a {
         text-align: center;
+        padding: 0;
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .menu li.start {
+        padding-top: 12em;
+        font-size: 1.5em;
+    }
+    img {
+        width: 0;
+        height: 0;
+        padding-top: 0em;
+        margin-left: 0;
+        left: 0;
+    }
+    h1 {
+        text-align: center;
+        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+        margin: 0 0 30px;
+        padding-bottom: 1em;
+        color: #fff;
+    }
+    .login-box2 {
+        top: 23%;
+        left: 50%;
+        width: 1250px;
+        padding: 40px;
+        padding-right: 0;
+        height: 800px;
+        background: rgba(0, 0, 0, 0);
+    }
+    #btnSignOut {
+        width: 9em;
+        height: 6.6em;
+        font-size: 35px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    .button {
+        padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 50px;
+    }
+    .img-start {
+        width: 50em;
+        height: 25em;
+        margin-right: 2em;
+        padding-top: 10em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0;
+        margin-bottom: 0;
+        font: normal bold 5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 50em;
+        height: 30em;
+        margin-left: 10em;
+        margin-bottom: 10em;
+    }
+    .exercise_info {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 3em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 40px;
+    }
+    .enum {
+        font: normal 4em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 70px;
+        padding-left: 4em;
+        padding-right: 2.5em;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:500px) {
+    html {
+        height: 200%;
+        width: 220%;
+    }
+    body {
+        height: 200%;
+        width: 180%;
+    }
+    .start-workout {
+        height: 140%;
+        background-size: 100% 100%;
+        background-color: rgb(13, 100, 150);
+        background-image: none;
+    }
+    .menu {
+        width: 1510px;
+        height: 200px;
+        font-size: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .menu,
+    li a {
+        text-align: center;
+        padding: 0;
+        padding-left: 1.1em;
+        padding-right: 1.5em;
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+    }
+    .menu li.start {
+        padding-top: 10em;
+        font-size: 0.7em;
+        margin-left: 0;
+    }
+    #btnSignOut {
+        width: 8em;
+        height: 5.2em;
+        font-size: 45px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    img {
+        width: 0;
+        height: 0;
+        padding-top: 0em;
+        margin-left: 0;
+        left: 0;
+    }
+    h1 {
+        text-align: center;
+        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+        margin: 0 0 30px;
+        padding-bottom: 1em;
+        color: #fff;
+    }
+    .login-box2 {
+        top: 22%;
+        left: 50%;
+        width: 1400px;
+        padding: 40px;
+        padding-right: 0;
+        height: 950px;
+        background: rgba(0, 0, 0, 0);
+    }
+    .button {
+        padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 55px;
+    }
+    .img-start {
+        width: 65em;
+        height: 40em;
+        margin-right: 2em;
+        padding-top: 10em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0;
+        margin-bottom: 0;
+        font: normal bold 5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 65em;
+        height: 40em;
+        margin-left: 8em;
+        margin-bottom: 10em;
+    }
+    .exercise_info {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 3em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 50px;
+    }
+    .enum {
+        font: normal 4.3em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 80px;
+        padding-left: 4em;
+        padding-right: 2.5em;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+    html {
+        height: 200%;
+        width: 220%;
+    }
+    body {
+        height: 200%;
+        width: 180%;
+    }
+    .start-workout {
+        height: 140%;
+        background-size: 100% 100%;
+        background-color: rgb(13, 100, 150);
+        background-image: none;
+    }
+    .menu {
+        width: 2300px;
+        height: 200px;
+        font-size: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .menu,
+    li a {
+        text-align: center;
+        padding: 0;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+    }
+    .menu li.start {
+        padding-top: 10em;
+        font-size: 0.9em;
+        margin-left: 0;
+    }
+    #btnSignOut {
+        width: 10em;
+        height: 5.6em;
+        font-size: 50px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    img {
+        width: 0;
+        height: 0;
+        padding-top: 0em;
+        margin-left: 0;
+        left: 0;
+    }
+    h1 {
+        text-align: center;
+        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+        margin: 0 0 30px;
+        padding-bottom: 1em;
+        color: #fff;
+    }
+    .login-box2 {
+        top: 30%;
+        left: 50%;
+        width: 1900px;
+        padding: 40px;
+        padding-right: 0;
+        height: 1250px;
+        background: rgba(0, 0, 0, 0);
+    }
+    .button {
+        padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 55px;
+    }
+    .img-start {
+        width: 82em;
+        height: 52em;
+        margin-right: 2em;
+        padding-top: 11em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0.5em;
+        margin-bottom: 0;
+        font: normal bold 5.5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 82em;
+        height: 52em;
+        margin-left: 15em;
+        margin-bottom: 13em;
+    }
+    .exercise_info {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 3em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 50px;
+    }
+    .enum {
+        font: normal 4.5em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 90px;
+        padding-left: 4em;
+        padding-right: 2.5em;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    html {
+        height: 200%;
+        width: 220%;
+    }
+    body {
+        height: 200%;
+        width: 180%;
+    }
+    .start-workout {
+        height: 140%;
+        background-size: 100% 100%;
+        background-color: rgb(13, 100, 150);
+        background-image: none;
+    }
+    .menu {
+        width: 2900px;
+        height: 300px;
+        font-size: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .menu,
+    li a {
+        text-align: center;
+        padding: 0;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+    }
+    .menu li.start {
+        padding-top: 10em;
+        font-size: 1em;
+        margin-left: 0;
+    }
+    #btnSignOut {
+        width: 10em;
+        height: 5.6em;
+        font-size: 65px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    img {
+        width: 0;
+        height: 0;
+        padding-top: 0em;
+        margin-left: 0;
+        left: 0;
+    }
+    h1 {
+        text-align: center;
+        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+        margin: 0 0 30px;
+        padding-bottom: 1em;
+        color: #fff;
+    }
+    .login-box2 {
+        top: 30%;
+        left: 50%;
+        width: 2700px;
+        padding: 40px;
+        padding-right: 0;
+        height: 1750px;
+        background: rgba(0, 0, 0, 0);
+    }
+    .button {
+        padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 70px;
+    }
+    .img-start {
+        width: 120em;
+        height: 80em;
+        margin-right: 2em;
+        padding-top: 10em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0.5em;
+        margin-bottom: 0;
+        font: normal bold 9em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 120em;
+        height: 75em;
+        margin-left: 25em;
+        margin-bottom: 13em;
+    }
+    .exercise_info {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 3em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 70px;
+    }
+    .enum {
+        font: normal 6em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 130px;
+        padding-left: 4em;
+        padding-right: 2.5em;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1500px) {
+    html {
+        height: 200%;
+        width: 220%;
+    }
+    body {
+        height: 200%;
+        width: 180%;
+    }
+    .start-workout {
+        height: 135%;
+        background-size: 100% 100%;
+        background-color: rgb(13, 100, 150);
+        background-image: none;
+    }
+    .menu {
+        width: 100%;
+        height: 400px;
+        font-size: 110px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .menu,
+    li a {
+        text-align: center;
+        padding: 0;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+    }
+    .menu li.start {
+        padding-top: 10em;
+        font-size: 0.5em;
+        margin-left: 0;
+    }
+    #btnSignOut {
+        width: 10em;
+        height: 5.7em;
+        font-size: 90px;
+        padding: 0 0;
+        padding-bottom: 1em;
+        padding: 1.5em;
+    }
+    img {
+        width: 0;
+        height: 0;
+        padding-top: 0em;
+        margin-left: 0;
+        left: 0;
+    }
+    h1 {
+        text-align: center;
+        font: normal bold 2.5em Georgia, 'Times New Roman', Times, serif;
+        margin: 0 0 30px;
+        padding-bottom: 1em;
+        color: #fff;
+    }
+    .login-box2 {
+        top: 35%;
+        left: 50%;
+        width: 3500px;
+        padding: 40px;
+        padding-right: 0;
+        height: 3000px;
+        background: rgba(0, 0, 0, 0);
+    }
+    .button {
+        padding: 1em 2em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 80px;
+    }
+    .img-start {
+        width: 190em;
+        height: 100em;
+        margin-right: 2em;
+        padding-top: 10em;
+    }
+    .login-box2 h2 {
+        padding-bottom: 1em;
+        color: rgb(8, 13, 82);
+        padding-top: 0.5em;
+        margin-bottom: 0;
+        font: normal bold 12em Georgia, 'Times New Roman', Times, serif;
+    }
+    .containerr {
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise {
+        width: 190em;
+        height: 130em;
+        margin-left: 12em;
+        margin-bottom: 20em;
+        margin-top: 5em;
+    }
+    .exercise_info {
+        position: relative;
+        color: rgb(0, 0, 0);
+        margin-top: 5em;
+        text-align: justify;
+        margin-right: 2em;
+    }
+    .button3 {
+        margin-top: 2em;
+        margin-left: 5em;
+        padding: 1em 1em;
+        background-color: rgb(8, 13, 82);
+        border: 4px solid rgb(1, 9, 32);
+        border-radius: 15px;
+        font-size: 85px;
+    }
+    .enum {
+        font: normal 7em Georgia, 'Times New Roman', Times, serif;
+    }
+    .title {
+        color: rgb(8, 13, 82);
+        font-size: 10em;
+        padding-left: 4em;
+        padding-right: 2.5em;
     }
 }
