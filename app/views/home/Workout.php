@@ -4612,7 +4612,7 @@ if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($gr
                 while($random_group1_ex1 == $random_group1_ex2){
                     $random_group1_ex2 =$array[array_rand($array)];
                 }
-                }
+            
                 $random_group1_ex3 = $array[array_rand($array)];
                 while($random_group1_ex1 == $random_group1_ex3 || $random_group1_ex2 == $random_group1_ex3 ){
                     $random_group1_ex3 = $array[array_rand($array)];
@@ -5025,7 +5025,7 @@ if (strcmp($group3val, "Legs")==0 && strcmp($group4val, "Legs")==0 || strcmp($gr
             $_SESSION['random_group4_ex1'] = $random_group4_ex1;
             $_SESSION['random_group4_ex2'] = $random_group4_ex2;
            }
-
+        }
 }
 
     ?>
