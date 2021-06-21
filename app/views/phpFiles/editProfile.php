@@ -44,7 +44,7 @@
         if($stmt->execute()){
             $stmt->close();
             $status = true;
-            $message[] = 'Updated succesfully.';
+            $message[] = 'Username updated succesfully.';
         }else{
             $status = false;
             $message[] =  'There was a problem at updating your username.';
@@ -60,7 +60,7 @@
             if($stmt->execute()){
                 $stmt->close();
                 $status = true;
-                $message[] = 'Updated succesfully.';
+                $message[] = 'Height updated succesfully.';
             }else{
                 $status = false;
                 $message[] =  'There was a problem at updating your height.';
@@ -81,7 +81,7 @@
             if($stmt->execute()){
                 $stmt->close();
                 $status = true;
-                $message[] = 'Updated succesfully.';
+                $message[] = 'Weight updated succesfully.';
             }else{
                 $status = false;
                 $message[] =  'There was a problem at updating your weight.';
@@ -122,7 +122,7 @@
                     if($stmt->execute()){
                         $stmt->close();
                         $status = true;
-                        $message[] = 'Updated succesfully.';
+                        $message[] = 'Password updated succesfully.';
                     }else{
                         $status = false;
                         $message[] =  'There was a problem at updating your password.';

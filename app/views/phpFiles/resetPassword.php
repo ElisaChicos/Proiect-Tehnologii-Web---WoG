@@ -10,14 +10,17 @@ session_start();
     $email = isset($_SESSION["emailForReset"]) ? $_SESSION["emailForReset"] : '';
     $token = isset($_POST["token"]) ? $_POST["token"] : '';
     $new_password = isset($_POST["newPassword"]) ? $_POST["newPassword"] : '';
-    $sendedToken = $_SESSION["hashToken"];
 
     $status = true;
     $message = array();
 
+
 if(empty($email) && empty($token) && empty($new_password)){
+        $status = false;
+        $message[] = 'You need to enter your email.';
+}else if(!empty($email) && empty($token) && empty($new_password)){
     $status = false;
-    $message[] = 'You need to modify an input to save the changes.';
+    $message[] = 'You need enter the token.';
 }else  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $status = false;
     $message[] = 'Please give a valid email adress.';
@@ -49,6 +52,7 @@ if(empty($email) && empty($token) && empty($new_password)){
         $status = false;
         $message[] = 'This account does not exist.';       
     }else{
+        $sendedToken = $_SESSION["hashToken"];
         if(!empty($token)){
             if(checkToken($token, $sendedToken)==1){
                     $hashPass = password_hash($new_password, PASSWORD_DEFAULT);

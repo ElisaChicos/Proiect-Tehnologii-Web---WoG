@@ -16,7 +16,7 @@ session_start();
         <div class="login-box2">
     
     <h2>Edit your profile</h2>
-    <form method="POST" action= "../phpFiles/editProfile.php" id = "myForm">
+    <form  id = "myForm">
     
         
         <div class="user-box">

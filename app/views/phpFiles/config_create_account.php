@@ -1,6 +1,5 @@
   <?php
 
-
   $status = true;
   $message = array();
 
@@ -34,42 +33,48 @@
           $message[] = 'Please fill in all the inputs.';
   }else{
   
-  if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $status = false;
-        $message[] = 'Please choose a valid email.';
-  }else{
-
-    if($age < 5 || $age > 120 || $height < 50|| $height > 250 || $weight < 30 || $weight > 500){
-      $status = false;
-      $message[] = 'Please fill in with correct informations.';
+    if(!filter_var(filter_var($email, FILTER_SANITIZE_EMAIL), FILTER_VALIDATE_EMAIL)){
+          $status = false;
+          $message[] = 'Please choose a valid email.';
     }else{
 
-    $stmt = $conn->prepare("SELECT email FROM user_exemplu.users WHERE email = ? ;");
-    $stmt->bind_param('s', $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $numberOfRows = $result->num_rows;
-    $stmt->close();
+      if($age < 5 || $age > 120 || $height < 50|| $height > 250 || $weight < 30 || $weight > 500){
+        $status = false;
+        $message[] = 'Please fill in with correct informations.';
+      }else{ 
 
-    if($numberOfRows == 0 ){
-      $hashPass = password_hash($pass, PASSWORD_DEFAULT);
-      $password = $hashPass;
-      $sql = "INSERT INTO user_exemplu.users (username,email,age,height,weight,old_weight,gender,password,want,focus_part,activity_points) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
-      $stmt = $conn->prepare($sql);
-      $stmt->bind_param("ssiddissssi",$username,$email,$age,$height,$weight,$old_weight,$gender,$password,$want,$focus_part,$activity_points);
-      $result = $stmt->execute();
-      $stmt->close();
-      if($result){
-          $status = true;
-          $message[] = 'Account created succesfully.';
+      if(!isset($_POST['gender']) || !isset($_POST['want']) || !isset($_POST['focus_part'])){
+        $status = false;
+        $message[] = 'Please choose an option from the select box.';
       }else{
-          $status = false;
-          $message[] = 'Email already exists.'; 
+        $stmt = $conn->prepare("SELECT email FROM user_exemplu.users WHERE email = '$email' ;");
+      $stmt->execute();
+      $result = $stmt->get_result();
+      $numberOfRows = $result->num_rows;
+      $stmt->close();
+
+      if($numberOfRows == 0 ){
+        $hashPass = password_hash($pass, PASSWORD_DEFAULT);
+        $password = $hashPass;
+        $sql = "INSERT INTO user_exemplu.users (username,email,age,height,weight,old_weight,gender,password,want,focus_part,activity_points) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("ssiddissssi",$username,$email,$age,$height,$weight,$old_weight,$gender,$password,$want,$focus_part,$activity_points);
+        $result = $stmt->execute();
+        $stmt->close();
+        if($result){
+            $status = true;
+            $message[] = 'Account created succesfully.';
         }
       }
+      else{
+            $status = false;
+            $message[] = 'Email already exists.'; 
+      }
+      }
+
   }
 }
-  }
+}
   echo json_encode(
     array(
         'status' => $status,

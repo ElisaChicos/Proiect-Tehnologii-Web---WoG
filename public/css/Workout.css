@@ -31,7 +31,7 @@ html {
 }
 
 .start-workout {
-    height: 753px;
+    height: 780px;
     margin: 0;
     padding: 0;
     padding-top: 0;
@@ -281,7 +281,7 @@ button {
         width: 180%;
     }
     .start-workout {
-        height: 158%;
+        height: 165%;
         background-size: 100% 100%;
         background-color: rgb(13, 100, 150);
         background-image: none;

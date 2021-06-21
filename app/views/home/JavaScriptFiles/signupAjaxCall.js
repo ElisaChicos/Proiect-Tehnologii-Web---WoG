@@ -13,6 +13,10 @@ const form = {
 };
 const formular = document.getElementById("myForm");
 
+form.gender.value = getSelectedOption(form.gender);
+form.want.value = getSelectedOption(form.want);
+form.focus_part.value = getSelectedOption(form.focus_part);
+
 function handleForm(event) { event.preventDefault(); }
 formular.addEventListener('submit', handleForm);
 form.submit.addEventListener('click', () => {
@@ -36,9 +40,7 @@ form.submit.addEventListener('click', () => {
         }
 
     }
-    const requestData = `username=${form.username.value}&email=${form.email.value}&age=${form.age.value}&height=${form.height.value}
-    &weight=${form.weight.value}&gender=${form.gender.value}&want=${form.want.value}&focus_part=${form.focus_part.value}
-    &password=${form.password.value}`;
+    const requestData = `username=${form.username.value}&email=${form.email.value}&age=${form.age.value}&height=${form.height.value}&weight=${form.weight.value}&gender=${form.gender.value}&want=${form.want.value}&focus_part=${form.focus_part.value}&password=${form.password.value}`;
     //console.log(requestData);
     ajax.open("POST", '../phpFiles/config_create_account.php', true);
     ajax.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -57,4 +59,15 @@ function getAndHandleResponse(response) {
         form.message.style.color = 'rgb(172, 0, 0)';
         form.message.style.marginBottom = "30px";
     }
+}
+
+function getSelectedOption(sel) {
+    var opt;
+    for (var i = 0, len = sel.options.length; i < len; i++) {
+        opt = sel.options[i];
+        if (opt.selected === true) {
+            break;
+        }
+    }
+    return opt;
 }

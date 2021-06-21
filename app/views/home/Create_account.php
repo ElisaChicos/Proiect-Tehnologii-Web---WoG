@@ -15,7 +15,7 @@
     
     <h2>Create account</h2>
 
-    <form action="../phpFiles/config_create_account.php" method="POST" id="myForm">
+    <form  id="myForm">
 
     <div class="container">
     <div class="row">
@@ -62,7 +62,7 @@
 
     <div id="radios1">
         <p> Gender:
-        <select name="gender" id="gender">
+        <select name="gender" id="gender" required>
         <option selected disabled> Choose an option </option>
         <option value="female"> Female </option>
         <option value="male"> Male </option>
@@ -72,7 +72,7 @@
 
       <div id="radios2" >
         <p> I want to:
-        <select name="want" id="want">
+        <select name="want" id="want" required>
         <option selected disabled> Choose an option </option>
         <option value="lose_weight"> Lose weight </option>
         <option value="get_toned"> Get toned </option>
@@ -84,7 +84,7 @@
               
        <div id="radios3">
           <p>Choose what's your focus part:
-          <select name="focus_part" id="focus_part">
+          <select name="focus_part" id="focus_part" required>
           <option selected disabled> Choose an option </option>
           <option value="arms"> Arms </option>
           <option value="abs"> Abs </option>
@@ -94,12 +94,7 @@
           </p>
         </div>
 
- <div id="terms">
-   <label>
-   <input type="checkbox" class="option-input-checkbox" required/>
-    I agree to the processing of my personal data.  I agree with the terms and <br> conditions. 
-   </label>
- </div>
+
 
   <div class="signUpBtn">
         <span></span>

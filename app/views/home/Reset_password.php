@@ -14,7 +14,7 @@ session_start();
     <div class="start-page">
     <div class="change-pass-box">
     <h2>Reset password</h2>
-    <form action="../phpFiles/sendMail.php" method="POST" id="myForm1">
+    <form id="myForm1">
 
     <div class="user-input">
     
@@ -33,7 +33,7 @@ session_start();
     </form>
 
 
-    <form action="../phpFiles/resetPassword.php" method="POST" id="myForm2">
+    <form id="myForm2">
     <div class="user-input">
     <input type="text" id="token" name="token">
     <label>Input the token send via gmail</label>
@@ -57,8 +57,8 @@ session_start();
     </div>
 
     </form>
+    <script src= "/app/views/home/JavaScriptFiles/resetPassAjaxCall.js"></script>
         </div>
     </div>
-      <script src= "/app/views/home/JavaScriptFiles/resetPassAjaxCall.js"></script>
 </body>
 </html>
